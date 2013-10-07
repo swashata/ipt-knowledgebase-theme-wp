@@ -231,10 +231,9 @@ button,
 input {
 	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+
+.entry-content input[type="reset"],
+.entry-content input[type="submit"] {
 	border: 1px solid #ccc;
 	border-color: #ccc #ccc #bbb #ccc;
 	border-radius: 3px;
@@ -246,22 +245,17 @@ input[type="submit"] {
 	font-size: 1.2rem;
 	line-height: 1;
 	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
-button:hover,
-input[type="button"]:hover,
+
 input[type="reset"]:hover,
 input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa #bbb;
 }
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-html input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
+
+.entry-content input[type="reset"]:focus,
+.entry-content input[type="submit"]:focus,
+.entry-content input[type="reset"]:active,
+.entry-content input[type="submit"]:active {
 	border-color: #aaa #bbb #bbb #bbb;
 }
 
