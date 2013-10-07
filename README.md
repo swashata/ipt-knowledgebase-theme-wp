@@ -1,4 +1,5 @@
-# iPanelThemes Knowledgebase for WordPress
+# WP Knowledge Base Theme
+### by iPanelThemes.com
 Finally a free and open source knowledgebase theme made specifically for WordPress.
 Uses twitter bootstrap for rendering UI components and some other open source elements
 for rendering niceness.
