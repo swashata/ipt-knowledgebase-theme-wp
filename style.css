@@ -675,6 +675,10 @@ body .comment-reply-title {
 	background-color: #910101;
 	border-color: #910101;
 }
+.ipt-kb-social-widget .ipt-kb-social-ul li.envato a:hover {
+	background-color: #82B540;
+	border-color: #82B540;
+}
 
 /* =Footer
 ---------------------------------------------- */
@@ -847,5 +851,22 @@ body blockquote p,
 }
 body code {
 	white-space: normal;
+}
+
+/* =Syntax Highlighter Compatibility
+------------------------------------------------- */
+.syntaxhighlighter .container:before,
+.syntaxhighlighter .container:after {
+	display: none;
+}
+.syntaxhighlighter *,
+.syntaxhighlighter *:after,
+.syntaxhighlighter *:before {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.syntaxhighlighter code {
+	white-space: nowrap;
 }
 

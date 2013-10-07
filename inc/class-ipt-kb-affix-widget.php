@@ -151,6 +151,8 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 			return;
 		}
 
+
+
 		$collapse_state = ' in';
 		if ( isset( $_COOKIE['ipt_kb_toc'] ) && $_COOKIE['ipt_kb_toc'] == '0' ) {
 			$collapse_state = '';
@@ -308,7 +310,11 @@ function ipt_kb_toc_content_filter( $content ) {
 
 	// Reset the toc array
 	// We do not know how many times it is going to get called
+	// If it is already set then just return the content
 	global $post;
+	if ( isset( IPT_KB_Affix_Widget::$toc[$post->ID] ) ) {
+		return $content;
+	}
 	IPT_KB_Affix_Widget::$toc[$post->ID] = array();
 
 	// Call the preg callback
@@ -339,6 +345,8 @@ function ipt_kb_toc_preg_callback( $matches ) {
 		$new_id = 'ipt_kb_toc_' . $post_id . '_' . count( IPT_KB_Affix_Widget::$toc[$post_id] );
 		$return = '<h' . $matches[1] . ' id="' . esc_attr( $new_id ) . '"' . $matches[2] . '>' . $matches[3] . '</';
 	}
+
+
 
 	if ( ! isset( IPT_KB_Affix_Widget::$toc[$post_id][$new_id] ) ) {
 		IPT_KB_Affix_Widget::$toc[$post_id][$new_id] = array(

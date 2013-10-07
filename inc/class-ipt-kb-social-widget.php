@@ -33,6 +33,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
 				'youtube' => '',
 				'vimeo' => '',
 				'pinterest' => '',
+				'envato' => '',
 			),
 		);
 		$settings_helper = array(
@@ -43,6 +44,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
     			'youtube' => __( 'Youtube', 'ipt_kb' ),
     			'vimeo' => __( 'Vimeo', 'ipt_kb' ),
     			'pinterest' => __( 'Pinterest', 'ipt_kb' ),
+    			'envato' => __( 'Follow on envato marketplaces', 'ipt_kb' ),
 			),
 			'social_classes' => array(
 				'facebook' => 'ipt-facebook',
@@ -51,6 +53,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
     			'youtube' => 'ipt-youtube',
     			'vimeo' => 'ipt-vimeo',
     			'pinterest' => 'ipt-pinterest',
+    			'envato' => 'ipt-leaf',
 			),
 		);
 		$this->default_settings = apply_filters( 'ipt_kb_social_widget_defaults', $default_settings );
@@ -117,6 +120,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
 	 **/
 	function form( $instance ) {
 		$instance = wp_parse_args( (array) $instance, $this->default_settings );
+		$instance['links'] = wp_parse_args( (array) $instance['links'], $this->default_settings['links'] );
 		?>
 <p>
 	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><strong><?php _e( 'Title', 'ipt_kb' ) ?></strong></label>
