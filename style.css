@@ -1,8 +1,8 @@
 /*
-Theme Name: iPanelThemes Knowledgebase
+Theme Name: WP Knowledge Base Theme
 Theme URI: http://ipanelthemes.com/kb/
-Author: iPanelThemes.com
-Author URI: http://ipanelthemes.com
+Author: swashata
+Author URI: http://www.swashata.com
 Description: A theme specifically used for iPanelThemes Knowledgebase and made open source for the greater community. Built using bootstrap, jQuery Sticky Kit and wp-bootstrap-navwalker.
 Version: 0.0.1
 License: GNU General Public License
@@ -801,6 +801,22 @@ body .ipt_kb_like_article_info {
 }
 body .well p {
 	margin: 5px 0;
+}
+body .entry-content ul.nav-tabs,
+body .entry-content ul.list-group {
+	margin-left: 0;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+body .entry-content ul.list-group {
+	margin-bottom: 10px;
+}
+body .tab-content {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-top: medium none;
+	border-radius: 0 4px 4px 4px;
 }
 
 /* =Post Content Styles

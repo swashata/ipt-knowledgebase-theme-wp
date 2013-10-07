@@ -397,6 +397,10 @@ function ipt_kb_breadcrumb() {
 			<li typeof="v:Breadcrumb" class="active">
 				<span property="v:title"><?php _e( 'Search result', 'ipt_kb' ); ?></span>
 			</li>
+		<?php elseif ( is_404() ) : ?>
+			<li typeof="v:Breadcrumb" class="active">
+				<span property="v:title"><?php _e( 'Error 404 - Not found', 'ipt_kb' ); ?></span>
+			</li>
 		<?php elseif ( ! is_home() ) : ?>
 			<li typeof="v:Breadcrumb" class="active">
 				<span property="v:title"><?php _e( 'Archive', 'ipt_kb' ); ?></span>

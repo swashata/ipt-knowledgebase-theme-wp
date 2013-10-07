@@ -122,18 +122,14 @@ class IPT_KB_Social_Widget extends WP_Widget {
 	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><strong><?php _e( 'Title', 'ipt_kb' ) ?></strong></label>
 	<input type="text" class="widefat" name="<?php echo $this->get_field_name( 'title' ); ?>" id="<?php echo $this->get_field_id( 'title' ); ?>" value="<?php echo esc_html( $instance['title'] ); ?>" />
 </p>
-<table class="form-table">
 	<?php foreach ( $instance['links'] as $l_key => $lval ) : ?>
-	<tr>
-		<th scope="row">
-			<label for="<?php echo $this->get_field_id( $l_key ); ?>"><?php echo $this->settings_helper['social_titles'][$l_key]; ?></label>
-		</th>
-		<td>
-			<input type="text" class="regular-text code" name="<?php echo $this->get_field_name( $l_key ); ?>" id="<?php echo $this->get_field_id( $l_key ); ?>" value="<?php echo esc_html( $lval ); ?>" />
-		</td>
-	</tr>
+<div>
+	<p>
+		<label for="<?php echo $this->get_field_id( $l_key ); ?>"><?php echo $this->settings_helper['social_titles'][$l_key]; ?></label>
+		<input type="text" class="widefat code" name="<?php echo $this->get_field_name( $l_key ); ?>" id="<?php echo $this->get_field_id( $l_key ); ?>" value="<?php echo esc_html( $lval ); ?>" />
+	</p>
+</div>
 	<?php endforeach; ?>
-</table>
 		<?php
 		// display field names here using:
 		// $this->get_field_id( 'option_name' ) - the CSS ID

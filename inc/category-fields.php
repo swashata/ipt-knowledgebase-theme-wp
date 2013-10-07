@@ -50,7 +50,7 @@ class IPT_KB_Category_Fields {
 <div class="form-field">
 	<label for="term_meta_image_url"><?php _e( 'Image URL', 'ipt_kb' ) ?></label>
 	<input type="text" name="term_meta[image_url]" id="term_meta_image_url" value="" class="regular-text code" />
-	<p class="description"><?php _e( 'Add a 100X100 image for this category. Will only be used for parent categories.', 'ipt_kb' ); ?></p>
+	<p class="description"><?php _e( 'Add a 128X128 image for this category. Will only be used for parent categories.', 'ipt_kb' ); ?></p>
 </div>
 		<?php
 	}

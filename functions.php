@@ -163,6 +163,14 @@ function ipt_kb_scripts() {
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'ajax_error' => __( 'Oops, some problem to connect. Try again?', 'ipt_kb' ),
 	) );
+
+	// Compatibility with Easy Bootstrap Shortcode
+	// @link http://wordpress.org/plugins/easy-bootstrap-shortcodes/
+	// Detach the icon css from bootstrap plugin
+	// Hats off to the developer to save me lot of trouble
+	wp_deregister_style( 'bootstrap-icon' );
+	wp_deregister_style( 'bootstrap' );
+	wp_deregister_script( 'bootstrap' );
 }
 add_action( 'wp_enqueue_scripts', 'ipt_kb_scripts' );
 

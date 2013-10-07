@@ -109,7 +109,6 @@ jQuery(document).ready(function($) {
 
 	// Set the cookie for TOC and Subcat collapse shown & hidden
 	$(document).on('shown.bs.collapse hidden.bs.collapse', function(e) {
-		console.log(e);
 		// Set the cookie
 		var cookie_str = '',
 		type = ( e.type == 'hidden' ? '0' : '1' ),
