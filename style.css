@@ -2,8 +2,8 @@
 Theme Name: WP Knowledge Base Theme
 Theme URI: http://ipanelthemes.com/kb/
 Author: swashata
-Author URI: http://www.swashata.com
-Description: A theme specifically used for iPanelThemes Knowledgebase and made open source for the greater community. Built using bootstrap, jQuery Sticky Kit and wp-bootstrap-navwalker.
+Author URI: http://ipanelthemes.com
+Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site.
 Version: 1.0.0
 License: GNU General Public License
 License URI: license.txt
@@ -383,6 +383,14 @@ textarea {
 	clear: both;
 }
 
+/* =Header
+----------------------------------------------- */
+.site-title {
+	font-size: 18px;
+}
+.site-title a {
+	color: #777;
+}
 
 /* =Menu
 ----------------------------------------------- */
@@ -702,6 +710,15 @@ body .comment-reply-title {
 #main .glyphicon {
 	font-size: 16px;
 }
+#main .entry-content h1 .glyphicon,
+#main .entry-content h2 .glyphicon,
+#main .entry-content h3 .glyphicon,
+#main .entry-content h4 .glyphicon,
+#main .entry-content h5 .glyphicon,
+#main .entry-content h6 .glyphicon {
+	font-size: inherit;
+	margin-right: 5px;
+}
 #main [class*="glyphicon-"] {
 	font-size: 15px;
 }
@@ -791,7 +808,7 @@ body .comment-reply-title {
 body .popover {
 	max-width: 680px;
 }
-body .ipt_kb_like_article {
+body .hidden-xs .ipt_kb_like_article {
 	text-align: left;
 }
 body .ipt_kb_like_article_info {
@@ -862,5 +879,12 @@ body code {
 }
 .syntaxhighlighter code {
 	white-space: nowrap;
+}
+
+/* =Wee little wpstats icon
+------------------------------------------------- */
+#wpstats {
+	display: block;
+	margin: 0 auto 10px;
 }
 

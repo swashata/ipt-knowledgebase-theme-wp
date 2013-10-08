@@ -98,6 +98,11 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 		echo $parent_cat->name; // Can set this with a widget option, or omit altogether
 		echo $after_title;
 		?>
+
+<!-- Stick it or not -->
+<?php if ( isset( $instance['dontfix'] ) && $instance['dontfix'] == true ) : ?>
+<input type="hidden" class="dontfix" value="1" />
+<?php endif; ?>
 <!-- Search form -->
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<input type="hidden" name="cat" value="<?php echo $parent_cat->term_id; ?>" />
@@ -275,7 +280,12 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 
 		// update logic goes here
-		$updated_instance = $new_instance;
+		$updated_instance = array();
+		if ( isset( $new_instance['dontfix'] ) ) {
+			$updated_instance['dontfix'] = true;
+		} else {
+			$updated_instance['dontfix'] = false;
+		}
 		return $updated_instance;
 	}
 
@@ -286,9 +296,15 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	 * @return void Echoes it's output
 	 **/
 	function form( $instance ) {
-		$instance = wp_parse_args( (array) $instance, array(  ) );
+		$instance = wp_parse_args( (array) $instance, array(
+			'dontfix' => false,
+		) );
 		?>
-<p class="description"><?php _e( 'No configuration necessary. Just activate and enjoy. Neat?', 'ipt_kb' ); ?></p>
+<p>
+	<label for="<?php echo $this->get_field_id( 'dontfix' ); ?>"><?php _e ( 'Do not make the widget sticky', 'ipt_kb' ); ?></label>
+	<input type="checkbox" name="<?php echo $this->get_field_name( 'dontfix' ); ?>" id="<?php echo $this->get_field_id( 'dontfix' ); ?>"<?php if ( $instance['dontfix'] == true ) echo ' checked="checked"'; ?> />
+</p>
+<p class="description"><?php _e( 'No other configuration necessary. Just activate and enjoy. Neat?', 'ipt_kb' ); ?></p>
 		<?php
 	}
 }
@@ -310,20 +326,17 @@ function ipt_kb_toc_content_filter( $content ) {
 
 	// Reset the toc array
 	// We do not know how many times it is going to get called
-	// If it is already set then just return the content
 	global $post;
-	if ( isset( IPT_KB_Affix_Widget::$toc[$post->ID] ) ) {
-		return $content;
-	}
+
 	IPT_KB_Affix_Widget::$toc[$post->ID] = array();
 
 	// Call the preg callback
-	$new = preg_replace_callback( '/<h([2-4])(.*?)>(.*?)<\//', 'ipt_kb_toc_preg_callback', $content );
+	$new = preg_replace_callback( '/<h([2-4])(.*?)>(.*?)<\/h/s', 'ipt_kb_toc_preg_callback', $content );
 
 	// Return it
 	return $new;
 }
-add_filter( 'the_content', 'ipt_kb_toc_content_filter' );
+add_filter( 'the_content', 'ipt_kb_toc_content_filter', 99 );
 
 function ipt_kb_toc_preg_callback( $matches ) {
 	// Create the toc array for this post
@@ -343,7 +356,7 @@ function ipt_kb_toc_preg_callback( $matches ) {
 		$return = $matches[0];
 	} else {
 		$new_id = 'ipt_kb_toc_' . $post_id . '_' . count( IPT_KB_Affix_Widget::$toc[$post_id] );
-		$return = '<h' . $matches[1] . ' id="' . esc_attr( $new_id ) . '"' . $matches[2] . '>' . $matches[3] . '</';
+		$return = '<h' . $matches[1] . ' id="' . esc_attr( $new_id ) . '"' . $matches[2] . '>' . $matches[3] . '</h';
 	}
 
 
@@ -351,7 +364,7 @@ function ipt_kb_toc_preg_callback( $matches ) {
 	if ( ! isset( IPT_KB_Affix_Widget::$toc[$post_id][$new_id] ) ) {
 		IPT_KB_Affix_Widget::$toc[$post_id][$new_id] = array(
 			'type' => $matches[1],
-			'text' => $matches[3],
+			'text' => trim( rtrim( strip_shortcodes( strip_tags( $matches[3] ) ), ':.;' ) ),
 		);
 	}
 

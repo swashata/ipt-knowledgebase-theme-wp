@@ -48,9 +48,13 @@ jQuery(document).ready(function($) {
 		window_width = $(window).width();
 
 		$('#content').css('min-height', min_height);
+
+		// Set the sidebar min-height
 		if ( window_width >= 975 ) {
-			$('#secondary').css('min-height', min_height);
+			var sidebar_min_height = Math.max( $('#primary').outerHeight(), $('#secondary').outerHeight() );
+			$('#secondary').css('min-height', sidebar_min_height);
 		}
+
 		if ( sticky_on ) {
 			if ( window_width >= 975 ) {
 				if ( ! sticked ) {
@@ -59,6 +63,16 @@ jQuery(document).ready(function($) {
 						offset_top : 30
 					});
 					sticked = true;
+				} else {
+					// Check the new height and if it overflows the sidebar, then fix it
+					var sidebar_height = $('#secondary').outerHeight(),
+					affix_height = $('.ipt_kb_affix').outerHeight(),
+					sidebar_offset = $('#secondary').offset().top,
+					affix_offset = $('.ipt_kb_affix').offset().top;
+					//console.log()
+					if ( sidebar_height < ( (affix_offset - sidebar_offset) + affix_height ) ) {
+						// This is a problem I am not able to solve right now
+					}
 				}
 				$(document.body).trigger("sticky_kit:recalc");
 			} else {
@@ -89,22 +103,19 @@ jQuery(document).ready(function($) {
 	// If you are reading this, perhaps you can help me with the footer sticky flicky bug
 	// Huh! I even gave it a name
 	if ( $('.ipt_kb_affix').length ) {
-		sticky_on = true;
-		// Make sure the secondary height is same as the container
-		// No need to do it here, as already done in the adjust_height
-		if ( $(window).width() >= 975 ) {
-			$('.ipt_kb_affix').stick_in_parent({
-				inner_scrolling : false,
-				offset_top : 30
-			});
-			sticked = true;
+		// Check to ensure that it is not non sticked
+		if ( ! $('.ipt_kb_affix').find('input.dontfix').length ) {
+			sticky_on = true;
+			// Make sure the secondary height is same as the container
+			// No need to do it here, as already done in the adjust_height
+			if ( $(window).width() >= 975 ) {
+				$('.ipt_kb_affix').stick_in_parent({
+					inner_scrolling : false,
+					offset_top : 30
+				});
+				sticked = true;
+			}
 		}
-
-		// Bind the event on collapsibles
-		$(document).on('shown.bs.collapse hidden.bs.collapse', function() {
-			$(document.body).trigger("sticky_kit:recalc");
-			adjust_height();
-		});
 	}
 
 	// Set the cookie for TOC and Subcat collapse shown & hidden
@@ -129,6 +140,9 @@ jQuery(document).ready(function($) {
 		if ( cookie_str !== '' ) {
 			cookie_str += ' expires=' + exp_date.toUTCString() + '; path=/';
 			document.cookie = cookie_str;
+
+			// Also set the recalc and adjust_height
+			adjust_height();
 		}
 	});
 });

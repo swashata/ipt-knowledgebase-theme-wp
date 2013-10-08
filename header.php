@@ -33,13 +33,15 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="sitetitle" href="<?php echo site_url( '/' ); ?>">
+
 						<?php if ( get_header_image() ) : ?>
-						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+						<a class="site-anchor" href="<?php echo home_url( '/' ); ?>">
+							<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+						</a>
 						<?php else : ?>
-						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+						<h1 class="site-title"><a class="site-anchor" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 						<?php endif; // End header image check. ?>
-					</a>
+
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">

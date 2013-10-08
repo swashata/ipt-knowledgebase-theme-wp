@@ -1,10 +1,13 @@
 # WP Knowledge Base Theme
-### by iPanelThemes.com
+#### by iPanelThemes.com
+
+![Theme Logo](screenshot.png?raw=true)
+
 Finally a free and open source knowledgebase theme made specifically for WordPress.
 Uses twitter bootstrap for rendering UI components and some other open source elements
 for rendering niceness.
 
-`This is currently in development. Use it if you want, but don't yell if it breaks`
+First release is out. Simply download the master and upload it as a theme.
 
 ## Acknowledgement
 Before we dive into the cool features of this theme, let's take a minute here to acknowledge
@@ -24,14 +27,14 @@ all the tools that were used during the development of this theme.
 * A nice and small footer to show off.
 
 ## Components converted to bootstrap UI
-* Home Page
-* Category Pages
-* Subcategory pages
-* Comments
-* Next/Previous Posts links
-* wp_link_pages pagination
-* Search bar
-* Navigation
+- [x] Home Page
+- [x] Category Pages
+- [x] Subcategory pages
+- [x] Comments
+- [x] Next/Previous Posts links
+- [x] wp_link_pages pagination
+- [x] Search bar
+- [x] Navigation
 
 ## About this repository
 This will always be the cutting edge development version of the theme. Pull requests are more than welcome.
@@ -45,11 +48,8 @@ This will always be the cutting edge development version of the theme. Pull requ
 * Footer large (on left) - ideal for a short about us
 * Footer small (on right) - ideal for social widget
 
-## Live Preview
-Check our own knowledgebase. [Under construction](http://ipanelthemes.com/kb/)
-
-## Howto's
-Coming soon...
-
 ## Documentation
-Once this theme is complete, we will host and put a link here.
+Extensive documentation on how to use this theme is available [at this link](http://ipanelthemes.com/kb/products/wp-knowledge-base-theme/).
+
+## Live Preview
+Check our own [Knowledge Base](http://ipanelthemes.com/kb/).

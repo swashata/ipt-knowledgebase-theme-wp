@@ -1,0 +1,582 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Knowledge Base Theme\n"
+"POT-Creation-Date: 2013-10-09 00:55+0530\n"
+"PO-Revision-Date: 2013-10-09 00:55+0530\n"
+"Last-Translator: Swashata Ghosh <swashata4u@gmail.com>\n"
+"Language-Team: ipanelthemes.com <ipanelthemes@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:26
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:30
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../404.php:38
+msgid "Recently Published Articles"
+msgstr ""
+
+#: ../404.php:58
+msgid "Knowledge Base"
+msgstr ""
+
+#: ../archive.php:31
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../archive.php:39
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../archive.php:42
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../archive.php:45
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../archive.php:48
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:51
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:54
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:57
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:60
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:63
+msgid "Archives"
+msgstr ""
+
+#: ../archive.php:68 ../category-templates/category-child.php:50
+#, php-format
+msgid "Page %1$d / %2$d"
+msgstr ""
+
+#: ../comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:36 ../comments.php:60
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:37 ../comments.php:61
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:38 ../comments.php:62
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:73
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:18 ../content-single.php:20
+msgid "<p class=\"pagination-p\">Pages:</p>"
+msgstr ""
+
+#: ../content-page.php:23 ../content-single.php:60 ../content.php:71
+#: ../image.php:32 ../image.php:64 ../inc/template-tags.php:77
+#: ../inc/template-tags.php:118
+msgid "Edit"
+msgstr ""
+
+#: ../content-single.php:29 ../content-single.php:32 ../content.php:49
+#: ../content.php:59
+msgid ", "
+msgstr ""
+
+#: ../content-single.php:37
+#, php-format
+msgid ""
+"This entry was tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;"
+"%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
+"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:39
+#, php-format
+msgid ""
+"Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a "
+"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:45
+#, php-format
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s and tagged <i class=\"glyphicon glyphicon-tags\"></"
+"i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:47
+#, php-format
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content.php:40 ../content.php:43
+msgid "Read more"
+msgstr ""
+
+#: ../content.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../content.php:63
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../content.php:69
+msgid "Leave a comment"
+msgstr ""
+
+#: ../content.php:69
+msgid "1 Comment"
+msgstr ""
+
+#: ../content.php:69
+msgid "% Comments"
+msgstr ""
+
+#: ../footer.php:25
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../footer.php:27
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:86
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:94
+msgid "Footer Large"
+msgstr ""
+
+#: ../functions.php:102
+msgid "Footer Small"
+msgstr ""
+
+#: ../functions.php:164
+msgid "Oops, some problem to connect. Try again?"
+msgstr ""
+
+#: ../header.php:30
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../home.php:41 ../home.php:53 ../category-templates/category-parent.php:73
+#: ../inc/class-ipt-kb-affix-widget.php:126
+msgid "Get support"
+msgstr ""
+
+#: ../home.php:57 ../home.php:99 ../category-templates/category-parent.php:77
+msgid "Browse all"
+msgstr ""
+
+#: ../home.php:115
+msgid "Recent articles"
+msgstr ""
+
+#: ../home.php:143
+msgid "Popular articles"
+msgstr ""
+
+#: ../image.php:22
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: ../image.php:37
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../image.php:38
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../image.php:58
+msgid "Pages:"
+msgstr ""
+
+#: ../no-results.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:7
+msgctxt "placeholder"
+msgid "Search Knowledgebase&hellip;"
+msgstr ""
+
+#: ../searchform.php:13
+#, php-format
+msgid "Search Knowledgebase for %s&hellip;"
+msgstr ""
+
+#: ../category-templates/category-child.php:39
+msgid "Support"
+msgstr ""
+
+#: ../category-templates/category-parent.php:17
+msgid "Get Support"
+msgstr ""
+
+#: ../category-templates/category-parent.php:62
+msgid "Browse"
+msgstr ""
+
+#: ../category-templates/category-parent.php:67
+#, php-format
+msgid "%1$s / %2$s"
+msgstr ""
+
+#: ../category-templates/no-result.php:7
+msgid "No articles published. Check back later?"
+msgstr ""
+
+#: ../inc/category-fields.php:41 ../inc/category-fields.php:62
+msgid "Support Forum"
+msgstr ""
+
+#: ../inc/category-fields.php:43 ../inc/category-fields.php:65
+msgid "Link to support forum. For parent category only."
+msgstr ""
+
+#: ../inc/category-fields.php:46 ../inc/category-fields.php:69
+msgid "Icon Class"
+msgstr ""
+
+#: ../inc/category-fields.php:48 ../inc/category-fields.php:72
+msgid ""
+"Add icon class to this category. This is for subcategories, not the parent "
+"category."
+msgstr ""
+
+#: ../inc/category-fields.php:51 ../inc/category-fields.php:76
+msgid "Image URL"
+msgstr ""
+
+#: ../inc/category-fields.php:53 ../inc/category-fields.php:79
+msgid ""
+"Add a 128X128 image for this category. Will only be used for parent "
+"categories."
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:32
+msgid "An affix widget for displaying on the sidebar of the single articles."
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:33
+msgid "Affix Widget"
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:111
+msgid "Search&hellip;"
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:167
+msgid "Click to show/hide table of contents."
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:169
+msgid "Table of Contents"
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:198
+msgid "Click to show/hide articles under this category."
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:257
+msgid "No articles found."
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:304
+msgid "Do not make the widget sticky"
+msgstr ""
+
+#: ../inc/class-ipt-kb-affix-widget.php:307
+msgid "No other configuration necessary. Just activate and enjoy. Neat?"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:28
+msgid "Stay <span>Connected</span>"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:41
+msgid "Facebook"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:42
+msgid "Twitter"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:43
+msgid "Google Plus"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:44
+msgid "Youtube"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:45
+msgid "Vimeo"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:46
+msgid "Pinterest"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:47
+msgid "Follow on envato marketplaces"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:61
+msgid "A nice looking social widget for the footer small area."
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:62
+msgid "Social Widget"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:126
+msgid "Title"
+msgstr ""
+
+#: ../inc/extras.php:66
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/ipt-kb-like-article.php:13 ../inc/ipt-kb-like-article.php:18
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: ../inc/ipt-kb-like-article.php:22 ../inc/template-tags.php:255
+msgid "You like it already"
+msgstr ""
+
+#: ../inc/ipt-kb-like-article.php:28
+msgid "Thank you."
+msgstr ""
+
+#: ../inc/template-tags.php:35
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:38
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: ../inc/template-tags.php:39
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: ../inc/template-tags.php:44
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../inc/template-tags.php:48
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:77
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:87
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:90
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:108
+msgid "<i class=\"glyphicon ipt-bubbles-4\"></i>&nbsp;&nbsp;Reply"
+msgstr ""
+
+#: ../inc/template-tags.php:115
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:196
+#, php-format
+msgid ""
+"<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i> "
+"Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:252
+msgid "This article was helpful"
+msgstr ""
+
+#: ../inc/template-tags.php:259 ../inc/template-tags.php:269
+#, php-format
+msgid "%d person found this article useful"
+msgid_plural "%d people found this article useful"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-tags.php:260 ../inc/template-tags.php:265
+msgid "Please wait"
+msgstr ""
+
+#: ../inc/template-tags.php:283 ../inc/template-tags.php:287
+msgid "Home"
+msgstr ""
+
+#: ../inc/template-tags.php:403
+msgid "Search result"
+msgstr ""
+
+#: ../inc/template-tags.php:407
+msgid "Error 404 - Not found"
+msgstr ""
+
+#: ../inc/template-tags.php:411
+msgid "Archive"
+msgstr ""
+
+#: ../inc/template-tags.php:443
+msgid "Name"
+msgstr ""
+
+#: ../inc/template-tags.php:445
+msgid "Email"
+msgstr ""
+
+#: ../inc/template-tags.php:447
+msgid "Website"
+msgstr ""
+
+#: ../inc/template-tags.php:451
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: ../inc/template-tags.php:454
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: ../inc/template-tags.php:455
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../inc/template-tags.php:456
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: ../inc/template-tags.php:457
+msgid "Your email address will not be published."
+msgstr ""
+
+#: ../inc/template-tags.php:458
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:461
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../inc/template-tags.php:462
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../inc/template-tags.php:463
+msgid "Cancel reply"
+msgstr ""
+
+#: ../inc/template-tags.php:464
+msgid "Post Comment"
+msgstr ""

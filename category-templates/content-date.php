@@ -12,7 +12,7 @@
 		) ); ?>
 	</span>
 	<?php endif; ?>
-	<span class="badge"><?php the_date(); ?></span>
+	<span class="badge"><?php echo get_the_date(); ?></span>
 	<h3><?php the_title(); ?></h3>
 	<span class="clearfix"></span>
 </a>

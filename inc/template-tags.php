@@ -255,13 +255,18 @@ function ipt_kb_like_article() {
 		$text = __( 'You like it already', 'ipt_kb' );
 	}
 	?>
-<p>
-	<span class="ipt_kb_like_article_info pull-right text-info hidden-xs"><i class="glyphicon glyphicon-fire"></i>&nbsp;&nbsp;<?php printf( _n( '%d person found this article useful', '%d people found this article useful', $total_count, 'ipt_kb' ), $total_count ); ?></span>
+<p class="hidden-xs">
+	<span class="ipt_kb_like_article_info pull-right text-info"><i class="glyphicon glyphicon-fire"></i>&nbsp;&nbsp;<?php printf( _n( '%d person found this article useful', '%d people found this article useful', $total_count, 'ipt_kb' ), $total_count ); ?></span>
 	<button<?php if ( $did_already ) echo ' disabled="disabled"'; ?> type="button" data-loading-text="<?php _e( 'Please wait', 'ipt_kb' ); ?>" class="btn btn-success ipt_kb_like_article" data-postid="<?php echo $post->ID; ?>" data-nonce="<?php echo wp_create_nonce( 'ipt_kb_like_article_' . $post->ID ); ?>">
 		<i class="glyphicon glyphicon-thumbs-up"></i> <span class="text"><?php echo $text; ?></span>
 	</button>
-	<span class="ipt_kb_like_article_info text-info visible-xs"><i class="glyphicon glyphicon-fire"></i>&nbsp;&nbsp;<?php printf( _n( '%d person found this article useful', '%d people found this article useful', $total_count, 'ipt_kb' ), $total_count ); ?></span>
 </p>
+<p class="visible-xs">
+	<button<?php if ( $did_already ) echo ' disabled="disabled"'; ?> type="button" data-loading-text="<?php _e( 'Please wait', 'ipt_kb' ); ?>" class="btn btn-success btn-block ipt_kb_like_article" data-postid="<?php echo $post->ID; ?>" data-nonce="<?php echo wp_create_nonce( 'ipt_kb_like_article_' . $post->ID ); ?>">
+		<i class="glyphicon glyphicon-thumbs-up"></i> <span class="text"><?php echo $text; ?></span>
+	</button>
+</p>
+<p class="ipt_kb_like_article_info text-info text-center visible-xs"><i class="glyphicon glyphicon-fire"></i>&nbsp;&nbsp;<?php printf( _n( '%d person found this article useful', '%d people found this article useful', $total_count, 'ipt_kb' ), $total_count ); ?></p>
 	<?php
 }
 
@@ -279,7 +284,7 @@ function ipt_kb_breadcrumb() {
 	</li>
 	<?php else : ?>
 	<li typeof="v:Breadcrumb">
-		<a rel="v:url" property="v:title" href="<?php echo site_url( '/' ); ?>"><?php _e('Home', 'ipt_kb'); ?></a>
+		<a rel="v:url" property="v:title" href="<?php echo home_url( '/' ); ?>"><?php _e('Home', 'ipt_kb'); ?></a>
 	</li>
 	<?php endif; ?>
 

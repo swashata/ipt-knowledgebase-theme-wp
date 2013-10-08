@@ -64,7 +64,7 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 				</p>
 			</div>
 			<div class="col-md-9 col-sm-10 col-xs-9">
-				<h2 class="knowledgebase-title"><a data-popt="kb-homepage-popover-<?php echo $scat->term_id; ?>" title="<?php echo esc_attr( sprintf( __( '%s / %s', 'ipt_kb' ), $cat->name, $scat->name ) ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-paragraph-justify "></i></a> <?php echo $scat->name; ?></h2>
+				<h2 class="knowledgebase-title"><a data-popt="kb-homepage-popover-<?php echo $scat->term_id; ?>" title="<?php echo esc_attr( sprintf( __( '%1$s / %2$s', 'ipt_kb' ), $cat->name, $scat->name ) ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-paragraph-justify "></i></a> <?php echo $scat->name; ?></h2>
 				<div class="ipt-kb-popover-target" id="kb-homepage-popover-<?php echo $scat->term_id; ?>">
 					<?php echo wpautop( $scat->description ); ?>
 					<p class="text-right">
