@@ -27,14 +27,14 @@ all the tools that were used during the development of this theme.
 * A nice and small footer to show off.
 
 ## Components converted to bootstrap UI
-- [x] Home Page
-- [x] Category Pages
-- [x] Subcategory pages
-- [x] Comments
-- [x] Next/Previous Posts links
-- [x] wp_link_pages pagination
-- [x] Search bar
-- [x] Navigation
+* Home Page
+* Category Pages
+* Subcategory pages
+* Comments
+* Next/Previous Posts links
+* wp_link_pages pagination
+* Search bar
+* Navigation
 
 ## About this repository
 This will always be the cutting edge development version of the theme. Pull requests are more than welcome.
