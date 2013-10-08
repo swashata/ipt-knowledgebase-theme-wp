@@ -1,6 +1,6 @@
 === WP Knowledge Base Theme ===
 Contributors: swashata, iPanelThemes
-Tags: knowledgebase, knowledge base, bootstrap, two-column, responsive, right sidebar, translation-ready
+Tags: two-columns, flexible-width, custom-header, custom-menu, featured-images, gray, light
 Requires at least: 3.5
 Tested up to: 3.7
 Stable tag: 1.0.0
