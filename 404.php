@@ -5,7 +5,18 @@
  * @package iPanelThemes Knowledgebase
  */
 
-get_header(); ?>
+get_header();
+
+$recent_posts = new WP_Query( array(
+	'posts_per_page' => get_option( 'posts_per_page' ),
+) );
+
+$main_categories = get_categories( array(
+	'taxonomy' => 'category',
+	'parent' => 0,
+	'hide_empty' => 0,
+) );
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -20,32 +31,45 @@ get_header(); ?>
 
 					<?php get_search_form(); ?>
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-info">
+								  <div class="panel-heading">
+										<h3 class="panel-title"><?php _e( 'Recently Published Articles', 'ipt_kb' ); ?></h3>
+								  </div>
+								  <div class="panel-body">
+										<div class="list-group">
+											<?php if ( $recent_posts->have_posts() ) : ?>
+												<?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); ?>
+												<?php get_template_part( 'category-templates/content', 'popular' ); ?>
+												<?php endwhile; ?>
+											<?php else : ?>
+												<?php get_template_part( 'category-templates/no-result' ); ?>
+											<?php endif; ?>
+											<?php wp_reset_query(); ?>
+										</div>
+								  </div>
+							</div>
+						</div>
 
-					<?php if ( ipt_kb_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'ipt_kb' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
-					<?php
-					/* translators: %1$s: smiley */
-					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'ipt_kb' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+						<div class="col-md-6">
+							<div class="panel panel-success">
+								  <div class="panel-heading">
+										<h3 class="panel-title"><?php _e( 'Knowledge Base', 'ipt_kb' ); ?></h3>
+								  </div>
+								  <div class="panel-body">
+										<div class="list-group">
+											<?php foreach( $main_categories as $cat ) : ?>
+											<a rel="bookmark" class="list-group-item kb-list-date kb-post-list" href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>">
+											<span class="badge"><?php echo ipt_kb_total_cat_post_count( $cat->term_id ); ?></span>
+											<?php echo $cat->name; ?>
+											</a>
+											<?php endforeach; ?>
+										</div>
+								  </div>
+							</div>
+						</div>
+					</div>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->

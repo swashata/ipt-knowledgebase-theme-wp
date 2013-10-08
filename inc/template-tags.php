@@ -505,3 +505,30 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 }
 
 endif;
+
+if ( ! function_exists( 'ipt_kb_total_cat_post_count' ) ) :
+
+/**
+ * Simple function to get category post count including all subcategories
+ *
+ * @link http://wordpress.stackexchange.com/a/91551 Stackexchange
+ * @param  int $cat_id Category ID
+ * @return int         Total post count
+ */
+function ipt_kb_total_cat_post_count( $cat_id ) {
+	$q = new WP_Query( array(
+		'nopaging' => true,
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'category',
+				'field' => 'id',
+				'terms' => $cat_id,
+				'include_children' => true,
+			),
+		),
+		'fields' => 'ids',
+	) );
+	return $q->post_count;
+}
+
+endif;

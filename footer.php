@@ -28,10 +28,9 @@
 			</p>
 			<?php do_action( 'ipt_kb_credits' ); ?>
 		</div><!-- .site-info -->
+		<?php wp_footer(); ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
-<?php wp_footer(); ?>
 
 </body>
 </html>

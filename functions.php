@@ -9,7 +9,7 @@
  * Set the version
  */
 global $ipt_kb_version;
-$ipt_kb_version = '0.0.1';
+$ipt_kb_version = '1.0.0';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
