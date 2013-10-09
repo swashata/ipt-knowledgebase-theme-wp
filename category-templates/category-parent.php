@@ -46,7 +46,7 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 			'posts_per_page' => get_option( 'posts_per_page', 5 ),
 		) ); ?>
 		<div class="col-md-6 kb-subcat">
-			<div class="col-md-3 col-sm-2 col-xs-3 kb-subcat-icon">
+			<div class="col-md-3 col-sm-2 hidden-xs kb-subcat-icon">
 				<p class="text-center">
 					<a href="<?php echo $sterm_link; ?>" class="thumbnail">
 						<?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
@@ -63,7 +63,7 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 					</a>
 				</p>
 			</div>
-			<div class="col-md-9 col-sm-10 col-xs-9">
+			<div class="col-md-9 col-sm-10 col-xs-12">
 				<h2 class="knowledgebase-title"><a data-popt="kb-homepage-popover-<?php echo $scat->term_id; ?>" title="<?php echo esc_attr( sprintf( __( '%1$s / %2$s', 'ipt_kb' ), $cat->name, $scat->name ) ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-paragraph-justify "></i></a> <?php echo $scat->name; ?></h2>
 				<div class="ipt-kb-popover-target" id="kb-homepage-popover-<?php echo $scat->term_id; ?>">
 					<?php echo wpautop( $scat->description ); ?>
@@ -75,6 +75,24 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 						<?php endif; ?>
 						<a href="<?php echo $sterm_link; ?>" class="btn btn-info">
 							<i class="glyphicon ipt-link"></i> <?php _e( 'Browse all', 'ipt_kb' ); ?>
+						</a>
+					</p>
+				</div>
+
+				<div class="visible-xs kb-subcat-icon">
+					<p class="text-center">
+						<a href="<?php echo $sterm_link; ?>" class="thumbnail">
+							<?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
+							<i class="glyphicon <?php echo esc_attr( $sterm_meta['icon_class'] ); ?>"></i>
+							<?php else : ?>
+							<i class="glyphicon ipt-books"></i>
+							<?php endif; ?>
+						</a>
+					</p>
+					<p class="text-center">
+						<a href="<?php echo $sterm_link; ?>" class="btn btn-default btn-block">
+							<i class="glyphicon ipt-link"></i>
+							<?php _e( 'Browse', 'ipt_kb' ); ?>
 						</a>
 					</p>
 				</div>

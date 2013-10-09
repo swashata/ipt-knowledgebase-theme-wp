@@ -27,7 +27,7 @@ $main_categories = get_categories( array(
 				<?php $term_meta = get_option( 'ipt_kb_category_meta_' . $cat->term_id, array() ); ?>
 				<?php $term_link = esc_url( get_term_link( $cat ) ); ?>
 				<div class="col-md-6">
-					<div class="col-md-4">
+					<div class="col-sm-4 hidden-xs">
 						<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
 						<p class="text-center">
 							<a href="<?php echo $term_link; ?>">
@@ -43,7 +43,7 @@ $main_categories = get_categories( array(
 						<?php endif; ?>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-sm-8">
 						<h2 class="knowledgebase-title"><a data-popt="kb-homepage-popover-<?php echo $cat->term_id; ?>" title="<?php echo esc_attr( $cat->name ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-paragraph-justify "></i></a> <?php echo $cat->name; ?></h2>
 						<div class="ipt-kb-popover-target" id="kb-homepage-popover-<?php echo $cat->term_id; ?>">
 							<?php echo wpautop( $cat->description ); ?>
@@ -57,6 +57,22 @@ $main_categories = get_categories( array(
 									<i class="glyphicon ipt-link"></i> <?php _e( 'Browse all', 'ipt_kb' ); ?>
 								</a>
 							</p>
+						</div>
+						<div class="visible-xs">
+							<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
+							<p class="text-center">
+								<a href="<?php echo $term_link; ?>">
+								<img class="img-circle" src="<?php echo esc_attr( $term_meta['image_url'] ); ?>" alt="<?php echo esc_attr( $cat->name ); ?>" />
+								</a>
+							</p>
+							<?php endif; ?>
+							<div class="caption">
+							<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
+								<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
+									<i class="glyphicon ipt-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
+								</a></p>
+							<?php endif; ?>
+							</div>
 						</div>
 						<?php $sub_categories = get_categories( array(
 							'taxonomy' => 'category',

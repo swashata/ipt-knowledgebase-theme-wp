@@ -14,6 +14,46 @@ if ( ! function_exists( 'ipt_kb_content_nav' ) ) :
 function ipt_kb_content_nav( $nav_id ) {
 	global $wp_query, $post;
 
+	// Give compatibility for wp-pagenavi
+	if ( function_exists( 'wp_pagenavi' ) && ! is_single() ) {
+		$wp_pagenavi = wp_pagenavi( array(
+			'echo' => false,
+		) );
+
+		$wp_pagenavi = str_replace( array(
+			"<div class='wp-pagenavi'>",
+			'</div>',
+			"<span class='pages'>",
+			'</span>',
+			"<span class='current'>",
+			'<a href=',
+			'</a>',
+			"<span class='extend'>",
+			/* translator: Translate it to the output of WP PageNavi for your lang */
+			__( '&laquo; First', 'ipt_kb' ),
+			/* translator: Translate it to the output of WP PageNavi for your lang */
+			__( 'Last &raquo;', 'ipt_kb' ),
+			'&laquo;',
+			'&raquo;',
+		), array(
+			'<ul class="pagination">',
+			'</ul>',
+			'<li class="disabled"><span>',
+			'</span></li>',
+			'<li class="active"><span>',
+			'<li><a href=',
+			'</a></li>',
+			'<li class="disabled"><span>',
+			'<i class="glyphicon glyphicon-fast-backward"></i>',
+			'<i class="glyphicon glyphicon-fast-forward"></i>',
+			'<i class="glyphicon glyphicon-backward"></i>',
+			'<i class="glyphicon glyphicon-forward"></i>',
+		), $wp_pagenavi );
+
+		echo $wp_pagenavi;
+		return;
+	}
+
 	// Don't print empty markup on single pages if there's nowhere to navigate.
 	if ( is_single() ) {
 		$previous = ( is_attachment() ) ? get_post( $post->post_parent ) : get_adjacent_post( false, '', true );
@@ -28,6 +68,8 @@ function ipt_kb_content_nav( $nav_id ) {
 		return;
 
 	$nav_class = ( is_single() ) ? 'post-navigation' : 'paging-navigation';
+
+	// Add support with bootstrap pager
 	$nav_class .= ' pager';
 
 	?>
@@ -35,17 +77,17 @@ function ipt_kb_content_nav( $nav_id ) {
 		<li class="screen-reader-text"><?php _e( 'Post navigation', 'ipt_kb' ); ?></li>
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<li class="nav-previous previous">%link</li>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'ipt_kb' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<li class="nav-next next">%link</li>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'ipt_kb' ) . '</span>' ); ?>
+		<?php previous_post_link( '<li class="nav-previous previous">%link</li>', '<span class="meta-nav">' . _x( '<span class="glyphicon glyphicon-arrow-left"></span>', 'Previous post link', 'ipt_kb' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<li class="nav-next next">%link</li>', '%title <span class="meta-nav">' . _x( '<span class="glyphicon glyphicon-arrow-right"></span>', 'Next post link', 'ipt_kb' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<li class="nav-previous previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'ipt_kb' ) ); ?></li>
+		<li class="nav-previous previous"><?php next_posts_link( __( '<span class="meta-nav"><span class="glyphicon glyphicon-arrow-left"></span></span> Older posts', 'ipt_kb' ) ); ?></li>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<li class="nav-next next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'ipt_kb' ) ); ?></li>
+		<li class="nav-next next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav"><span class="glyphicon glyphicon-arrow-right"></span></span>', 'ipt_kb' ) ); ?></li>
 		<?php endif; ?>
 
 	<?php endif; ?>

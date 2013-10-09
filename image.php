@@ -33,10 +33,10 @@ get_header(); ?>
 						?>
 					</div><!-- .entry-meta -->
 
-					<nav role="navigation" id="image-navigation" class="image-navigation">
-						<div class="nav-previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'ipt_kb' ) ); ?></div>
-						<div class="nav-next"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'ipt_kb' ) ); ?></div>
-					</nav><!-- #image-navigation -->
+					<ul role="navigation" id="image-navigation" class="image-navigation pager">
+						<li class="nav-previous previous"><?php previous_image_link( false, __( '<span class="meta-nav"><span class="glyphicon glyphicon-arrow-left"></span></span> Previous', 'ipt_kb' ) ); ?></li>
+						<li class="nav-next next"><?php next_image_link( false, __( 'Next <span class="meta-nav"><span class="glyphicon glyphicon-arrow-right"></span></span>', 'ipt_kb' ) ); ?></li>
+					</ul><!-- #image-navigation -->
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
