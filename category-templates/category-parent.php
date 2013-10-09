@@ -5,7 +5,7 @@
 global $term_meta, $cat, $cat_id, $sub_categories;
 ?>
 	<header class="kb-parent-category-header row">
-		<div class="col-md-4 col-lg-2 kb-pcat-icon">
+		<div class="col-sm-4 col-md-3 col-lg-2 kb-pcat-icon hidden-xs">
 			<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
 			<p class="text-center">
 				<img class="img-circle" src="<?php echo esc_attr( $term_meta['image_url'] ); ?>" alt="<?php echo esc_attr( $cat->name ); ?>" />
@@ -19,12 +19,26 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 			<?php endif; ?>
 			</div>
 		</div>
-		<div class="col-md-8 col-lg-10">
+		<div class="col-sm-8 col-md-9 col-lg-10">
 			<h1 class="page-title">
 				<?php
 					single_cat_title();
 				?>
 			</h1>
+			<div class="kb-pcat-icon visible-xs">
+				<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
+				<p class="text-center">
+					<img class="img-circle" src="<?php echo esc_attr( $term_meta['image_url'] ); ?>" alt="<?php echo esc_attr( $cat->name ); ?>" />
+				</p>
+				<?php endif; ?>
+				<div class="caption">
+				<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
+					<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
+						<i class="glyphicon ipt-support"></i> <?php _e( 'Get Support', 'ipt_kb' ); ?>
+					</a></p>
+				<?php endif; ?>
+				</div>
+			</div>
 			<?php
 				// Show an optional term description.
 				$term_description = term_description();

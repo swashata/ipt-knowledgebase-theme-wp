@@ -140,9 +140,11 @@ jQuery(document).ready(function($) {
 		if ( cookie_str !== '' ) {
 			cookie_str += ' expires=' + exp_date.toUTCString() + '; path=/';
 			document.cookie = cookie_str;
-
-			// Also set the recalc and adjust_height
-			adjust_height();
 		}
+
+		// Also set the recalc and adjust_height
+		// This might even be necessary for other components
+		// Say a collapsible inside the entry-content
+		adjust_height();
 	});
 });

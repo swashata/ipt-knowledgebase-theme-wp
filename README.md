@@ -3,20 +3,21 @@
 
 ![Theme Logo](screenshot.png?raw=true)
 
-Finally a free and open source knowledgebase theme made specifically for WordPress.
+Finally a free and open source knowledge base theme made specifically for WordPress.
 Uses twitter bootstrap for rendering UI components and some other open source elements
 for rendering niceness.
 
-We are going to release first stable version 1.1.0. Check the release channel.
+Released version 1.1.0. Download the release and upload it as a WordPress Theme.
 
 ## Acknowledgement
 Before we dive into the cool features of this theme, let's take a minute here to acknowledge
 all the tools that were used during the development of this theme.
-* [*Underscore Starter Theme*](http://underscores.me/): The basic theme framework.
-* [*Twitter Bootstrap 3.0*](http://getbootstrap.com/): Nothing would've been possible without this.
-* [*Icomoon Icons*](http://icomoon.io/): Along with Glyphicons, we've included icomoon for more icons.
-* [*Sticky-kit*](https://github.com/leafo/sticky-kit): A little forked version of it to provide the affix widget.
-* [*wp-bootstrap-navwalker*](https://github.com/twittem/wp-bootstrap-navwalker): A little forked version to generate the top nav.
+* [Underscore Starter Theme](http://underscores.me/): The basic theme framework.
+* [Twitter Bootstrap 3.0](http://getbootstrap.com/): Nothing would've been possible without this.
+* [Icomoon Icons](http://icomoon.io/): Along with Glyphicons, we've included icomoon for more icons.
+* [Sticky-kit](https://github.com/leafo/sticky-kit): A little forked version of it to provide the affix widget.
+* [wp-bootstrap-navwalker](https://github.com/twittem/wp-bootstrap-navwalker): A little forked version to generate the top nav.
+* [Google Webfonts](http://www.google.com/fonts/): Particularly, Oswald & Roboto Fonts are used.
 
 ## Features
 * Awesome bootstrap 3.0 UI all over the theme.
@@ -32,7 +33,15 @@ all the tools that were used during the development of this theme.
 * In built compatibility with a number of other plugins. (See recommended plugins).
 * A nice and small footer to show off.
 * Bootstrap navigation menu with custom-header image as logo.
+* Custom 404 page! [Check it](http://ipanelthemes.com/kb/i-am-a-smart-404-page/).
+* Integrated SEO support with BreadCrumbs (Rich Snippets) and third-party plugin integrations.
 * and so on...
+
+## Documentation
+Comprehensive documentation on how to use this theme is available [at this link](http://ipanelthemes.com/kb/products/wp-knowledge-base-theme/).
+
+## Live Preview
+Check our own [Knowledge Base](http://ipanelthemes.com/kb/).
 
 ## Core Components converted to bootstrap UI
 * Home Page
@@ -61,9 +70,4 @@ This will always be the cutting edge development version of the theme. Pull requ
 * [Category and Post Ordering](http://ipanelthemes.com/kb/category-post-ordering/) : Reorder Knowledge Bases and articles.
 * [Syntax Highlighter Evolved](http://ipanelthemes.com/kb/syntax-highlighting/) : Put source codes on your post.
 * [WP-PageNavi](http://ipanelthemes.com/kb/pagination-using-wp-pagenavi/) : Convert Next/Previous links on archive pages to paginations.
-
-## Documentation
-Comprehensive documentation on how to use this theme is available [at this link](http://ipanelthemes.com/kb/products/wp-knowledge-base-theme/).
-
-## Live Preview
-Check our own [Knowledge Base](http://ipanelthemes.com/kb/).
+* [WordPress SEO](http://ipanelthemes.com/kb/search-engine-optimization/) : Complete compatibility with WordPress SEO by Yoast.

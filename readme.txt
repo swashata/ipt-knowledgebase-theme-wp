@@ -3,7 +3,7 @@ Contributors: swashata, iPanelThemes
 Tags: two-columns, flexible-width, custom-header, custom-menu, featured-images, gray, light
 Requires at least: 3.5
 Tested up to: 3.7
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 
 A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site.
 

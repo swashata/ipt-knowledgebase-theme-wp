@@ -4,7 +4,7 @@ Theme URI: http://ipanelthemes.com/kb/products/wp-knowledge-base-theme/
 Author: swashata
 Author URI: http://ipanelthemes.com
 Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site.
-Version: 1.0.0
+Version: 1.1.0
 License: GNU General Public License
 License URI: license.txt
 Text Domain: ipt_kb
@@ -450,6 +450,7 @@ a:hover img {
 	-moz-box-shadow: 0 0 4px #eee;
 	box-shadow: 0 0 4px #eee;
 	border-radius: 4px;
+	border: 1px solid #ddd;
 }
 img[class*="wp-image-"] {
 	border-radius: 4px;
@@ -484,6 +485,7 @@ img[class*="wp-image-"] {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+	border: none;
 }
 .wp-caption-text {
 	text-align: center;
@@ -498,10 +500,9 @@ img[class*="wp-image-"] {
 .gallery-caption {
 }
 .site-main .gallery a img {
-	border: none;
+	border: 1px solid #ddd !important;
 	height: auto;
 	max-width: 90%;
-	border: medium none !important;
 	-webkit-box-shadow: 0 0 4px #eee;
 	-moz-box-shadow: 0 0 4px #eee;
 	box-shadow: 0 0 4px #eee;
@@ -864,6 +865,10 @@ body .tab-content {
 	border-top: medium none;
 	border-radius: 0 4px 4px 4px;
 }
+body .popover-title button.pull-right {
+	font-size: 12px;
+	margin: -2px 0 0 10px;
+}
 
 /* =Post Content Styles
 ----------------------------------------------- */
@@ -910,6 +915,14 @@ body code {
 }
 .syntaxhighlighter code {
 	white-space: nowrap;
+}
+body .syntaxhighlighter table,
+body .syntaxhighlighter table tbody,
+body .syntaxhighlighter table tr,
+body .syntaxhighlighter table td,
+body .syntaxhighlighter table code,
+body .syntaxhighlighter table div {
+	font-size: 12px !important;
 }
 
 /* =Wee little wpstats icon

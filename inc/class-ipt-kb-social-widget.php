@@ -38,13 +38,13 @@ class IPT_KB_Social_Widget extends WP_Widget {
 		);
 		$settings_helper = array(
 			'social_titles' => array(
-				'facebook' => __( 'Facebook', 'ipt_kb' ),
-    			'twitter' => __( 'Twitter', 'ipt_kb' ),
-    			'gplus' => __( 'Google Plus', 'ipt_kb' ),
-    			'youtube' => __( 'Youtube', 'ipt_kb' ),
-    			'vimeo' => __( 'Vimeo', 'ipt_kb' ),
-    			'pinterest' => __( 'Pinterest', 'ipt_kb' ),
-    			'envato' => __( 'Follow on envato marketplaces', 'ipt_kb' ),
+				'facebook' => __( 'Like us on Facebook', 'ipt_kb' ),
+    			'twitter' => __( 'Follow us on Twitter', 'ipt_kb' ),
+    			'gplus' => __( 'Circle us on Google Plus', 'ipt_kb' ),
+    			'youtube' => __( 'Subscribe to our Youtube Channel', 'ipt_kb' ),
+    			'vimeo' => __( 'Subscribe to our Vimeo Channel', 'ipt_kb' ),
+    			'pinterest' => __( 'Follow us on Pinterest', 'ipt_kb' ),
+    			'envato' => __( 'Follow us on envato marketplaces', 'ipt_kb' ),
 			),
 			'social_classes' => array(
 				'facebook' => 'ipt-facebook',

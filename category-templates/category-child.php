@@ -23,7 +23,7 @@ if ( $cat->parent != '0' ) {
 		<?php if ( have_posts() ) : ?>
 
 			<header class="kb-parent-category-header">
-				<div class="col-xs-4 col-sm-3 col-lg-2 kb-subcat-icon">
+				<div class="col-sm-3 col-lg-2 kb-subcat-icon hidden-xs">
 					<p class="text-center">
 						<a href="<?php echo esc_url( get_category_link( $cat ) ); ?>" class="thumbnail">
 								<?php if ( isset( $term_meta['icon_class'] ) && '' != $term_meta['icon_class'] ) : ?>
@@ -41,7 +41,7 @@ if ( $cat->parent != '0' ) {
 					<?php endif; ?>
 					</div>
 				</div>
-				<div class="col-xs-8 col-sm-9 col-lg-10">
+				<div class="col-sm-9 col-lg-10">
 					<h1 class="page-title kb-scat-title">
 						<?php
 							single_cat_title();
@@ -50,6 +50,24 @@ if ( $cat->parent != '0' ) {
 							<small class="text-muted"><?php printf( __( 'Page %1$d / %2$d', 'ipt_kb' ), $wp_query->query_vars['paged'], $wp_query->max_num_pages ); ?></small>
 						<?php endif; ?>
 					</h1>
+					<div class="col-sm-3 col-lg-2 kb-subcat-icon visible-xs">
+						<p class="text-center">
+							<a href="<?php echo esc_url( get_category_link( $cat ) ); ?>" class="thumbnail">
+									<?php if ( isset( $term_meta['icon_class'] ) && '' != $term_meta['icon_class'] ) : ?>
+									<i class="glyphicon <?php echo esc_attr( $term_meta['icon_class'] ); ?>"></i>
+									<?php else : ?>
+									<i class="glyphicon ipt-books"></i>
+									<?php endif; ?>
+							</a>
+						</p>
+						<div class="caption">
+						<?php if ( isset( $pterm_meta['support_forum'] ) && $pterm_meta['support_forum'] != '' ) : ?>
+							<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $pterm_meta['support_forum'] ); ?>">
+								<i class="glyphicon ipt-support"></i> <?php _e( 'Support', 'ipt_kb' ); ?>
+							</a></p>
+						<?php endif; ?>
+						</div>
+					</div>
 					<?php
 						// Show an optional term description.
 						$term_description = term_description();
