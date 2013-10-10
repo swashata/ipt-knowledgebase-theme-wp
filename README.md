@@ -68,6 +68,9 @@ This will always be the cutting edge development version of the theme. Pull requ
 ## Compatible and Recommended Plugins
 * [Easy Bootstrap Shortcode](http://ipanelthemes.com/kb/easy-bootstrap-shortcode/) : Add shortcode functionality to output bootstrap components.
 * [Category and Post Ordering](http://ipanelthemes.com/kb/category-post-ordering/) : Reorder Knowledge Bases and articles.
+* [Remove Category Base](http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/remove-category-base/) : Remove the `/category/` base from permalink.
 * [Syntax Highlighter Evolved](http://ipanelthemes.com/kb/syntax-highlighting/) : Put source codes on your post.
 * [WP-PageNavi](http://ipanelthemes.com/kb/pagination-using-wp-pagenavi/) : Convert Next/Previous links on archive pages to paginations.
 * [WordPress SEO](http://ipanelthemes.com/kb/search-engine-optimization/) : Complete compatibility with WordPress SEO by Yoast.
+* [jQuery Colorbox](http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/jquery-colorbox-display-images-lighbox/) : Put your images inside lightbox.
+* [Advanced TinyMCE](http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/customizing-tinymce-editor-buttons/) : Customize TinyMCE buttons.
