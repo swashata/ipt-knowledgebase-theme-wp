@@ -68,7 +68,6 @@ function ipt_kb_setup() {
 	// Add post thumbnail
 	add_theme_support( 'post-thumbnails', array( 'post' ) );
 
-	add_image_size( 'ipt_kb_small', 24, 24, true );
 	add_image_size( 'ipt_kb_medium', 256, 128, true );
 	add_image_size( 'ipt_kb_large', 9999, 200, true );
 
