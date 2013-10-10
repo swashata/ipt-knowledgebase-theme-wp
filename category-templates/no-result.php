@@ -4,5 +4,5 @@
  */
 ?>
 <div class="list-group-item text-muted">
-	<?php _e( 'No articles published. Check back later?', 'ipt_kb' ); ?>
+	<span class="glyphicon ipt-blocked"></span> <?php _e( 'No articles published. Check back later?', 'ipt_kb' ); ?>
 </div>
