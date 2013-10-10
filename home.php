@@ -44,7 +44,7 @@ $main_categories = get_categories( array(
 						</div>
 					</div>
 					<div class="col-sm-8">
-						<h2 class="knowledgebase-title"><a data-popt="kb-homepage-popover-<?php echo $cat->term_id; ?>" title="<?php echo esc_attr( $cat->name ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-paragraph-justify "></i></a> <?php echo $cat->name; ?></h2>
+						<h2 class="knowledgebase-title"><a data-placement="bottom" data-popt="kb-homepage-popover-<?php echo $cat->term_id; ?>" title="<?php echo esc_attr( $cat->name ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-paragraph-justify "></i></a> <?php echo $cat->name; ?></h2>
 						<div class="ipt-kb-popover-target" id="kb-homepage-popover-<?php echo $cat->term_id; ?>">
 							<?php echo wpautop( $cat->description ); ?>
 							<p class="text-right">
