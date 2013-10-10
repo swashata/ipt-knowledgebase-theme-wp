@@ -145,12 +145,21 @@ $main_categories = get_categories( array(
 				</div>
 				<?php // Popular posts ?>
 				<?php
+				// Remove the filter from the Posts Order By Plugin
+				if ( function_exists( 'CPTOrderPosts' ) ) {
+					remove_filter( 'posts_orderby', 'CPTOrderPosts', 99, 2 );
+				}
+
+				// Prep the arguments
 				$args = array(
+					'post_type' => 'post',
 					'posts_per_page' => get_option( 'posts_per_page', 5 ),
-					'orderby' => 'meta_value_num',
 					'order' => 'DESC',
 					'meta_key' => 'ipt_kb_like_article',
+					'orderby' => 'meta_value_num',
 				);
+
+				// Build our custom query
 				$popular_query = new WP_Query( $args );
 				?>
 				<div class="col-md-6">
@@ -174,6 +183,12 @@ $main_categories = get_categories( array(
 			</div>
 
 			<?php wp_reset_query(); ?>
+			<?php
+			// Add the filter from the Posts Order By Plugin
+			if ( function_exists( 'CPTOrderPosts' ) ) {
+				add_filter( 'posts_orderby', 'CPTOrderPosts', 99, 2 );
+			}
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
