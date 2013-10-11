@@ -3,6 +3,7 @@
  * @package iPanelThemes Knowledgebase
  */
 global $term_meta, $cat, $cat_id, $sub_categories;
+$pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 ?>
 	<header class="kb-parent-category-header row">
 		<div class="col-sm-4 col-md-3 col-lg-2 kb-pcat-icon hidden-xs">
@@ -21,9 +22,8 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 		</div>
 		<div class="col-sm-8 col-md-9 col-lg-10">
 			<h1 class="page-title">
-				<?php
-					single_cat_title();
-				?>
+				<span class="pull-right label label-info"><?php printf( _n( '%d article', '%d articles', $pcat_totals, 'ipt_kb' ), $pcat_totals ); ?></span>
+				<?php single_cat_title(); ?>
 			</h1>
 			<div class="kb-pcat-icon visible-xs">
 				<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
@@ -55,6 +55,7 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 		<?php $cat_iterator = 0; foreach ( $sub_categories as $scat ) : ?>
 		<?php $sterm_meta = get_option( 'ipt_kb_category_meta_' . $scat->term_id, array() ); ?>
 		<?php $sterm_link = esc_url( get_category_link( $scat ) ); ?>
+		<?php $scat_totals = ipt_kb_total_cat_post_count( $scat->term_id ); ?>
 		<?php $scat_posts = new WP_Query( array(
 			'cat' => $scat->term_id,
 			'posts_per_page' => get_option( 'posts_per_page', 5 ),
@@ -68,12 +69,6 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 						<?php else : ?>
 						<i class="glyphicon ipt-books"></i>
 						<?php endif; ?>
-					</a>
-				</p>
-				<p class="text-center">
-					<a href="<?php echo $sterm_link; ?>" class="btn btn-default btn-block">
-						<i class="glyphicon ipt-link"></i>
-						<?php _e( 'Browse', 'ipt_kb' ); ?>
 					</a>
 				</p>
 			</div>
@@ -103,12 +98,6 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 							<?php endif; ?>
 						</a>
 					</p>
-					<p class="text-center">
-						<a href="<?php echo $sterm_link; ?>" class="btn btn-default btn-block">
-							<i class="glyphicon ipt-link"></i>
-							<?php _e( 'Browse', 'ipt_kb' ); ?>
-						</a>
-					</p>
 				</div>
 
 				<div class="list-group">
@@ -120,6 +109,9 @@ global $term_meta, $cat, $cat_id, $sub_categories;
 						<?php get_template_part( 'category-templates/no-result' ); ?>
 					<?php endif; ?>
 				</div>
+				<p class="text-right">
+					<a class="btn btn-default" href="<?php echo $sterm_link; ?>"><i class="glyphicon ipt-link"></i> <?php printf( _n( 'Browse %d article', 'Browse all %d articles', $scat_totals, 'ipt_kb' ), $scat_totals ); ?></a>
+				</p>
 			</div>
 			<div class="clearfix"></div>
 		</div>

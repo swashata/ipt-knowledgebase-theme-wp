@@ -26,6 +26,7 @@ $main_categories = get_categories( array(
 				<?php $cat_iterator = 0; foreach ( $main_categories as $cat ) : ?>
 				<?php $term_meta = get_option( 'ipt_kb_category_meta_' . $cat->term_id, array() ); ?>
 				<?php $term_link = esc_url( get_term_link( $cat ) ); ?>
+				<?php $pcat_totals = ipt_kb_total_cat_post_count( $cat->term_id ); ?>
 				<div class="col-md-6">
 					<div class="col-sm-4 hidden-xs">
 						<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
@@ -112,7 +113,7 @@ $main_categories = get_categories( array(
 						</div>
 						<p class="text-right">
 							<a href="<?php echo $term_link; ?>" class="btn btn-default">
-								<i class="glyphicon ipt-link"></i> <?php _e( 'Browse all', 'ipt_kb' ); ?>
+								<i class="glyphicon ipt-link"></i> <?php printf( _n( 'Browse %d article', 'Browse all %d articles', $pcat_totals, 'ipt_kb' ), $pcat_totals ); ?>
 							</a>
 						</p>
 					</div>

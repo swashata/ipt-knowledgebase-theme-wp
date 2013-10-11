@@ -17,8 +17,7 @@ if ( $cat->parent != '0' ) {
 } else {
 	$pterm_meta = $term_meta;
 }
-
-
+$pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 ?>
 		<?php if ( have_posts() ) : ?>
 
@@ -43,9 +42,8 @@ if ( $cat->parent != '0' ) {
 				</div>
 				<div class="col-sm-9 col-lg-10">
 					<h1 class="page-title kb-scat-title">
-						<?php
-							single_cat_title();
-						?>
+						<span class="pull-right label label-info"><?php printf( _n( '%d article', '%d articles', $pcat_totals, 'ipt_kb' ), $pcat_totals ); ?></span>
+						<?php single_cat_title(); ?>
 						<?php if ( $wp_query->max_num_pages > 1 && isset( $wp_query->query_vars['paged'] ) && $wp_query->query_vars['paged'] != 0 ) : ?>
 							<small class="text-muted"><?php printf( __( 'Page %1$d / %2$d', 'ipt_kb' ), $wp_query->query_vars['paged'], $wp_query->max_num_pages ); ?></small>
 						<?php endif; ?>

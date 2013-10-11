@@ -781,15 +781,15 @@ body .comment-reply-title {
 	padding: 0;
 }
 #main .kb-subcat-icon .thumbnail {
-	height: 100px;
-	line-height: 100px;
+	height: 128px;
+	line-height: 128px;
 }
 #main .kb-subcat-icon .thumbnail .glyphicon {
 	font-size: 64px;
-	line-height: 72px;
+	line-height: 95px;
 }
 #main .kb-subcat-icon .thumbnail i[class*=ipt-] {
-	line-height: 82px;
+	line-height: 105px;
 }
 #main .kb-scat-title {
 	margin-top: 0;
@@ -868,6 +868,12 @@ body .tab-content {
 body .popover-title button.pull-right {
 	font-size: 12px;
 	margin: -2px 0 0 10px;
+}
+body .label {
+	font-weight: normal;
+}
+body a .label {
+	text-decoration: none;
 }
 
 /* =Post Content Styles
