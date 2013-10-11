@@ -600,6 +600,12 @@ body .comment-reply-title {
 }
 
 /* Affix Widget */
+.ipt_kb_affix .list-group .list-group-item > .glyphicon {
+	font-size: 15px;
+}
+.ipt_kb_affix .list-group .list-group-item > i[class*="ipt-"] {
+	font-size: 16px;
+}
 .ipt_kb_affix .list-group-item.active-cat {
 	background-color: #f1f1f1;
 }
@@ -638,6 +644,13 @@ body .comment-reply-title {
 #ipt-kb-affix-active-post .list-group-item {
 	padding: 5px 15px;
 	font-size: 12px;
+	border-radius: 0;
+}
+#ipt-kb-affix-active-post .list-group-item:first-child {
+	margin-top: -1px;
+}
+#ipt-kb-affix-active-post .list-group-item:last-child {
+	margin-bottom: -1px;
 }
 .ipt-kb-toc .accordion-toggle i.glyphicon {
 	font-size: 16px;
