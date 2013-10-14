@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Knowledge Base Theme\n"
-"POT-Creation-Date: 2013-10-09 18:57+0530\n"
-"PO-Revision-Date: 2013-10-09 18:57+0530\n"
+"POT-Creation-Date: 2013-10-14 13:57+0530\n"
+"PO-Revision-Date: 2013-10-14 13:57+0530\n"
 "Last-Translator: Swashata Ghosh <swashata4u@gmail.com>\n"
 "Language-Team: ipanelthemes.com <ipanelthemes@gmail.com>\n"
 "Language: en_US\n"
@@ -80,7 +80,7 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: ../archive.php:68 ../category-templates/category-child.php:50
+#: ../archive.php:68 ../category-templates/category-child.php:48
 #, php-format
 msgid "Page %1$d / %2$d"
 msgstr ""
@@ -196,19 +196,19 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:86
+#: ../functions.php:85
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:94
+#: ../functions.php:93
 msgid "Footer Large"
 msgstr ""
 
-#: ../functions.php:102
+#: ../functions.php:101
 msgid "Footer Small"
 msgstr ""
 
-#: ../functions.php:164
+#: ../functions.php:163
 msgid "Oops, some problem to connect. Try again?"
 msgstr ""
 
@@ -216,21 +216,28 @@ msgstr ""
 msgid "Toggle navigation"
 msgstr ""
 
-#: ../home.php:41 ../home.php:53 ../home.php:72
-#: ../category-templates/category-parent.php:87
+#: ../home.php:42 ../home.php:54 ../home.php:73
+#: ../category-templates/category-parent.php:82
 #: ../inc/class-ipt-kb-affix-widget.php:126
 msgid "Get support"
 msgstr ""
 
-#: ../home.php:57 ../home.php:115 ../category-templates/category-parent.php:91
+#: ../home.php:58 ../category-templates/category-parent.php:86
 msgid "Browse all"
 msgstr ""
 
-#: ../home.php:131
+#: ../home.php:116 ../category-templates/category-parent.php:113
+#, php-format
+msgid "Browse %d article"
+msgid_plural "Browse all %d articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../home.php:132
 msgid "Recent articles"
 msgstr ""
 
-#: ../home.php:159
+#: ../home.php:169
 msgid "Popular articles"
 msgstr ""
 
@@ -295,22 +302,25 @@ msgstr ""
 msgid "Search Knowledgebase for %s&hellip;"
 msgstr ""
 
-#: ../category-templates/category-child.php:39
-#: ../category-templates/category-child.php:66
+#: ../category-templates/category-child.php:38
+#: ../category-templates/category-child.php:64
 msgid "Support"
 msgstr ""
 
-#: ../category-templates/category-parent.php:17
+#: ../category-templates/category-child.php:45
+#: ../category-templates/category-parent.php:25
+#, php-format
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../category-templates/category-parent.php:18
 #: ../category-templates/category-parent.php:37
 msgid "Get Support"
 msgstr ""
 
 #: ../category-templates/category-parent.php:76
-#: ../category-templates/category-parent.php:109
-msgid "Browse"
-msgstr ""
-
-#: ../category-templates/category-parent.php:81
 #, php-format
 msgid "%1$s / %2$s"
 msgstr ""

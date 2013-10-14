@@ -10,12 +10,12 @@ function ipt_kb_like_article_cb() {
 	$post_id = isset( $_REQUEST['post_id'] ) ? $_REQUEST['post_id'] : '';
 
 	if ( '' == $post_id ) {
-		die( __( 'Cheatin&#8217; uh?' ) );
+		die( __( 'Cheatin&#8217; uh?', 'ipt_kb' ) );
 	}
 
 	$post_id = (int) $post_id;
 	if ( ! wp_verify_nonce( $nonce, 'ipt_kb_like_article_' . $post_id ) ) {
-		die( __( 'Cheatin&#8217; uh?' ) );
+		die( __( 'Cheatin&#8217; uh?', 'ipt_kb' ) );
 	}
 
 	if ( isset( $_COOKIE['ipt_kb_like_article_' . $post_id] ) && $_COOKIE['ipt_kb_like_article_' . $post_id] == '1' ) {

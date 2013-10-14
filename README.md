@@ -1,13 +1,13 @@
 # WP Knowledge Base Theme
 #### by iPanelThemes.com
 
-![Theme Logo](screenshot.png?raw=true)
+![Theme Logo](theme-banner.png?raw=true)
 
 Finally a free and open source knowledge base theme made specifically for WordPress.
 Uses twitter bootstrap for rendering UI components and some other open source elements
 for rendering niceness.
 
-Released version 1.2.0. Download the release and upload it as a WordPress Theme.
+Released version 1.3.0. Download the release and upload it as a WordPress Theme.
 
 ## Acknowledgement
 Before we dive into the cool features of this theme, let's take a minute here to acknowledge
@@ -74,3 +74,32 @@ This will always be the cutting edge development version of the theme. Pull requ
 * [WordPress SEO](http://ipanelthemes.com/kb/search-engine-optimization/) : Complete compatibility with WordPress SEO by Yoast.
 * [jQuery Colorbox](http://http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/jquery-colorbox-display-images-lighbox/) : Put your images inside lightbox.
 * [Advanced TinyMCE](http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/customizing-tinymce-editor-buttons/) : Customize TinyMCE buttons.
+
+## TODO
+
+* Add Twitter typehead to the search fields for auto-completion
+
+## Changelog
+
+### Version 1.3.0
+
+* Updated Theme name in style.css (respecting WordPress guideline).
+* Added compatibility for upcoming EBS Plugin.
+* Updated translations and a few translation bugs.
+
+### Version 1.2.0
+
+* Added article number information all throughout the pages.
+* Optimized footer appearance for handheld devices.
+* Added icons to empty results.
+* Repositioned popover to bottom for better appearance on handheld devices.
+* Removed small image on article list and added icon instead.
+* Added compatibility with Post Order Plugin.
+* Several other fine tuning (see commits)
+* SHA: 0aac9c67304ed506f300fcfa6c6aeba5e2e51746
+
+### Version 1.1.0
+* First Stable release
+* SHA: 8cf9a9ba94724e72d7ce599f24c71e58bb68c534
+* SHA: 336fcfc5debf109473d3d8d2a38c5b4e7f4af4d4
+* SHA: bd56c93b50cd93e6e55b8b9553d1e4b19e87bcc3

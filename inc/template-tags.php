@@ -482,28 +482,28 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 	$html5    = 'html5' === $args['format'];
 	$fields   =  array(
-		'author' => '<div class="form-group comment-form-author">' . '<label class="col-md-2 control-label" for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		'author' => '<div class="form-group comment-form-author">' . '<label class="col-md-2 control-label" for="author">' . __( 'Name', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
 		            '<div class="col-md-10"><input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div></div>',
-		'email'  => '<div class="form-group comment-form-email"><label class="col-md-2 control-label" for="email">' . __( 'Email' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		'email'  => '<div class="form-group comment-form-email"><label class="col-md-2 control-label" for="email">' . __( 'Email', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
 		            '<div class="col-md-10"><input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
-		'url'    => '<div class="form-group comment-form-url"><label class="col-md-2 control-label" for="url">' . __( 'Website' ) . '</label> ' .
+		'url'    => '<div class="form-group comment-form-url"><label class="col-md-2 control-label" for="url">' . __( 'Website', 'ipt_kb' ) . '</label> ' .
 		            '<div class="col-md-10"><input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div></div>',
 	);
 
-	$required_text = sprintf( ' ' . __('Required fields are marked %s'), '<span class="required">*</span>' );
+	$required_text = sprintf( ' ' . __( 'Required fields are marked %s', 'ipt_kb' ), '<span class="required">*</span>' );
 	$defaults = array(
 		'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
-		'comment_field'        => '<div class="comment-form-comment form-group"><label class="col-md-2 control-label" for="comment">' . _x( 'Comment', 'noun' ) . '</label><div class="col-md-10"><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></div></div>',
-		'must_log_in'          => '<p class="must-log-in alert alert-danger">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
-		'logged_in_as'         => '<p class="logged-in-as alert alert-success">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>' ), get_edit_user_link(), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
-		'comment_notes_before' => '<p class="comment-notes alert alert-info">' . __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) . '</p>',
+		'comment_field'        => '<div class="comment-form-comment form-group"><label class="col-md-2 control-label" for="comment">' . _x( 'Comment', 'noun', 'ipt_kb' ) . '</label><div class="col-md-10"><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></div></div>',
+		'must_log_in'          => '<p class="must-log-in alert alert-danger">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'ipt_kb' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
+		'logged_in_as'         => '<p class="logged-in-as alert alert-success">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'ipt_kb' ), get_edit_user_link(), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
+		'comment_notes_before' => '<p class="comment-notes alert alert-info">' . __( 'Your email address will not be published.', 'ipt_kb' ) . ( $req ? $required_text : '' ) . '</p>',
 		'comment_notes_after'  => '<p class="form-allowed-tags well well-sm">' . sprintf( __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>',
 		'id_form'              => 'commentform',
 		'id_submit'            => 'submit',
-		'title_reply'          => __( 'Leave a Reply' ),
-		'title_reply_to'       => __( 'Leave a Reply to %s' ),
-		'cancel_reply_link'    => __( 'Cancel reply' ),
-		'label_submit'         => __( 'Post Comment' ),
+		'title_reply'          => __( 'Leave a Reply', 'ipt_kb' ),
+		'title_reply_to'       => __( 'Leave a Reply to %s', 'ipt_kb' ),
+		'cancel_reply_link'    => __( 'Cancel reply', 'ipt_kb' ),
+		'label_submit'         => __( 'Post Comment', 'ipt_kb' ),
 		'format'               => 'xhtml',
 	);
 

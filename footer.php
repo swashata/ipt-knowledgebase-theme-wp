@@ -24,7 +24,7 @@
 			<p class="copyright text-muted">
 				<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'ipt_kb' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'ipt_kb' ), 'WP Knowledge Base Theme', '<a href="http://ipanelthemes.com" rel="designer">iPanelThemes.com</a>' ); ?>
+				<?php printf( __( 'Theme: %1$s by %2$s.', 'ipt_kb' ), 'WP Knowledge Base', '<a href="http://ipanelthemes.com/" rel="designer">iPanelThemes.com</a>' ); ?>
 			</p>
 			<?php do_action( 'ipt_kb_credits' ); ?>
 		</div><!-- .site-info -->
