@@ -33,14 +33,13 @@
 						<span class="icon-bar"></span>
 					</button>
 
-
-						<?php if ( get_header_image() ) : ?>
-						<a class="site-anchor" href="<?php echo home_url( '/' ); ?>">
-							<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-						</a>
-						<?php else : ?>
-						<h1 class="site-title"><a class="site-anchor" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php endif; // End header image check. ?>
+					<?php if ( get_header_image() ) : ?>
+					<a class="site-anchor" href="<?php echo home_url( '/' ); ?>">
+						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+					</a>
+					<?php else : ?>
+					<h1 class="site-title"><a class="site-anchor" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php endif; // End header image check. ?>
 
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,8 +49,7 @@
 						'menu'              => 'primary',
 						'theme_location'    => 'primary',
 						'depth'             => 2,
-						'container'         => 'div',
-						'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+						'container'         => '',
 						'menu_class'        => 'nav navbar-nav',
 						'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 						'walker'            => new wp_bootstrap_navwalker())
