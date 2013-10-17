@@ -9,7 +9,7 @@
  * Set the version
  */
 global $ipt_kb_version;
-$ipt_kb_version = '1.3.0';
+$ipt_kb_version = '1.4.0';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -82,8 +82,18 @@ add_action( 'after_setup_theme', 'ipt_kb_setup' );
  */
 function ipt_kb_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'ipt_kb' ),
+		'name'          => __( 'Knowledge Base Sidebar', 'ipt_kb' ),
 		'id'            => 'sidebar-1',
+		'description'   => __( 'Shows up only on category archive pages and single posts.', 'ipt_kb' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
+		'after_widget'  => '</div></aside>',
+		'before_title'  => '<div class="panel-heading"><h3 class="widget-title panel-title">',
+		'after_title'   => '</h3></div><div class="panel-body">',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'General Sidebar', 'ipt_kb' ),
+		'id'            => 'sidebar-4',
+		'description'   => __( 'Shows up everywhere except the category archive pages and single posts.', 'ipt_kb' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</div></aside>',
 		'before_title'  => '<div class="panel-heading"><h3 class="widget-title panel-title">',
@@ -284,3 +294,13 @@ require get_template_directory() . '/inc/class-ipt-kb-affix-widget.php';
  * Load the Social Widget
  */
 require get_template_directory() . '/inc/class-ipt-kb-social-widget.php';
+
+/**
+ * Load the Knowledge Base Widget
+ */
+require get_template_directory() . '/inc/class-ipt-kb-knowledgebase-widget.php';
+
+/**
+ * Load the Popular Articles Widget
+ */
+require get_template_directory() . '/inc/class-ipt-kb-popular-widget.php';

@@ -59,9 +59,12 @@ This will always be the cutting edge development version of the theme. Pull requ
 ## Included Widgets
 * Affix Widget
 * Social Widget
+* Knowledge Base Widget
+* Popular Knowledge Base Articles
 
 ## Included Sidebars
-* Main sidebar on individual posts - ideal for affix widget
+* Knowledge Base Sidebar on individual posts and category archives - ideal for affix widget
+* General Sidebar - on everywhere else - ideal for any widgets
 * Footer large (on left) - ideal for a short about us
 * Footer small (on right) - ideal for social widget
 
@@ -79,7 +82,57 @@ This will always be the cutting edge development version of the theme. Pull requ
 
 * Add Twitter typehead to the search fields for auto-completion
 
+## Bundled Resources
+```
+Underscore A Starter Theme for WordPress - ​http://underscores.me/
+License: Distributed under the terms of the GPL License
+Copyright: Automattic, http://automattic.com/
+```
+
+```
+Bootstrap - ​http://getbootstrap.com/
+License: Distributed under the terms of the Apache 2.0 license.
+Copyright: Twitter, http://twitter.com
+```
+
+```
+Icomoon Icon Packs - ​http://icomoon.io/app/
+License: Distributed under the terms of the creative commons Attribution 3.0 Unported (CC BY 3.0)
+Copyright: IcoMoon, http://icomoon.io/
+```
+
+```
+Sticky-Kit - ​http://leafo.net/sticky-kit/
+License: Distributed under the terms of the WTFPL
+Copyright: Leaf Corcoran, http://leafo.net
+```
+
+```
+wp-bootstrap-navwalker - ​https://github.com/twittem/wp-bootstrap-navwalker
+License: Distributed under the terms of the GPL-2.0+
+Copyright: Edward McIntyre - @twittem
+```
+
+```
+Google Fonts (Roboto and Oswald) - ​http://www.google.com/fonts/
+License: Roboto font and Oswald font are distributed under the terms of the Apache License, version 2.0 and SIL Open Font License, 1.1 respectively
+Copyright: Google Fonts, http://www.google.com/fonts/attribution
+```
+
 ## Changelog
+
+### Version 1.4.0
+* Updated the home.php to use default blog type layout
+* Added page templete (Knowledge Base Page) to populate the knowledge base appearance (see documentation to learn how to use this as the front page)
+* Added author information on single posts and author archive
+* Made two sidebars, one for Knowledge Base (categories and posts) and another general
+* Added comments to the pages (when comment is turned on)
+* Added copyright information to the stylesheet and readme.txt
+* Fixed long title overflow issue
+* Added a new popular articles widget
+* Added a new knowledge bases widget
+* Improved Comment form layout
+* Fixed header navigation bar collapsing issue
 
 ### Version 1.3.0
 

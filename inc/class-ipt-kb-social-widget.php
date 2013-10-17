@@ -9,6 +9,8 @@
  */
 
 /**
+ * Social Widget Class
+ *
  * new WordPress Widget format
  * Wordpress 2.8 and above
  * @see http://codex.wordpress.org/Widgets_API#Developing_Widgets
@@ -22,7 +24,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
 	 * Constructor
 	 *
 	 * @return void
-	 **/
+	 */
 	function IPT_KB_Social_Widget() {
 		$default_settings = array(
 			'title' => __( 'Stay <span>Connected</span>', 'ipt_kb' ),
@@ -68,14 +70,16 @@ class IPT_KB_Social_Widget extends WP_Widget {
 	 * @param array  An array of standard parameters for widgets in this theme
 	 * @param array  An array of settings for this widget instance
 	 * @return void Echoes it's output
-	 **/
+	 */
 	function widget( $args, $instance ) {
 		extract( $args, EXTR_SKIP );
 		echo $before_widget;
 
-		if ( $instance['title'] != '' ) {
+		$title = apply_filters( 'widget_title', $instance['title'] );
+
+		if ( $title != '' ) {
 			echo $before_title;
-			echo $instance['title'];
+			echo htmlspecialchars_decode( $title );
 			echo $after_title;
 		}
 
@@ -100,7 +104,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
 	 * @param array  An array of new settings as submitted by the admin
 	 * @param array  An array of the previous settings
 	 * @return array The validated and (if necessary) amended settings
-	 **/
+	 */
 	function update( $new_instance, $old_instance ) {
 		$updated_instance = $this->default_settings;
 		$updated_instance['title'] = $new_instance['title'];
@@ -117,7 +121,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
 	 *
 	 * @param array  An array of the current settings for this widget
 	 * @return void Echoes it's output
-	 **/
+	 */
 	function form( $instance ) {
 		$instance = wp_parse_args( (array) $instance, $this->default_settings );
 		$instance['links'] = wp_parse_args( (array) $instance['links'], $this->default_settings['links'] );
@@ -135,10 +139,6 @@ class IPT_KB_Social_Widget extends WP_Widget {
 </div>
 	<?php endforeach; ?>
 		<?php
-		// display field names here using:
-		// $this->get_field_id( 'option_name' ) - the CSS ID
-		// $this->get_field_name( 'option_name' ) - the HTML name
-		// $instance['option_name'] - the option value
 	}
 }
 

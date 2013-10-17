@@ -27,7 +27,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	 * Constructor
 	 *
 	 * @return void
-	 **/
+	 */
 	function IPT_KB_Affix_Widget() {
 		$widget_ops = array( 'classname' => 'ipt_kb_affix', 'description' => __( 'An affix widget for displaying on the sidebar of the single articles.', 'ipt_kb' ) );
 		$this->WP_Widget( 'ipt_kb_affix', __( 'Affix Widget', 'ipt_kb' ), $widget_ops );
@@ -39,7 +39,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	 * @param array  An array of standard parameters for widgets in this theme
 	 * @param array  An array of settings for this widget instance
 	 * @return void Echoes it's output
-	 **/
+	 */
 	function widget( $args, $instance ) {
 		// This widget is supposed to work only on single post type pages
 		// So check and exit on all other pages
@@ -276,7 +276,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	 * @param array  An array of new settings as submitted by the admin
 	 * @param array  An array of the previous settings
 	 * @return array The validated and (if necessary) amended settings
-	 **/
+	 */
 	function update( $new_instance, $old_instance ) {
 
 		// update logic goes here
@@ -294,7 +294,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	 *
 	 * @param array  An array of the current settings for this widget
 	 * @return void Echoes it's output
-	 **/
+	 */
 	function form( $instance ) {
 		$instance = wp_parse_args( (array) $instance, array(
 			'dontfix' => false,

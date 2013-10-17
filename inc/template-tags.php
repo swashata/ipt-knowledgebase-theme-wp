@@ -320,7 +320,7 @@ function ipt_kb_breadcrumb() {
 	$post_loop = false;
 	?>
 <ol id="breadcrumbs" class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
-	<?php if ( is_home() ) : ?>
+	<?php if ( is_front_page() ) : ?>
 	<li class="active" typeof="v:Breadcrumb">
 		<span property="v:title"><?php _e('Home', 'ipt_kb'); ?></span>
 	</li>
@@ -366,7 +366,7 @@ function ipt_kb_breadcrumb() {
 		<li class="active" typeof="v:Breadcrumb">
 			<span property="v:title"><?php the_title(); ?></span>
 		</li>
-	<?php elseif ( is_page() ) : the_post(); global $post; $post_loop = true; ?>
+	<?php elseif ( is_page() && ! is_front_page() ) : the_post(); global $post; $post_loop = true; ?>
 		<?php
 		$parent_id = $post->post_parent;
 		$parent_pages = array();
@@ -448,9 +448,13 @@ function ipt_kb_breadcrumb() {
 			<li typeof="v:Breadcrumb" class="active">
 				<span property="v:title"><?php _e( 'Error 404 - Not found', 'ipt_kb' ); ?></span>
 			</li>
-		<?php elseif ( ! is_home() ) : ?>
+		<?php elseif ( ! is_home() && ! is_front_page() ) : ?>
 			<li typeof="v:Breadcrumb" class="active">
 				<span property="v:title"><?php _e( 'Archive', 'ipt_kb' ); ?></span>
+			</li>
+		<?php elseif ( is_home() && ! is_front_page() ) : ?>
+			<li typeof="v:Breadcrumb" class="active">
+				<span property="v:title"><?php _e( 'Blog', 'ipt_kb' ); ?></span>
 			</li>
 		<?php endif; ?>
 	<?php if($post_loop) rewind_posts(); ?>
@@ -482,18 +486,18 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 	$html5    = 'html5' === $args['format'];
 	$fields   =  array(
-		'author' => '<div class="form-group comment-form-author">' . '<label class="col-md-2 control-label" for="author">' . __( 'Name', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-		            '<div class="col-md-10"><input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div></div>',
-		'email'  => '<div class="form-group comment-form-email"><label class="col-md-2 control-label" for="email">' . __( 'Email', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-		            '<div class="col-md-10"><input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
-		'url'    => '<div class="form-group comment-form-url"><label class="col-md-2 control-label" for="url">' . __( 'Website', 'ipt_kb' ) . '</label> ' .
-		            '<div class="col-md-10"><input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div></div>',
+		'author' => '<div class="form-group comment-form-author">' . '<label class="sr-only control-label" for="author">' . __( 'Name', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-user-4"></span></span><input placeholder="' . __( 'Name', 'ipt_kb' ) . ( $req ? ' *' : '' ) . '" class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div></div>',
+		'email'  => '<div class="form-group comment-form-email"><label class="sr-only control-label" for="email">' . __( 'Email', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-mail-4"></span></span><input placeholder="' . __( 'Email', 'ipt_kb' ) . ( $req ? ' *' : '' ) . '" class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
+		'url'    => '<div class="form-group comment-form-url"><label class="sr-only control-label" for="url">' . __( 'Website', 'ipt_kb' ) . '</label> ' .
+		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-link"></span></span><input placeholder="' . __( 'Website', 'ipt_kb' ) . '" class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div></div>',
 	);
 
 	$required_text = sprintf( ' ' . __( 'Required fields are marked %s', 'ipt_kb' ), '<span class="required">*</span>' );
 	$defaults = array(
 		'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
-		'comment_field'        => '<div class="comment-form-comment form-group"><label class="col-md-2 control-label" for="comment">' . _x( 'Comment', 'noun', 'ipt_kb' ) . '</label><div class="col-md-10"><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></div></div>',
+		'comment_field'        => '<div class="comment-form-comment form-group"><label class="sr-only control-label" for="comment">' . _x( 'Comment', 'noun', 'ipt_kb' ) . '</label><textarea placeholder="' . _x( 'Comment', 'noun', 'ipt_kb' ) . '" class="form-control" id="comment" name="comment" rows="6" aria-required="true"></textarea></div>',
 		'must_log_in'          => '<p class="must-log-in alert alert-danger">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'ipt_kb' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
 		'logged_in_as'         => '<p class="logged-in-as alert alert-success">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'ipt_kb' ), get_edit_user_link(), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
 		'comment_notes_before' => '<p class="comment-notes alert alert-info">' . __( 'Your email address will not be published.', 'ipt_kb' ) . ( $req ? $required_text : '' ) . '</p>',
@@ -524,17 +528,26 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 						<?php if ( is_user_logged_in() ) : ?>
 							<?php echo apply_filters( 'comment_form_logged_in', $args['logged_in_as'], $commenter, $user_identity ); ?>
 							<?php do_action( 'comment_form_logged_in_after', $commenter, $user_identity ); ?>
+							<?php echo apply_filters( 'comment_form_field_comment', $args['comment_field'] ); ?>
 						<?php else : ?>
 							<?php echo $args['comment_notes_before']; ?>
 							<?php
 							do_action( 'comment_form_before_fields' );
-							foreach ( (array) $args['fields'] as $name => $field ) {
-								echo apply_filters( "comment_form_field_{$name}", $field ) . "\n";
-							}
-							do_action( 'comment_form_after_fields' );
 							?>
+							<div class="col-md-5">
+								<?php
+								foreach ( (array) $args['fields'] as $name => $field ) {
+									echo apply_filters( "comment_form_field_{$name}", $field ) . "\n";
+								}
+								do_action( 'comment_form_after_fields' );
+								?>
+							</div>
+							<div class="col-md-7">
+								<?php echo apply_filters( 'comment_form_field_comment', $args['comment_field'] ); ?>
+							</div>
+							<div class="clearfix"></div>
 						<?php endif; ?>
-						<?php echo apply_filters( 'comment_form_field_comment', $args['comment_field'] ); ?>
+
 						<?php echo $args['comment_notes_after']; ?>
 						<p class="form-submit text-right">
 							<input name="submit" class="btn btn-lg btn-primary" type="submit" id="<?php echo esc_attr( $args['id_submit'] ); ?>" value="<?php echo esc_attr( $args['label_submit'] ); ?>" />
@@ -578,4 +591,91 @@ function ipt_kb_total_cat_post_count( $cat_id ) {
 	return $q->post_count;
 }
 
+endif;
+
+if ( ! function_exists( 'ipt_kb_author_meta' ) ) :
+
+/**
+ * Put a nice little box about the author meta
+ * @param  int $author_id The ID of the author
+ * @return void
+ */
+function ipt_kb_author_meta( $author_id = null ) {
+	// Check for the author_id
+	if ( $author_id === null ) {
+		// There are two possibilities
+		// 1. It is a single post/page
+		// 2. It is author archive page
+		if ( is_singular() ) {
+			$author_id = get_the_author_meta( 'ID' );
+		} elseif ( is_author() ) {
+			the_post();
+			$author_id = get_the_author_meta( 'ID' );
+			rewind_posts();
+		}
+	}
+
+	// Double check the author ID before progressing
+	if ( $author_id == null ) {
+		return;
+	}
+
+	// We are here, so we are good to go
+	$display_name = get_the_author_meta( 'display_name', $author_id );
+	$total_posts = count_user_posts( $author_id );
+	$bio = get_the_author_meta( 'description', $author_id );
+	$archive = get_author_posts_url( $author_id );
+	$buttons = array(
+		'user_url' => array(
+			'title' => __( 'Website', 'ipt_kb' ),
+			'icon' => 'ipt-home',
+		),
+		// Some compatibility with WordPress SEO
+		'facebook' => array(
+			'title' => __( 'Facebook', 'ipt_kb' ),
+			'icon' => 'ipt-facebook',
+		),
+		'twitter' => array(
+			'title' => __( 'Twitter', 'ipt_kb' ),
+			'icon' => 'ipt-twitter',
+		),
+		'googleplus' => array(
+			'title' => __( 'Google+', 'ipt_kb' ),
+			'icon' => 'ipt-google-plus',
+		),
+	);
+
+	// Filter for extensibility
+	$buttons = apply_filters( 'ipt_kb_author_meta_buttons', $buttons );
+
+	// Print the metabox
+	?>
+<div class="well author-meta">
+	<div class="author-avatar text-center pull-left">
+		<a href="<?php echo $archive; ?>"><?php echo get_avatar( $author_id, $size = '96' ); ?></a>
+	</div>
+	<h4 class="author-meta-title">
+		<?php
+		/* translator: %1$s -> Author Name, %2$s -> author posts link, %3$s -> Author display_name, %4$s -> article/articles */
+		printf( __( '%1$s has written <a href="%2$s">%3$s</a> %4$s', 'ipt_kb' ), $display_name, $archive, $total_posts, _n( 'article', 'articles', $total_posts, 'ipt_kb' ) );
+		?>
+	</h4>
+	<div class="author-meta-bio">
+		<?php echo wpautop( $bio ); ?>
+	</div>
+	<div class="author-meta-buttons text-right">
+		<div class="btn-group">
+			<?php foreach ( $buttons as $meta_key => $button ) : ?>
+				<?php $link = get_the_author_meta( $meta_key, $author_id ); ?>
+				<?php if ( ! empty( $link ) ) : ?>
+					<?php if ( $meta_key == 'twitter' ) $link = 'https://twitter.com/' . $link; ?>
+					<a href="<?php echo esc_url( $link ); ?>" class="btn btn-default"><span title="<?php echo esc_attr( $button['title'] ); ?>" class="glyphicon <?php echo esc_attr( $button['icon'] ); ?> bstooltip"></span></a>
+				<?php endif; ?>
+			<?php endforeach; ?>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+	<?php
+}
 endif;

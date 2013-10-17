@@ -3,12 +3,14 @@ Contributors: swashata, iPanelThemes
 Tags: two-columns, flexible-width, custom-header, custom-menu, featured-images, gray, light
 Requires at least: 3.5
 Tested up to: 3.7
-Stable tag: 1.1.0
+Stable tag: 1.4.0
 
 A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site.
 
 == Description ==
 Finally a free and open source knowledgebase theme made specifically for WordPress. Uses twitter bootstrap for rendering UI components and some other open source elements for rendering niceness.
+
+Please note that this file might not be updated regularly. For a detailed information, please check the [ThemeURI](http://ipanelthemes.com/kb/wp-knowledge-base-theme/) or the README.md file.
 
 ### Acknowledgement
 Before we dive into the cool features of this theme, let's take a minute here to acknowledge
@@ -51,4 +53,29 @@ Extensive documentation on how to use this theme is available [at this link](htt
 
 ### Live Preview
 Check our own [Knowledge Base](http://ipanelthemes.com/kb/).
+
+### Bundled Resources
+Underscore A Starter Theme for WordPress - ​http://underscores.me/
+License: Distributed under the terms of the GPL License
+Copyright: Automattic, http://automattic.com/
+
+Bootstrap - ​http://getbootstrap.com/
+License: Distributed under the terms of the Apache 2.0 license.
+Copyright: Twitter, http://twitter.com
+
+Icomoon Icon Packs - ​http://icomoon.io/app/
+License: Distributed under the terms of the creative commons Attribution 3.0 Unported (CC BY 3.0)
+Copyright: IcoMoon, http://icomoon.io/
+
+Sticky-Kit - ​http://leafo.net/sticky-kit/
+License: Distributed under the terms of the WTFPL
+Copyright: Leaf Corcoran, http://leafo.net
+
+wp-bootstrap-navwalker - ​https://github.com/twittem/wp-bootstrap-navwalker
+License: Distributed under the terms of the GPL-2.0+
+Copyright: Edward McIntyre - @twittem
+
+Google Fonts (Roboto and Oswald) - ​http://www.google.com/fonts/
+License: Roboto font and Oswald font are distributed under the terms of the Apache License, version 2.0 and SIL Open Font License, 1.1 respectively
+Copyright: Google Fonts, http://www.google.com/fonts/attribution
 

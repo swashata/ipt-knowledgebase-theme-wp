@@ -77,6 +77,10 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+			<?php if ( is_author() ) : ?>
+				<?php ipt_kb_author_meta(); ?>
+			<?php endif; ?>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
