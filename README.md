@@ -82,6 +82,15 @@ This will always be the cutting edge development version of the theme. Pull requ
 
 * Add Twitter typehead to the search fields for auto-completion
 
+## License
+```
+WP Knowledge Base WordPress theme, Copyright (C) 2013 iPanelThemes.com
+WP Knowledge Base WordPress theme is licensed under the GPL.
+```
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
 ## Bundled Resources
 ```
 Underscore A Starter Theme for WordPress - ​http://underscores.me/
