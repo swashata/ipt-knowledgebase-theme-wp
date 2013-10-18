@@ -9,7 +9,7 @@
  * Set the version
  */
 global $ipt_kb_version;
-$ipt_kb_version = '1.5.0';
+$ipt_kb_version = '1.5.1';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -138,7 +138,7 @@ function ipt_kb_scripts() {
 	global $ipt_kb_version;
 
 	// Fonts from Google Webfonts
-	wp_enqueue_style( 'ipt_kb-fonts', 'http://fonts.googleapis.com/css?family=Oswald|Roboto:400,400italic,700,700italic', array(), $ipt_kb_version );
+	wp_enqueue_style( 'ipt_kb-fonts', '//fonts.googleapis.com/css?family=Oswald|Roboto:400,400italic,700,700italic', array(), $ipt_kb_version );
 
 	// Main stylesheet
 	wp_enqueue_style( 'ipt_kb-style', get_stylesheet_uri(), array(), $ipt_kb_version );

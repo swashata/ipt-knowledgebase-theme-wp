@@ -133,6 +133,7 @@ Copyright: Google Fonts, http://www.google.com/fonts/attribution
 ### Version 1.5.1
 
 * Fixed site-title issue when not using image as header
+* Google webfonts will be enqueued respecting protocol (http or https)
 
 ### Version 1.5.0
 
