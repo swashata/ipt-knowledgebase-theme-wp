@@ -28,14 +28,14 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 								<?php if ( isset( $term_meta['icon_class'] ) && '' != $term_meta['icon_class'] ) : ?>
 								<i class="glyphicon <?php echo esc_attr( $term_meta['icon_class'] ); ?>"></i>
 								<?php else : ?>
-								<i class="glyphicon ipt-books"></i>
+								<i class="glyphicon ipt-icon-books"></i>
 								<?php endif; ?>
 						</a>
 					</p>
 					<div class="caption">
 					<?php if ( isset( $pterm_meta['support_forum'] ) && $pterm_meta['support_forum'] != '' ) : ?>
 						<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $pterm_meta['support_forum'] ); ?>">
-							<i class="glyphicon ipt-support"></i> <?php _e( 'Support', 'ipt_kb' ); ?>
+							<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Support', 'ipt_kb' ); ?>
 						</a></p>
 					<?php endif; ?>
 					</div>
@@ -54,14 +54,14 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 									<?php if ( isset( $term_meta['icon_class'] ) && '' != $term_meta['icon_class'] ) : ?>
 									<i class="glyphicon <?php echo esc_attr( $term_meta['icon_class'] ); ?>"></i>
 									<?php else : ?>
-									<i class="glyphicon ipt-books"></i>
+									<i class="glyphicon ipt-icon-books"></i>
 									<?php endif; ?>
 							</a>
 						</p>
 						<div class="caption">
 						<?php if ( isset( $pterm_meta['support_forum'] ) && $pterm_meta['support_forum'] != '' ) : ?>
 							<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $pterm_meta['support_forum'] ); ?>">
-								<i class="glyphicon ipt-support"></i> <?php _e( 'Support', 'ipt_kb' ); ?>
+								<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Support', 'ipt_kb' ); ?>
 							</a></p>
 						<?php endif; ?>
 						</div>
@@ -70,7 +70,7 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 						// Show an optional term description.
 						$term_description = term_description();
 						if ( ! empty( $term_description ) ) :
-							printf( '<div class="taxonomy-description well">%s</div>', $term_description );
+							printf( '<div class="taxonomy-description well well-sm">%s</div>', $term_description );
 						endif;
 					?>
 				</div>

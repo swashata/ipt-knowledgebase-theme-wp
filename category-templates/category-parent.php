@@ -15,7 +15,7 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 			<div class="caption">
 			<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
 				<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
-					<i class="glyphicon ipt-support"></i> <?php _e( 'Get Support', 'ipt_kb' ); ?>
+					<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Get Support', 'ipt_kb' ); ?>
 				</a></p>
 			<?php endif; ?>
 			</div>
@@ -34,7 +34,7 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 				<div class="caption">
 				<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
 					<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
-						<i class="glyphicon ipt-support"></i> <?php _e( 'Get Support', 'ipt_kb' ); ?>
+						<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Get Support', 'ipt_kb' ); ?>
 					</a></p>
 				<?php endif; ?>
 				</div>
@@ -43,7 +43,7 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 				// Show an optional term description.
 				$term_description = term_description();
 				if ( ! empty( $term_description ) ) :
-					printf( '<div class="taxonomy-description well">%s</div>', $term_description );
+					printf( '<div class="taxonomy-description well well-sm">%s</div>', $term_description );
 				endif;
 			?>
 		</div>
@@ -67,23 +67,23 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 						<?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
 						<i class="glyphicon <?php echo esc_attr( $sterm_meta['icon_class'] ); ?>"></i>
 						<?php else : ?>
-						<i class="glyphicon ipt-books"></i>
+						<i class="glyphicon ipt-icon-books"></i>
 						<?php endif; ?>
 					</a>
 				</p>
 			</div>
 			<div class="col-md-9 col-sm-10 col-xs-12">
-				<h2 class="knowledgebase-title"><a data-placement="bottom" data-popt="kb-homepage-popover-<?php echo $scat->term_id; ?>" title="<?php echo esc_attr( sprintf( __( '%1$s / %2$s', 'ipt_kb' ), $cat->name, $scat->name ) ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-paragraph-justify "></i></a> <?php echo $scat->name; ?></h2>
+				<h2 class="knowledgebase-title"><a data-placement="bottom" data-popt="kb-homepage-popover-<?php echo $scat->term_id; ?>" title="<?php echo esc_attr( sprintf( __( '%1$s / %2$s', 'ipt_kb' ), $cat->name, $scat->name ) ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-icon-paragraph-justify2"></i></a> <?php echo $scat->name; ?></h2>
 				<div class="ipt-kb-popover-target" id="kb-homepage-popover-<?php echo $scat->term_id; ?>">
 					<?php echo wpautop( $scat->description ); ?>
 					<p class="text-right">
 						<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
 						<a class="btn btn-default" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
-							<i class="glyphicon ipt-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
+							<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
 						</a>
 						<?php endif; ?>
 						<a href="<?php echo $sterm_link; ?>" class="btn btn-info">
-							<i class="glyphicon ipt-link"></i> <?php _e( 'Browse all', 'ipt_kb' ); ?>
+							<i class="glyphicon ipt-icon-link"></i> <?php _e( 'Browse all', 'ipt_kb' ); ?>
 						</a>
 					</p>
 				</div>
@@ -94,7 +94,7 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 							<?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
 							<i class="glyphicon <?php echo esc_attr( $sterm_meta['icon_class'] ); ?>"></i>
 							<?php else : ?>
-							<i class="glyphicon ipt-books"></i>
+							<i class="glyphicon ipt-icon-books"></i>
 							<?php endif; ?>
 						</a>
 					</p>
@@ -110,7 +110,7 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 					<?php endif; ?>
 				</div>
 				<p class="text-right">
-					<a class="btn btn-default" href="<?php echo $sterm_link; ?>"><i class="glyphicon ipt-link"></i> <?php printf( _n( 'Browse %d article', 'Browse all %d articles', $scat_totals, 'ipt_kb' ), $scat_totals ); ?></a>
+					<a class="btn btn-default" href="<?php echo $sterm_link; ?>"><i class="glyphicon ipt-icon-link"></i> <?php printf( _n( 'Browse %d article', 'Browse all %d articles', $scat_totals, 'ipt_kb' ), $scat_totals ); ?></a>
 				</p>
 			</div>
 			<div class="clearfix"></div>

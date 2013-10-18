@@ -45,7 +45,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		 * If not empty, then add something with glymphicons class
 		 */
 		$icon = '';
-		if ( ! empty( $item->xfn ) ) {
+		if ( ! empty( $item->xfn ) && preg_match( '/(ipt-icon-)|(glyphicon)/', $item->xfn ) ) {
 			$icon = '<span class="glyphicon ' . esc_attr( $item->xfn ) . '"></span>&nbsp;';
 		}
 
@@ -88,7 +88,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$atts = array();
 			$atts['title']  = ! empty( $item->title ) 	   ? $item->title 	   : '';
 			$atts['target'] = ! empty( $item->target )     ? $item->target     : '';
-			$atts['rel']    = ! empty( $item->xfn )        ? $item->xfn        : '';
+			$atts['rel']    = ! empty( $item->xfn ) && ! preg_match( '/(ipt-icon-)|(glyphicon)/', $item->xfn )       ? $item->xfn        : '';
 
 			//If item has_children add atts to a
 			if($args->has_children && $depth === 0) {

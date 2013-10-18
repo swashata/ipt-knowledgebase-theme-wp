@@ -147,7 +147,7 @@ function ipt_kb_comment( $comment, $args, $depth ) {
 							'max_depth' => $args['max_depth'],
 							'before'    => '<div class="reply text-right">',
 							'after'     => '</div>',
-							'reply_text'=> __( '<i class="glyphicon ipt-bubbles-4"></i>&nbsp;&nbsp;Reply', 'ipt_kb' ),
+							'reply_text'=> __( '<i class="glyphicon ipt-icon-reply"></i>&nbsp;&nbsp;Reply', 'ipt_kb' ),
 						) ) );
 					?>
 				</div>
@@ -487,11 +487,11 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 	$html5    = 'html5' === $args['format'];
 	$fields   =  array(
 		'author' => '<div class="form-group comment-form-author">' . '<label class="sr-only control-label" for="author">' . __( 'Name', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-user-4"></span></span><input placeholder="' . __( 'Name', 'ipt_kb' ) . ( $req ? ' *' : '' ) . '" class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div></div>',
+		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-icon-user"></span></span><input placeholder="' . __( 'Name', 'ipt_kb' ) . ( $req ? ' *' : '' ) . '" class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div></div>',
 		'email'  => '<div class="form-group comment-form-email"><label class="sr-only control-label" for="email">' . __( 'Email', 'ipt_kb' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-mail-4"></span></span><input placeholder="' . __( 'Email', 'ipt_kb' ) . ( $req ? ' *' : '' ) . '" class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
+		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-icon-mail"></span></span><input placeholder="' . __( 'Email', 'ipt_kb' ) . ( $req ? ' *' : '' ) . '" class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
 		'url'    => '<div class="form-group comment-form-url"><label class="sr-only control-label" for="url">' . __( 'Website', 'ipt_kb' ) . '</label> ' .
-		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-link"></span></span><input placeholder="' . __( 'Website', 'ipt_kb' ) . '" class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div></div>',
+		            '<div class="input-group"><span class="input-group-addon"><span class="glyphicon ipt-icon-link"></span></span><input placeholder="' . __( 'Website', 'ipt_kb' ) . '" class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div></div>',
 	);
 
 	$required_text = sprintf( ' ' . __( 'Required fields are marked %s', 'ipt_kb' ), '<span class="required">*</span>' );
@@ -534,7 +534,7 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 							<?php
 							do_action( 'comment_form_before_fields' );
 							?>
-							<div class="col-md-5">
+							<div class="col-sm-5">
 								<?php
 								foreach ( (array) $args['fields'] as $name => $field ) {
 									echo apply_filters( "comment_form_field_{$name}", $field ) . "\n";
@@ -542,7 +542,7 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 								do_action( 'comment_form_after_fields' );
 								?>
 							</div>
-							<div class="col-md-7">
+							<div class="col-sm-7">
 								<?php echo apply_filters( 'comment_form_field_comment', $args['comment_field'] ); ?>
 							</div>
 							<div class="clearfix"></div>
@@ -628,20 +628,20 @@ function ipt_kb_author_meta( $author_id = null ) {
 	$buttons = array(
 		'user_url' => array(
 			'title' => __( 'Website', 'ipt_kb' ),
-			'icon' => 'ipt-home',
+			'icon' => 'ipt-icon-home',
 		),
 		// Some compatibility with WordPress SEO
 		'facebook' => array(
 			'title' => __( 'Facebook', 'ipt_kb' ),
-			'icon' => 'ipt-facebook',
+			'icon' => 'ipt-icon-facebook',
 		),
 		'twitter' => array(
 			'title' => __( 'Twitter', 'ipt_kb' ),
-			'icon' => 'ipt-twitter',
+			'icon' => 'ipt-icon-twitter',
 		),
 		'googleplus' => array(
 			'title' => __( 'Google+', 'ipt_kb' ),
-			'icon' => 'ipt-google-plus',
+			'icon' => 'ipt-icon-google-plus',
 		),
 	);
 

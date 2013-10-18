@@ -3,8 +3,8 @@ Theme Name: WP Knowledge Base
 Theme URI: http://ipanelthemes.com/kb/wp-knowledge-base-theme/
 Author: swashata
 Author URI: http://www.swashata.com/
-Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site. Easily create knowledge bases with just posts and categories. You can also have images, support forum links and/or icons assigned to knowledge bases. The theme also has a comprehensive documentation which can be found at the theme URI. Requires atleast WordPress 3.5
-Version: 1.4.0
+Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site. Easily create knowledge bases with just posts and categories. You can also have images, support forum links and/or icons assigned to knowledge bases. The theme also has a comprehensive documentation which can be found at the ThemeURI ( http://ipanelthemes.com/kb/wp-knowledge-base-theme/ ). Requires atleast WordPress 3.5 due to jQuery dependency of bootstrap 3.0.
+Version: 1.5.0
 License: GNU General Public License
 License URI: license.txt
 Text Domain: ipt_kb
@@ -22,8 +22,8 @@ Bootstrap - ​http://getbootstrap.com/
 License: Distributed under the terms of the Apache 2.0 license.
 Copyright: Twitter, http://twitter.com
 
-Icomoon Icon Packs - ​http://icomoon.io/app/
-License: Distributed under the terms of the creative commons Attribution 3.0 Unported (CC BY 3.0)
+Icomoon Icon Packs - ​http://icomoon.io/#icons
+License: Distributed under the terms of the GPL
 Copyright: IcoMoon, http://icomoon.io/
 
 Sticky-Kit - ​http://leafo.net/sticky-kit/
@@ -592,13 +592,17 @@ object {
 /* =Comments
 ----------------------------------------------- */
 body .comment-form-comment.form-group {
-	margin-left: 0;
 	margin-right: 0;
 }
-body .col-md-7 .comment-form-comment.form-group {
+@media screen and (min-width: 768px) {
+	body .comment-form-comment.form-group {
+		margin-left: 0;
+	}
+}
+body .col-sm-7 .comment-form-comment.form-group {
 	margin-right: -15px;
 }
-.col-md-7 #comment {
+.col-sm-7 #comment {
 	height: 132px;
 }
 
@@ -655,7 +659,7 @@ body .comment-reply-title {
 .ipt_kb_affix .list-group .list-group-item > .glyphicon {
 	font-size: 15px;
 }
-.ipt_kb_affix .list-group .list-group-item > i[class*="ipt-"] {
+.ipt_kb_affix .list-group .list-group-item > i[class*="ipt-icon"] {
 	font-size: 16px;
 }
 .ipt_kb_affix .list-group-item.active-cat {
@@ -853,7 +857,7 @@ body .comment-reply-title {
 	font-size: 64px;
 	line-height: 95px;
 }
-#main .kb-subcat-icon .thumbnail i[class*=ipt-] {
+#main .kb-subcat-icon .thumbnail i[class*="ipt-icon"] {
 	line-height: 105px;
 }
 #main .kb-scat-title {

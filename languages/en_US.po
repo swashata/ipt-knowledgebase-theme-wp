@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Knowledge Base Theme\n"
-"POT-Creation-Date: 2013-10-14 13:57+0530\n"
-"PO-Revision-Date: 2013-10-14 13:57+0530\n"
+"POT-Creation-Date: 2013-10-18 17:57+0530\n"
+"PO-Revision-Date: 2013-10-18 17:59+0530\n"
 "Last-Translator: Swashata Ghosh <swashata4u@gmail.com>\n"
 "Language-Team: ipanelthemes.com <ipanelthemes@gmail.com>\n"
 "Language: en_US\n"
@@ -110,6 +110,7 @@ msgid "Comments are closed."
 msgstr ""
 
 #: ../content-page.php:18 ../content-single.php:20
+#: ../template-knowledgebase.php:214
 msgid "<p class=\"pagination-p\">Pages:</p>"
 msgstr ""
 
@@ -197,48 +198,35 @@ msgid "Primary Menu"
 msgstr ""
 
 #: ../functions.php:85
-msgid "Sidebar"
+msgid "Knowledge Base Sidebar"
 msgstr ""
 
-#: ../functions.php:93
+#: ../functions.php:87
+msgid "Shows up only on category archive pages and single posts."
+msgstr ""
+
+#: ../functions.php:94
+msgid "General Sidebar"
+msgstr ""
+
+#: ../functions.php:96
+msgid "Shows up everywhere except the category archive pages and single posts."
+msgstr ""
+
+#: ../functions.php:103
 msgid "Footer Large"
 msgstr ""
 
-#: ../functions.php:101
+#: ../functions.php:111
 msgid "Footer Small"
 msgstr ""
 
-#: ../functions.php:163
+#: ../functions.php:173
 msgid "Oops, some problem to connect. Try again?"
 msgstr ""
 
 #: ../header.php:30
 msgid "Toggle navigation"
-msgstr ""
-
-#: ../home.php:42 ../home.php:54 ../home.php:73
-#: ../category-templates/category-parent.php:82
-#: ../inc/class-ipt-kb-affix-widget.php:126
-msgid "Get support"
-msgstr ""
-
-#: ../home.php:58 ../category-templates/category-parent.php:86
-msgid "Browse all"
-msgstr ""
-
-#: ../home.php:116 ../category-templates/category-parent.php:113
-#, php-format
-msgid "Browse %d article"
-msgid_plural "Browse all %d articles"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../home.php:132
-msgid "Recent articles"
-msgstr ""
-
-#: ../home.php:169
-msgid "Popular articles"
 msgstr ""
 
 #: ../image.php:22
@@ -300,6 +288,34 @@ msgstr ""
 #: ../searchform.php:13
 #, php-format
 msgid "Search Knowledgebase for %s&hellip;"
+msgstr ""
+
+#: ../template-knowledgebase.php:42 ../template-knowledgebase.php:54
+#: ../template-knowledgebase.php:73
+#: ../category-templates/category-parent.php:82
+#: ../inc/class-ipt-kb-affix-widget.php:126
+msgid "Get support"
+msgstr ""
+
+#: ../template-knowledgebase.php:58
+#: ../category-templates/category-parent.php:86
+msgid "Browse all"
+msgstr ""
+
+#: ../template-knowledgebase.php:116
+#: ../category-templates/category-parent.php:113
+#, php-format
+msgid "Browse %d article"
+msgid_plural "Browse all %d articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../template-knowledgebase.php:144
+msgid "Recent articles"
+msgstr ""
+
+#: ../template-knowledgebase.php:181
+msgid "Popular articles"
 msgstr ""
 
 #: ../category-templates/category-child.php:38
@@ -393,48 +409,84 @@ msgstr ""
 msgid "No other configuration necessary. Just activate and enjoy. Neat?"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:28
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:26
+msgid "Lists all your categories or knowledge bases with the right appearance."
+msgstr ""
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:27
+msgid "Knowledge Base Widget"
+msgstr ""
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:125
+msgid "Knowledge Bases"
+msgstr ""
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:128
+#: ../inc/class-ipt-kb-popular-widget.php:117
+#: ../inc/class-ipt-kb-social-widget.php:130
+msgid "Title"
+msgstr ""
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:132
+msgid ""
+"No other settings necessary. The icon classes you have put on categories and "
+"sub categories will be thoroughly used."
+msgstr ""
+
+#: ../inc/class-ipt-kb-popular-widget.php:26
+msgid "Shows articles or posts based on the user likes."
+msgstr ""
+
+#: ../inc/class-ipt-kb-popular-widget.php:27
+msgid "Popular Knowledge Base Articles"
+msgstr ""
+
+#: ../inc/class-ipt-kb-popular-widget.php:112
+msgid "Popular Articles"
+msgstr ""
+
+#: ../inc/class-ipt-kb-popular-widget.php:121
+msgid "Number of articles"
+msgstr ""
+
+#: ../inc/class-ipt-kb-social-widget.php:30
 msgid "Stay <span>Connected</span>"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:41
+#: ../inc/class-ipt-kb-social-widget.php:43
 msgid "Like us on Facebook"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:42
+#: ../inc/class-ipt-kb-social-widget.php:44
 msgid "Follow us on Twitter"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:43
+#: ../inc/class-ipt-kb-social-widget.php:45
 msgid "Circle us on Google Plus"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:44
+#: ../inc/class-ipt-kb-social-widget.php:46
 msgid "Subscribe to our Youtube Channel"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:45
+#: ../inc/class-ipt-kb-social-widget.php:47
 msgid "Subscribe to our Vimeo Channel"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:46
+#: ../inc/class-ipt-kb-social-widget.php:48
 msgid "Follow us on Pinterest"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:47
+#: ../inc/class-ipt-kb-social-widget.php:49
 msgid "Follow us on envato marketplaces"
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:61
+#: ../inc/class-ipt-kb-social-widget.php:63
 msgid "A nice looking social widget for the footer small area."
 msgstr ""
 
-#: ../inc/class-ipt-kb-social-widget.php:62
+#: ../inc/class-ipt-kb-social-widget.php:64
 msgid "Social Widget"
-msgstr ""
-
-#: ../inc/class-ipt-kb-social-widget.php:126
-msgid "Title"
 msgstr ""
 
 #: ../inc/extras.php:66
@@ -502,7 +554,7 @@ msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: ../inc/template-tags.php:150
-msgid "<i class=\"glyphicon ipt-bubbles-4\"></i>&nbsp;&nbsp;Reply"
+msgid "<i class=\"glyphicon ipt-icon-reply\"></i>&nbsp;&nbsp;Reply"
 msgstr ""
 
 #: ../inc/template-tags.php:157
@@ -549,64 +601,92 @@ msgstr ""
 msgid "Archive"
 msgstr ""
 
-#: ../inc/template-tags.php:485
+#: ../inc/template-tags.php:457
+msgid "Blog"
+msgstr ""
+
+#: ../inc/template-tags.php:489 ../inc/template-tags.php:490
 msgid "Name"
 msgstr ""
 
-#: ../inc/template-tags.php:487
+#: ../inc/template-tags.php:491 ../inc/template-tags.php:492
 msgid "Email"
 msgstr ""
 
-#: ../inc/template-tags.php:489
+#: ../inc/template-tags.php:493 ../inc/template-tags.php:494
+#: ../inc/template-tags.php:630
 msgid "Website"
-msgstr ""
-
-#: ../inc/template-tags.php:493
-#, php-format
-msgid "Required fields are marked %s"
-msgstr ""
-
-#: ../inc/template-tags.php:496
-msgctxt "noun"
-msgid "Comment"
 msgstr ""
 
 #: ../inc/template-tags.php:497
 #, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: ../inc/template-tags.php:500
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: ../inc/template-tags.php:501
+#, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: ../inc/template-tags.php:498
+#: ../inc/template-tags.php:502
 #, php-format
 msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out?</a>"
 msgstr ""
 
-#: ../inc/template-tags.php:499
+#: ../inc/template-tags.php:503
 msgid "Your email address will not be published."
 msgstr ""
 
-#: ../inc/template-tags.php:500
+#: ../inc/template-tags.php:504
 #, php-format
 msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes: %s"
 msgstr ""
 
-#: ../inc/template-tags.php:503
+#: ../inc/template-tags.php:507
 msgid "Leave a Reply"
 msgstr ""
 
-#: ../inc/template-tags.php:504
+#: ../inc/template-tags.php:508
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: ../inc/template-tags.php:505
+#: ../inc/template-tags.php:509
 msgid "Cancel reply"
 msgstr ""
 
-#: ../inc/template-tags.php:506
+#: ../inc/template-tags.php:510
 msgid "Post Comment"
 msgstr ""
+
+#: ../inc/template-tags.php:635
+msgid "Facebook"
+msgstr ""
+
+#: ../inc/template-tags.php:639
+msgid "Twitter"
+msgstr ""
+
+#: ../inc/template-tags.php:643
+msgid "Google+"
+msgstr ""
+
+#: ../inc/template-tags.php:660
+#, php-format
+msgid "%1$s has written <a href=\"%2$s\">%3$s</a> %4$s"
+msgstr ""
+
+#: ../inc/template-tags.php:660
+msgid "article"
+msgid_plural "articles"
+msgstr[0] ""
+msgstr[1] ""

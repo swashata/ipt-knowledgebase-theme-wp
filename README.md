@@ -105,8 +105,8 @@ Copyright: Twitter, http://twitter.com
 ```
 
 ```
-Icomoon Icon Packs - ​http://icomoon.io/app/
-License: Distributed under the terms of the creative commons Attribution 3.0 Unported (CC BY 3.0)
+Icomoon Icon Packs - ​http://icomoon.io/#icons
+License: Distributed under the terms of the GPL
 Copyright: IcoMoon, http://icomoon.io/
 ```
 
@@ -130,7 +130,17 @@ Copyright: Google Fonts, http://www.google.com/fonts/attribution
 
 ## Changelog
 
+### Version 1.5.0
+
+* Updated to latest IcoMoon fonts which is now under GPL (thanks to @Keyamoon)
+* Better CSS localization for Icon Classes (prefixed with `ipt-icon` instead of just `ipt`)
+* Fixed comment template layout issue when viewed under small devices (comment textarea leaving a margin on left)
+* Fixed invalid href on a div element in Affix Widget
+* While using the rel property on the navigation menu for adding icons, it will not get added to the rel attribute and thereby produce incorrect HTML
+* Improved category archive page appearance (changed well to well-sm for better white-space usage)
+
 ### Version 1.4.0
+
 * Updated the home.php to use default blog type layout
 * Added page templete (Knowledge Base Page) to populate the knowledge base appearance (see documentation to learn how to use this as the front page)
 * Added author information on single posts and author archive
