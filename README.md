@@ -7,7 +7,7 @@ Finally a free and open source knowledge base theme made specifically for WordPr
 Uses twitter bootstrap for rendering UI components and some other open source elements
 for rendering niceness.
 
-Released version 1.4.0. Download the release and upload it as a WordPress Theme.
+Released version 1.5.1. Download the release and upload it as a WordPress Theme.
 
 ## Acknowledgement
 Before we dive into the cool features of this theme, let's take a minute here to acknowledge
@@ -129,6 +129,10 @@ Copyright: Google Fonts, http://www.google.com/fonts/attribution
 ```
 
 ## Changelog
+
+### Version 1.5.1
+
+* Fixed site-title issue when not using image as header
 
 ### Version 1.5.0
 

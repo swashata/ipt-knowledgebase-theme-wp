@@ -4,7 +4,7 @@ Theme URI: http://ipanelthemes.com/kb/wp-knowledge-base-theme/
 Author: swashata
 Author URI: http://www.swashata.com/
 Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site. Easily create knowledge bases with just posts and categories. You can also have images, support forum links and/or icons assigned to knowledge bases. The theme also has a comprehensive documentation which can be found at the ThemeURI ( http://ipanelthemes.com/kb/wp-knowledge-base-theme/ ). Requires atleast WordPress 3.5 due to jQuery dependency of bootstrap 3.0.
-Version: 1.5.0
+Version: 1.5.1
 License: GNU General Public License
 License URI: license.txt
 Text Domain: ipt_kb
@@ -411,8 +411,8 @@ textarea {
 ----------------------------------------------- */
 .site-title {
 	font-size: 18px;
-	margin: 0;
-	line-height: 52px;
+	margin: 15px 0 0;
+	clear: none;
 }
 .site-title a {
 	color: #777;
