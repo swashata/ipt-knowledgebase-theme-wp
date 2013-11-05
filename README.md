@@ -79,6 +79,7 @@ This will always be the cutting edge development version of the theme. Pull requ
 * [Advanced TinyMCE](http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/customizing-tinymce-editor-buttons/) : Customize TinyMCE buttons.
 
 ## Compatible and Recommended bbPress Plugins
+Complete support is added to bbPress 2.4.1 and (hopefully) greater to host support related forums. Please read [this post](http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-components/support-forum-using-bbpress/) to learn more. Below is a quick list of compatible plugins.
 * [Buddy-bbPress Support Topic](http://wordpress.org/plugins/buddy-bbpress-support-topic/) Out of the box compatibility with styling and proper icons. Supports only the version 2.0.0 (currently in beta) or greater. Also adds a few more status to the plugin.
 * [bbPress Pencil Unread](http://wordpress.org/plugins/bbpress-pencil-unread/) Properly styled unread forums (highlighted icons).
 * [GD bbPress Attachments](http://wordpress.org/plugins/gd-bbpress-attachments/) For uploading attachments. Frontend output is properly styled.

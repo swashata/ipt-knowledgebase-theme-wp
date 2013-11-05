@@ -164,4 +164,9 @@ jQuery(document).ready(function($) {
 			bbPPuMAR.addClass('disabled');
 		});
 	}
+
+	// GD Attachment
+	if ( $('.d4p-attachment-addfile').length ) {
+		$('.d4p-attachment-addfile').addClass('btn btn-default').prepend('<span class="glyphicon ipt-icon-attachment"></span> ');
+	}
 });
