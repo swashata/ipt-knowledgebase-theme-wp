@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Knowledge Base Theme\n"
-"POT-Creation-Date: 2013-10-18 17:57+0530\n"
-"PO-Revision-Date: 2013-10-18 17:59+0530\n"
+"POT-Creation-Date: 2013-11-04 23:12+0530\n"
+"PO-Revision-Date: 2013-11-04 23:12+0530\n"
 "Last-Translator: Swashata Ghosh <swashata4u@gmail.com>\n"
 "Language-Team: ipanelthemes.com <ipanelthemes@gmail.com>\n"
 "Language: en_US\n"
@@ -115,8 +115,8 @@ msgid "<p class=\"pagination-p\">Pages:</p>"
 msgstr ""
 
 #: ../content-page.php:23 ../content-single.php:60 ../content.php:71
-#: ../image.php:32 ../image.php:64 ../inc/template-tags.php:119
-#: ../inc/template-tags.php:160
+#: ../image.php:32 ../image.php:64 ../bbpress/user-details.php:54
+#: ../inc/template-tags.php:119 ../inc/template-tags.php:160
 msgid "Edit"
 msgstr ""
 
@@ -214,18 +214,26 @@ msgid "Shows up everywhere except the category archive pages and single posts."
 msgstr ""
 
 #: ../functions.php:103
+msgid "bbPress Sidebar"
+msgstr ""
+
+#: ../functions.php:105
+msgid "Shows up on bbPress forums and topics."
+msgstr ""
+
+#: ../functions.php:112
 msgid "Footer Large"
 msgstr ""
 
-#: ../functions.php:111
+#: ../functions.php:120
 msgid "Footer Small"
 msgstr ""
 
-#: ../functions.php:173
+#: ../functions.php:182
 msgid "Oops, some problem to connect. Try again?"
 msgstr ""
 
-#: ../header.php:30
+#: ../header-bbpress.php:30 ../header.php:30
 msgid "Toggle navigation"
 msgstr ""
 
@@ -318,6 +326,870 @@ msgstr ""
 msgid "Popular articles"
 msgstr ""
 
+#: ../bbpress/content-single-topic-lead.php:18
+#: ../bbpress/content-single-topic-lead.php:90
+msgid "Creator"
+msgstr ""
+
+#: ../bbpress/content-single-topic-lead.php:22
+#: ../bbpress/content-single-topic-lead.php:94 ../bbpress/loop-topics.php:17
+#: ../bbpress/loop-topics.php:31
+msgid "Topic"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:15
+msgid "Registered Users"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:16
+msgid "Forums"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:17 ../bbpress/loop-forums.php:17
+msgid "Topics"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:18 ../bbpress/loop-forums.php:18
+#: ../bbpress/loop-replies.php:25 ../bbpress/loop-replies.php:48
+#: ../bbpress/loop-topics.php:19 ../bbpress/loop-topics.php:33
+msgid "Replies"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:19
+msgid "Topic Tags"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:21
+msgid "Empty Topic Tags"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:24
+msgid "Hidden Topics"
+msgstr ""
+
+#: ../bbpress/content-statistics.php:27
+msgid "Hidden Replies"
+msgstr ""
+
+#: ../bbpress/feedback-logged-in.php:13
+msgid "You are already logged in."
+msgstr ""
+
+#: ../bbpress/feedback-no-access.php:13
+msgid "Private"
+msgstr ""
+
+#: ../bbpress/feedback-no-access.php:16
+msgid "You do not have permission to view this forum."
+msgstr ""
+
+#: ../bbpress/feedback-no-forums.php:13
+msgid "Oh bother! No forums were found here!"
+msgstr ""
+
+#: ../bbpress/feedback-no-replies.php:13
+msgid "Oh bother! No replies were found here!"
+msgstr ""
+
+#: ../bbpress/feedback-no-search.php:13
+msgid "Oh bother! No search results were found here!"
+msgstr ""
+
+#: ../bbpress/feedback-no-topics.php:13
+msgid "Oh bother! No topics were found here!"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:15
+msgid "Author Information"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:15
+msgid "Your information:"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:20 ../bbpress/form-anonymous.php:21
+msgid "Name (required):"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:25 ../bbpress/form-anonymous.php:26
+msgid "Mail (will not be published) (required):"
+msgstr ""
+
+#: ../bbpress/form-anonymous.php:30 ../bbpress/form-anonymous.php:31
+msgid "Website:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:35 ../bbpress/form-topic.php:29
+#, php-format
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-forum.php:37
+#, php-format
+msgid "Create New Forum in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-forum.php:37
+msgid "Create New Forum"
+msgstr ""
+
+#: ../bbpress/form-forum.php:47
+msgid ""
+"This forum is closed to new content, however your account still allows you "
+"to do so."
+msgstr ""
+
+#: ../bbpress/form-forum.php:55 ../bbpress/form-reply.php:34
+#: ../bbpress/form-topic.php:44
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr ""
+
+#: ../bbpress/form-forum.php:67
+#, php-format
+msgid "Forum Name (Maximum Length: %d):"
+msgstr ""
+
+#: ../bbpress/form-forum.php:82 ../bbpress/form-reply.php:50
+#: ../bbpress/form-topic.php:76
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:91
+msgid "Forum Type:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:100
+msgid "Status:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:109
+msgid "Visibility:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:118
+msgid "Parent Forum:"
+msgstr ""
+
+#: ../bbpress/form-forum.php:123
+msgid "(No Parent)"
+msgstr ""
+
+#: ../bbpress/form-forum.php:138 ../bbpress/form-reply-move.php:62
+#: ../bbpress/form-reply.php:110 ../bbpress/form-topic-merge.php:71
+#: ../bbpress/form-topic-split.php:83 ../bbpress/form-topic.php:172
+#: ../inc/template-tags.php:695
+msgid "Submit"
+msgstr ""
+
+#: ../bbpress/form-forum.php:161
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new content."
+msgstr ""
+
+#: ../bbpress/form-forum.php:169
+msgid "You cannot create new forums."
+msgstr ""
+
+#: ../bbpress/form-forum.php:169
+msgid "You must be logged in to create new forums."
+msgstr ""
+
+#: ../bbpress/form-protected.php:14
+msgid "Protected"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:18
+#, php-format
+msgid "Move reply \"%s\""
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:21
+msgid ""
+"You can either make this reply a new topic with a new title, or merge it "
+"into an existing topic."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:25
+msgid ""
+"If you choose an existing topic, replies will be ordered by the time and "
+"date they were created."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:28
+msgid "Move Method"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:32 ../bbpress/form-topic-split.php:33
+#, php-format
+msgid "New topic in <strong>%s</strong> titled:"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:35
+#, php-format
+msgid "Moved: %s"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:41 ../bbpress/form-topic-split.php:42
+msgid "Use an existing topic in this forum:"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:51 ../bbpress/form-topic-split.php:52
+msgid "No other topics found!"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:58 ../bbpress/form-topic-merge.php:67
+#: ../bbpress/form-topic-split.php:79
+msgid "<strong>WARNING:</strong> This process cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:74
+msgid "You do not have the permissions to edit this reply!"
+msgstr ""
+
+#: ../bbpress/form-reply-move.php:74
+msgid "You cannot edit this reply."
+msgstr ""
+
+#: ../bbpress/form-reply.php:23
+#, php-format
+msgid "Reply To: %s"
+msgstr ""
+
+#: ../bbpress/form-reply.php:28
+msgid ""
+"This topic is marked as closed to new replies, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: ../bbpress/form-reply.php:59
+msgid "Tags:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:77 ../bbpress/form-topic.php:142
+msgid "Notify the author of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-reply.php:79 ../bbpress/form-topic.php:144
+msgid "Notify me of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-reply.php:93 ../bbpress/form-topic.php:155
+msgid "Keep a log of this edit:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:97 ../bbpress/form-reply.php:98
+#: ../bbpress/form-topic.php:159
+msgid "Optional reason for editing:"
+msgstr ""
+
+#: ../bbpress/form-reply.php:127
+#, php-format
+msgid "The topic &#8216;%s&#8217; is closed to new replies."
+msgstr ""
+
+#: ../bbpress/form-reply.php:133 ../bbpress/form-topic.php:193
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr ""
+
+#: ../bbpress/form-reply.php:139
+msgid "You cannot reply to this topic."
+msgstr ""
+
+#: ../bbpress/form-reply.php:139
+msgid "You must be logged in to reply to this topic."
+msgstr ""
+
+#: ../bbpress/form-search.php:13
+msgid "Search for:"
+msgstr ""
+
+#: ../bbpress/form-search.php:17
+#, php-format
+msgid "Search %s&hellip;"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:20
+#, php-format
+msgid "Merge topic \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:23
+msgid ""
+"Select the topic to merge this one into. The destination topic will remain "
+"the lead topic, and this one will change into a reply."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:24
+msgid ""
+"To keep this topic as the lead, go to the other topic and use the merge tool "
+"from there instead."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:28
+msgid ""
+"All replies within both topics will be merged chronologically. The order of "
+"the merged replies is based on the time and date they were posted. If the "
+"destination topic was created after this one, it's post date will be updated "
+"to second earlier than this one."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:30
+msgid "Destination"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:32
+msgid "Merge with this topic:"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:40
+msgid "No topics were found to which the topic could be merged to!"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:44
+msgid "There are no other topics in this forum to merge with."
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:47 ../bbpress/form-topic-split.php:59
+msgid "Topic Extras"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:52
+msgid "Merge topic subscribers"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:57
+msgid "Merge topic favoriters"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:62
+msgid "Merge topic tags"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:82 ../bbpress/form-topic-split.php:95
+msgid "You do not have the permissions to edit this topic!"
+msgstr ""
+
+#: ../bbpress/form-topic-merge.php:82 ../bbpress/form-topic-split.php:95
+msgid "You cannot edit this topic."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:19
+#, php-format
+msgid "Split topic \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:22
+msgid ""
+"When you split a topic, you are slicing it in half starting with the reply "
+"you just selected. Choose to use that reply as a new topic with a new title, "
+"or merge those replies into an existing topic."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:26
+msgid ""
+"If you use the existing topic option, replies within both topics will be "
+"merged chronologically. The order of the merged replies is based on the time "
+"and date they were posted."
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:29
+msgid "Split Method"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:36
+#, php-format
+msgid "Split: %s"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:64
+msgid "Copy subscribers to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:69
+msgid "Copy favoriters to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-split.php:74
+msgid "Copy topic tags to the new topic"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:18
+#, php-format
+msgid "Manage Tag: \"%s\""
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:22
+msgid "Rename"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:25
+msgid "Leave the slug empty to have one automatically generated."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:29
+msgid ""
+"Changing the slug affects its permalink. Any links to the old slug will stop "
+"working."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:35
+msgid "Name:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:40
+msgid "Slug:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:45
+msgid "Update"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:59 ../bbpress/form-topic-tag.php:73
+msgid "Merge"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:62
+msgid "Merging tags together cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:68
+msgid "Existing tag:"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:73
+#, php-format
+msgid ""
+"Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:88 ../bbpress/form-topic-tag.php:101
+msgid "Delete"
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:91
+msgid "This does not delete your topics. Only the tag itself is deleted."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:94
+msgid "Deleting a tag cannot be undone."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:95
+msgid "Any links to this tag will no longer function."
+msgstr ""
+
+#: ../bbpress/form-topic-tag.php:101
+#, php-format
+msgid ""
+"Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
+"be undone."
+msgstr ""
+
+#: ../bbpress/form-topic.php:31
+#, php-format
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-topic.php:31
+msgid "Create New Topic"
+msgstr ""
+
+#: ../bbpress/form-topic.php:38
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: ../bbpress/form-topic.php:57
+#, php-format
+msgid "Topic Title (Maximum Length: %d):"
+msgstr ""
+
+#: ../bbpress/form-topic.php:84
+msgid "Topic Tags:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:99
+msgid "Forum:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:102
+msgid "(No Forum)"
+msgstr ""
+
+#: ../bbpress/form-topic.php:116
+msgid "Topic Type:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:127
+msgid "Topic Status:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:201
+msgid "You cannot create new topics."
+msgstr ""
+
+#: ../bbpress/form-topic.php:201
+msgid "You must be logged in to create new topics."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:14 ../inc/template-tags.php:489
+#: ../inc/template-tags.php:490
+msgid "Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:23
+msgid "First Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:28
+msgid "Last Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:33
+msgid "Nickname"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:38
+msgid "Display Name"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:51
+msgid "Contact Info"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:57 ../inc/template-tags.php:493
+#: ../inc/template-tags.php:494 ../inc/template-tags.php:630
+msgid "Website"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:72
+msgid "About Yourself"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:72
+msgid "About the user"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:78
+msgid "Biographical Info"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:85
+msgid "Account"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:91 ../bbpress/form-user-login.php:17
+#: ../bbpress/form-user-register.php:23
+msgid "Username"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:96 ../bbpress/form-user-register.php:28
+#: ../inc/template-tags.php:491 ../inc/template-tags.php:492
+msgid "Email"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:104
+#, php-format
+msgid ""
+"There is a pending email address change to <code>%1$s</code>. <a class=\"btn "
+"btn-sm btn-danger\" href=\"%2$s\">Cancel</a>"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:109
+msgid "New Password"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:112
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:115
+msgid "Type your new password again."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:117
+msgid "Strength indicator"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:118
+msgid ""
+"Your password should be at least ten characters long. Use upper and lower "
+"case letters, numbers, and symbols to make it even stronger."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:127
+msgid "User Role"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:134
+msgid "Network Role"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:137
+msgid "Grant this user super admin privileges for the Network."
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:152
+msgid "Update Profile"
+msgstr ""
+
+#: ../bbpress/form-user-edit.php:152
+msgid "Update User"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:14 ../bbpress/form-user-login.php:33
+msgid "Log In"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:22
+msgid "Password"
+msgstr ""
+
+#: ../bbpress/form-user-login.php:28
+msgid "Keep me signed in"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:14
+msgid "Lost Password"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:17
+msgid "Username or Email"
+msgstr ""
+
+#: ../bbpress/form-user-lost-pass.php:23
+msgid "Reset My Password"
+msgstr ""
+
+#: ../bbpress/form-user-register.php:14
+msgid "Create an Account"
+msgstr ""
+
+#: ../bbpress/form-user-register.php:17
+msgid "Your username must be unique, and cannot be changed later."
+msgstr ""
+
+#: ../bbpress/form-user-register.php:18
+msgid ""
+"We use your email address to email you a secure password and verify your "
+"account."
+msgstr ""
+
+#: ../bbpress/form-user-register.php:35
+msgid "Register"
+msgstr ""
+
+#: ../bbpress/form-user-roles.php:13
+msgid "Blog Role"
+msgstr ""
+
+#: ../bbpress/form-user-roles.php:23
+msgid "Forum Role"
+msgstr ""
+
+#: ../bbpress/loop-forums.php:16
+msgid "Forum"
+msgstr ""
+
+#: ../bbpress/loop-forums.php:18 ../bbpress/loop-replies.php:19
+#: ../bbpress/loop-replies.php:46 ../bbpress/loop-topics.php:19
+#: ../bbpress/loop-topics.php:33
+msgid "Posts"
+msgstr ""
+
+#: ../bbpress/loop-forums.php:19 ../bbpress/loop-topics.php:20
+#: ../bbpress/loop-topics.php:34
+msgid "Freshness"
+msgstr ""
+
+#: ../bbpress/loop-replies.php:16 ../bbpress/loop-replies.php:43
+#: ../bbpress/loop-search.php:16 ../bbpress/loop-search.php:29
+msgid "Author"
+msgstr ""
+
+#: ../bbpress/loop-search-forum.php:16
+#, php-format
+msgid "Last updated %s"
+msgstr ""
+
+#: ../bbpress/loop-search-forum.php:26
+msgid "Forum: "
+msgstr ""
+
+#: ../bbpress/loop-search-reply.php:24
+msgid "In reply to: "
+msgstr ""
+
+#: ../bbpress/loop-search-topic.php:26
+msgid "Topic: "
+msgstr ""
+
+#: ../bbpress/loop-search-topic.php:33
+msgid "in group forum "
+msgstr ""
+
+#: ../bbpress/loop-search-topic.php:37
+msgid "in forum "
+msgstr ""
+
+#: ../bbpress/loop-search.php:18 ../bbpress/loop-search.php:31
+msgid "Search Results"
+msgstr ""
+
+#: ../bbpress/loop-single-reply.php:17
+msgid "Actions"
+msgstr ""
+
+#: ../bbpress/loop-single-reply.php:27
+msgid "in reply to: "
+msgstr ""
+
+#: ../bbpress/loop-single-topic.php:58
+#, php-format
+msgid "Started by: %1$s"
+msgstr ""
+
+#: ../bbpress/loop-single-topic.php:62
+#, php-format
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: ../bbpress/loop-single-topic.php:91 ../inc/bbpress.php:113
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: ../bbpress/loop-topics.php:18 ../bbpress/loop-topics.php:32
+msgid "Voices"
+msgstr ""
+
+#: ../bbpress/user-details.php:28
+#, php-format
+msgid "%s's Profile"
+msgstr ""
+
+#: ../bbpress/user-details.php:28 ../bbpress/user-profile.php:15
+msgid "Profile"
+msgstr ""
+
+#: ../bbpress/user-details.php:32
+#, php-format
+msgid "%s's Topics Started"
+msgstr ""
+
+#: ../bbpress/user-details.php:32
+msgid "Topics Started"
+msgstr ""
+
+#: ../bbpress/user-details.php:36
+#, php-format
+msgid "%s's Replies Created"
+msgstr ""
+
+#: ../bbpress/user-details.php:36
+msgid "Replies Created"
+msgstr ""
+
+#: ../bbpress/user-details.php:41
+#, php-format
+msgid "%s's Favorites"
+msgstr ""
+
+#: ../bbpress/user-details.php:41
+msgid "Favorites"
+msgstr ""
+
+#: ../bbpress/user-details.php:49
+#, php-format
+msgid "%s's Subscriptions"
+msgstr ""
+
+#: ../bbpress/user-details.php:49
+msgid "Subscriptions"
+msgstr ""
+
+#: ../bbpress/user-details.php:54
+#, php-format
+msgid "Edit %s's Profile"
+msgstr ""
+
+#: ../bbpress/user-favorites.php:15
+msgid "Favorite Forum Topics"
+msgstr ""
+
+#: ../bbpress/user-favorites.php:28
+msgid "You currently have no favorite topics."
+msgstr ""
+
+#: ../bbpress/user-favorites.php:28
+msgid "This user has no favorite topics."
+msgstr ""
+
+#: ../bbpress/user-profile.php:24
+#, php-format
+msgid "%s Forum Role:"
+msgstr ""
+
+#: ../bbpress/user-profile.php:25
+#, php-format
+msgid "%s Topics Started:"
+msgstr ""
+
+#: ../bbpress/user-profile.php:26
+#, php-format
+msgid "%s Replies Created:"
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:15
+msgid "Forum Replies Created"
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:28
+msgid "You have not replied to any topics."
+msgstr ""
+
+#: ../bbpress/user-replies-created.php:28
+msgid "This user has not replied to any topics."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:19
+msgid "Subscribed Forum Topics"
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:32
+msgid "You are not currently subscribed to any topics."
+msgstr ""
+
+#: ../bbpress/user-subscriptions.php:32
+msgid "This user is not currently subscribed to any topics."
+msgstr ""
+
+#: ../bbpress/user-topics-created.php:15
+msgid "Forum Topics Started"
+msgstr ""
+
+#: ../bbpress/user-topics-created.php:28
+msgid "You have not created any topics."
+msgstr ""
+
+#: ../bbpress/user-topics-created.php:28
+msgid "This user has not created any topics."
+msgstr ""
+
+#: ../bbtemp/page-forum-statistics.php:22
+msgid "<p>Here are the statistics and popular topics of our forums.</p>"
+msgstr ""
+
+#: ../bbtemp/page-forum-statistics.php:34
+msgid "Popular Topics"
+msgstr ""
+
 #: ../category-templates/category-child.php:38
 #: ../category-templates/category-child.php:64
 msgid "Support"
@@ -343,6 +1215,10 @@ msgstr ""
 
 #: ../category-templates/no-result.php:7
 msgid "No articles published. Check back later?"
+msgstr ""
+
+#: ../inc/bbpress.php:251
+msgid "Tagged:"
 msgstr ""
 
 #: ../inc/category-fields.php:41 ../inc/category-fields.php:62
@@ -605,19 +1481,6 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: ../inc/template-tags.php:489 ../inc/template-tags.php:490
-msgid "Name"
-msgstr ""
-
-#: ../inc/template-tags.php:491 ../inc/template-tags.php:492
-msgid "Email"
-msgstr ""
-
-#: ../inc/template-tags.php:493 ../inc/template-tags.php:494
-#: ../inc/template-tags.php:630
-msgid "Website"
-msgstr ""
-
 #: ../inc/template-tags.php:497
 #, php-format
 msgid "Required fields are marked %s"
@@ -690,3 +1553,13 @@ msgid "article"
 msgid_plural "articles"
 msgstr[0] ""
 msgstr[1] ""
+
+#: ../inc/template-tags.php:693
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr ""
+
+#: ../inc/template-tags.php:695
+msgid "Password:"
+msgstr ""

@@ -40,6 +40,10 @@ class IPT_KB_KnowledgeBase_Widget extends WP_Widget {
 
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
+		if ( ! isset( $instance['show_sub'] ) ) {
+			$instance['show_sub'] = true;
+		}
+
 		if ( $title != '' ) {
 			echo $before_title;
 			echo $title;
@@ -56,14 +60,14 @@ class IPT_KB_KnowledgeBase_Widget extends WP_Widget {
 		echo '<div class="list-group">';
 
 		foreach ( $main_categories as $cat ) {
-			$this->print_main_category( $cat );
+			$this->print_main_category( $cat, $instance['show_sub'] );
 		}
 
 		echo '</div>';
 		echo $after_widget;
 	}
 
-	protected function print_main_category( $cat ) {
+	protected function print_main_category( $cat, $print_subcat = true ) {
 		// Do the main category
 		$this->print_category( $cat );
 
@@ -75,7 +79,7 @@ class IPT_KB_KnowledgeBase_Widget extends WP_Widget {
 			'number' => '',
 		) );
 
-		if ( ! empty( $sub_categories ) ) {
+		if ( ! empty( $sub_categories ) && $print_subcat ) {
 			foreach ( $sub_categories as $scat ) {
 				$this->print_category( $scat, str_repeat( '&nbsp;', 8 ) );
 			}
@@ -112,6 +116,7 @@ class IPT_KB_KnowledgeBase_Widget extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 		$updated_instance = $new_instance;
 		$updated_instance['title'] = isset( $new_instance['title'] ) ? strip_tags( $new_instance['title'] ) : '';
+		$updated_instance['show_sub'] = isset( $new_instance['show_sub'] ) && ! empty( $new_instance['show_sub'] ) ? true : false;
 		return $updated_instance;
 	}
 
@@ -122,11 +127,15 @@ class IPT_KB_KnowledgeBase_Widget extends WP_Widget {
 	 * @return void Echoes it's output
 	 */
 	function form( $instance ) {
-		$instance = wp_parse_args( (array) $instance, array( 'title' => __( 'Knowledge Bases', 'ipt_kb' ) ) );
+		$instance = wp_parse_args( (array) $instance, array( 'title' => __( 'Knowledge Bases', 'ipt_kb' ), 'show_sub' => true ) );
 		?>
 <p>
 	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><strong><?php _e( 'Title', 'ipt_kb' ) ?></strong></label>
 	<input type="text" class="widefat" name="<?php echo $this->get_field_name( 'title' ); ?>" id="<?php echo $this->get_field_id( 'title' ); ?>" value="<?php echo esc_html( $instance['title'] ); ?>" />
+</p>
+<p>
+	<input type="checkbox"<?php checked( $instance['show_sub'] ); ?> name="<?php echo $this->get_field_name( 'show_sub' ); ?>" id="<?php echo $this->get_field_id( 'show_sub' ); ?>" value="1" />
+	<label for="<?php echo $this->get_field_id( 'show_sub' ); ?>"><?php _e( 'Show sub categories below the parent category (main knowledge bases)', 'ipt_kb' ); ?></label>
 </p>
 <p class="description">
 	<?php _e( 'No other settings necessary. The icon classes you have put on categories and sub categories will be thoroughly used.', 'ipt_kb' ); ?>

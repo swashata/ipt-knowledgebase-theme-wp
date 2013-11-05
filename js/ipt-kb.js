@@ -147,4 +147,21 @@ jQuery(document).ready(function($) {
 		// Say a collapsible inside the entry-content
 		adjust_height();
 	});
+
+	// Canned reply bbPress
+	if ( $('.bbp-canned-replies-wrapper').length ) {
+		var cannedReply = $('.bbp-canned-replies-wrapper');
+		cannedReply.find('.bbp-toggle-replies', '.bbp-toggle-replies').addClass('btn btn-default');
+		cannedReply.find('.bbp-canned-replies-list').addClass('list-group').css({
+			margin : '10px 0'
+		}).find('li.bpp-canned-reply').addClass('list-group-item').find('.bbp-canned-reply-insert').addClass('btn btn-sm btn-success');
+	}
+
+	// Mark as read
+	if ( $('.bbppu-mark-as-read').length ) {
+		var bbPPuMAR = $('.bbppu-mark-as-read');
+		bbPPuMAR.addClass('pull-right btn btn-default').find('a').prepend('<span class="glyphicon ipt-icon-checkmark"></span> ').on('click', function() {
+			bbPPuMAR.addClass('disabled');
+		});
+	}
 });

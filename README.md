@@ -78,6 +78,14 @@ This will always be the cutting edge development version of the theme. Pull requ
 * [jQuery Colorbox](http://http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/jquery-colorbox-display-images-lighbox/) : Put your images inside lightbox.
 * [Advanced TinyMCE](http://ipanelthemes.com/kb/wp-knowledge-base-theme/kb-plugins/customizing-tinymce-editor-buttons/) : Customize TinyMCE buttons.
 
+## Compatible and Recommended bbPress Plugins
+* [Buddy-bbPress Support Topic](http://wordpress.org/plugins/buddy-bbpress-support-topic/) Out of the box compatibility with styling and proper icons. Supports only the version 2.0.0 (currently in beta) or greater. Also adds a few more status to the plugin.
+* [bbPress Pencil Unread](http://wordpress.org/plugins/bbpress-pencil-unread/) Properly styled unread forums (highlighted icons).
+* [GD bbPress Attachments](http://wordpress.org/plugins/gd-bbpress-attachments/) For uploading attachments. Frontend output is properly styled.
+* [GD bbPress Tools](http://wordpress.org/plugins/gd-bbpress-tools/) Various tools. Each of them are styled properly to match the theme.
+* [bbPress - Canned Replies](http://wordpress.org/plugins/bbpress-canned-replies/) - Preset replies. Properly styled for enhanced visual experience.
+* [Captcha](http://wordpress.org/plugins/captcha/) The output on the bbPress registration and login page are styled.
+
 ## TODO
 
 * Add Twitter typehead to the search fields for auto-completion
@@ -129,6 +137,15 @@ Copyright: Google Fonts, http://www.google.com/fonts/attribution
 ```
 
 ## Changelog
+
+### Version 1.6.0
+* Updated to latest bootstrap 3.0.1
+* Added the optional theme for visually enhanced experience
+* Added complete support for bbPress. Now WP Knowledge Base Theme can serve purpose for support forum as well
+* Pages will now be with sidebar
+* Added a full-width page template
+* Fixed comment form bug on handheld devices
+* Improved default button and form styling
 
 ### Version 1.5.1
 

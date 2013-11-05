@@ -3,8 +3,8 @@ Theme Name: WP Knowledge Base
 Theme URI: http://ipanelthemes.com/kb/wp-knowledge-base-theme/
 Author: swashata
 Author URI: http://www.swashata.com/
-Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site. Easily create knowledge bases with just posts and categories. You can also have images, support forum links and/or icons assigned to knowledge bases. The theme also has a comprehensive documentation which can be found at the ThemeURI ( http://ipanelthemes.com/kb/wp-knowledge-base-theme/ ). Requires atleast WordPress 3.5 due to jQuery dependency of bootstrap 3.0.
-Version: 1.5.1
+Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site. Easily create knowledge bases with just posts and categories. You can also have images, support forum links and/or icons assigned to knowledge bases. The theme also has a comprehensive documentation which can be found at the ThemeURI ( http://ipanelthemes.com/kb/wp-knowledge-base-theme/ ). Requires atleast WordPress 3.5 due to jQuery dependency of bootstrap 3.0. Support for bbPress is added officially to version 1.6.0.
+Version: 1.6.0
 License: GNU General Public License
 License URI: license.txt
 Text Domain: ipt_kb
@@ -593,14 +593,17 @@ object {
 ----------------------------------------------- */
 body .comment-form-comment.form-group {
 	margin-right: 0;
+	margin-left: 0;
 }
-@media screen and (min-width: 768px) {
-	body .comment-form-comment.form-group {
-		margin-left: 0;
-	}
-}
+
 body .col-sm-7 .comment-form-comment.form-group {
 	margin-right: -15px;
+	margin-left: -15px;
+}
+@media screen and (min-width: 768px) {
+	body .col-sm-7 .comment-form-comment.form-group {
+		margin-left: 0;
+	}
 }
 .col-sm-7 #comment {
 	height: 132px;
@@ -808,9 +811,20 @@ body .comment-reply-title {
 	font-size: 17px;
 	margin-top: 10px;
 }
-#main .glyphicon {
+
+#main .kb-home-cat-row .glyphicon,
+#main .kb-cat-parent-row .glyphicon {
 	font-size: 16px;
 }
+#main .kb-home-cat-row .pagination .glyphicon,
+#main .kb-cat-parent-row .pagination .glyphicon {
+	font-size: inherit;
+}
+#main .kb-home-cat-row [class*="glyphicon-"],
+#main .kb-cat-parent-row [class*="glyphicon-"] {
+	font-size: 15px;
+}
+
 #main .entry-content h1 .glyphicon,
 #main .entry-content h2 .glyphicon,
 #main .entry-content h3 .glyphicon,
@@ -820,9 +834,7 @@ body .comment-reply-title {
 	font-size: inherit;
 	margin-right: 5px;
 }
-#main [class*="glyphicon-"] {
-	font-size: 15px;
-}
+
 .kb-post-list .badge {
 	margin-top: 3px;
 }
@@ -944,6 +956,142 @@ body .label {
 body a .label {
 	text-decoration: none;
 }
+#secondary .list-group,
+#secondary .nav {
+	margin: 0;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+select {
+	height: 30px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+textarea {
+	height: auto;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+input[type="text"][disabled],
+input[type="text"][readonly],
+fieldset[disabled] .form-control,
+select[disabled],
+textarea:disabled {
+	cursor: not-allowed;
+	background-color: #eeeeee;
+}
+button,
+input[type="submit"] {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+button:focus,
+input[type="submit"]:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	color: #333333;
+	text-decoration: none;
+}
+button:active,
+button.active,
+input[type="submit"]:active {
+	outline: 0;
+	background-image: none;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+button.disabled,
+button[disabled],
+fieldset[disabled] .btn {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+button,
+input[type="submit"] {
+	color: #333333;
+	background-color: #ffffff;
+	border-color: #cccccc;
+}
+button:hover,
+button:focus,
+button:active,
+button.active,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	color: #333333;
+	background-color: #ebebeb;
+	border-color: #adadad;
+}
+button:active,
+button.active,
+input[type="submit"]:active {
+	background-image: none;
+}
+button.disabled,
+button[disabled],
+button.disabled:hover,
+button[disabled]:hover,
+button.disabled:focus,
+button[disabled]:focus,
+button.disabled:active,
+button[disabled]:active,
+button.disabled.active,
+button[disabled].active {
+	background-color: #ffffff;
+	border-color: #cccccc;
+}
+.list-group-item.active {
+	color: #fff;
+}
 
 /* =Post Content Styles
 ----------------------------------------------- */
@@ -998,6 +1146,55 @@ body .syntaxhighlighter table td,
 body .syntaxhighlighter table code,
 body .syntaxhighlighter table div {
 	font-size: 12px !important;
+}
+
+/* =Captcha Plugin Compatibility
+------------------------------------------------- */
+/* Captcha Plugin */
+.cptch_block {
+	overflow: hidden;
+	margin: 0 -15px 10px;
+	font-family: monospace;
+	text-align: left;
+}
+.cptch_block br,
+.cptch_block + br {
+	display: none;
+}
+.cptch_block label {
+	float: left;
+	width: 33.333333%;
+	padding: 0 15px;
+	margin-right: 15px;
+	margin-top: 2px;
+	font-family: 'Roboto', 'Arial', sans-serif;
+}
+#commentform .cptch_block label {
+	width: 41.6667%;
+}
+.cptch_block #cptch_input {
+	width: 60px !important;
+	height: 34px !important;
+	line-height: 1.428571429 !important;
+	font-size: 14px !important;
+	padding: 6px 12px !important;
+}
+
+#secondary .widget .cptch_block label {
+	width: auto;
+	line-height: 2;
+}
+@media only screen and (max-width: 768px) {
+	.cptch_block {
+		margin: 0 0 10px;
+	}
+	.cptch_block label,
+	#secondary .widget .cptch_block label,
+	#commentform .cptch_block label {
+		width: 100%;
+		margin: 0 0 10px 0;
+		padding-left: 0;
+	}
 }
 
 /* =Wee little wpstats icon

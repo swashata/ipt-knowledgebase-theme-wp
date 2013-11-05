@@ -340,7 +340,7 @@ function ipt_kb_breadcrumb() {
 		<li class="active" typeof="v:Breadcrumb">
 			<span property="v:title"><?php the_title(); ?></span>
 		</li>
-	<?php elseif ( is_single() ) : the_post(); global $post; $post_loop = true; ?>
+	<?php elseif ( is_singular( 'post' ) ) : the_post(); global $post; $post_loop = true; ?>
 		<?php $category = get_the_category(); ?>
 		<?php $clink = get_category_link( $category[0]->term_id ); ?>
 		<?php if ( $category[0]->parent != '0' ) : ?>
@@ -539,18 +539,21 @@ function ipt_kb_comment_form( $args = array(), $post_id = null ) {
 								foreach ( (array) $args['fields'] as $name => $field ) {
 									echo apply_filters( "comment_form_field_{$name}", $field ) . "\n";
 								}
-								do_action( 'comment_form_after_fields' );
 								?>
 							</div>
 							<div class="col-sm-7">
 								<?php echo apply_filters( 'comment_form_field_comment', $args['comment_field'] ); ?>
 							</div>
 							<div class="clearfix"></div>
+							<div class="col-sm-12">
+								<?php do_action( 'comment_form_after_fields' ); ?>
+							</div>
+							<div class="clearfix"></div>
 						<?php endif; ?>
 
 						<?php echo $args['comment_notes_after']; ?>
 						<p class="form-submit text-right">
-							<input name="submit" class="btn btn-lg btn-primary" type="submit" id="<?php echo esc_attr( $args['id_submit'] ); ?>" value="<?php echo esc_attr( $args['label_submit'] ); ?>" />
+							<button name="submit" class="btn btn-lg btn-primary" type="submit" id="<?php echo esc_attr( $args['id_submit'] ); ?>"><?php echo $args['label_submit']; ?></button>
 							<?php comment_id_fields( $post_id ); ?>
 						</p>
 						<?php do_action( 'comment_form', $post_id ); ?>
@@ -669,7 +672,7 @@ function ipt_kb_author_meta( $author_id = null ) {
 				<?php $link = get_the_author_meta( $meta_key, $author_id ); ?>
 				<?php if ( ! empty( $link ) ) : ?>
 					<?php if ( $meta_key == 'twitter' ) $link = 'https://twitter.com/' . $link; ?>
-					<a href="<?php echo esc_url( $link ); ?>" class="btn btn-default"><span title="<?php echo esc_attr( $button['title'] ); ?>" class="glyphicon <?php echo esc_attr( $button['icon'] ); ?> bstooltip"></span></a>
+					<a href="<?php echo esc_url( $link ); ?>" class="btn btn-info bstooltip" title="<?php echo esc_attr( $button['title'] ); ?>"><span class="glyphicon <?php echo esc_attr( $button['icon'] ); ?>"></span></a>
 				<?php endif; ?>
 			<?php endforeach; ?>
 		</div>
@@ -679,3 +682,22 @@ function ipt_kb_author_meta( $author_id = null ) {
 	<?php
 }
 endif;
+
+/**
+ * Add filter to the password form
+ */
+function ipt_kb_the_password_form_filter( $html ) {
+	// Get the post ID
+	if ( ! preg_match( '<label for="([^\'"]+?)">', $html, $matches ) ) {
+		return $html;
+	}
+
+	$label = $matches[1];
+	$output = '<div class="alert well-sm alert-danger"><p>' . __( 'This content is password protected. To view it please enter your password below:', 'ipt_kb' ) . '</p></div>
+	<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form" method="post">
+	<div class="form-group"><label for="' . $label . '">' . __( 'Password:', 'ipt_kb' ) . '</label><input class="form-control" name="post_password" id="' . $label . '" type="password" /></div> <button class="btn btn-default" type="submit" name="Submit">' . esc_attr__( 'Submit' ) . '</button>
+	</form>
+	';
+	return $output;
+}
+add_filter( 'the_password_form', 'ipt_kb_the_password_form_filter' );

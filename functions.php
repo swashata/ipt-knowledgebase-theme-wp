@@ -9,7 +9,7 @@
  * Set the version
  */
 global $ipt_kb_version;
-$ipt_kb_version = '1.5.1';
+$ipt_kb_version = '1.6.0';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -100,6 +100,15 @@ function ipt_kb_widgets_init() {
 		'after_title'   => '</h3></div><div class="panel-body">',
 	) );
 	register_sidebar( array(
+		'name'          => __( 'bbPress Sidebar', 'ipt_kb' ),
+		'id'            => 'sidebar-5',
+		'description'   => __( 'Shows up on bbPress forums and topics.', 'ipt_kb' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
+		'after_widget'  => '</div></aside>',
+		'before_title'  => '<div class="panel-heading"><h3 class="widget-title panel-title">',
+		'after_title'   => '</h3></div><div class="panel-body">',
+	) );
+	register_sidebar( array(
 		'name'          => __( 'Footer Large', 'ipt_kb' ),
 		'id'            => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -145,6 +154,7 @@ function ipt_kb_scripts() {
 
 	// Bootstrap
 	wp_enqueue_style( 'ipt_kb-bootstrap', get_stylesheet_directory_uri() . '/lib/bootstrap/css/bootstrap.min.css', array(), $ipt_kb_version );
+	wp_enqueue_style( 'ipt_kb-bootstrap-theme', get_stylesheet_directory_uri() . '/lib/bootstrap/css/bootstrap-theme.min.css', array(), $ipt_kb_version );
 
 	// Icomoon
 	wp_enqueue_style( 'ipt_kb-icomoon', get_stylesheet_directory_uri() . '/lib/icomoon/style.css', array(), $ipt_kb_version );
@@ -304,3 +314,10 @@ require get_template_directory() . '/inc/class-ipt-kb-knowledgebase-widget.php';
  * Load the Popular Articles Widget
  */
 require get_template_directory() . '/inc/class-ipt-kb-popular-widget.php';
+
+/**
+ * Load the bbPress functions
+ */
+if ( function_exists( 'bbpress' ) ) {
+	require get_template_directory() . '/inc/bbpress.php';
+}
