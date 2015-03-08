@@ -10,7 +10,7 @@
  */
 global $ipt_kb_version;
 $ipt_kb_version = '1.7.0';
-
+add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -78,7 +78,7 @@ function ipt_kb_setup() {
 	if ( function_exists( 'ipt_bootstrap_walker_nav_menu_edit_add_fields' ) ) {
 
 	}
-	add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
+	// add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
 }
 endif; // ipt_kb_setup
 add_action( 'after_setup_theme', 'ipt_kb_setup' );
