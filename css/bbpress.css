@@ -1263,3 +1263,9 @@ form[name="tc-envato-verify-form"] label {
 form[name="tc-envato-verify-form"] input[type="submit"] {
 	padding: 8px 30px;
 }
+
+/* Plug-in bbpress report content */
+.bbp-admin-links a.bbp-topic-report-link:before,
+.bbp-admin-links a.bbp-reply-report-link:before {
+	content: '\e8b7';
+}
