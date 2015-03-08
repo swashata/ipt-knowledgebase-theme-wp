@@ -1241,7 +1241,7 @@ msgstr ""
 
 #: ../inc/bbpress.php:245
 msgid ""
-"<span class=\"glyphicon ipt-icon-info2 bstooltip\" title=\"New Request\"></"
+"<span class=\"glyphicon ipt-icomoon-info2 bstooltip\" title=\"New Request\"></"
 "span><span class=\"sr-only\"> [New Request] </span>"
 msgstr ""
 
@@ -1251,7 +1251,7 @@ msgstr ""
 
 #: ../inc/bbpress.php:251
 msgid ""
-"<span class=\"glyphicon ipt-icon-checkmark-circle bstooltip\" title="
+"<span class=\"glyphicon ipt-icomoon-checkmark-circle bstooltip\" title="
 "\"Resolved\"></span><span class=\"sr-only\"> [Resolved] </span>"
 msgstr ""
 
@@ -1261,7 +1261,7 @@ msgstr ""
 
 #: ../inc/bbpress.php:257
 msgid ""
-"<span class=\"glyphicon ipt-icon-history bstooltip\" title=\"Processing\"></"
+"<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"Processing\"></"
 "span><span class=\"sr-only\"> [Processing] </span>"
 msgstr ""
 
@@ -1271,7 +1271,7 @@ msgstr ""
 
 #: ../inc/bbpress.php:263
 msgid ""
-"<span class=\"glyphicon ipt-icon-cancel-circle bstooltip\" title=\"No "
+"<span class=\"glyphicon ipt-icomoon-cancel-circle bstooltip\" title=\"No "
 "Solution\"></span><span class=\"sr-only\"> [No Solution] </span>"
 msgstr ""
 
@@ -1281,7 +1281,7 @@ msgstr ""
 
 #: ../inc/bbpress.php:269
 msgid ""
-"<span class=\"glyphicon ipt-icon-bullhorn bstooltip\" title=\"Announcement"
+"<span class=\"glyphicon ipt-icomoon-bullhorn bstooltip\" title=\"Announcement"
 "\"></span><span class=\"sr-only\"> [Announcement] </span>"
 msgstr ""
 
@@ -1291,7 +1291,7 @@ msgstr ""
 
 #: ../inc/bbpress.php:275
 msgid ""
-"<span class=\"glyphicon ipt-icon-user4 bstooltip\" title=\"Announcement\"></"
+"<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Announcement\"></"
 "span><span class=\"sr-only\"> [Management] </span>"
 msgstr ""
 
@@ -1559,7 +1559,7 @@ msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: ../inc/template-tags.php:150
-msgid "<i class=\"glyphicon ipt-icon-reply\"></i>&nbsp;&nbsp;Reply"
+msgid "<i class=\"glyphicon ipt-icomoon-reply\"></i>&nbsp;&nbsp;Reply"
 msgstr ""
 
 #: ../inc/template-tags.php:157

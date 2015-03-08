@@ -21,7 +21,7 @@
 		<?php do_action( 'login_form', 'resetpass' ); ?>
 
 		<div class="bbp-submit-wrapper">
-			<button class="btn btn-primary btn-lg" type="submit" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><span class="glyphicon ipt-icon-mail3"></span> <?php _e( 'Reset My Password', 'bbpress' ); ?></button>
+			<button class="btn btn-primary btn-lg" type="submit" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><span class="glyphicon ipt-icomoon-mail3"></span> <?php _e( 'Reset My Password', 'bbpress' ); ?></button>
 			<?php bbp_user_lost_pass_fields(); ?>
 		</div>
 	</div>

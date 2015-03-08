@@ -662,7 +662,7 @@ body .comment-reply-title {
 .ipt_kb_affix .list-group .list-group-item > .glyphicon {
 	font-size: 15px;
 }
-.ipt_kb_affix .list-group .list-group-item > i[class*="ipt-icon"] {
+.ipt_kb_affix .list-group .list-group-item > i[class*="ipt-icomoon"] {
 	font-size: 16px;
 }
 .ipt_kb_affix .list-group-item.active-cat {
@@ -869,7 +869,7 @@ body .comment-reply-title {
 	font-size: 64px;
 	line-height: 111px;
 }
-#main .kb-subcat-icon .thumbnail i[class*="ipt-icon"] {
+#main .kb-subcat-icon .thumbnail i[class*="ipt-icomoon"] {
 	line-height: 105px;
 }
 #main .kb-scat-title {

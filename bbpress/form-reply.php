@@ -59,7 +59,7 @@
 							<label for="bbp_topic_tags"><?php _e( 'Tags:', 'bbpress' ); ?></label>
 							<div class="input-group">
 								<span class="input-group-addon">
-									<span class="glyphicon ipt-icon-tags"></span>
+									<span class="glyphicon ipt-icomoon-tags"></span>
 								</span>
 								<input class="form-control" type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" <?php disabled( bbp_is_topic_spam() ); ?> />
 							</div>

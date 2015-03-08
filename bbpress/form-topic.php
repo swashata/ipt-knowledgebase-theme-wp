@@ -57,7 +57,7 @@
 						<label for="bbp_topic_title"><?php printf( __( 'Topic Title (Maximum Length: %d):', 'bbpress' ), bbp_get_title_max_length() ); ?></label>
 						<div class="input-group">
 							<span class="input-group-addon">
-								<span class="glyphicon ipt-icon-ticket" style="font-size: 24px;"></span>
+								<span class="glyphicon ipt-icomoon-ticket" style="font-size: 24px;"></span>
 							</span>
 							<input class="form-control input-lg" type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" />
 						</div>
@@ -84,7 +84,7 @@
 							<label for="bbp_topic_tags"><?php _e( 'Topic Tags:', 'bbpress' ); ?></label>
 							<div class="input-group">
 								<span class="input-group-addon">
-									<span class="glyphicon ipt-icon-tags"></span>
+									<span class="glyphicon ipt-icomoon-tags"></span>
 								</span>
 								<input type="text" class="form-control" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" <?php disabled( bbp_is_topic_spam() ); ?> />
 							</div>

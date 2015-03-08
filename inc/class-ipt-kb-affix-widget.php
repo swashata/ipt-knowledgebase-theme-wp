@@ -109,7 +109,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	<div class="form-group">
 		<div class="input-group input-group-sm">
 			<input type="search" class="search-field form-control" placeholder="<?php _e( 'Search&hellip;', 'ipt_kb' ) ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" />
-			<span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="ipt-icon-search"></span></button></span>
+			<span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="ipt-icomoon-search"></span></button></span>
 		</div>
 	</div>
 </form>
@@ -123,7 +123,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 <?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
 <p>
 	<a href="<?php echo esc_url( $term_meta['support_forum'] ); ?>" class="btn btn-block btn-default">
-		<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
+		<i class="glyphicon ipt-icomoon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
 	</a>
 </p>
 <?php endif; ?>
@@ -164,7 +164,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 		}
 		?>
 <div class="text-muted ipt-kb-toc">
-	<a href="#ipt-kb-toc-scrollspy" title="<?php esc_attr_e( 'Click to show/hide table of contents.', 'ipt_kb' ); ?>" class="bstooltip pull-right btn btn-xs btn-default accordion-toggle ipt-kb-sub-toc-toggle" data-toggle="collapse"><i class="glyphicon ipt-icon-menu"></i></a>
+	<a href="#ipt-kb-toc-scrollspy" title="<?php esc_attr_e( 'Click to show/hide table of contents.', 'ipt_kb' ); ?>" class="bstooltip pull-right btn btn-xs btn-default accordion-toggle ipt-kb-sub-toc-toggle" data-toggle="collapse"><i class="glyphicon ipt-icomoon-menu"></i></a>
 	<h4>
 		<?php _e( 'Table of Contents', 'ipt_kb' ); ?>
 	</h4>
@@ -196,12 +196,12 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 <?php if ( $do_posts ) : ?>
 <div class="list-group-item <?php echo $btn_class; ?>">
 <a href="#ipt-kb-affix-active-post" title="<?php esc_attr_e( 'Click to show/hide articles under this category.', 'ipt_kb' ); ?>" class="bstooltip accordion-toggle pull-right btn btn-default btn-xs text-center ipt-kb-sub-cat-toggle" data-toggle="collapse">
-	<i class="glyphicon ipt-icon-enter"></i>
+	<i class="glyphicon ipt-icomoon-enter"></i>
 </a>
 <?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
 <i class="glyphicon <?php echo esc_attr( $sterm_meta['icon_class'] ); ?>"></i>
 <?php else : ?>
-<i class="glyphicon ipt-icon-books"></i>
+<i class="glyphicon ipt-icomoon-books"></i>
 <?php endif; ?>
 <?php echo $cat->name; ?>
 </div>
@@ -210,7 +210,7 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 <?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
 <i class="glyphicon <?php echo esc_attr( $sterm_meta['icon_class'] ); ?>"></i>
 <?php else : ?>
-<i class="glyphicon ipt-icon-books"></i>
+<i class="glyphicon ipt-icomoon-books"></i>
 <?php endif; ?>
 <?php echo $cat->name; ?>
 </a>

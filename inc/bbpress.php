@@ -40,9 +40,9 @@ function ipt_kb_bbp_list_subforums( $args = array() ) {
 		<li class="bbp-forum-info">
 			<span class="pull-left ipt_kb_bbpress_subforum_icon ipt_kb_bbpress_forum_icon">
 			<?php if ( bbp_is_forum_category( $sub_forum->ID ) ) : ?>
-				<span class="glyphicon ipt-icon-folder-open"></span>
+				<span class="glyphicon ipt-icomoon-folder-open"></span>
 			<?php else : ?>
-				<span class="glyphicon ipt-icon-file4"></span>
+				<span class="glyphicon ipt-icomoon-file4"></span>
 			<?php endif; ?>
 			</span>
 			<?php ipt_kb_bbp_forum_title_in_list( $sub_forum->ID ); ?>
@@ -242,37 +242,37 @@ function ipt_kb_support_new_status( $status ) {
 	$status['topic-not-resolved'] = array(
 		'sb-caption'   => __( 'New Request', 'ipt_kb' ),
 		'value'        => 1,
-		'prefix-title' => __( '<span class="glyphicon ipt-icon-info2 bstooltip" title="New Request"></span><span class="sr-only"> [New Request] </span>', 'ipt_kb' ),
+		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-info2 bstooltip" title="New Request"></span><span class="sr-only"> [New Request] </span>', 'ipt_kb' ),
 		'admin_class'  => 'waiting'
 	);
 	$status['topic-resolved'] = array(
 		'sb-caption'   => __( 'Resolved', 'ipt_kb' ),
 		'value'        => 2,
-		'prefix-title' => __( '<span class="glyphicon ipt-icon-checkmark-circle bstooltip" title="Resolved"></span><span class="sr-only"> [Resolved] </span>', 'buddy-bbpress-support-topic' ),
+		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-checkmark-circle bstooltip" title="Resolved"></span><span class="sr-only"> [Resolved] </span>', 'buddy-bbpress-support-topic' ),
 		'admin_class'  => 'approved'
 	);
 	$status['topic-processing'] = array(
 		'sb-caption'   => __( 'Processing', 'ipt_kb' ),
 		'value'        => 3,
-		'prefix-title' => __( '<span class="glyphicon ipt-icon-history bstooltip" title="Processing"></span><span class="sr-only"> [Processing] </span>', 'ipt_kb' ),
+		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-history bstooltip" title="Processing"></span><span class="sr-only"> [Processing] </span>', 'ipt_kb' ),
 		'admin_class'  => 'waiting'
 	);
 	$status['topic-no-solution'] = array(
 		'sb-caption'   => __( 'No Solution', 'ipt_kb' ),
 		'value'        => 4,
-		'prefix-title' => __( '<span class="glyphicon ipt-icon-cancel-circle bstooltip" title="No Solution"></span><span class="sr-only"> [No Solution] </span>', 'ipt_kb' ),
+		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-cancel-circle bstooltip" title="No Solution"></span><span class="sr-only"> [No Solution] </span>', 'ipt_kb' ),
 		'admin_class'  => 'spam'
 	);
 	$status['topic-announcement'] = array(
 		'sb-caption'   => __( 'Announcement', 'ipt_kb' ),
 		'value'        => 5,
-		'prefix-title' => __( '<span class="glyphicon ipt-icon-bullhorn bstooltip" title="Announcement"></span><span class="sr-only"> [Announcement] </span>', 'ipt_kb' ),
+		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-bullhorn bstooltip" title="Announcement"></span><span class="sr-only"> [Announcement] </span>', 'ipt_kb' ),
 		'admin_class'  => 'approved'
 	);
 	$status['topic-management'] = array(
 		'sb-caption'   => __( 'Management Topic', 'ipt_kb' ),
 		'value'        => 6,
-		'prefix-title' => __( '<span class="glyphicon ipt-icon-user4 bstooltip" title="Announcement"></span><span class="sr-only"> [Management] </span>', 'ipt_kb' ),
+		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-user4 bstooltip" title="Announcement"></span><span class="sr-only"> [Management] </span>', 'ipt_kb' ),
 		'admin_class'  => 'approved'
 	);
 	return $status;
@@ -294,7 +294,7 @@ add_filter( 'bbp_get_topic_admin_links', 'ipt_kb_bbp_admin_links', 11 );
  * Make the tag list look nicer
  */
 function ipt_kb_bbp_get_topic_tag_list( $args ) {
-	$args['before'] = '<div class="well well-sm"><p><span class="glyphicon ipt-icon-tags"></span> ' . esc_html__( 'Tagged:', 'bbpress' ) . '&nbsp;';
+	$args['before'] = '<div class="well well-sm"><p><span class="glyphicon ipt-icomoon-tags"></span> ' . esc_html__( 'Tagged:', 'bbpress' ) . '&nbsp;';
 	$args['after'] = '</p></div>';
 	return $args;
 }
@@ -305,7 +305,7 @@ add_filter( 'bbp_after_get_topic_tag_list_parse_args', 'ipt_kb_bbp_get_topic_tag
  */
 function ipt_kb_bbp_get_logout_link_filter( $html ) {
 	$new_html = preg_replace( '/class=("|\')(.*?)("|\')/i', 'class="$2 btn btn-danger btn-sm"', $html );
-	$new_html = preg_replace( '/<a([^>]*?)>([^<]*?)<\/a>/', '<a$1><span class="glyphicon ipt-icon-switch"></span> $2</a>', $new_html );
+	$new_html = preg_replace( '/<a([^>]*?)>([^<]*?)<\/a>/', '<a$1><span class="glyphicon ipt-icomoon-switch"></span> $2</a>', $new_html );
 	return $new_html;
 }
 add_filter( 'bbp_get_logout_link', 'ipt_kb_bbp_get_logout_link_filter' );

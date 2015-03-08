@@ -49,13 +49,13 @@ class IPT_KB_Social_Widget extends WP_Widget {
     			'envato' => __( 'Follow us on envato marketplaces', 'ipt_kb' ),
 			),
 			'social_classes' => array(
-				'facebook' => 'ipt-icon-facebook',
-    			'twitter' => 'ipt-icon-twitter',
-    			'gplus' => 'ipt-icon-google-plus',
-    			'youtube' => 'ipt-icon-youtube',
-    			'vimeo' => 'ipt-icon-vimeo',
-    			'pinterest' => 'ipt-icon-pinterest',
-    			'envato' => 'ipt-icon-leaf',
+				'facebook' => 'ipt-icomoon-facebook',
+    			'twitter' => 'ipt-icomoon-twitter',
+    			'gplus' => 'ipt-icomoon-google-plus',
+    			'youtube' => 'ipt-icomoon-youtube',
+    			'vimeo' => 'ipt-icomoon-vimeo',
+    			'pinterest' => 'ipt-icomoon-pinterest',
+    			'envato' => 'ipt-icomoon-leaf',
 			),
 		);
 		$this->default_settings = apply_filters( 'ipt_kb_social_widget_defaults', $default_settings );

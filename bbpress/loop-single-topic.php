@@ -13,15 +13,15 @@
 		<li class="bbp-topic-title">
 			<?php if ( bbp_is_topic_sticky() || bbp_is_topic_super_sticky() ) : ?>
 			<span class="pull-left bbp-sticky-icon bbp-topic-icon text-muted">
-				<span class="glyphicon ipt-icon-pushpin"></span>
+				<span class="glyphicon ipt-icomoon-pushpin"></span>
 			</span>
 			<?php elseif ( bbp_is_topic_closed() ) : ?>
 			<span class="pull-left bbp-sticky-icon bbp-topic-icon text-muted">
-				<span class="glyphicon ipt-icon-bubbles3"></span>
+				<span class="glyphicon ipt-icomoon-bubbles3"></span>
 			</span>
 			<?php else : ?>
 			<span class="pull-left bbp-sticky-icon bbp-topic-icon text-muted">
-				<span class="glyphicon ipt-icon-bubbles4"></span>
+				<span class="glyphicon ipt-icomoon-bubbles4"></span>
 			</span>
 			<?php endif; ?>
 			<?php if ( bbp_is_user_home() ) : ?>

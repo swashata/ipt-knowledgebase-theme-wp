@@ -66,7 +66,7 @@
 			<?php endif; // End if 'post' == get_post_type() ?>
 
 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-			<span class="comments-link">&nbsp;&nbsp;<i class="glyphicon ipt-icon-bubbles2"></i>&nbsp;<?php comments_popup_link( __( 'Leave a comment', 'ipt_kb' ), __( '1 Comment', 'ipt_kb' ), __( '% Comments', 'ipt_kb' ) ); ?></span>
+			<span class="comments-link">&nbsp;&nbsp;<i class="glyphicon ipt-icomoon-bubbles2"></i>&nbsp;<?php comments_popup_link( __( 'Leave a comment', 'ipt_kb' ), __( '1 Comment', 'ipt_kb' ), __( '% Comments', 'ipt_kb' ) ); ?></span>
 			<?php endif; ?>
 			<?php edit_post_link( __( 'Edit', 'ipt_kb' ), '&nbsp;&nbsp;<i class="glyphicon glyphicon-edit"></i>&nbsp;<span class="edit-link">', '</span>' ); ?>
 		</p>

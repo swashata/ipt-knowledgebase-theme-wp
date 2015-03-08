@@ -23,6 +23,6 @@
 
 <?php do_action( 'bbp_template_after_pagination_loop' ); ?>
 <?php if ( bbp_current_user_can_access_create_topic_form() && ! bbp_is_topic_edit() && bbp_is_single_forum() ) : ?>
-<a href="#new-topic-<?php bbp_topic_id(); ?>" class="btn btn-info pull-left"><span class="glyphicon ipt-icon-ticket"></span> <?php _e( 'New Topic', 'ipt_kb' ); ?></a>
+<a href="#new-topic-<?php bbp_topic_id(); ?>" class="btn btn-info pull-left"><span class="glyphicon ipt-icomoon-ticket"></span> <?php _e( 'New Topic', 'ipt_kb' ); ?></a>
 <?php endif; ?>
 <div class="clearfix"></div>

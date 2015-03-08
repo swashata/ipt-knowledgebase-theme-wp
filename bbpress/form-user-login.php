@@ -31,7 +31,7 @@
 		</div>
 
 		<div class="bbp-submit-wrapper">
-			<button type="submit" class="btn btn-primary btn-lg" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><span class="glyphicon ipt-icon-switch"></span> <?php _e( 'Log In', 'bbpress' ); ?></button>
+			<button type="submit" class="btn btn-primary btn-lg" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><span class="glyphicon ipt-icomoon-switch"></span> <?php _e( 'Log In', 'bbpress' ); ?></button>
 			<?php bbp_user_login_fields(); ?>
 		</div>
 	</div>

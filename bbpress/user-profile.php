@@ -21,11 +21,11 @@
 			<?php endif; ?>
 
 			<div class="list-group">
-				<a href="<?php bbp_user_profile_url(); ?>" class="list-group-item active bbp-user-forum-role"><span class="glyphicon ipt-icon-user4"></span> <?php  printf( __( '%s Forum Role', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_display_role() . '</span>' ); ?></a>
-				<a href="<?php bbp_user_topics_created_url(); ?>" class="list-group-item bbp-user-topic-count"><span class="glyphicon ipt-icon-bubbles4"></span> <?php printf( __( '%s Topics Started:', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_topic_count_raw() . '</span>' ); ?></a>
-				<a href="<?php bbp_user_replies_created_url(); ?>" class="list-group-item bbp-user-reply-count"><span class="glyphicon ipt-icon-reply"></span> <?php printf( __( '%s Replies Created', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_reply_count_raw() . '</span>' ); ?></a>
+				<a href="<?php bbp_user_profile_url(); ?>" class="list-group-item active bbp-user-forum-role"><span class="glyphicon ipt-icomoon-user4"></span> <?php  printf( __( '%s Forum Role', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_display_role() . '</span>' ); ?></a>
+				<a href="<?php bbp_user_topics_created_url(); ?>" class="list-group-item bbp-user-topic-count"><span class="glyphicon ipt-icomoon-bubbles4"></span> <?php printf( __( '%s Topics Started:', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_topic_count_raw() . '</span>' ); ?></a>
+				<a href="<?php bbp_user_replies_created_url(); ?>" class="list-group-item bbp-user-reply-count"><span class="glyphicon ipt-icomoon-reply"></span> <?php printf( __( '%s Replies Created', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_reply_count_raw() . '</span>' ); ?></a>
 				<?php if ( bbp_is_favorites_active() ) : ?>
-					<a href="<?php bbp_favorites_permalink(); ?>" class="list-group-item bbp-user-favorite-count"><span class="glyphicon ipt-icon-heart"></span> <?php printf( __( '%s Favorites', 'ipt_kb' ), '<span class="badge">' . count( bbp_get_user_favorites_topic_ids() ) . '</span>' ); ?></a>
+					<a href="<?php bbp_favorites_permalink(); ?>" class="list-group-item bbp-user-favorite-count"><span class="glyphicon ipt-icomoon-heart"></span> <?php printf( __( '%s Favorites', 'ipt_kb' ), '<span class="badge">' . count( bbp_get_user_favorites_topic_ids() ) . '</span>' ); ?></a>
 				<?php endif; ?>
 			</div>
 		</div>

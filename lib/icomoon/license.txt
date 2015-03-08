@@ -1,4 +1,0 @@
-Icomoon Icon Packs - ?http://icomoon.io/app/
-License: Distributed under the terms of the GPL
-Copyright: IcoMoon, http://icomoon.io/
-License URL: http://www.gnu.org/licenses/gpl.html

@@ -51,8 +51,8 @@
 						'depth'             => 2,
 						'container'         => '',
 						'menu_class'        => 'nav navbar-nav',
-						'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-						'walker'            => new wp_bootstrap_navwalker())
+						'fallback_cb'       => 'IPT_Bootstrap_Walker_Nav_Menu::fallback',
+						'walker'            => new IPT_Bootstrap_Walker_Nav_Menu())
 					);
 					?>
 				</div>

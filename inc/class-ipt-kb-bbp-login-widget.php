@@ -79,7 +79,7 @@ class IPT_KB_BBP_Login_Widget extends WP_Widget {
 						<label for="user_login" class="sr-only"><?php _e( 'Username', 'bbpress' ); ?>: </label>
 						<div class="input-group">
 							<span class="input-group-addon">
-								<span class="glyphicon ipt-icon-user"></span>
+								<span class="glyphicon ipt-icomoon-user"></span>
 							</span>
 							<input placeholder="<?php _e( 'Username', 'bbpress' ); ?>" class="form-control" type="text" name="log" value="<?php bbp_sanitize_val( 'user_login', 'text' ); ?>" size="20" id="user_login" tabindex="<?php bbp_tab_index(); ?>" />
 						</div>
@@ -89,7 +89,7 @@ class IPT_KB_BBP_Login_Widget extends WP_Widget {
 						<label for="user_pass" class="sr-only"><?php _e( 'Password', 'bbpress' ); ?>: </label>
 						<div class="input-group">
 							<span class="input-group-addon">
-								<span class="glyphicon ipt-icon-console"></span>
+								<span class="glyphicon ipt-icomoon-console"></span>
 							</span>
 							<input placeholder="<?php _e( 'Password', 'bbpress' ); ?>" class="form-control" type="password" name="pwd" value="<?php bbp_sanitize_val( 'user_pass', 'password' ); ?>" size="20" id="user_pass" tabindex="<?php bbp_tab_index(); ?>" />
 						</div>
@@ -104,12 +104,12 @@ class IPT_KB_BBP_Login_Widget extends WP_Widget {
 
 					<div class="bbp-submit-wrapper btn-group">
 						<?php if ( !empty( $settings['lostpass'] ) ) : ?>
-							<a href="<?php echo esc_url( $settings['lostpass'] ); ?>" title="<?php esc_attr_e( 'Lost Password', 'bbpress' ); ?>" class="bbp-lostpass-link btn btn-default"><span class="glyphicon ipt-icon-info"></span></a>
+							<a href="<?php echo esc_url( $settings['lostpass'] ); ?>" title="<?php esc_attr_e( 'Lost Password', 'bbpress' ); ?>" class="bbp-lostpass-link btn btn-default"><span class="glyphicon ipt-icomoon-info"></span></a>
 						<?php endif; ?>
 						<?php if ( !empty( $settings['register'] ) ) : ?>
-							<a href="<?php echo esc_url( $settings['register'] ); ?>" title="<?php esc_attr_e( 'Register', 'bbpress' ); ?>" class="bbp-register-link btn btn-default"><span class="glyphicon ipt-icon-signup"></span> <?php _e( 'Register', 'bbpress' ); ?></a>
+							<a href="<?php echo esc_url( $settings['register'] ); ?>" title="<?php esc_attr_e( 'Register', 'bbpress' ); ?>" class="bbp-register-link btn btn-default"><span class="glyphicon ipt-icomoon-signup"></span> <?php _e( 'Register', 'bbpress' ); ?></a>
 						<?php endif; ?>
-						<button class="btn btn-primary" type="submit" name="user-submit" id="user-submit" tabindex="<?php bbp_tab_index(); ?>" class="button submit user-submit"><span class="glyphicon ipt-icon-switch"></span> <?php _e( 'Log In', 'bbpress' ); ?></button>
+						<button class="btn btn-primary" type="submit" name="user-submit" id="user-submit" tabindex="<?php bbp_tab_index(); ?>" class="button submit user-submit"><span class="glyphicon ipt-icomoon-switch"></span> <?php _e( 'Log In', 'bbpress' ); ?></button>
 					</div>
 					<?php bbp_user_login_fields(); ?>
 				</fieldset>
@@ -129,22 +129,22 @@ class IPT_KB_BBP_Login_Widget extends WP_Widget {
 
 				<div class="list-group">
 					<a href="<?php bbp_user_profile_url( bbp_get_current_user_id() ); ?>" class="list-group-item bbp-user-forum-role <?php if ( bbp_is_user_home() && bbp_is_single_user_profile() ) echo 'active'; ?>">
-						<span class="glyphicon ipt-icon-user4"></span> <?php  printf( __( '%s Forum Role', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_display_role( bbp_get_current_user_id() ) . '</span>' ); ?>
+						<span class="glyphicon ipt-icomoon-user4"></span> <?php  printf( __( '%s Forum Role', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_display_role( bbp_get_current_user_id() ) . '</span>' ); ?>
 					</a>
 					<a href="<?php bbp_user_topics_created_url( bbp_get_current_user_id() ); ?>" class="list-group-item bbp-user-topic-count <?php if ( bbp_is_user_home() && bbp_is_single_user_topics() ) echo 'active'; ?>">
-						<span class="glyphicon ipt-icon-bubbles4"></span> <?php printf( __( '%s Topics Started', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_topic_count_raw( bbp_get_current_user_id() ) . '</span>' ); ?>
+						<span class="glyphicon ipt-icomoon-bubbles4"></span> <?php printf( __( '%s Topics Started', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_topic_count_raw( bbp_get_current_user_id() ) . '</span>' ); ?>
 					</a>
 					<a href="<?php bbp_user_replies_created_url( bbp_get_current_user_id() ); ?>" class="list-group-item bbp-user-reply-count <?php if ( bbp_is_user_home() && bbp_is_single_user_replies() ) echo 'active'; ?>">
-						<span class="glyphicon ipt-icon-reply"></span> <?php printf( __( '%s Replies Created', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_reply_count_raw( bbp_get_current_user_id() ) . '</span>' ); ?>
+						<span class="glyphicon ipt-icomoon-reply"></span> <?php printf( __( '%s Replies Created', 'ipt_kb' ), '<span class="badge">' . bbp_get_user_reply_count_raw( bbp_get_current_user_id() ) . '</span>' ); ?>
 					</a>
 					<?php if ( bbp_is_favorites_active() ) : ?>
 					<a href="<?php bbp_favorites_permalink( bbp_get_current_user_id() ); ?>" class="list-group-item bbp-user-favorite-count <?php if ( bbp_is_user_home() && bbp_is_favorites() ) echo 'active'; ?>" title="<?php printf( esc_attr__( "Your Favorites", 'ipt_kb' ) ); ?>">
-						<span class="glyphicon ipt-icon-heart"></span> <?php printf( __( '%s Favorites', 'ipt_kb' ), '<span class="badge">' . count( bbp_get_user_favorites_topic_ids( bbp_get_current_user_id() ) ) . '</span>' ); ?>
+						<span class="glyphicon ipt-icomoon-heart"></span> <?php printf( __( '%s Favorites', 'ipt_kb' ), '<span class="badge">' . count( bbp_get_user_favorites_topic_ids( bbp_get_current_user_id() ) ) . '</span>' ); ?>
 					</a>
 					<?php endif; ?>
 					<?php if ( bbp_is_subscriptions_active() ) : ?>
 					<a href="<?php bbp_subscriptions_permalink( bbp_get_current_user_id() ); ?>" class="list-group-item bbp-user-subscribe-count <?php if ( bbp_is_user_home() && bbp_is_subscriptions() ) echo 'active'; ?>" title="<?php printf( esc_attr__( "Your Subscriptions", 'ipt_kb' ) ); ?>">
-						<span class="glyphicon ipt-icon-bookmarks"></span> <?php printf( __( '%s Subscriptions', 'ipt_kb' ), '<span class="badge">' . count( bbp_get_user_subscribed_topic_ids( bbp_get_current_user_id() ) ) . '</span>' ); ?>
+						<span class="glyphicon ipt-icomoon-bookmarks"></span> <?php printf( __( '%s Subscriptions', 'ipt_kb' ), '<span class="badge">' . count( bbp_get_user_subscribed_topic_ids( bbp_get_current_user_id() ) ) . '</span>' ); ?>
 					</a>
 					<?php endif; ?>
 				</div>

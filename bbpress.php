@@ -6,8 +6,9 @@
  * @package bbPress
  * @subpackage Theme
  */
+
 get_header( 'bbpress' ); ?>
-	<div id="primary" class="content-area col-md-8">
+	<div id="primary" class="content-area<?php if ( is_active_sidebar( 'sidebar-5' ) ) echo ' col-md-8'; ?>">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>

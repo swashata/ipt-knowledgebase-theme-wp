@@ -13,9 +13,9 @@
 		<li class="bbp-forum-info">
 			<span class="pull-left ipt_kb_bbpress_forum_icon">
 			<?php if ( bbp_is_forum_category() ) : ?>
-				<span class="glyphicon ipt-icon-folder-open"></span>
+				<span class="glyphicon ipt-icomoon-folder-open"></span>
 			<?php else : ?>
-				<span class="glyphicon ipt-icon-file4"></span>
+				<span class="glyphicon ipt-icomoon-file4"></span>
 			<?php endif; ?>
 			</span>
 			<?php ipt_kb_bbp_forum_title_in_list(); ?>

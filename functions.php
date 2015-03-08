@@ -80,6 +80,7 @@ add_action( 'after_setup_theme', 'ipt_kb_setup' );
 /**
  * Register widgetized area and update sidebar with default widgets
  */
+if ( ! function_exists( 'ipt_kb_widgets_init' ) ) :
 function ipt_kb_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Knowledge Base Sidebar', 'ipt_kb' ),
@@ -125,6 +126,7 @@ function ipt_kb_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 }
+endif;
 add_action( 'widgets_init', 'ipt_kb_widgets_init' );
 
 /**
@@ -132,17 +134,20 @@ add_action( 'widgets_init', 'ipt_kb_widgets_init' );
  *
  * As we are using panels
  */
+if ( ! function_exists( 'ipt_kb_widget_title_filter' ) ) :
 function ipt_kb_widget_title_filter( $title = '' ) {
 	if ( $title == '' ) {
 		return ' ';
 	}
 	return $title;
 }
+endif;
 add_filter( 'widget_title', 'ipt_kb_widget_title_filter' );
 
 /**
  * Enqueue scripts and styles
  */
+if ( ! function_exists( 'ipt_kb_scripts' ) ) :
 function ipt_kb_scripts() {
 	global $ipt_kb_version;
 
@@ -153,15 +158,15 @@ function ipt_kb_scripts() {
 	wp_enqueue_style( 'ipt_kb-style', get_stylesheet_uri(), array(), $ipt_kb_version );
 
 	// Bootstrap
-	wp_enqueue_style( 'ipt_kb-bootstrap', get_stylesheet_directory_uri() . '/lib/bootstrap/css/bootstrap.min.css', array(), $ipt_kb_version );
-	wp_enqueue_style( 'ipt_kb-bootstrap-theme', get_stylesheet_directory_uri() . '/lib/bootstrap/css/bootstrap-theme.min.css', array(), $ipt_kb_version );
+	wp_enqueue_style( 'ipt_kb-bootstrap', get_template_directory_uri() . '/lib/bootstrap/css/bootstrap.min.css', array(), $ipt_kb_version );
+	wp_enqueue_style( 'ipt_kb-bootstrap-theme', get_template_directory_uri() . '/lib/bootstrap/css/bootstrap-theme.min.css', array(), $ipt_kb_version );
 
 	// Icomoon
-	wp_enqueue_style( 'ipt_kb-icomoon', get_stylesheet_directory_uri() . '/lib/icomoon/style.css', array(), $ipt_kb_version );
+	wp_enqueue_style( 'ipt-icomoon-fonts', get_template_directory_uri() . '/lib/icomoon/icomoon.css', array(), $ipt_kb_version );
 
 	// Now the JS
-	wp_enqueue_script( 'ipt_kb-bootstrap', get_stylesheet_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array( 'jquery' ), $ipt_kb_version );
-	wp_enqueue_script( 'ipt_kb-bootstrap-jq', get_stylesheet_directory_uri() . '/lib/bootstrap/js/jquery.ipt-kb-bootstrap.js', array( 'jquery' ), $ipt_kb_version );
+	wp_enqueue_script( 'ipt_kb-bootstrap', get_template_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array( 'jquery' ), $ipt_kb_version );
+	wp_enqueue_script( 'ipt_kb-bootstrap-jq', get_template_directory_uri() . '/lib/bootstrap/js/jquery.ipt-kb-bootstrap.js', array( 'jquery' ), $ipt_kb_version );
 
 	wp_enqueue_script( 'ipt_kb-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), $ipt_kb_version, true );
 
@@ -183,6 +188,7 @@ function ipt_kb_scripts() {
 		'ajax_error' => __( 'Oops, some problem to connect. Try again?', 'ipt_kb' ),
 	) );
 }
+endif;
 add_action( 'wp_enqueue_scripts', 'ipt_kb_scripts' );
 
 /**
@@ -226,10 +232,12 @@ add_filter( 'excerpt_more', 'ipt_kb_excerpt_more' );
  * @param  stdObj $post               $post
  * @return string                     new reply link
  */
+if ( ! function_exists( 'ipt_kb_comment_reply_filter' ) ) :
 function ipt_kb_comment_reply_filter( $comment_reply_link, $post = null ) {
 	$new = preg_replace( '/<a(.*?)class=\'(.*?)\'/', '<a$1class=\'$2 btn btn-info btn-sm\'', $comment_reply_link );
 	return $new;
 }
+endif;
 add_filter( 'comment_reply_link', 'ipt_kb_comment_reply_filter', 10, 2 );
 /**
  * Add filter to cancel comment reply link to convert into bootstrap button
@@ -237,10 +245,12 @@ add_filter( 'comment_reply_link', 'ipt_kb_comment_reply_filter', 10, 2 );
  * @param  stdObj $post               $post
  * @return string                     new reply link
  */
+if ( ! function_exists( 'ipt_kb_cancel_comment_reply_filter' ) ) :
 function ipt_kb_cancel_comment_reply_filter( $cancel_comment_reply_link, $post = null ) {
 	$new = str_replace( '<a', '<a class="btn btn-danger btn-sm"', $cancel_comment_reply_link );
 	return $new;
 }
+endif;
 add_filter( 'cancel_comment_reply_link', 'ipt_kb_cancel_comment_reply_filter', 10, 2 );
 
 /**
@@ -248,6 +258,7 @@ add_filter( 'cancel_comment_reply_link', 'ipt_kb_cancel_comment_reply_filter', 1
  * @param  string $link original link html
  * @return string       Modified link html
  */
+if ( ! function_exists( 'ipt_kb_link_pages' ) ) :
 function ipt_kb_link_pages( $link ) {
 	$return = $link;
 	if ( is_numeric( $link ) ) {
@@ -258,12 +269,13 @@ function ipt_kb_link_pages( $link ) {
 	}
 	return $return;
 }
+endif;
 add_filter( 'wp_link_pages_link', 'ipt_kb_link_pages' );
 
 /**
  * Include the walker class for bootstrap nav menu
  */
-require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+require get_template_directory() . '/inc/class-ipt-bootstrap-walker-nav-menu.php';
 
 /**
  * Implement the Custom Header feature.

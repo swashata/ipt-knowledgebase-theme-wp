@@ -39,23 +39,23 @@ $main_categories = get_categories( array(
 						<div class="caption">
 						<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
 							<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
-								<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
+								<i class="glyphicon ipt-icomoon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
 							</a></p>
 						<?php endif; ?>
 						</div>
 					</div>
 					<div class="col-sm-8">
-						<h2 class="knowledgebase-title"><a data-placement="bottom" data-popt="kb-homepage-popover-<?php echo $cat->term_id; ?>" title="<?php echo esc_attr( $cat->name ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-icon-paragraph-justify2"></i></a> <?php echo $cat->name; ?></h2>
+						<h2 class="knowledgebase-title"><a data-placement="bottom" data-popt="kb-homepage-popover-<?php echo $cat->term_id; ?>" title="<?php echo esc_attr( $cat->name ); ?>" href="#" class="btn btn-default btn-sm text-muted ipt-kb-popover"><i class="glyphicon ipt-icomoon-paragraph-justify"></i></a> <?php echo $cat->name; ?></h2>
 						<div class="ipt-kb-popover-target" id="kb-homepage-popover-<?php echo $cat->term_id; ?>">
 							<?php echo wpautop( $cat->description ); ?>
 							<p class="text-right">
 								<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
 								<a class="btn btn-default" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
-									<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
+									<i class="glyphicon ipt-icomoon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
 								</a>
 								<?php endif; ?>
 								<a href="<?php echo $term_link; ?>" class="btn btn-info">
-									<i class="glyphicon ipt-icon-link"></i> <?php _e( 'Browse all', 'ipt_kb' ); ?>
+									<i class="glyphicon ipt-icomoon-link"></i> <?php _e( 'Browse all', 'ipt_kb' ); ?>
 								</a>
 							</p>
 						</div>
@@ -70,7 +70,7 @@ $main_categories = get_categories( array(
 							<div class="caption">
 							<?php if ( isset( $term_meta['support_forum'] ) && '' != $term_meta['support_forum'] ) : ?>
 								<p class="text-center"><a class="btn btn-default btn-block" href="<?php echo esc_url( $term_meta['support_forum'] ); ?>">
-									<i class="glyphicon ipt-icon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
+									<i class="glyphicon ipt-icomoon-support"></i> <?php _e( 'Get support', 'ipt_kb' ); ?>
 								</a></p>
 							<?php endif; ?>
 							</div>
@@ -90,7 +90,7 @@ $main_categories = get_categories( array(
 								<?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
 								<i class="glyphicon <?php echo esc_attr( $sterm_meta['icon_class'] ); ?>"></i>
 								<?php else : ?>
-								<i class="glyphicon ipt-icon-books"></i>
+								<i class="glyphicon ipt-icomoon-books"></i>
 								<?php endif; ?>
 								<?php echo $scat->name; ?>
 
@@ -113,7 +113,7 @@ $main_categories = get_categories( array(
 						</div>
 						<p class="text-right">
 							<a href="<?php echo $term_link; ?>" class="btn btn-default">
-								<i class="glyphicon ipt-icon-link"></i> <?php printf( _n( 'Browse %d article', 'Browse all %d articles', $pcat_totals, 'ipt_kb' ), $pcat_totals ); ?>
+								<i class="glyphicon ipt-icomoon-link"></i> <?php printf( _n( 'Browse %d article', 'Browse all %d articles', $pcat_totals, 'ipt_kb' ), $pcat_totals ); ?>
 							</a>
 						</p>
 					</div>

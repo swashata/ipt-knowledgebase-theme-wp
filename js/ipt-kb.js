@@ -160,13 +160,13 @@ jQuery(document).ready(function($) {
 	// Mark as read
 	if ( $('.bbppu-mark-as-read').length ) {
 		var bbPPuMAR = $('.bbppu-mark-as-read');
-		bbPPuMAR.addClass('pull-right btn btn-default').find('a').prepend('<span class="glyphicon ipt-icon-checkmark"></span> ').on('click', function() {
+		bbPPuMAR.addClass('pull-right btn btn-default').find('a').prepend('<span class="glyphicon ipt-icomoon-checkmark"></span> ').on('click', function() {
 			bbPPuMAR.addClass('disabled');
 		});
 	}
 
 	// GD Attachment
 	if ( $('.d4p-attachment-addfile').length ) {
-		$('.d4p-attachment-addfile').addClass('btn btn-default').prepend('<span class="glyphicon ipt-icon-attachment"></span> ');
+		$('.d4p-attachment-addfile').addClass('btn btn-default').prepend('<span class="glyphicon ipt-icomoon-attachment"></span> ');
 	}
 });

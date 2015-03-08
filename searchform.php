@@ -15,7 +15,7 @@ $stext = esc_attr_x( 'Search Knowledgebase&hellip;', 'placeholder', 'ipt_kb' );
 	<div class="form-group">
 		<div class="input-group input-group-lg">
 			<input type="search" class="search-field form-control" placeholder="<?php echo $stext; ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" />
-			<span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="ipt-icon-search"></span></button></span>
+			<span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="ipt-icomoon-search"></span></button></span>
 		</div>
 	</div>
 </form>

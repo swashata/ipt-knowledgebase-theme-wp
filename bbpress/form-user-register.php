@@ -32,7 +32,7 @@
 		<?php do_action( 'register_form' ); ?>
 
 		<div class="bbp-submit-wrapper">
-			<button type="submit" class="btn btn-lg btn-primary" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><span class="glyphicon ipt-icon-signup"></span> <?php _e( 'Register', 'bbpress' ); ?></button>
+			<button type="submit" class="btn btn-lg btn-primary" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><span class="glyphicon ipt-icomoon-signup"></span> <?php _e( 'Register', 'bbpress' ); ?></button>
 			<?php bbp_user_register_fields(); ?>
 		</div>
 	</div>
