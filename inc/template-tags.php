@@ -997,7 +997,7 @@ function ipt_kb_wp_login_form( $args = array() ) {
 	$login_form_action = '';
 	ob_start();
 	do_action( 'login_form' );
-	$login_form_action = ob_end_clean();
+	$login_form_action = ob_get_clean();
 
 	$form = '
 		<form class="form-horizontal" name="' . $args['form_id'] . '" id="' . $args['form_id'] . '" action="' . esc_url( site_url( 'wp-login.php', 'login_post' ) ) . '" method="post">
