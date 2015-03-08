@@ -68,6 +68,9 @@ function ipt_kb_setup() {
 	// Add post thumbnail
 	add_theme_support( 'post-thumbnails', array( 'post' ) );
 
+	// Add new theme title-tag WP4.1
+	add_theme_support( 'title-tag' );
+
 	add_image_size( 'ipt_kb_medium', 256, 128, true );
 	add_image_size( 'ipt_kb_large', 9999, 200, true );
 
@@ -76,6 +79,18 @@ function ipt_kb_setup() {
 }
 endif; // ipt_kb_setup
 add_action( 'after_setup_theme', 'ipt_kb_setup' );
+
+/**
+ * Backward compatibility
+ */
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+    function ipt_kb_render_title() {
+?>
+<title><?php wp_title( '|', true, 'right' ); ?></title>
+<?php
+    }
+    add_action( 'wp_head', 'ipt_kb_render_title' );
+endif;
 
 /**
  * Register widgetized area and update sidebar with default widgets
