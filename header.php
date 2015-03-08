@@ -24,7 +24,7 @@ global $ipt_theme_op_settings;
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
-		<nav class="navbar navbar-default navbar-static-top main-navigation" role="navigation" id="site_navigation">
+		<nav class="navbar navbar-default navbar-fixed-top main-navigation" role="navigation" id="site_navigation">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
