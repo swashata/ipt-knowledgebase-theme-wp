@@ -11,12 +11,16 @@ global $ipt_theme_op_settings;
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
+<?php if ( $ipt_theme_op_settings['laf']['favicon'] != '' ) : ?>
+<link rel="shortcut icon" type="image/png" href="<?php echo esc_attr( $ipt_theme_op_settings['laf']['favicon'] ); ?>" />
+<?php endif; ?>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<?php echo $ipt_theme_op_settings['integration']['header']; ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,9 +48,11 @@ global $ipt_theme_op_settings;
 					</button>
 					<?php endif; ?>
 					<a class="navbar-brand" href="<?php echo home_url( '/' ); ?>">
-						<?php if ( function_exists( 'ipt_theme_op_navigation_brand' ) ) : ?>
-						<?php ipt_theme_op_navigation_brand(); ?>
-						<?php endif; ?>
+						<?php if ( get_header_image() ) : ?>
+						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+						<?php else : ?>
+						<?php bloginfo( 'name' ); ?>
+						<?php endif; // End header image check. ?>
 					</a>
 				</div>
 

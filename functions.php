@@ -9,7 +9,7 @@
  * Set the version
  */
 global $ipt_kb_version;
-$ipt_kb_version = '1.6.0';
+$ipt_kb_version = '1.7.0';
 
 
 add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
@@ -277,10 +277,138 @@ endif;
 add_filter( 'wp_link_pages_link', 'ipt_kb_link_pages' );
 
 /**
+ * Include the TGM Plugin Activation
+ */
+require get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+
+add_action( 'tgmpa_register', 'ipt_kb_required_plugins' );
+
+if ( ! function_exists( 'ipt_kb_required_plugins' ) ) :
+function ipt_kb_required_plugins() {
+	if ( function_exists( 'tgmpa' ) ) {
+		$plugins = array();
+
+		// Base plugin
+		$plugins[] = array(
+			'name' => 'iPanelThemes Theme Options',
+			'slug' => 'ipt-theme-options',
+			'source' => get_template_directory() . '/plugins/ipt-theme-options.zip',
+			'required' => true,
+			'version' => '0.0.1',
+			'force_activation' => true,
+			'external_url' => '',
+		);
+
+		// Easy Bootstrap shortcode
+		$plugins[] = array(
+			'name' => 'Easy Bootstrap Shortcode',
+			'slug' => 'easy-bootstrap-shortcodes',
+			'required' => true,
+			'version' => '4.2.3',
+		);
+
+		// bbPress
+		$plugins[] = array(
+			'name' => 'bbPress',
+			'slug' => 'bbpress',
+			'required' => false,
+			'version' => '2.5.5',
+		);
+
+		// Category Order and Taxonomy Terms Order
+		$plugins[] = array(
+			'name' => 'Category Order and Taxonomy Terms Order',
+			'slug' => 'taxonomy-terms-order',
+			'required' => false,
+			'version' => '1.4.1',
+		);
+
+		// Post Types Order
+		$plugins[] = array(
+			'name' => 'Post Types Order',
+			'slug' => 'post-types-order',
+			'required' => false,
+			'version' => '1.7.7',
+		);
+
+		// SyntaxHighlighter Evolved
+		$plugins[] = array(
+			'name' => 'SyntaxHighlighter Evolved',
+			'slug' => 'syntaxhighlighter',
+			'required' => false,
+			'version' => '3.1.11',
+		);
+
+		$config = array(
+			'default_path' => get_template_directory() . '/plugins',          // Default absolute path to pre-packaged plugins.
+			'menu'         => 'tgmpa-install-plugins', // Menu slug.
+			'has_notices'  => true,                    // Show admin notices or not.
+			'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+			'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+			'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+			'message'      => '',                      // Message to output right before the plugins table.
+			'strings'      => array(
+				'page_title'                      => __( 'Install Required Plugins', 'tgmpa' ),
+				'menu_title'                      => __( 'Install Plugins', 'tgmpa' ),
+				'installing'                      => __( 'Installing Plugin: %s', 'tgmpa' ), // %s = plugin name.
+				'oops'                            => __( 'Something went wrong with the plugin API.', 'tgmpa' ),
+				'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ), // %1$s = plugin name(s).
+				'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ), // %1$s = plugin name(s).
+				'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ), // %1$s = plugin name(s).
+				'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s).
+				'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s).
+				'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ), // %1$s = plugin name(s).
+				'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ), // %1$s = plugin name(s).
+				'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ), // %1$s = plugin name(s).
+				'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
+				'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins' ),
+				'return'                          => __( 'Return to Required Plugins Installer', 'tgmpa' ),
+				'plugin_activated'                => __( 'Plugin activated successfully.', 'tgmpa' ),
+				'complete'                        => __( 'All plugins installed and activated successfully. %s', 'tgmpa' ), // %s = dashboard link.
+				'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
+			)
+		);
+
+		tgmpa( $plugins );
+	}
+}
+endif;
+
+/**
+ * Modify the options plugin
+ */
+if ( ! function_exists( 'ipt_kb_theme_ops_tabs' ) ) :
+function ipt_kb_theme_ops_tabs( $tabs ) {
+	$new_tabs = array();
+	foreach ( $tabs as $tab ) {
+		if ( in_array( $tab['id'], array( 'ipt_navigation', 'ipt_integration' ) ) ) {
+			$new_tabs[] = $tab;
+		}
+	}
+	return $new_tabs;
+}
+endif;
+add_filter( 'ipt_theme_op_admin_tabs', 'ipt_kb_theme_ops_tabs' );
+
+if ( ! function_exists( 'ipt_kb_theme_op_name' ) ) :
+function ipt_kb_theme_op_name( $name ) {
+	return __( 'Knowledge Base Theme', 'ipt_kb' );
+}
+endif;
+add_filter( 'ipt_theme_op_active_theme_name', 'ipt_kb_theme_op_name' );
+
+if ( ! function_exists( 'ipt_kb_theme_op_version' ) ) :
+function ipt_kb_theme_op_version( $v ) {
+	global $ipt_kb_version;
+	return $ipt_kb_version;
+}
+endif;
+add_filter( 'ipt_theme_op_active_theme_version', 'ipt_kb_theme_op_version' );
+
+/**
  * Include the walker class for bootstrap nav menu
  */
 require get_template_directory() . '/inc/class-ipt-bootstrap-walker-nav-menu.php';
-
 /**
  * Implement the Custom Header feature.
  */

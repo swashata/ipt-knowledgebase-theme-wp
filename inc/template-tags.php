@@ -16,41 +16,166 @@ function ipt_kb_content_nav( $nav_id ) {
 
 	// Give compatibility for wp-pagenavi
 	if ( function_exists( 'wp_pagenavi' ) && ! is_single() ) {
-		$wp_pagenavi = wp_pagenavi( array(
-			'echo' => false,
+
+		$args = wp_parse_args( array(), array(
+			'before' => '',
+			'after' => '',
+			'options' => array(),
+			'query' => $GLOBALS['wp_query'],
+			'type' => 'posts',
+			'echo' => true
 		) );
 
-		$wp_pagenavi = str_replace( array(
-			"<div class='wp-pagenavi'>",
-			'</div>',
-			"<span class='pages'>",
-			'</span>',
-			"<span class='current'>",
-			'<a href=',
-			'</a>',
-			"<span class='extend'>",
-			/* translator: Translate it to the output of WP PageNavi for your lang */
-			__( '&laquo; First', 'ipt_kb' ),
-			/* translator: Translate it to the output of WP PageNavi for your lang */
-			__( 'Last &raquo;', 'ipt_kb' ),
-			'&laquo;',
-			'&raquo;',
-		), array(
-			'<ul class="pagination">',
-			'</ul>',
-			'<li class="disabled"><span>',
-			'</span></li>',
-			'<li class="active"><span>',
-			'<li><a href=',
-			'</a></li>',
-			'<li class="disabled"><span>',
-			'<i class="glyphicon glyphicon-fast-backward"></i>',
-			'<i class="glyphicon glyphicon-fast-forward"></i>',
-			'<i class="glyphicon glyphicon-backward"></i>',
-			'<i class="glyphicon glyphicon-forward"></i>',
-		), $wp_pagenavi );
+		extract( $args, EXTR_SKIP );
 
-		echo $wp_pagenavi;
+		$options = wp_parse_args( $options, PageNavi_Core::$options->get() );
+
+		$instance = new PageNavi_Call( $args );
+
+		list( $posts_per_page, $paged, $total_pages ) = $instance->get_pagination_args();
+
+		if ( 1 == $total_pages && !$options['always_show'] )
+			return;
+
+		$pages_to_show = absint( $options['num_pages'] );
+		$larger_page_to_show = absint( $options['num_larger_page_numbers'] );
+		$larger_page_multiple = absint( $options['larger_page_numbers_multiple'] );
+		$pages_to_show_minus_1 = $pages_to_show - 1;
+		$half_page_start = floor( $pages_to_show_minus_1/2 );
+		$half_page_end = ceil( $pages_to_show_minus_1/2 );
+		$start_page = $paged - $half_page_start;
+
+		if ( $start_page <= 0 )
+			$start_page = 1;
+
+		$end_page = $paged + $half_page_end;
+
+		if ( ( $end_page - $start_page ) != $pages_to_show_minus_1 )
+			$end_page = $start_page + $pages_to_show_minus_1;
+
+		if ( $end_page > $total_pages ) {
+			$start_page = $total_pages - $pages_to_show_minus_1;
+			$end_page = $total_pages;
+		}
+
+		if ( $start_page < 1 )
+			$start_page = 1;
+
+		$out = '';
+
+		// Text
+		if ( !empty( $options['pages_text'] ) ) {
+			$pages_text = str_replace(
+				array( "%CURRENT_PAGE%", "%TOTAL_PAGES%" ),
+				array( number_format_i18n( $paged ), number_format_i18n( $total_pages ) ),
+			$options['pages_text'] );
+			$out .= "<li class='disabled'><span class='pages'>$pages_text</span></li>";
+		}
+
+		if ( $start_page >= 2 && $pages_to_show < $total_pages ) {
+			// First
+			$first_text = str_replace( '%TOTAL_PAGES%', number_format_i18n( $total_pages ), $options['first_text'] );
+			$out .= '<li>' . $instance->get_single( 1, '<i class="glyphicon glyphicon-fast-backward"></i>', array(
+				'class' => 'first bstooltip',
+				'title' => $first_text,
+				'data-container' => 'body',
+			), '%TOTAL_PAGES%' ) . '</li>';
+		}
+
+		// Previous
+		if ( $paged > 1 && !empty( $options['prev_text'] ) ) {
+			$out .= '<li>' . $instance->get_single( $paged - 1, '<i class="glyphicon glyphicon-backward"></i>', array(
+				'class' => 'previouspostslink bstooltip',
+				'title' =>  $options['prev_text'],
+				'data-container' => 'body',
+			) ) . '</li>';
+		}
+
+		if ( $start_page >= 2 && $pages_to_show < $total_pages ) {
+			if ( !empty( $options['dotleft_text'] ) )
+				$out .= "<li class='disabled'><span class='extend'>{$options['dotleft_text']}</span></li>";
+		}
+
+		// Smaller pages
+		$larger_pages_array = array();
+		if ( $larger_page_multiple )
+			for ( $i = $larger_page_multiple; $i <= $total_pages; $i+= $larger_page_multiple )
+				$larger_pages_array[] = $i;
+
+		$larger_page_start = 0;
+		foreach ( $larger_pages_array as $larger_page ) {
+			if ( $larger_page < ($start_page - $half_page_start) && $larger_page_start < $larger_page_to_show ) {
+				$out .= '<li>' . $instance->get_single( $larger_page, $options['page_text'], array(
+					'class' => 'smaller page',
+				) ) . '</li>';
+				$larger_page_start++;
+			}
+		}
+
+		if ( $larger_page_start )
+			$out .= "<li class='disabled'><span class='extend'>{$options['dotleft_text']}</span></li>";
+
+		// Page numbers
+		$timeline = 'smaller';
+		foreach ( range( $start_page, $end_page ) as $i ) {
+			if ( $i == $paged && !empty( $options['current_text'] ) ) {
+				$current_page_text = str_replace( '%PAGE_NUMBER%', number_format_i18n( $i ), $options['current_text'] );
+				$out .= "<li class='active'><span class='current'>$current_page_text</span></li>";
+				$timeline = 'larger';
+			} else {
+				$out .= '<li>' . $instance->get_single( $i, $options['page_text'], array(
+					'class' => "page $timeline",
+				) ) . '</li>';
+			}
+		}
+
+		// Large pages
+		$larger_page_end = 0;
+		$larger_page_out = '';
+		foreach ( $larger_pages_array as $larger_page ) {
+			if ( $larger_page > ($end_page + $half_page_end) && $larger_page_end < $larger_page_to_show ) {
+				$larger_page_out .='<li>' . $instance->get_single( $larger_page, $options['page_text'], array(
+					'class' => 'larger page',
+				) ) . '</li>';
+				$larger_page_end++;
+			}
+		}
+
+		if ( $larger_page_out ) {
+			$out .= "<li class='disabled'><span class='extend'>{$options['dotright_text']}</span></li>";
+		}
+		$out .= $larger_page_out;
+
+		if ( $end_page < $total_pages ) {
+			if ( !empty( $options['dotright_text'] ) )
+				$out .= "<li class='disabled'><span class='extend'>{$options['dotright_text']}</span></li>";
+		}
+
+		// Next
+		if ( $paged < $total_pages && !empty( $options['next_text'] ) ) {
+			$out .= '<li>' . $instance->get_single( $paged + 1, '<i class="glyphicon glyphicon-forward"></i>', array(
+				'class' => 'nextpostslink bstooltip',
+				'title' =>  $options['next_text'],
+				'data-container' => 'body',
+			) ) . '</li>';
+		}
+
+		if ( $end_page < $total_pages ) {
+			// Last
+			$out .= '<li>' . $instance->get_single( $total_pages, '<i class="glyphicon glyphicon-fast-forward"></i>', array(
+				'class' => 'last bstooltip',
+				'title' => $options['last_text'],
+				'data-container' => 'body',
+			), '%TOTAL_PAGES%' ) . '</li>';
+		}
+		$out = $before . "<ul class='pagination pagination-lg'>\n$out\n</ul>" . $after;
+
+		$out = apply_filters( 'wp_pagenavi', $out );
+
+		if ( !$echo )
+			return $out;
+
+		echo $out;
 		return;
 	}
 
