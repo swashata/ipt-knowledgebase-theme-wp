@@ -1204,3 +1204,225 @@ body .syntaxhighlighter table div {
 	margin: 0 auto 10px;
 }
 
+/* =Top Navigation
+------------------------------------------------- */
+#masthead nav.navbar {
+	margin: 0;
+	position: relative;
+}
+#masthead .navbar-brand img {
+	height: 20px;
+	width: 20px;
+	margin-top: -3px;
+}
+
+/* Fine Tune the search and login */
+/* Collapse & Toggle */
+#masthead .navbar-inverse .navbar-toggle {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#masthead .navbar-inverse .navbar-toggle i {
+	font-size: 16px;
+}
+/* Search form */
+#masthead .navbar-form {
+	border: 0 none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+/* Modal login */
+#masthead .navmodal-login {
+	padding: 20px 30px;
+	width: 400px;
+	color: #333;
+}
+
+/* Dropdown header */
+#masthead .dropdown-header a {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Custom breakpoints */
+/* When the buttons are shown */
+@media screen and (max-width: 1280px) {
+	#masthead .navbar-header {
+		float: none;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	#masthead .navbar-brand {
+		margin-left: 0 !important;
+	}
+	#masthead .navbar-toggle {
+		display: block;
+	}
+	#masthead .navbar-collapse.collapse {
+		display: none!important;
+	}
+	#masthead .navbar-nav {
+		float: none!important;
+		margin: 7.5px -15px;
+	}
+	#masthead .navbar-form {
+		float: none !important;
+		margin: 7.5px -15px !important;
+		width: auto;
+	}
+	#masthead .navbar-form .form-group {
+		width: 100%;
+	}
+	#masthead .navbar-nav>li {
+		float: none;
+	}
+	#masthead .navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#masthead .navbar-collapse {
+		margin-left: -15px !important;
+		margin-right: -15px !important;
+		float: none !important;
+	}
+	#masthead .navbar-collapse.collapse.in {
+		display: block!important;
+		overflow-y: auto !important;
+	}
+
+	/* Dropdown */
+	#masthead .navbar-inverse .navbar-nav .open .dropdown-menu > li > a,
+	#masthead .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+	#masthead .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #fff;
+		background-color: transparent;
+	}
+	#masthead .navbar-nav .open .dropdown-menu > li > a {
+		line-height: 20px;
+	}
+	#masthead .navbar-nav .open .dropdown-menu > li > a,
+	#masthead .navbar-nav .open .dropdown-menu .dropdown-header {
+		padding: 5px 15px 5px 25px;
+	}
+	#masthead .navbar-nav .open .dropdown-menu .dropdown-header a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/* Split buttons */
+	#masthead .dropdown-split-left {
+		padding-right: 40px;
+	}
+	#masthead .dropdown-split-right {
+		top: -40px;
+	}
+	#masthead .dropdown-split-right > a {
+		float: right;
+		z-index: 1;
+	}
+	#masthead .dropdown-split-right .dropdown-menu {
+		clear: both;
+		margin-bottom: -40px;
+	}
+	#masthead .dropdown-menu {
+		background: transparent;
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0px;
+		background-color: transparent;
+		border: 0px none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		list-style: none outside none;
+		font-size: 14px;
+	}
+	#masthead .divider {
+		background-color: #cd4e3a;
+	}
+	#masthead .dropdown-header {
+		border-color: #cd4e3a;
+		color: #eee;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	/* little animation for the search */
+	#masthead #site-navbar-search .navbar-form {
+		width: 200px;
+	}
+
+	/* Dropdown menu optimization */
+	#masthead .dropdown-menu {
+		min-width: 300px;
+		font-size: 16px;
+	}
+	#masthead #site-navbar > ul > li:first-child + li.dropdown-split-right .dropdown-menu {
+		left: 0;
+		right: auto;
+	}
+
+	/* Multilevel dropdown menu */
+	#masthead .dropdown-submenu {
+		position: relative;
+	}
+
+	#masthead .dropdown-submenu>.dropdown-menu {
+		top: 0;
+		left: 100%;
+		margin-top: -6px;
+		margin-left: -1px;
+		-webkit-border-radius: 0 6px 6px 6px;
+		-moz-border-radius: 0 6px 6px;
+		border-radius: 0 6px 6px 6px;
+	}
+
+	#masthead .dropdown-submenu:hover>.dropdown-menu {
+		display: block;
+	}
+
+	#masthead .dropdown-submenu>a:after {
+		display: block;
+		content: " ";
+		float: right;
+		width: 0;
+		height: 0;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 5px 0 5px 5px;
+		border-left-color: #ccc;
+		margin-top: 5px;
+		margin-right: -10px;
+	}
+
+	#masthead .dropdown-submenu:hover>a:after {
+		border-left-color: #fff;
+	}
+
+	#masthead .dropdown-submenu.pull-left {
+		float: none;
+	}
+
+	#masthead .dropdown-submenu.pull-left>.dropdown-menu {
+		left: -100%;
+		margin-left: 10px;
+		-webkit-border-radius: 6px 0 6px 6px;
+		-moz-border-radius: 6px 0 6px 6px;
+		border-radius: 6px 0 6px 6px;
+	}
+
+	/* Split */
+	#masthead .dropdown-split-right {
+		padding: 0;
+	}
+	#masthead .dropdown-split-right > a {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#masthead .dropdown-split-left > a {
+		padding-right: 5px;
+	}
+}
+

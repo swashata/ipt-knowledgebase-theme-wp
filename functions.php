@@ -11,6 +11,10 @@
 global $ipt_kb_version;
 $ipt_kb_version = '1.6.0';
 
+
+add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
+
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */

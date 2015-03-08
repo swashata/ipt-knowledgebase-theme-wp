@@ -701,3 +701,216 @@ function ipt_kb_the_password_form_filter( $html ) {
 	return $output;
 }
 add_filter( 'the_password_form', 'ipt_kb_the_password_form_filter' );
+
+
+if ( ! function_exists( 'ipt_kb_navbar_search' ) ) :
+/**
+ * Shows the search bar based on settings
+ *
+ * @return void
+ */
+function ipt_kb_navbar_search() {
+	global $ipt_theme_op_settings;
+	if ( ! isset( $ipt_theme_op_settings ) || $ipt_theme_op_settings['navigation']['search_bar'] == false ) {
+		return;
+	}
+	?>
+<div class="collapse navbar-collapse navbar-right" id="site-navbar-search">
+	<form class="navbar-form navbar-right" role="search">
+	  <div class="form-group">
+	  	<div class="input-group">
+	  		<input type="search" class="search-field form-control" placeholder="<?php _e( 'Search', 'ipt_kb' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" />
+	  		<span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="ipt-icomoon-search"></span></button></span>
+	  	</div>
+	  </div>
+	</form>
+</div>
+	<?php
+}
+endif;
+
+if ( ! function_exists( 'ipt_kb_navbar_login' ) ) :
+/**
+ * Prints optional dynamic login/logout with nice forms etc
+ *
+ * @return void
+ */
+function ipt_kb_navbar_login() {
+	global $ipt_theme_op_settings, $current_user, $wp;
+	if ( $ipt_theme_op_settings['navigation']['show_login'] == false ) {
+		return false;
+	}
+	get_currentuserinfo();
+	$additional_items = '';
+	if ( function_exists( 'ipt_theme_op_navigation_logged_out_nav' ) ) {
+		$additional_items = ipt_theme_op_navigation_logged_out_nav( false );
+	}
+	?>
+<div class="collapse navbar-collapse navbar-right" id="site-navbar-user">
+	<?php if ( ! is_user_logged_in() ) : ?>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown<?php if ( $additional_items != '' ) echo ' dropdown-split-left'; ?>">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<?php _e( 'Login', 'ipt_kb' ); ?><?php if ( $additional_items == '' ) echo ' <span class="caret"></span>'; ?>
+			</a>
+			<div class="dropdown-menu navmodal-login">
+				<?php ipt_kb_wp_login_form(); ?>
+			</div>
+		</li>
+		<?php if ( $additional_items != '' ) : ?>
+		<li class="dropdown dropdown-split-right">
+			<a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"><i class="ipticm ipt-icomoon-caret-down"></i></a>
+			<ul class="dropdown-menu dropdown-menu-right" role="menu">
+				<?php echo $additional_items; ?>
+			</ul>
+		</li>
+		<?php endif; ?>
+	</ul>
+	<?php else : ?>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<?php printf( __( 'Hi %1$s', 'ipt_kb' ), $current_user->user_login ); ?> <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<?php if ( function_exists( 'ipt_theme_op_navigation_logged_in_nav' ) ) ipt_theme_op_navigation_logged_in_nav(); ?>
+				<li><a href="<?php echo wp_logout_url( home_url( add_query_arg( array(), $wp->request ) ) ); ?>"><i class="ipticm ipt-icomoon-power-off"></i> <?php _e( 'Signout', 'ipt_kb' ); ?></a></li>
+			</ul>
+		</li>
+	</ul>
+	<?php endif; ?>
+</div>
+	<?php
+}
+endif;
+
+if ( ! function_exists( 'ipt_kb_wp_login_form' ) ) :
+/**
+ * Provides a simple login form for use anywhere within WordPress. By default, it echoes
+ * the HTML immediately. Pass array('echo'=>false) to return the string instead.
+ *
+ * This modified version will print the form in BootStrap way
+ *
+ * Most of the code is taken unmodified from the core
+ *
+ * @since 3.0.0
+ *
+ * @param array $args Configuration options to modify the form output.
+ * @return string|null String when retrieving, null when displaying.
+ */
+function ipt_kb_wp_login_form( $args = array() ) {
+	$defaults = array(
+		'echo' => true,
+		'redirect' => ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'], // Default redirect is back to the current page
+		'form_id' => 'loginform',
+		'label_username' => __( 'Username' ),
+		'label_password' => __( 'Password' ),
+		'label_remember' => __( 'Remember Me' ),
+		'label_log_in' => __( 'Log In' ),
+		'id_username' => 'user_login',
+		'id_password' => 'user_pass',
+		'id_remember' => 'rememberme',
+		'id_submit' => 'wp-submit',
+		'remember' => true,
+		'value_username' => '',
+		'value_remember' => false, // Set this to true to default the "Remember me" checkbox to checked
+		'show_forgot' => true,
+		'show_register' => true,
+	);
+
+	/**
+	 * Filter the default login form output arguments.
+	 *
+	 * @since 3.0.0
+	 *
+	 * @see wp_login_form()
+	 *
+	 * @param array $defaults An array of default login form arguments.
+	 */
+	$args = wp_parse_args( $args, apply_filters( 'login_form_defaults', $defaults ) );
+
+	/**
+	 * Filter content to display at the top of the login form.
+	 *
+	 * The filter evaluates just following the opening form tag element.
+	 *
+	 * @since 3.0.0
+	 *
+	 * @param string $content Content to display. Default empty.
+	 * @param array  $args    Array of login form arguments.
+	 */
+	$login_form_top = apply_filters( 'login_form_top', '', $args );
+
+	/**
+	 * Filter content to display in the middle of the login form.
+	 *
+	 * The filter evaluates just following the location where the 'login-password'
+	 * field is displayed.
+	 *
+	 * @since 3.0.0
+	 *
+	 * @param string $content Content to display. Default empty.
+	 * @param array  $args    Array of login form arguments.
+	 */
+	$login_form_middle = apply_filters( 'login_form_middle', '', $args );
+
+	/**
+	 * Filter content to display at the bottom of the login form.
+	 *
+	 * The filter evaluates just preceding the closing form tag element.
+	 *
+	 * @since 3.0.0
+	 *
+	 * @param string $content Content to display. Default empty.
+	 * @param array  $args    Array of login form arguments.
+	 */
+	$login_form_bottom = apply_filters( 'login_form_bottom', '', $args );
+
+	$form = '
+		<form class="form-horizontal" name="' . $args['form_id'] . '" id="' . $args['form_id'] . '" action="' . esc_url( site_url( 'wp-login.php', 'login_post' ) ) . '" method="post">
+			' . $login_form_top . '
+			<div class="login-username form-group">
+				<label class="col-sm-4" for="' . esc_attr( $args['id_username'] ) . '">' . esc_html( $args['label_username'] ) . '</label>
+				<div class="col-sm-8">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="ipticm ipt-icomoon-envelope"></i></span>
+						<input type="text" name="log" id="' . esc_attr( $args['id_username'] ) . '" class="input form-control" value="' . esc_attr( $args['value_username'] ) . '" />
+					</div>
+				</div>
+			</div>
+			<div class="login-password form-group">
+				<label class="col-sm-4" for="' . esc_attr( $args['id_password'] ) . '">' . esc_html( $args['label_password'] ) . '</label>
+				<div class="col-sm-8">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="ipticm ipt-icomoon-asterisk"></i></span>
+						<input type="password" name="pwd" id="' . esc_attr( $args['id_password'] ) . '" class="input form-control" value="" />
+					</div>
+				</div>
+			</div>
+			' . $login_form_middle . '
+			' . ( $args['remember'] ?
+			'<div class="login-remember form-group">
+				<div class="col-sm-offset-4 col-sm-8">
+					<div class="checkbox">
+						<label><input name="rememberme" type="checkbox" id="' . esc_attr( $args['id_remember'] ) . '" value="forever"' . ( $args['value_remember'] ? ' checked="checked"' : '' ) . ' /> ' . esc_html( $args['label_remember'] ) . '</label>
+					</div>
+				</div>
+			</div>'
+			 : '' ) . '
+			<div class="login-submit text-right">
+				<div class="pull-left btn-group">' .
+				( $args['show_forgot'] ? '<a href="' . wp_lostpassword_url( $args['redirect'] ) . '" class="btn btn-danger">' . __( '<i class="ipticm ipt-icomoon-question-circle"></i> Forgot Password', 'ipt_kb' ) . '</a>' : '' ) .
+				( $args['show_forgot'] ? '<a href="' . wp_registration_url() . '" class="btn btn-info">' . __( '<i class="ipticm ipt-icomoon-signup"></i> Signup', 'ipt_kb' ) . '</a>' : '' ) .
+				'</div>
+				<button type="submit" name="wp-submit" id="' . esc_attr( $args['id_submit'] ) . '" class="button-primary btn btn-default"><i class="ipticm ipt-icomoon-enter"></i> ' . esc_attr( $args['label_log_in'] ) . '</button>
+				<input type="hidden" name="redirect_to" value="' . esc_url( $args['redirect'] ) . '" />
+			</div>
+			' . $login_form_bottom . '
+		</form>';
+
+	if ( $args['echo'] )
+		echo $form;
+	else
+		return $form;
+}
+endif;
