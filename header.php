@@ -25,7 +25,7 @@ global $ipt_theme_op_settings;
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<nav class="navbar navbar-default navbar-static-top main-navigation" role="navigation" id="site_navigation">
-			<div class="container-fluid">
+			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">

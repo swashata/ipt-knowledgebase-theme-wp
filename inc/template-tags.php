@@ -899,7 +899,7 @@ function ipt_kb_navbar_login() {
 			</a>
 			<ul class="dropdown-menu">
 				<?php if ( function_exists( 'bbp_user_profile_url' ) ) : ?>
-				<a href="<?php bbp_user_profile_url( bbp_get_current_user_id() ); ?>"><i class="ipticm ipt-icomoon-user3"></i> <?php _e( 'My Profile', 'ipt_kb' ); ?></a>
+				<li><a href="<?php bbp_user_profile_url( bbp_get_current_user_id() ); ?>"><i class="ipticm ipt-icomoon-user3"></i> <?php _e( 'My Profile', 'ipt_kb' ); ?></a></li>
 				<?php endif; ?>
 				<?php if ( function_exists( 'ipt_theme_op_navigation_logged_in_nav' ) ) ipt_theme_op_navigation_logged_in_nav(); ?>
 				<li><a href="<?php echo wp_logout_url( home_url( add_query_arg( array(), $wp->request ) ) ); ?>"><i class="ipticm ipt-icomoon-power-off"></i> <?php _e( 'Signout', 'ipt_kb' ); ?></a></li>
