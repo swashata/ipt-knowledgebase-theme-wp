@@ -797,7 +797,7 @@ function ipt_kb_author_meta( $author_id = null ) {
 				<?php $link = get_the_author_meta( $meta_key, $author_id ); ?>
 				<?php if ( ! empty( $link ) ) : ?>
 					<?php if ( $meta_key == 'twitter' ) $link = 'https://twitter.com/' . $link; ?>
-					<a href="<?php echo esc_url( $link ); ?>" class="btn btn-info bstooltip" title="<?php echo esc_attr( $button['title'] ); ?>"><span class="glyphicon <?php echo esc_attr( $button['icon'] ); ?>"></span></a>
+					<a href="<?php echo esc_url( $link ); ?>" class="btn btn-info bstooltip" data-container="body" title="<?php echo esc_attr( $button['title'] ); ?>"><span class="glyphicon <?php echo esc_attr( $button['icon'] ); ?>"></span></a>
 				<?php endif; ?>
 			<?php endforeach; ?>
 		</div>
