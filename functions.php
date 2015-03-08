@@ -11,6 +11,11 @@
 global $ipt_kb_version;
 $ipt_kb_version = '1.7.0';
 add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
+// Save custom fields from menu
+		add_action( 'wp_update_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_update_fields', 10, 3 );
+
+		// Change the edit menu walker
+		add_filter( 'wp_edit_nav_menu_walker', 'ipt_bootstrap_walker_nav_menu_edit_filter', 10, 2 );
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
