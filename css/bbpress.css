@@ -1240,7 +1240,7 @@ li.bbp-body div.hentry:after {
 	float: left;
 }
 .bbp-admin-links a.d4p-bbt-quote-link:before {
-	content: '\e839';
+	content: '\e0a2';
 }
 
 /* Envato Purchase Code */
@@ -1267,5 +1267,5 @@ form[name="tc-envato-verify-form"] input[type="submit"] {
 /* Plug-in bbpress report content */
 .bbp-admin-links a.bbp-topic-report-link:before,
 .bbp-admin-links a.bbp-reply-report-link:before {
-	content: '\e8b7';
+	content: '\e10e';
 }
