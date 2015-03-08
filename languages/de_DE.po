@@ -2,2042 +2,2532 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Knowledge Base v1.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-02-12 00:00:28+0000\n"
+"POT-Creation-Date: 2015-03-08 18:33+0530\n"
+"PO-Revision-Date: 2015-03-08 18:33+0530\n"
 "Last-Translator: Alexander Ihrig <github@alexander-ihrig.de>\n"
 "Language-Team: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: CSL v1.x\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
+# @ ipt_kb
 #: 404.php:26
-#@ ipt_kb
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Oh nein! Diese Seite konnte nicht gefunden werden."
 
+# @ ipt_kb
 #: 404.php:30
-#@ ipt_kb
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr "Es scheint so, dass an dieser Adresse nichts gefunden wird. Sie können gerne die folgenden Links oder die Suchfunktion ausprobieren."
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Es scheint so, dass an dieser Adresse nichts gefunden wird. Sie können gerne "
+"die folgenden Links oder die Suchfunktion ausprobieren."
 
+# @ ipt_kb
 #: 404.php:38
-#@ ipt_kb
 msgid "Recently Published Articles"
 msgstr "Kürzlich veröffentlichte Beiträge"
 
+# @ ipt_kb
 #: 404.php:58
-#@ ipt_kb
 msgid "Knowledge Base"
 msgstr "Knowledge-Base"
 
+# @ ipt_kb
 #: archive.php:31
 #, php-format
-#@ ipt_kb
 msgid "Author: %s"
 msgstr "Autor: %s"
 
+# @ ipt_kb
 #: archive.php:39
 #, php-format
-#@ ipt_kb
 msgid "Day: %s"
 msgstr "Tag: %s"
 
+# @ ipt_kb
 #: archive.php:42
 #, php-format
-#@ ipt_kb
 msgid "Month: %s"
 msgstr "Monat: %s"
 
+# @ ipt_kb
 #: archive.php:45
 #, php-format
-#@ ipt_kb
 msgid "Year: %s"
 msgstr "Jahr: %s"
 
+# @ ipt_kb
 #: archive.php:48
-#@ ipt_kb
 msgid "Asides"
 msgstr "Anmerkungen"
 
+# @ ipt_kb
 #: archive.php:51
-#@ ipt_kb
 msgid "Images"
 msgstr "Bilder"
 
+# @ ipt_kb
 #: archive.php:54
-#@ ipt_kb
 msgid "Videos"
 msgstr "Videos"
 
+# @ ipt_kb
 #: archive.php:57
-#@ ipt_kb
 msgid "Quotes"
 msgstr "Zitate"
 
+# @ ipt_kb
 #: archive.php:60
-#@ ipt_kb
 msgid "Links"
 msgstr "Links"
 
+# @ ipt_kb
 #: archive.php:63
-#@ ipt_kb
 msgid "Archives"
 msgstr "Archive"
 
-#: archive.php:68
-#: category-templates/category-child.php:48
+# @ ipt_kb
+#: archive.php:68 category-templates/category-child.php:48
 #, php-format
-#@ ipt_kb
 msgid "Page %1$d / %2$d"
 msgstr "Seite %1$d / %2$d"
 
+# @ bbpress
 #: bbpress/content-single-topic-lead.php:18
 #: bbpress/content-single-topic-lead.php:90
-#@ bbpress
 msgid "Creator"
 msgstr "Autor"
 
+# @ bbpress
 #: bbpress/content-single-topic-lead.php:22
-#: bbpress/content-single-topic-lead.php:94
-#: bbpress/loop-topics.php:17
+#: bbpress/content-single-topic-lead.php:94 bbpress/loop-topics.php:17
 #: bbpress/loop-topics.php:31
-#@ bbpress
 msgid "Topic"
 msgstr "Thema"
 
+# @ bbpress
 #: bbpress/content-statistics.php:15
-#@ bbpress
 msgid "Registered Users"
 msgstr "Registrierte Mitglieder"
 
+# @ bbpress
 #: bbpress/content-statistics.php:16
-#@ bbpress
 msgid "Forums"
 msgstr "Foren"
 
-#: bbpress/content-statistics.php:17
-#: bbpress/loop-forums.php:17
-#@ bbpress
+# @ bbpress
+#: bbpress/content-statistics.php:17 bbpress/loop-forums.php:17
 msgid "Topics"
 msgstr "Themen"
 
-#: bbpress/content-statistics.php:18
-#: bbpress/loop-forums.php:18
-#: bbpress/loop-replies.php:25
-#: bbpress/loop-replies.php:48
-#: bbpress/loop-topics.php:19
-#: bbpress/loop-topics.php:33
-#@ bbpress
+# @ bbpress
+#: bbpress/content-statistics.php:18 bbpress/loop-forums.php:18
+#: bbpress/loop-replies.php:25 bbpress/loop-replies.php:48
+#: bbpress/loop-topics.php:19 bbpress/loop-topics.php:33
 msgid "Replies"
 msgstr "Antworten"
 
+# @ bbpress
 #: bbpress/content-statistics.php:19
-#@ bbpress
 msgid "Topic Tags"
 msgstr "Themen-Stichwörter"
 
+# @ bbpress
 #: bbpress/content-statistics.php:21
-#@ bbpress
 msgid "Empty Topic Tags"
 msgstr "Leere Themen-Stichwörter"
 
+# @ bbpress
 #: bbpress/content-statistics.php:24
-#@ bbpress
 msgid "Hidden Topics"
 msgstr "Versteckte Themen"
 
+# @ bbpress
 #: bbpress/content-statistics.php:27
-#@ bbpress
 msgid "Hidden Replies"
 msgstr "Versteckte Antworten"
 
+# @ bbpress
 #: bbpress/feedback-logged-in.php:13
-#@ bbpress
 msgid "You are already logged in."
 msgstr "Sie sind bereits angemeldet."
 
+# @ bbpress
 #: bbpress/feedback-no-access.php:13
-#@ bbpress
 msgid "Private"
 msgstr "Privat"
 
+# @ bbpress
 #: bbpress/feedback-no-access.php:16
-#@ bbpress
 msgid "You do not have permission to view this forum."
 msgstr "Sie sind nicht berechtigt dieses Forum anzuzeigen."
 
+# @ bbpress
 #: bbpress/feedback-no-forums.php:13
-#@ bbpress
 msgid "Oh bother! No forums were found here!"
 msgstr "Oh nein! Hier wurden keine Foren gefunden."
 
+# @ bbpress
 #: bbpress/feedback-no-replies.php:13
-#@ bbpress
 msgid "Oh bother! No replies were found here!"
 msgstr "Oh nein! Hier wurden keine Antworten gefunden."
 
+# @ bbpress
 #: bbpress/feedback-no-search.php:13
-#@ bbpress
 msgid "Oh bother! No search results were found here!"
 msgstr "Oh nein! Es wurden keine Suchergebnisse gefunden."
 
+# @ bbpress
 #: bbpress/feedback-no-topics.php:13
-#@ bbpress
 msgid "Oh bother! No topics were found here!"
 msgstr "Oh nein! Hier wurden keine Themen gefunden."
 
+# @ bbpress
 #: bbpress/form-anonymous.php:15
-#@ bbpress
 msgid "Author Information"
 msgstr "Informationen über den Autor"
 
+# @ bbpress
 #: bbpress/form-anonymous.php:15
-#@ bbpress
 msgid "Your information:"
 msgstr "Informationen über Sie:"
 
+# @ bbpress
 #: bbpress/form-anonymous.php:20
-#: bbpress/form-anonymous.php:21
-#@ bbpress
 msgid "Name (required):"
 msgstr "Name (notwendig):"
 
+# @ bbpress
 #: bbpress/form-anonymous.php:25
-#: bbpress/form-anonymous.php:26
-#@ bbpress
 msgid "Mail (will not be published) (required):"
 msgstr "E-Mail (wird nicht veröffentlicht) (notwendig):"
 
+# @ bbpress
 #: bbpress/form-anonymous.php:30
-#: bbpress/form-anonymous.php:31
-#@ bbpress
 msgid "Website:"
 msgstr "Webseite:"
 
-#: bbpress/form-forum.php:35
-#: bbpress/form-topic.php:29
+# @ bbpress
+#: bbpress/form-forum.php:35 bbpress/form-topic.php:29
 #, php-format
-#@ bbpress
 msgid "Now Editing &ldquo;%s&rdquo;"
 msgstr "Jetzt wird bearbeitet &ldquo;%s&rdquo;"
 
+# @ bbpress
 #: bbpress/form-forum.php:37
 #, php-format
-#@ bbpress
 msgid "Create New Forum in &ldquo;%s&rdquo;"
 msgstr "Neues Forum erstellen in &ldquo;%s&rdquo;"
 
+# @ bbpress
 #: bbpress/form-forum.php:37
-#@ bbpress
 msgid "Create New Forum"
 msgstr "Neues Forum erstellen"
 
+# @ bbpress
 #: bbpress/form-forum.php:47
-#@ bbpress
-msgid "This forum is closed to new content, however your account still allows you to do so."
-msgstr "Dieses Forum ist für neue Beiträge geschlossen, Ihre Benutzerrechte erlauben es aber dennoch."
+msgid ""
+"This forum is closed to new content, however your account still allows you "
+"to do so."
+msgstr ""
+"Dieses Forum ist für neue Beiträge geschlossen, Ihre Benutzerrechte erlauben "
+"es aber dennoch."
 
-#: bbpress/form-forum.php:55
-#: bbpress/form-reply.php:34
+# @ bbpress
+#: bbpress/form-forum.php:55 bbpress/form-reply.php:34
 #: bbpress/form-topic.php:44
-#@ bbpress
 msgid "Your account has the ability to post unrestricted HTML content."
 msgstr "Sie dürfen mit diesem Benutzerkonto uneingeschränkt HTML verwenden."
 
+# @ bbpress
 #: bbpress/form-forum.php:67
 #, php-format
-#@ bbpress
 msgid "Forum Name (Maximum Length: %d):"
 msgstr "Foren-Name (Maximale Länge: %d):"
 
-#: bbpress/form-forum.php:82
-#: bbpress/form-reply.php:50
+# @ bbpress
+#: bbpress/form-forum.php:82 bbpress/form-reply.php:50
 #: bbpress/form-topic.php:76
-#@ bbpress
-msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes:"
-msgstr "Sie dürfen folgende <abbr title=\"HyperText Markup Language\">HTML</abbr>-Tags verwenden:"
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+"Sie dürfen folgende <abbr title=\"HyperText Markup Language\">HTML</abbr>-"
+"Tags verwenden:"
 
+# @ bbpress
 #: bbpress/form-forum.php:91
-#@ bbpress
 msgid "Forum Type:"
 msgstr "Foren-Typ:"
 
+# @ bbpress
 #: bbpress/form-forum.php:100
-#@ bbpress
 msgid "Status:"
 msgstr "Status:"
 
+# @ bbpress
 #: bbpress/form-forum.php:109
-#@ bbpress
 msgid "Visibility:"
 msgstr "Sichtbarkeit:"
 
+# @ bbpress
 #: bbpress/form-forum.php:118
-#@ bbpress
 msgid "Parent Forum:"
 msgstr "Übergeordnetes Forum:"
 
+# @ bbpress
 #: bbpress/form-forum.php:123
-#@ bbpress
 msgid "(No Parent)"
 msgstr "(Kein übergeordnetes Forum)"
 
-#: bbpress/form-forum.php:138
-#: bbpress/form-reply-move.php:62
-#: bbpress/form-reply.php:110
-#: bbpress/form-topic-merge.php:71
-#: bbpress/form-topic-split.php:83
-#: bbpress/form-topic.php:172
-#: inc/template-tags.php:698
-#@ bbpress
-#@ default
+# @ bbpress
+# @ default
+#: bbpress/form-forum.php:138 bbpress/form-reply-move.php:62
+#: bbpress/form-reply.php:110 bbpress/form-topic-merge.php:71
+#: bbpress/form-topic-split.php:83 bbpress/form-topic.php:172
 msgid "Submit"
 msgstr "Absenden"
 
+# @ bbpress
 #: bbpress/form-forum.php:161
 #, php-format
-#@ bbpress
 msgid "The forum &#8216;%s&#8217; is closed to new content."
 msgstr "Das Forum &#8216;%s&#8217; ist für neue Beiträge geschlossen."
 
+# @ bbpress
 #: bbpress/form-forum.php:169
-#@ bbpress
 msgid "You cannot create new forums."
 msgstr "Sie können keine neuen Foren erstellen."
 
+# @ bbpress
 #: bbpress/form-forum.php:169
-#@ bbpress
 msgid "You must be logged in to create new forums."
 msgstr "Sie müssen angemeldet sein, um neue Foren erstellen zu können."
 
+# @ bbpress
 #: bbpress/form-protected.php:14
-#@ bbpress
 msgid "Protected"
 msgstr "Geschützt"
 
+# @ bbpress
 #: bbpress/form-reply-move.php:18
 #, php-format
-#@ bbpress
 msgid "Move reply \"%s\""
 msgstr "Antwort \"%s\" verschieben"
 
+# @ bbpress
 #: bbpress/form-reply-move.php:21
-#@ bbpress
-msgid "You can either make this reply a new topic with a new title, or merge it into an existing topic."
-msgstr "Sie können diese Antwort zu einem neuen Thema mit neuem Titel machen, oder mit einem vorhandenen Thema zusammenführen."
+msgid ""
+"You can either make this reply a new topic with a new title, or merge it "
+"into an existing topic."
+msgstr ""
+"Sie können diese Antwort zu einem neuen Thema mit neuem Titel machen, oder "
+"mit einem vorhandenen Thema zusammenführen."
 
+# @ bbpress
 #: bbpress/form-reply-move.php:25
-#@ bbpress
-msgid "If you choose an existing topic, replies will be ordered by the time and date they were created."
-msgstr "Wenn Sie ein vorhandenes Thema auswählen, werden die Antworten nach dem Erstellungszeitpunkt einsortiert."
+msgid ""
+"If you choose an existing topic, replies will be ordered by the time and "
+"date they were created."
+msgstr ""
+"Wenn Sie ein vorhandenes Thema auswählen, werden die Antworten nach dem "
+"Erstellungszeitpunkt einsortiert."
 
+# @ bbpress
 #: bbpress/form-reply-move.php:28
-#@ bbpress
 msgid "Move Method"
 msgstr "Verschiebe-Methode"
 
-#: bbpress/form-reply-move.php:32
-#: bbpress/form-topic-split.php:33
+# @ bbpress
+#: bbpress/form-reply-move.php:32 bbpress/form-topic-split.php:33
 #, php-format
-#@ bbpress
 msgid "New topic in <strong>%s</strong> titled:"
 msgstr "Neues Thema in <strong>%s</strong> mit dem Titel:"
 
+# @ bbpress
 #: bbpress/form-reply-move.php:35
 #, php-format
-#@ bbpress
 msgid "Moved: %s"
 msgstr "Verschoben: %s"
 
-#: bbpress/form-reply-move.php:41
-#: bbpress/form-topic-split.php:42
-#@ bbpress
+# @ bbpress
+#: bbpress/form-reply-move.php:41 bbpress/form-topic-split.php:42
 msgid "Use an existing topic in this forum:"
 msgstr "Ein vorhandenes Thema in diesem Forum verwenden:"
 
-#: bbpress/form-reply-move.php:51
-#: bbpress/form-topic-split.php:52
-#@ bbpress
+# @ bbpress
+#: bbpress/form-reply-move.php:51 bbpress/form-topic-split.php:52
 msgid "No other topics found!"
 msgstr "Keine weiteren Themen gefunden!"
 
-#: bbpress/form-reply-move.php:58
-#: bbpress/form-topic-merge.php:67
+# @ bbpress
+#: bbpress/form-reply-move.php:58 bbpress/form-topic-merge.php:67
 #: bbpress/form-topic-split.php:79
-#@ bbpress
 msgid "<strong>WARNING:</strong> This process cannot be undone."
-msgstr "<strong>WARNUNG:</strong> Dieser Vorgang kann nicht rückgängig gemacht werden."
+msgstr ""
+"<strong>WARNUNG:</strong> Dieser Vorgang kann nicht rückgängig gemacht "
+"werden."
 
+# @ bbpress
 #: bbpress/form-reply-move.php:74
-#@ bbpress
 msgid "You do not have the permissions to edit this reply!"
 msgstr "Sie sind nicht berechtigt, um diese Antwort zu bearbeiten!"
 
+# @ bbpress
 #: bbpress/form-reply-move.php:74
-#@ bbpress
 msgid "You cannot edit this reply."
 msgstr "Sie können diese Antwort nicht bearbeiten."
 
+# @ bbpress
 #: bbpress/form-reply.php:23
 #, php-format
-#@ bbpress
 msgid "Reply To: %s"
 msgstr "Antwort auf: %s"
 
+# @ bbpress
 #: bbpress/form-reply.php:28
-#@ bbpress
-msgid "This topic is marked as closed to new replies, however your posting capabilities still allow you to do so."
-msgstr "Dieses Thema ist für neue Antworten geschlossen. Ihre Benutzerrechte erlauben es aber dennoch."
+msgid ""
+"This topic is marked as closed to new replies, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+"Dieses Thema ist für neue Antworten geschlossen. Ihre Benutzerrechte "
+"erlauben es aber dennoch."
 
+# @ bbpress
 #: bbpress/form-reply.php:59
-#@ bbpress
 msgid "Tags:"
 msgstr "Schlagwörter:"
 
-#: bbpress/form-reply.php:77
-#: bbpress/form-topic.php:142
-#@ bbpress
+# @ bbpress
+#: bbpress/form-reply.php:77 bbpress/form-topic.php:142
 msgid "Notify the author of follow-up replies via email"
 msgstr "Den Autor per E-Mail über folgende Antworten benachrichtigen."
 
-#: bbpress/form-reply.php:79
-#: bbpress/form-topic.php:144
-#@ bbpress
+# @ bbpress
+#: bbpress/form-reply.php:79 bbpress/form-topic.php:144
 msgid "Notify me of follow-up replies via email"
 msgstr "Mich per E-Mail über folgende Antworten benachrichtigen."
 
-#: bbpress/form-reply.php:93
-#: bbpress/form-topic.php:155
-#@ bbpress
+# @ bbpress
+#: bbpress/form-reply.php:93 bbpress/form-topic.php:155
 msgid "Keep a log of this edit:"
 msgstr "Diese Bearbeitung im Logbuch vermerken:"
 
-#: bbpress/form-reply.php:97
-#: bbpress/form-reply.php:98
-#: bbpress/form-topic.php:159
-#@ bbpress
+# @ bbpress
+#: bbpress/form-reply.php:97 bbpress/form-topic.php:159
 msgid "Optional reason for editing:"
 msgstr "Grund für die Bearbeitung (optional):"
 
+# @ bbpress
 #: bbpress/form-reply.php:127
 #, php-format
-#@ bbpress
 msgid "The topic &#8216;%s&#8217; is closed to new replies."
 msgstr "Das Thema &#8216;%s&#8217; ist für neue Antworten geschlossen."
 
-#: bbpress/form-reply.php:133
-#: bbpress/form-topic.php:193
+# @ bbpress
+#: bbpress/form-reply.php:133 bbpress/form-topic.php:193
 #, php-format
-#@ bbpress
 msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
-msgstr "Das Forum &#8216;%s&#8217; ist für neue Themen und Antworten geschlossen."
+msgstr ""
+"Das Forum &#8216;%s&#8217; ist für neue Themen und Antworten geschlossen."
 
+# @ bbpress
 #: bbpress/form-reply.php:139
-#@ bbpress
 msgid "You cannot reply to this topic."
 msgstr "Sie können auf dieses Thema nicht antworten."
 
+# @ bbpress
 #: bbpress/form-reply.php:139
-#@ bbpress
 msgid "You must be logged in to reply to this topic."
 msgstr "Sie müssen angemeldet sein, um auf das Thema zu antworten."
 
+# @ bbpress
 #: bbpress/form-search.php:13
-#@ bbpress
 msgid "Search for:"
 msgstr "Suchen nach:"
 
+# @ ipt_kb
 #: bbpress/form-search.php:17
 #, php-format
-#@ ipt_kb
 msgid "Search %s&hellip;"
 msgstr "Suchen in %s&hellip;"
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:20
 #, php-format
-#@ bbpress
 msgid "Merge topic \"%s\""
 msgstr "Thema zusammenführen \"%s\""
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:23
-#@ bbpress
-msgid "Select the topic to merge this one into. The destination topic will remain the lead topic, and this one will change into a reply."
-msgstr "Wählen Sie das Ziel-Thema, mit dem dieses zusammengeführt werden soll. Das Ziel-Thema wird erhalten bleiben und diese Beiträge werden dort einsortiert."
+msgid ""
+"Select the topic to merge this one into. The destination topic will remain "
+"the lead topic, and this one will change into a reply."
+msgstr ""
+"Wählen Sie das Ziel-Thema, mit dem dieses zusammengeführt werden soll. Das "
+"Ziel-Thema wird erhalten bleiben und diese Beiträge werden dort einsortiert."
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:24
-#@ bbpress
-msgid "To keep this topic as the lead, go to the other topic and use the merge tool from there instead."
-msgstr "Um dieses Thema als Ziel-Thema zu erhalten, gehen Sie zu dem anderen Thema und führen Sie von dort aus zusammen."
+msgid ""
+"To keep this topic as the lead, go to the other topic and use the merge tool "
+"from there instead."
+msgstr ""
+"Um dieses Thema als Ziel-Thema zu erhalten, gehen Sie zu dem anderen Thema "
+"und führen Sie von dort aus zusammen."
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:28
-#@ bbpress
-msgid "All replies within both topics will be merged chronologically. The order of the merged replies is based on the time and date they were posted. If the destination topic was created after this one, it's post date will be updated to second earlier than this one."
-msgstr "Alle Antworten beider Themen werden chronologisch zusammengeführt. Die Reihenfolge wird sich anschließend also nach dem Erstellzeitpunkt jeder einzelnen Antwort richten. Wenn das Ziel-Thema ursprünglich später als dieses hier erstellt wurde, dann wird der Erstellzeitpunkt für das Ziel-Thema entsprechend nach vorne korrigiert."
+msgid ""
+"All replies within both topics will be merged chronologically. The order of "
+"the merged replies is based on the time and date they were posted. If the "
+"destination topic was created after this one, it's post date will be updated "
+"to second earlier than this one."
+msgstr ""
+"Alle Antworten beider Themen werden chronologisch zusammengeführt. Die "
+"Reihenfolge wird sich anschließend also nach dem Erstellzeitpunkt jeder "
+"einzelnen Antwort richten. Wenn das Ziel-Thema ursprünglich später als "
+"dieses hier erstellt wurde, dann wird der Erstellzeitpunkt für das Ziel-"
+"Thema entsprechend nach vorne korrigiert."
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:30
-#@ bbpress
 msgid "Destination"
 msgstr "Ziel"
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:32
-#@ bbpress
 msgid "Merge with this topic:"
 msgstr "Mit diesem Thema zusammenführen"
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:40
-#@ bbpress
 msgid "No topics were found to which the topic could be merged to!"
-msgstr "Es wurden keine Themen gefunden, mit denen dieses hier zusammengeführt werden kann!"
+msgstr ""
+"Es wurden keine Themen gefunden, mit denen dieses hier zusammengeführt "
+"werden kann!"
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:44
-#@ bbpress
 msgid "There are no other topics in this forum to merge with."
-msgstr "Es gibt keine anderen Themen in diesem Forum mit denen zusammengeführt werden kann."
+msgstr ""
+"Es gibt keine anderen Themen in diesem Forum mit denen zusammengeführt "
+"werden kann."
 
-#: bbpress/form-topic-merge.php:47
-#: bbpress/form-topic-split.php:59
-#@ bbpress
+# @ bbpress
+#: bbpress/form-topic-merge.php:47 bbpress/form-topic-split.php:59
 msgid "Topic Extras"
 msgstr "Themen-Extras"
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:52
-#@ bbpress
 msgid "Merge topic subscribers"
 msgstr "Themen-Abonnenten zusammenführen"
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:57
-#@ bbpress
 msgid "Merge topic favoriters"
 msgstr "Themen-Favorisierer zusammenführen"
 
+# @ bbpress
 #: bbpress/form-topic-merge.php:62
-#@ bbpress
 msgid "Merge topic tags"
 msgstr "Themen-Schlagwörter zusammenführen"
 
-#: bbpress/form-topic-merge.php:82
-#: bbpress/form-topic-split.php:95
-#@ bbpress
+# @ bbpress
+#: bbpress/form-topic-merge.php:82 bbpress/form-topic-split.php:95
 msgid "You do not have the permissions to edit this topic!"
 msgstr "Sie haben keine Berechtigung, um dieses Thema zu bearbeiten!"
 
-#: bbpress/form-topic-merge.php:82
-#: bbpress/form-topic-split.php:95
-#@ bbpress
+# @ bbpress
+#: bbpress/form-topic-merge.php:82 bbpress/form-topic-split.php:95
 msgid "You cannot edit this topic."
 msgstr "Sie können dieses Thema nicht bearbeiten."
 
+# @ bbpress
 #: bbpress/form-topic-split.php:19
 #, php-format
-#@ bbpress
 msgid "Split topic \"%s\""
 msgstr "Thema \"%s\" aufteilen"
 
+# @ bbpress
 #: bbpress/form-topic-split.php:22
-#@ bbpress
-msgid "When you split a topic, you are slicing it in half starting with the reply you just selected. Choose to use that reply as a new topic with a new title, or merge those replies into an existing topic."
-msgstr "Wenn Sie ein Thema aufteilen, wird die gerade gewählte Antwort der Beginn des neuen Teils. Der neue Teil kann zu einem neuen Thema mit neuen Titel werden, oder Sie führen den neuen Teil mit einem anderen vorhandenen Thema zusammen."
+msgid ""
+"When you split a topic, you are slicing it in half starting with the reply "
+"you just selected. Choose to use that reply as a new topic with a new title, "
+"or merge those replies into an existing topic."
+msgstr ""
+"Wenn Sie ein Thema aufteilen, wird die gerade gewählte Antwort der Beginn "
+"des neuen Teils. Der neue Teil kann zu einem neuen Thema mit neuen Titel "
+"werden, oder Sie führen den neuen Teil mit einem anderen vorhandenen Thema "
+"zusammen."
 
+# @ bbpress
 #: bbpress/form-topic-split.php:26
-#@ bbpress
-msgid "If you use the existing topic option, replies within both topics will be merged chronologically. The order of the merged replies is based on the time and date they were posted."
-msgstr "Wenn Sie sich für ein vorhandenes Thema entscheiden, werden die Antworten beider Themen chronologisch einsortiert. Die Reihenfolge der zusammengeführten Antworten richtet sich dann nach dem jeweiligen Erstellzeitpunkt."
+msgid ""
+"If you use the existing topic option, replies within both topics will be "
+"merged chronologically. The order of the merged replies is based on the time "
+"and date they were posted."
+msgstr ""
+"Wenn Sie sich für ein vorhandenes Thema entscheiden, werden die Antworten "
+"beider Themen chronologisch einsortiert. Die Reihenfolge der "
+"zusammengeführten Antworten richtet sich dann nach dem jeweiligen "
+"Erstellzeitpunkt."
 
+# @ bbpress
 #: bbpress/form-topic-split.php:29
-#@ bbpress
 msgid "Split Method"
 msgstr "Teilmethode"
 
+# @ bbpress
 #: bbpress/form-topic-split.php:36
 #, php-format
-#@ bbpress
 msgid "Split: %s"
 msgstr "Aufteilen: %s"
 
+# @ bbpress
 #: bbpress/form-topic-split.php:64
-#@ bbpress
 msgid "Copy subscribers to the new topic"
 msgstr "Abonnenten auch zum neuen Thema kopieren"
 
+# @ bbpress
 #: bbpress/form-topic-split.php:69
-#@ bbpress
 msgid "Copy favoriters to the new topic"
 msgstr "Favorisierer auch zum neuen Thema kopieren"
 
+# @ bbpress
 #: bbpress/form-topic-split.php:74
-#@ bbpress
 msgid "Copy topic tags to the new topic"
 msgstr "Schlagwörter auch zum neuen Thema kopieren"
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:18
 #, php-format
-#@ bbpress
 msgid "Manage Tag: \"%s\""
 msgstr "Schlagwort verwalten: \"%s\""
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:22
-#@ bbpress
 msgid "Rename"
 msgstr "Umbenennen"
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:25
-#@ bbpress
 msgid "Leave the slug empty to have one automatically generated."
 msgstr "Lassen Sie das Slug leer, um ein neues automatisch erstellen zu lassen"
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:29
-#@ bbpress
-msgid "Changing the slug affects its permalink. Any links to the old slug will stop working."
-msgstr "Eine Änderung am Slug betrifft den permanenten Link. Alle Links zum alten Slug werden nicht mehr funktionieren."
+msgid ""
+"Changing the slug affects its permalink. Any links to the old slug will stop "
+"working."
+msgstr ""
+"Eine Änderung am Slug betrifft den permanenten Link. Alle Links zum alten "
+"Slug werden nicht mehr funktionieren."
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:35
-#@ bbpress
 msgid "Name:"
 msgstr ""
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:40
-#@ bbpress
 msgid "Slug:"
 msgstr ""
 
-#: bbpress/form-topic-tag.php:45
-#@ bbpress
-msgid "Update"
-msgstr "Aktualisieren"
-
+# @ bbpress
 #: bbpress/form-topic-tag.php:59
-#: bbpress/form-topic-tag.php:73
-#@ bbpress
 msgid "Merge"
 msgstr "Zusammenführen"
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:62
-#@ bbpress
 msgid "Merging tags together cannot be undone."
-msgstr "Das Zusammenführen der Schlagwörter kann nicht rückgängig gemacht werden."
+msgstr ""
+"Das Zusammenführen der Schlagwörter kann nicht rückgängig gemacht werden."
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:68
-#@ bbpress
 msgid "Existing tag:"
 msgstr "Vorhandenes Schlagwort:"
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:73
 #, php-format
-#@ bbpress
-msgid "Are you sure you want to merge the \"%s\" tag into the tag you specified?"
-msgstr "Soll das Schlagwort \"%s\" wirklich mit dem gewählten zusammengeführt werden?"
+msgid ""
+"Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr ""
+"Soll das Schlagwort \"%s\" wirklich mit dem gewählten zusammengeführt werden?"
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:88
-#: bbpress/form-topic-tag.php:101
-#@ bbpress
 msgid "Delete"
 msgstr "Löschen"
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:91
-#@ bbpress
 msgid "This does not delete your topics. Only the tag itself is deleted."
 msgstr "Dies löscht nicht die Themen. Nur das Schlagwort wird gelöscht."
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:94
-#@ bbpress
 msgid "Deleting a tag cannot be undone."
 msgstr "Das Löschen eines Schlagworts kann nicht rückgängig gemacht werden."
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:95
-#@ bbpress
 msgid "Any links to this tag will no longer function."
 msgstr "Alle Links zu diesem Schlagwort werden nicht mehr funktionieren."
 
+# @ bbpress
 #: bbpress/form-topic-tag.php:101
 #, php-format
-#@ bbpress
-msgid "Are you sure you want to delete the \"%s\" tag? This is permanent and cannot be undone."
-msgstr "Soll das Schlagwort \"%s\" wirklich gelöscht werden? Dies kann nicht rückgängig gemacht werden."
+msgid ""
+"Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
+"be undone."
+msgstr ""
+"Soll das Schlagwort \"%s\" wirklich gelöscht werden? Dies kann nicht "
+"rückgängig gemacht werden."
 
+# @ bbpress
 #: bbpress/form-topic.php:31
 #, php-format
-#@ bbpress
 msgid "Create New Topic in &ldquo;%s&rdquo;"
 msgstr "Neues Thema erstellen in &ldquo;%s&rdquo;"
 
+# @ bbpress
 #: bbpress/form-topic.php:31
-#@ bbpress
 msgid "Create New Topic"
 msgstr "Neues Thema erstellen"
 
+# @ bbpress
 #: bbpress/form-topic.php:38
-#@ bbpress
-msgid "This forum is marked as closed to new topics, however your posting capabilities still allow you to do so."
-msgstr "Dieses Forum ist für neue Themen geschlossen. Ihre Benutzerrechte erlauben dies aber dennoch."
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+"Dieses Forum ist für neue Themen geschlossen. Ihre Benutzerrechte erlauben "
+"dies aber dennoch."
 
+# @ bbpress
 #: bbpress/form-topic.php:57
 #, php-format
-#@ bbpress
 msgid "Topic Title (Maximum Length: %d):"
 msgstr "Titel (Maximale Länge: %d):"
 
+# @ bbpress
 #: bbpress/form-topic.php:84
-#@ bbpress
 msgid "Topic Tags:"
 msgstr "Schlagwörter:"
 
+# @ bbpress
 #: bbpress/form-topic.php:99
-#@ bbpress
 msgid "Forum:"
 msgstr ""
 
+# @ bbpress
 #: bbpress/form-topic.php:102
-#@ bbpress
 msgid "(No Forum)"
 msgstr "(Kein Forum)"
 
+# @ bbpress
 #: bbpress/form-topic.php:116
-#@ bbpress
 msgid "Topic Type:"
 msgstr "Themen-Typ:"
 
+# @ bbpress
 #: bbpress/form-topic.php:127
-#@ bbpress
 msgid "Topic Status:"
 msgstr "Themen-Status:"
 
+# @ bbpress
 #: bbpress/form-topic.php:201
-#@ bbpress
 msgid "You cannot create new topics."
 msgstr "Sie dürfen keine neuen Themen erstellen."
 
+# @ bbpress
 #: bbpress/form-topic.php:201
-#@ bbpress
 msgid "You must be logged in to create new topics."
 msgstr "Sie müssen angemeldet sein, um neue Themen zu erstellen."
 
-#: bbpress/form-user-edit.php:14
-#: inc/template-tags.php:489
-#: inc/template-tags.php:490
-#@ bbpress
-#@ ipt_kb
+# @ bbpress
+# @ ipt_kb
+#: bbpress/form-user-edit.php:14 inc/template-tags.php:614
+#: inc/template-tags.php:615
 msgid "Name"
 msgstr "Name"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:23
-#@ bbpress
 msgid "First Name"
 msgstr "Vorname"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:28
-#@ bbpress
 msgid "Last Name"
 msgstr "Nachname"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:33
-#@ bbpress
 msgid "Nickname"
 msgstr "Spitzname"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:38
-#@ bbpress
 msgid "Display Name"
 msgstr "Angezeigter Name"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:51
-#@ bbpress
 msgid "Contact Info"
 msgstr "Kontakt-Informationen"
 
-#: bbpress/form-user-edit.php:57
-#: inc/template-tags.php:493
-#: inc/template-tags.php:494
-#: inc/template-tags.php:633
-#@ bbpress
-#@ ipt_kb
+# @ bbpress
+# @ ipt_kb
+#: bbpress/form-user-edit.php:57 inc/template-tags.php:618
+#: inc/template-tags.php:619 inc/template-tags.php:758
 msgid "Website"
 msgstr "Webseite"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:72
-#@ bbpress
 msgid "About Yourself"
 msgstr "Über Sie selbst"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:72
-#@ bbpress
 msgid "About the user"
 msgstr "Über den Benutzer"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:78
-#@ bbpress
 msgid "Biographical Info"
 msgstr "Biografische Informationen"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:85
-#@ bbpress
 msgid "Account"
 msgstr "Benutzerkonto"
 
-#: bbpress/form-user-edit.php:91
-#: bbpress/form-user-login.php:17
-#: bbpress/form-user-register.php:23
-#: inc/class-ipt-kb-bbp-login-widget.php:79
-#: inc/class-ipt-kb-bbp-login-widget.php:84
-#@ bbpress
+# @ bbpress
+#: bbpress/form-user-edit.php:91 bbpress/form-user-login.php:17
+#: bbpress/form-user-register.php:23 inc/class-ipt-kb-bbp-login-widget.php:79
+#: inc/class-ipt-kb-bbp-login-widget.php:84 inc/template-tags.php:931
 msgid "Username"
 msgstr "Benutzername"
 
-#: bbpress/form-user-edit.php:96
-#: bbpress/form-user-register.php:28
-#: inc/template-tags.php:491
-#: inc/template-tags.php:492
-#@ bbpress
-#@ ipt_kb
+# @ bbpress
+# @ ipt_kb
+#: bbpress/form-user-edit.php:96 bbpress/form-user-register.php:28
+#: inc/template-tags.php:616 inc/template-tags.php:617
 msgid "Email"
 msgstr "E-Mail"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:104
 #, php-format
-#@ bbpress
-msgid "There is a pending email address change to <code>%1$s</code>. <a class=\"btn btn-sm btn-danger\" href=\"%2$s\">Cancel</a>"
-msgstr "Eine Änderung der E-Mail-Adresse zu <code>%1$s</code> wurde bereits angefordert. <a class=\"btn btn-sm btn-danger\" href=\"%2$s\">Abbrechen</a>"
+msgid ""
+"There is a pending email address change to <code>%1$s</code>. <a class=\"btn "
+"btn-sm btn-danger\" href=\"%2$s\">Cancel</a>"
+msgstr ""
+"Eine Änderung der E-Mail-Adresse zu <code>%1$s</code> wurde bereits "
+"angefordert. <a class=\"btn btn-sm btn-danger\" href=\"%2$s\">Abbrechen</a>"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:109
-#@ bbpress
 msgid "New Password"
 msgstr "Neues Passwort"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:112
-#@ bbpress
-msgid "If you would like to change the password type a new one. Otherwise leave this blank."
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
 msgstr "Wenn Sie das Passwort nicht ändern möchten, lassen Sie das Feld leer."
 
+# @ bbpress
 #: bbpress/form-user-edit.php:115
-#@ bbpress
 msgid "Type your new password again."
 msgstr "Wiederholen Sie das gewünschte neue Passwort."
 
+# @ bbpress
 #: bbpress/form-user-edit.php:117
-#@ bbpress
 msgid "Strength indicator"
 msgstr "Sicherheitsniveau"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:118
-#@ bbpress
-msgid "Your password should be at least ten characters long. Use upper and lower case letters, numbers, and symbols to make it even stronger."
-msgstr "Ihr Passwort sollte wenigstens 10 Zeichen lang sein. Verwenden Sie am besten Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen, um es sicherer zu machen."
+msgid ""
+"Your password should be at least ten characters long. Use upper and lower "
+"case letters, numbers, and symbols to make it even stronger."
+msgstr ""
+"Ihr Passwort sollte wenigstens 10 Zeichen lang sein. Verwenden Sie am besten "
+"Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen, um es sicherer zu "
+"machen."
 
+# @ bbpress
 #: bbpress/form-user-edit.php:127
-#@ bbpress
 msgid "User Role"
 msgstr "Benutzerrolle"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:134
-#@ bbpress
 msgid "Network Role"
 msgstr "Netzwerkrolle"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:137
-#@ bbpress
 msgid "Grant this user super admin privileges for the Network."
-msgstr "Diesem Benutzer die Rechte eines Super-Administrators für das Netzwerk geben."
+msgstr ""
+"Diesem Benutzer die Rechte eines Super-Administrators für das Netzwerk geben."
 
+# @ bbpress
 #: bbpress/form-user-edit.php:152
-#@ bbpress
 msgid "Update Profile"
 msgstr "Profil aktualisieren"
 
+# @ bbpress
 #: bbpress/form-user-edit.php:152
-#@ bbpress
 msgid "Update User"
 msgstr "Benutzer aktualisieren"
 
-#: bbpress/form-user-login.php:14
-#: bbpress/form-user-login.php:34
+# @ bbpress
+#: bbpress/form-user-login.php:14 bbpress/form-user-login.php:34
 #: inc/class-ipt-kb-bbp-login-widget.php:76
-#: inc/class-ipt-kb-bbp-login-widget.php:112
-#@ bbpress
+#: inc/class-ipt-kb-bbp-login-widget.php:112 inc/template-tags.php:934
 msgid "Log In"
 msgstr "Anmelden"
 
-#: bbpress/form-user-login.php:22
-#: inc/class-ipt-kb-bbp-login-widget.php:89
-#: inc/class-ipt-kb-bbp-login-widget.php:94
-#@ bbpress
+# @ bbpress
+#: bbpress/form-user-login.php:22 inc/class-ipt-kb-bbp-login-widget.php:89
+#: inc/class-ipt-kb-bbp-login-widget.php:94 inc/template-tags.php:932
 msgid "Password"
 msgstr "Passwort"
 
+# @ bbpress
 #: bbpress/form-user-login.php:30
-#@ bbpress
 msgid "Keep me signed in"
 msgstr "Mich angemeldet lassen"
 
+# @ bbpress
 #: bbpress/form-user-lost-pass.php:14
-#: inc/class-ipt-kb-bbp-login-widget.php:107
-#@ bbpress
 msgid "Lost Password"
 msgstr "Passwort vergessen"
 
+# @ bbpress
 #: bbpress/form-user-lost-pass.php:17
-#@ bbpress
 msgid "Username or Email"
 msgstr "Benutzername oder E-Mail-Adresse"
 
+# @ bbpress
 #: bbpress/form-user-lost-pass.php:24
-#@ bbpress
 msgid "Reset My Password"
 msgstr "Mein Passwort zurücksetzen"
 
+# @ bbpress
 #: bbpress/form-user-register.php:14
-#@ bbpress
 msgid "Create an Account"
 msgstr "Benutzerkonto erstellen"
 
+# @ bbpress
 #: bbpress/form-user-register.php:17
-#@ bbpress
 msgid "Your username must be unique, and cannot be changed later."
-msgstr "Ihr Benutzername muss einmalig sein und kann später nicht mehr geändert werden."
+msgstr ""
+"Ihr Benutzername muss einmalig sein und kann später nicht mehr geändert "
+"werden."
 
+# @ bbpress
 #: bbpress/form-user-register.php:18
-#@ bbpress
-msgid "We use your email address to email you a secure password and verify your account."
-msgstr "Ihre E-Mail-Adresse wird benötigt, um Ihnen ein sicheres Passwort zu senden und um das Benutzerkonto zu aktivieren."
+msgid ""
+"We use your email address to email you a secure password and verify your "
+"account."
+msgstr ""
+"Ihre E-Mail-Adresse wird benötigt, um Ihnen ein sicheres Passwort zu senden "
+"und um das Benutzerkonto zu aktivieren."
 
-#: bbpress/form-user-register.php:35
-#: inc/class-ipt-kb-bbp-login-widget.php:110
-#@ bbpress
+# @ bbpress
+#: bbpress/form-user-register.php:35 inc/class-ipt-kb-bbp-login-widget.php:110
 msgid "Register"
 msgstr "Registrieren"
 
+# @ bbpress
 #: bbpress/form-user-roles.php:13
-#@ bbpress
 msgid "Blog Role"
 msgstr "Benutzerrolle"
 
+# @ bbpress
 #: bbpress/form-user-roles.php:23
-#@ bbpress
 msgid "Forum Role"
 msgstr "Foren-Benutzerrolle"
 
+# @ bbpress
 #: bbpress/loop-forums.php:16
-#@ bbpress
 msgid "Forum"
 msgstr "Forum"
 
-#: bbpress/loop-forums.php:18
-#: bbpress/loop-replies.php:19
-#: bbpress/loop-replies.php:46
-#: bbpress/loop-topics.php:19
+# @ bbpress
+#: bbpress/loop-forums.php:18 bbpress/loop-replies.php:19
+#: bbpress/loop-replies.php:46 bbpress/loop-topics.php:19
 #: bbpress/loop-topics.php:33
-#@ bbpress
 msgid "Posts"
 msgstr "Beiträge"
 
-#: bbpress/loop-forums.php:19
-#: bbpress/loop-topics.php:20
+# @ bbpress
+#: bbpress/loop-forums.php:19 bbpress/loop-topics.php:20
 #: bbpress/loop-topics.php:34
-#@ bbpress
 msgid "Freshness"
 msgstr "Aktualität"
 
-#: bbpress/loop-replies.php:16
-#: bbpress/loop-replies.php:43
-#: bbpress/loop-search.php:16
-#: bbpress/loop-search.php:29
-#@ bbpress
+# @ bbpress
+#: bbpress/loop-replies.php:16 bbpress/loop-replies.php:43
+#: bbpress/loop-search.php:16 bbpress/loop-search.php:29
 msgid "Author"
 msgstr "Autor"
 
+# @ bbpress
 #: bbpress/loop-search-forum.php:16
 #, php-format
-#@ bbpress
 msgid "Last updated %s"
 msgstr "Zuletzt aktualisiert %s"
 
+# @ bbpress
 #: bbpress/loop-search-forum.php:26
-#@ bbpress
 msgid "Forum: "
 msgstr "Forum:"
 
+# @ bbpress
 #: bbpress/loop-search-reply.php:24
-#@ bbpress
 msgid "In reply to: "
 msgstr "In Antwort auf:"
 
+# @ bbpress
 #: bbpress/loop-search-topic.php:26
-#@ bbpress
 msgid "Topic: "
 msgstr "Thema:"
 
+# @ bbpress
 #: bbpress/loop-search-topic.php:33
-#@ bbpress
 msgid "in group forum "
 msgstr "in Gruppenforum"
 
+# @ bbpress
 #: bbpress/loop-search-topic.php:37
-#@ bbpress
 msgid "in forum "
 msgstr "in Forum"
 
-#: bbpress/loop-search.php:18
-#: bbpress/loop-search.php:31
-#@ bbpress
+# @ bbpress
+#: bbpress/loop-search.php:18 bbpress/loop-search.php:31
 msgid "Search Results"
 msgstr "Suchergebnisse"
 
+# @ ipt_kb
 #: bbpress/loop-single-reply.php:17
-#@ ipt_kb
 msgid "Actions"
 msgstr "Aktionen"
 
+# @ bbpress
 #: bbpress/loop-single-reply.php:27
-#@ bbpress
 msgid "in reply to: "
 msgstr "in Antwort auf:"
 
+# @ bbpress
 #: bbpress/loop-single-topic.php:58
 #, php-format
-#@ bbpress
 msgid "Started by: %1$s"
 msgstr "Begonnen von: %1$s"
 
+# @ bbpress
 #: bbpress/loop-single-topic.php:62
 #, php-format
-#@ bbpress
 msgid "in: <a href=\"%1$s\">%2$s</a>"
 msgstr "in: <a href=\"%1$s\">%2$s</a>"
 
-#: bbpress/loop-single-topic.php:94
-#: inc/bbpress.php:116
+# @ ipt_kb
+#: bbpress/loop-single-topic.php:94 inc/bbpress.php:116
 #, php-format
-#@ ipt_kb
 msgid "by %s"
 msgstr "von %s"
 
-#: bbpress/loop-topics.php:18
-#: bbpress/loop-topics.php:32
-#@ bbpress
+# @ bbpress
+#: bbpress/loop-topics.php:18 bbpress/loop-topics.php:32
 msgid "Voices"
 msgstr "Stimmen"
 
+# @ ipt_kb
 #: bbpress/pagination-topics.php:26
-#@ ipt_kb
 msgid "New Topic"
 msgstr "Neues Thema"
 
-#: bbpress/user-details.php:28
-#, php-format
-#@ bbpress
-msgid "%s's Profile"
-msgstr "Profil von %s"
-
-#: bbpress/user-details.php:28
-#: bbpress/user-profile.php:15
-#@ bbpress
+# @ bbpress
+#: bbpress/user-details.php:28 bbpress/user-profile.php:15
 msgid "Profile"
 msgstr "Profil"
 
+# @ bbpress
 #: bbpress/user-details.php:32
-#, php-format
-#@ bbpress
-msgid "%s's Topics Started"
-msgstr "Begonnene Themen von %s"
-
-#: bbpress/user-details.php:32
-#@ bbpress
 msgid "Topics Started"
 msgstr "Begonnene Themen"
 
+# @ bbpress
 #: bbpress/user-details.php:36
-#, php-format
-#@ bbpress
-msgid "%s's Replies Created"
-msgstr "Erstellte Antworten von %s"
-
-#: bbpress/user-details.php:36
-#@ bbpress
 msgid "Replies Created"
 msgstr "Erstellte Antworten"
 
+# @ bbpress
 #: bbpress/user-details.php:41
-#, php-format
-#@ bbpress
-msgid "%s's Favorites"
-msgstr "Favoriten von %s"
-
-#: bbpress/user-details.php:41
-#@ bbpress
 msgid "Favorites"
 msgstr "Favoriten"
 
+# @ bbpress
 #: bbpress/user-details.php:49
-#, php-format
-#@ bbpress
-msgid "%s's Subscriptions"
-msgstr "Abonnements von %s"
-
-#: bbpress/user-details.php:49
-#@ bbpress
 msgid "Subscriptions"
 msgstr "Abonnements"
 
-#: bbpress/user-details.php:54
-#, php-format
-#@ bbpress
-msgid "Edit %s's Profile"
-msgstr "Profil von %s bearbeiten"
-
-#: bbpress/user-details.php:54
-#: content-page.php:23
-#: content-single.php:61
-#: content.php:71
-#: image.php:32
-#: image.php:64
-#: inc/class-ipt-kb-bbp-login-widget.php:124
-#: inc/template-tags.php:119
-#: inc/template-tags.php:160
-#@ bbpress
-#@ ipt_kb
+# @ bbpress
+# @ ipt_kb
+#: bbpress/user-details.php:54 content-page.php:23 content-single.php:60
+#: content.php:71 image.php:32 image.php:64
+#: inc/class-ipt-kb-bbp-login-widget.php:124 inc/template-tags.php:244
+#: inc/template-tags.php:285
 msgid "Edit"
 msgstr "Bearbeiten"
 
+# @ bbpress
 #: bbpress/user-favorites.php:15
-#@ bbpress
 msgid "Favorite Forum Topics"
 msgstr "Favorisierte Forenthemen"
 
+# @ bbpress
 #: bbpress/user-favorites.php:28
-#@ bbpress
 msgid "You currently have no favorite topics."
 msgstr "Sie haben keine Themen favorisiert."
 
+# @ bbpress
 #: bbpress/user-favorites.php:28
-#@ bbpress
 msgid "This user has no favorite topics."
 msgstr "Dieser Benutzer hat keine Themen favorisiert."
 
-#: bbpress/user-profile.php:24
-#: inc/class-ipt-kb-bbp-login-widget.php:132
+# @ ipt_kb
+#: bbpress/user-profile.php:24 inc/class-ipt-kb-bbp-login-widget.php:132
 #, php-format
-#@ ipt_kb
 msgid "%s Forum Role"
 msgstr "%s Foren-Benutzerrolle"
 
+# @ ipt_kb
 #: bbpress/user-profile.php:25
 #, php-format
-#@ ipt_kb
 msgid "%s Topics Started:"
 msgstr "%s Begonnene Themen:"
 
-#: bbpress/user-profile.php:26
-#: inc/class-ipt-kb-bbp-login-widget.php:138
+# @ ipt_kb
+#: bbpress/user-profile.php:26 inc/class-ipt-kb-bbp-login-widget.php:138
 #, php-format
-#@ ipt_kb
 msgid "%s Replies Created"
 msgstr "%s Erstellte Antworten"
 
-#: bbpress/user-profile.php:28
-#: inc/class-ipt-kb-bbp-login-widget.php:142
+# @ ipt_kb
+#: bbpress/user-profile.php:28 inc/class-ipt-kb-bbp-login-widget.php:142
 #, php-format
-#@ ipt_kb
 msgid "%s Favorites"
 msgstr "%s Favoriten"
 
+# @ bbpress
 #: bbpress/user-replies-created.php:15
-#@ bbpress
 msgid "Forum Replies Created"
 msgstr "Erstellte Antworten"
 
+# @ bbpress
 #: bbpress/user-replies-created.php:28
-#@ bbpress
 msgid "You have not replied to any topics."
 msgstr "Von Ihnen gibt es keine Antworten auf Themen."
 
+# @ bbpress
 #: bbpress/user-replies-created.php:28
-#@ bbpress
 msgid "This user has not replied to any topics."
 msgstr "Von diesem Benutzer gibt es keine Antworten auf Themen."
 
+# @ bbpress
 #: bbpress/user-subscriptions.php:19
-#@ bbpress
 msgid "Subscribed Forum Topics"
 msgstr "Abonnierte Forenthemen"
 
+# @ bbpress
 #: bbpress/user-subscriptions.php:32
-#@ bbpress
 msgid "You are not currently subscribed to any topics."
 msgstr "Sie haben momentan keine Themen abonniert."
 
+# @ bbpress
 #: bbpress/user-subscriptions.php:32
-#@ bbpress
 msgid "This user is not currently subscribed to any topics."
 msgstr "Dieser Benutzer hat momentan keine Themen abonniert."
 
+# @ bbpress
 #: bbpress/user-topics-created.php:15
-#@ bbpress
 msgid "Forum Topics Started"
 msgstr "Begonnene Forenthemen"
 
+# @ bbpress
 #: bbpress/user-topics-created.php:28
-#@ bbpress
 msgid "You have not created any topics."
 msgstr "Sie haben keine Themen erstellt."
 
+# @ bbpress
 #: bbpress/user-topics-created.php:28
-#@ bbpress
 msgid "This user has not created any topics."
 msgstr "Dieser Benutzer hat keine Themen erstellt."
 
+# @ bbpress
 #: bbtemp/page-forum-statistics.php:23
-#@ bbpress
 msgid "<p>Here are the statistics and popular topics of our forums.</p>"
 msgstr "<p>Hier sind die Statistik und beliebte Themen der Foren..</p>"
 
+# @ bbpress
 #: bbtemp/page-forum-statistics.php:29
-#@ bbpress
 msgid "Popular Topics"
 msgstr "Beliebte Themen"
 
+# @ ipt_kb
 #: category-templates/category-child.php:38
 #: category-templates/category-child.php:64
-#@ ipt_kb
 msgid "Support"
 msgstr "Hilfe"
 
+# @ ipt_kb
 #: category-templates/category-child.php:45
 #: category-templates/category-parent.php:25
 #, php-format
-#@ ipt_kb
 msgid "%d article"
 msgid_plural "%d articles"
 msgstr[0] "%d Beitrag"
 msgstr[1] "%d Beiträge"
 
+# @ ipt_kb
 #: category-templates/category-parent.php:18
 #: category-templates/category-parent.php:37
-#@ ipt_kb
 msgid "Get Support"
 msgstr "Hilfe erhalten"
 
+# @ ipt_kb
 #: category-templates/category-parent.php:76
 #, php-format
-#@ ipt_kb
 msgid "%1$s / %2$s"
 msgstr "%1$s / %2$s"
 
+# @ ipt_kb
 #: category-templates/category-parent.php:82
-#: inc/class-ipt-kb-affix-widget.php:126
-#: template-knowledgebase.php:42
-#: template-knowledgebase.php:54
-#: template-knowledgebase.php:73
-#@ ipt_kb
+#: inc/class-ipt-kb-affix-widget.php:126 template-knowledgebase.php:42
+#: template-knowledgebase.php:54 template-knowledgebase.php:73
 msgid "Get support"
 msgstr "Hilfe erhalten"
 
-#: category-templates/category-parent.php:86
-#: template-knowledgebase.php:58
-#@ ipt_kb
+# @ ipt_kb
+#: category-templates/category-parent.php:86 template-knowledgebase.php:58
 msgid "Browse all"
 msgstr "Alle anzeigen"
 
-#: category-templates/category-parent.php:113
-#: template-knowledgebase.php:116
+# @ ipt_kb
+#: category-templates/category-parent.php:113 template-knowledgebase.php:116
 #, php-format
-#@ ipt_kb
 msgid "Browse %d article"
 msgid_plural "Browse all %d articles"
 msgstr[0] "%d Beitrag anzeigen"
 msgstr[1] "%d Beiträge anzeigen"
 
+# @ ipt_kb
 #: category-templates/no-result.php:7
-#@ ipt_kb
 msgid "No articles published. Check back later?"
-msgstr "Bisher keine Beiträge veröffentlicht. Sie können gerne später nochmal schauen."
+msgstr ""
+"Bisher keine Beiträge veröffentlicht. Sie können gerne später nochmal "
+"schauen."
 
+# @ ipt_kb
 #: comments.php:29
 #, php-format
-#@ ipt_kb
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
 
-#: comments.php:36
-#: comments.php:60
-#@ ipt_kb
+# @ ipt_kb
+#: comments.php:36 comments.php:60
 msgid "Comment navigation"
 msgstr "Kommentar-Navigation"
 
-#: comments.php:37
-#: comments.php:61
-#@ ipt_kb
+# @ ipt_kb
+#: comments.php:37 comments.php:61
 msgid "&larr; Older Comments"
 msgstr "&larr; Ältere Kommentare"
 
-#: comments.php:38
-#: comments.php:62
-#@ ipt_kb
+# @ ipt_kb
+#: comments.php:38 comments.php:62
 msgid "Newer Comments &rarr;"
 msgstr "Jüngere Kommentare &rarr;"
 
+# @ ipt_kb
 #: comments.php:73
-#@ ipt_kb
 msgid "Comments are closed."
 msgstr "Kommentare sind deaktiviert"
 
-#: content-page.php:18
-#: content-single.php:20
-#: template-knowledgebase.php:214
-#@ ipt_kb
+# @ ipt_kb
+#: content-page.php:18 content-single.php:20 template-knowledgebase.php:214
 msgid "<p class=\"pagination-p\">Pages:</p>"
 msgstr "<p class=\"pagination-p\">Seiten:</p>"
 
-#. translators: used between list items, there is a space after the comma
-#: content-single.php:29
-#: content-single.php:32
-#: content.php:49
-#: content.php:59
-#@ ipt_kb
+# @ ipt_kb
+#: content-single.php:29 content-single.php:32 content.php:49 content.php:59
 msgid ", "
 msgstr ", "
 
+# @ ipt_kb
 #: content-single.php:37
 #, php-format
-#@ ipt_kb
-msgid "This entry was tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Dieser Beitrag wurde verschlagwortet mit <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;%2$s. <br />Fügen Sie ein Lesezeichen für den <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permanenten Link</a> hinzu."
+msgid ""
+"This entry was tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;"
+"%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
+"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dieser Beitrag wurde verschlagwortet mit <i class=\"glyphicon glyphicon-tags"
+"\"></i>&nbsp;&nbsp;%2$s. <br />Fügen Sie ein Lesezeichen für den <i class="
+"\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel="
+"\"bookmark\">permanenten Link</a> hinzu."
 
+# @ ipt_kb
 #: content-single.php:39
 #, php-format
-#@ ipt_kb
-msgid "Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Fügen Sie ein Lesezeichen für den <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permanenten Link</a> hinzu."
+msgid ""
+"Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a "
+"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Fügen Sie ein Lesezeichen für den <i class=\"glyphicon glyphicon-bookmark"
+"\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permanenten Link</a> "
+"hinzu."
 
+# @ ipt_kb
 #: content-single.php:45
 #, php-format
-#@ ipt_kb
-msgid "This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;&nbsp;%1$s and tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Dieser Beitrag wurde in <i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;&nbsp;%1$s veröffentlicht und verschlagwortet mit <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;%2$s. <br />Fügen Sie ein Lesezeichen für den <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permanenten Link</a> hinzu."
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s and tagged <i class=\"glyphicon glyphicon-tags\"></"
+"i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dieser Beitrag wurde in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s veröffentlicht und verschlagwortet mit <i class="
+"\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;%2$s. <br />Fügen Sie ein "
+"Lesezeichen für den <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
+"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permanenten Link</a> hinzu."
 
+# @ ipt_kb
 #: content-single.php:47
 #, php-format
-#@ ipt_kb
-msgid "This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;&nbsp;%1$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr "Dieser Beitrag wurde in <i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;&nbsp;%1$s veröffentlicht. <br />Fügen Sie ein Lesezeichen für den <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permanenten Link</a> hinzu."
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dieser Beitrag wurde in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s veröffentlicht. <br />Fügen Sie ein Lesezeichen für den "
+"<i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" "
+"rel=\"bookmark\">permanenten Link</a> hinzu."
 
-#: content.php:40
-#: content.php:43
-#@ ipt_kb
+# @ ipt_kb
+#: content.php:40 content.php:43
 msgid "Read more"
 msgstr "Mehr lesen"
 
+# @ ipt_kb
 #: content.php:53
 #, php-format
-#@ ipt_kb
 msgid "Posted in %1$s"
 msgstr "Veröffentlicht in %1$s"
 
+# @ ipt_kb
 #: content.php:63
 #, php-format
-#@ ipt_kb
 msgid "Tagged %1$s"
 msgstr "Schlagwörter %1$s"
 
+# @ ipt_kb
 #: content.php:69
-#@ ipt_kb
 msgid "Leave a comment"
 msgstr "Einen Kommentar schreiben"
 
+# @ ipt_kb
 #: content.php:69
-#@ ipt_kb
 msgid "1 Comment"
 msgstr "1 Kommentar"
 
+# @ ipt_kb
 #: content.php:69
-#@ ipt_kb
 msgid "% Comments"
 msgstr "% Kommentare"
 
+# @ ipt_kb
 #: footer.php:25
 #, php-format
-#@ ipt_kb
 msgid "Proudly powered by %s"
 msgstr "Stolz betrieben mit %s"
 
+# @ ipt_kb
 #: footer.php:27
 #, php-format
-#@ ipt_kb
 msgid "Theme: %1$s by %2$s."
 msgstr "Thema: %1$s von %2$s."
 
-#: functions.php:54
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:58
 msgid "Primary Menu"
 msgstr "Haupt-Menü"
 
-#: functions.php:85
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:90
 msgid "Knowledge Base Sidebar"
 msgstr "Knowledge-Base-Sidebar"
 
-#: functions.php:87
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:92
 msgid "Shows up only on category archive pages and single posts."
 msgstr "Wird nur in Kategorien und Beiträgen angezeigt."
 
-#: functions.php:94
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:99
 msgid "General Sidebar"
 msgstr "Standard-Sidebar"
 
-#: functions.php:96
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:101
 msgid "Shows up everywhere except the category archive pages and single posts."
 msgstr "Wird überall außer in Kategorien und Beiträgen angezeigt."
 
-#: functions.php:103
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:108
 msgid "bbPress Sidebar"
 msgstr "bbPress-Sidebar"
 
-#: functions.php:105
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:110
 msgid "Shows up on bbPress forums and topics."
 msgstr "Wird in bbPress-Foren und -Themen angezeigt."
 
-#: functions.php:112
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:117
 msgid "Footer Large"
 msgstr ""
 
-#: functions.php:120
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:125
 msgid "Footer Small"
 msgstr ""
 
-#: functions.php:183
-#@ ipt_kb
+# @ ipt_kb
+#: functions.php:192
 msgid "Oops, some problem to connect. Try again?"
 msgstr "Oh nein, Probleme beim Verbinden sind aufgetreten. Erneut Versuchen?"
 
-#: header-bbpress.php:30
-#: header.php:30
-#@ ipt_kb
+#: functions.php:351 inc/class-tgm-plugin-activation.php:196
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:352 inc/class-tgm-plugin-activation.php:197
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:353 inc/class-tgm-plugin-activation.php:198
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:354
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:355 inc/class-tgm-plugin-activation.php:200
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:356 inc/class-tgm-plugin-activation.php:201
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:357 inc/class-tgm-plugin-activation.php:202
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:358 inc/class-tgm-plugin-activation.php:203
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:359 inc/class-tgm-plugin-activation.php:204
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:360 inc/class-tgm-plugin-activation.php:205
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:361 inc/class-tgm-plugin-activation.php:206
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:362 inc/class-tgm-plugin-activation.php:207
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:363 inc/class-tgm-plugin-activation.php:208
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:364 inc/class-tgm-plugin-activation.php:209
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:365 inc/class-tgm-plugin-activation.php:210
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:366 inc/class-tgm-plugin-activation.php:212
+#: inc/class-tgm-plugin-activation.php:1951
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:367
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:395
+msgid "Knowledge Base Theme"
+msgstr ""
+
+# @ ipt_kb
+#: header-bbpress.php:35 header.php:35
 msgid "Toggle navigation"
 msgstr "Navigation ein-/ausblenden"
 
+#: header-bbpress.php:40 header.php:40
+msgid "Toggle search"
+msgstr ""
+
+#: header-bbpress.php:46 header.php:46
+msgid "Toggle User"
+msgstr ""
+
+# @ ipt_kb
 #: image.php:22
 #, php-format
-#@ ipt_kb
-msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a href=\"%6$s\" rel=\"gallery\">%7$s</a>"
-msgstr "Veröffentlicht <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> um <a href=\"%3$s\">%4$s &times; %5$s</a> in <a href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+"Veröffentlicht <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> um <a href=\"%3$s\">%4$s &times; %5$s</"
+"a> in <a href=\"%6$s\" rel=\"gallery\">%7$s</a>"
 
+# @ ipt_kb
 #: image.php:37
-#@ ipt_kb
-msgid "<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></span></span> Previous"
-msgstr "<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></span></span> Vorherige"
+msgid ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Previous"
+msgstr ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Vorherige"
 
+# @ ipt_kb
 #: image.php:38
-#@ ipt_kb
-msgid "Next <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right\"></span></span>"
-msgstr "Nächste <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right\"></span></span>"
+msgid ""
+"Next <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right"
+"\"></span></span>"
+msgstr ""
+"Nächste <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-"
+"right\"></span></span>"
 
+# @ ipt_kb
 #: image.php:58
-#@ ipt_kb
 msgid "Pages:"
 msgstr "Seiten:"
 
+# @ ipt_kb
 #: inc/bbpress.php:243
-#@ ipt_kb
 msgid "New Request"
 msgstr "Neue Anfrage"
 
 #: inc/bbpress.php:245
-#@ ipt_kb
-msgid "<span class=\"glyphicon ipt-icon-info2 bstooltip\" title=\"New Request\"></span><span class=\"sr-only\"> [New Request] </span>"
-msgstr "<span class=\"glyphicon ipt-icon-info2 bstooltip\" title=\"Neue Anfrage\"></span><span class=\"sr-only\"> [Neue Anfrage] </span>"
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-info2 bstooltip\" title=\"New Request"
+"\"></span><span class=\"sr-only\"> [New Request] </span>"
+msgstr ""
 
+# @ ipt_kb
 #: inc/bbpress.php:249
-#@ ipt_kb
 msgid "Resolved"
 msgstr "Gelöst"
 
 #: inc/bbpress.php:251
-#@ buddy-bbpress-support-topic
-msgid "<span class=\"glyphicon ipt-icon-checkmark-circle bstooltip\" title=\"Resolved\"></span><span class=\"sr-only\"> [Resolved] </span>"
-msgstr "<span class=\"glyphicon ipt-icon-checkmark-circle bstooltip\" title=\"Resolved\"></span><span class=\"sr-only\"> [Gelöst] </span>"
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-checkmark-circle bstooltip\" title="
+"\"Resolved\"></span><span class=\"sr-only\"> [Resolved] </span>"
+msgstr ""
 
+# @ ipt_kb
 #: inc/bbpress.php:255
-#@ ipt_kb
 msgid "Processing"
 msgstr "In Bearbeitung"
 
 #: inc/bbpress.php:257
-#@ ipt_kb
-msgid "<span class=\"glyphicon ipt-icon-history bstooltip\" title=\"Processing\"></span><span class=\"sr-only\"> [Processing] </span>"
-msgstr "<span class=\"glyphicon ipt-icon-history bstooltip\" title=\"In Bearbeitung\"></span><span class=\"sr-only\"> [In Bearbeitung] </span>"
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"Processing"
+"\"></span><span class=\"sr-only\"> [Processing] </span>"
+msgstr ""
 
+# @ ipt_kb
 #: inc/bbpress.php:261
-#@ ipt_kb
 msgid "No Solution"
 msgstr "Keine Lösung"
 
 #: inc/bbpress.php:263
-#@ ipt_kb
-msgid "<span class=\"glyphicon ipt-icon-cancel-circle bstooltip\" title=\"No Solution\"></span><span class=\"sr-only\"> [No Solution] </span>"
-msgstr "<span class=\"glyphicon ipt-icon-cancel-circle bstooltip\" title=\"Keine Lösung\"></span><span class=\"sr-only\"> [Keine Lösung] </span>"
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-cancel-circle bstooltip\" title=\"No "
+"Solution\"></span><span class=\"sr-only\"> [No Solution] </span>"
+msgstr ""
 
+# @ ipt_kb
 #: inc/bbpress.php:267
-#@ ipt_kb
 msgid "Announcement"
 msgstr "Bekanntmachung"
 
 #: inc/bbpress.php:269
-#@ ipt_kb
-msgid "<span class=\"glyphicon ipt-icon-bullhorn bstooltip\" title=\"Announcement\"></span><span class=\"sr-only\"> [Announcement] </span>"
-msgstr "<span class=\"glyphicon ipt-icon-bullhorn bstooltip\" title=\"Bekanntmachung\"></span><span class=\"sr-only\"> [Bekanntmachung] </span>"
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-bullhorn bstooltip\" title=\"Announcement"
+"\"></span><span class=\"sr-only\"> [Announcement] </span>"
+msgstr ""
 
+# @ ipt_kb
 #: inc/bbpress.php:273
-#@ ipt_kb
 msgid "Management Topic"
 msgstr "Management-Thema"
 
 #: inc/bbpress.php:275
-#@ ipt_kb
-msgid "<span class=\"glyphicon ipt-icon-user4 bstooltip\" title=\"Announcement\"></span><span class=\"sr-only\"> [Management] </span>"
-msgstr "<span class=\"glyphicon ipt-icon-user4 bstooltip\" title=\"Bekanntmachung\"></span><span class=\"sr-only\"> [Management] </span>"
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Announcement"
+"\"></span><span class=\"sr-only\"> [Management] </span>"
+msgstr ""
 
-#: inc/bbpress.php:297
-#@ bbpress
-msgid "Tagged:"
-msgstr "Verschlagwortet:"
-
-#: inc/category-fields.php:41
-#: inc/category-fields.php:62
-#@ ipt_kb
+# @ ipt_kb
+#: inc/category-fields.php:41 inc/category-fields.php:62
 msgid "Support Forum"
 msgstr "Hilfe-Forum"
 
-#: inc/category-fields.php:43
-#: inc/category-fields.php:65
-#@ ipt_kb
+# @ ipt_kb
+#: inc/category-fields.php:43 inc/category-fields.php:65
 msgid "Link to support forum. For parent category only."
 msgstr "Link zu einem Hilfe-Forum. Nur für übergeordnete Kategorien."
 
-#: inc/category-fields.php:46
-#: inc/category-fields.php:69
-#@ ipt_kb
+# @ ipt_kb
+#: inc/category-fields.php:46 inc/category-fields.php:69
 msgid "Icon Class"
 msgstr "Icon-Class"
 
-#: inc/category-fields.php:48
-#: inc/category-fields.php:72
-#@ ipt_kb
-msgid "Add icon class to this category. This is for subcategories, not the parent category."
-msgstr "Dieser Kategorie eine Icon-Class zuordnen. Dies ist für Unterkategorien - nicht für übergeordnete Kategorien. "
+# @ ipt_kb
+#: inc/category-fields.php:48 inc/category-fields.php:72
+msgid ""
+"Add icon class to this category. This is for subcategories, not the parent "
+"category."
+msgstr ""
+"Dieser Kategorie eine Icon-Class zuordnen. Dies ist für Unterkategorien - "
+"nicht für übergeordnete Kategorien. "
 
-#: inc/category-fields.php:51
-#: inc/category-fields.php:76
-#@ ipt_kb
+# @ ipt_kb
+#: inc/category-fields.php:51 inc/category-fields.php:76
 msgid "Image URL"
 msgstr "Bild-URL"
 
-#: inc/category-fields.php:53
-#: inc/category-fields.php:79
-#@ ipt_kb
-msgid "Add a 128X128 image for this category. Will only be used for parent categories."
-msgstr "Dieser Kategorie ein 128x128px-Bild zuordnen. Wird für übergeordnete Kategorien verwendet."
+# @ ipt_kb
+#: inc/category-fields.php:53 inc/category-fields.php:79
+msgid ""
+"Add a 128X128 image for this category. Will only be used for parent "
+"categories."
+msgstr ""
+"Dieser Kategorie ein 128x128px-Bild zuordnen. Wird für übergeordnete "
+"Kategorien verwendet."
 
+# @ ipt_kb
 #: inc/class-ipt-kb-affix-widget.php:32
-#@ ipt_kb
 msgid "An affix widget for displaying on the sidebar of the single articles."
 msgstr "Ein Affix-Widget für die Sidebar in Beiträgen."
 
+# @ ipt_kb
 #: inc/class-ipt-kb-affix-widget.php:33
-#@ ipt_kb
 msgid "Affix Widget"
 msgstr "Affix-Widget"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-affix-widget.php:111
-#@ ipt_kb
 msgid "Search&hellip;"
 msgstr "Suchen&hellip;"
 
-#: inc/class-ipt-kb-affix-widget.php:167
-#@ ipt_kb
-msgid "Click to show/hide table of contents."
-msgstr "Klicken, um ein Inhaltsverzeichnis ein-/auszublenden."
-
+# @ ipt_kb
 #: inc/class-ipt-kb-affix-widget.php:169
-#@ ipt_kb
 msgid "Table of Contents"
 msgstr "Inhaltsverzeichnis"
 
-#: inc/class-ipt-kb-affix-widget.php:198
-#@ ipt_kb
-msgid "Click to show/hide articles under this category."
-msgstr "Klicken, um die Beiträge in dieser Kategorie ein-/auszublenden."
-
+# @ ipt_kb
 #: inc/class-ipt-kb-affix-widget.php:257
-#@ ipt_kb
 msgid "No articles found."
 msgstr "Keine Beiträge gefunden"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-affix-widget.php:304
-#@ ipt_kb
 msgid "Do not make the widget sticky"
 msgstr "Das Widget nicht anheften"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-affix-widget.php:307
-#@ ipt_kb
 msgid "No other configuration necessary. Just activate and enjoy. Neat?"
-msgstr "Keine weiteren Einstellungen notwendig. Einfach aktivieren und fertig. Toll?"
+msgstr ""
+"Keine weiteren Einstellungen notwendig. Einfach aktivieren und fertig. Toll?"
 
+# @ bbpress
 #: inc/class-ipt-kb-bbp-login-widget.php:27
-#@ bbpress
-msgid "A simple login form with optional links to sign-up and lost password pages."
-msgstr "Ein einfaches Login-Formular mit optionalen Links zu den Seiten für Registrierung und vergessenes Passwort."
+msgid ""
+"A simple login form with optional links to sign-up and lost password pages."
+msgstr ""
+"Ein einfaches Login-Formular mit optionalen Links zu den Seiten für "
+"Registrierung und vergessenes Passwort."
 
+# @ bbpress
 #: inc/class-ipt-kb-bbp-login-widget.php:30
-#@ bbpress
 msgid "(bbPress) Login Widget"
 msgstr "(bbPress) Login-Widget"
 
-#: inc/class-ipt-kb-bbp-login-widget.php:102
-#@ bbpress
+# @ bbpress
+#: inc/class-ipt-kb-bbp-login-widget.php:102 inc/template-tags.php:933
 msgid "Remember Me"
 msgstr "Angemeldet bleiben"
 
-#: inc/class-ipt-kb-bbp-login-widget.php:124
-#@ ipt_kb
-msgid "Edit Your Profile"
-msgstr "Profil bearbeiten"
-
+# @ ipt_kb
 #: inc/class-ipt-kb-bbp-login-widget.php:135
 #, php-format
-#@ ipt_kb
 msgid "%s Topics Started"
 msgstr "%s Begonnene Themen"
 
-#: inc/class-ipt-kb-bbp-login-widget.php:141
-#@ ipt_kb
-msgid "Your Favorites"
-msgstr "Ihre Favoriten"
-
-#: inc/class-ipt-kb-bbp-login-widget.php:146
-#@ ipt_kb
-msgid "Your Subscriptions"
-msgstr "Ihre Abonnements"
-
+# @ ipt_kb
 #: inc/class-ipt-kb-bbp-login-widget.php:147
 #, php-format
-#@ ipt_kb
 msgid "%s Subscriptions"
 msgstr "%s Abonnements"
 
+# @ bbpress
 #: inc/class-ipt-kb-bbp-login-widget.php:190
-#@ bbpress
 msgid "Title:"
 msgstr "Titel:"
 
+# @ bbpress
 #: inc/class-ipt-kb-bbp-login-widget.php:195
-#@ bbpress
 msgid "Register URI:"
 msgstr "Registrierungs-URL:"
 
+# @ bbpress
 #: inc/class-ipt-kb-bbp-login-widget.php:200
-#@ bbpress
 msgid "Lost Password URI:"
 msgstr "Vergessenes Passwort-URL"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-knowledgebase-widget.php:26
-#@ ipt_kb
 msgid "Lists all your categories or knowledge bases with the right appearance."
-msgstr "Listet all Ihre Kategorien oder Knowledge-Bases mit der richtigen optischen Erscheinung."
+msgstr ""
+"Listet all Ihre Kategorien oder Knowledge-Bases mit der richtigen optischen "
+"Erscheinung."
 
+# @ ipt_kb
 #: inc/class-ipt-kb-knowledgebase-widget.php:27
-#@ ipt_kb
 msgid "Knowledge Base Widget"
 msgstr "Knowledge-Base-Widget"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-knowledgebase-widget.php:130
-#@ ipt_kb
 msgid "Knowledge Bases"
 msgstr "Knowledge-Bases"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-knowledgebase-widget.php:133
 #: inc/class-ipt-kb-popular-widget.php:117
 #: inc/class-ipt-kb-social-widget.php:130
-#@ ipt_kb
 msgid "Title"
 msgstr "Titel"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-knowledgebase-widget.php:138
-#@ ipt_kb
 msgid "Show sub categories below the parent category (main knowledge bases)"
-msgstr "Zeige Unterkategorien unter den übergeordneten Kategorien (Haupt-Knowledge-Bases)"
+msgstr ""
+"Zeige Unterkategorien unter den übergeordneten Kategorien (Haupt-Knowledge-"
+"Bases)"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-knowledgebase-widget.php:141
-#@ ipt_kb
-msgid "No other settings necessary. The icon classes you have put on categories and sub categories will be thoroughly used."
-msgstr "Keine weiteren Einstellungen notwendig. Die Icon-Classes, die Sie Kategorien und Unterkategorien zugeordnet haben, werden verwendet."
+msgid ""
+"No other settings necessary. The icon classes you have put on categories and "
+"sub categories will be thoroughly used."
+msgstr ""
+"Keine weiteren Einstellungen notwendig. Die Icon-Classes, die Sie Kategorien "
+"und Unterkategorien zugeordnet haben, werden verwendet."
 
+# @ ipt_kb
 #: inc/class-ipt-kb-popular-widget.php:26
-#@ ipt_kb
 msgid "Shows articles or posts based on the user likes."
 msgstr "Zeigt Beiträge, die von Benutzern als hilfreich markiert wurden."
 
+# @ ipt_kb
 #: inc/class-ipt-kb-popular-widget.php:27
-#@ ipt_kb
 msgid "Popular Knowledge Base Articles"
 msgstr "Beliebte Knowledge-Base-Beiträge"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-popular-widget.php:112
-#@ ipt_kb
 msgid "Popular Articles"
 msgstr "Beliebte Beiträge"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-popular-widget.php:121
-#@ ipt_kb
 msgid "Number of articles"
 msgstr "Anzahl der Beiträge"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:30
-#@ ipt_kb
 msgid "Stay <span>Connected</span>"
 msgstr "<span>In Verbindung</span> bleiben"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:43
-#@ ipt_kb
 msgid "Like us on Facebook"
 msgstr "Like auf Facebook"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:44
-#@ ipt_kb
 msgid "Follow us on Twitter"
 msgstr "Folge uns auf Twitter"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:45
-#@ ipt_kb
 msgid "Circle us on Google Plus"
 msgstr "Auf Google+ zu den Kreisen"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:46
-#@ ipt_kb
 msgid "Subscribe to our Youtube Channel"
 msgstr "Unseren YouTube-Kanal abonnieren"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:47
-#@ ipt_kb
 msgid "Subscribe to our Vimeo Channel"
 msgstr "Unseren Vimeo-Kanal abonnieren"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:48
-#@ ipt_kb
 msgid "Follow us on Pinterest"
 msgstr "Folge uns auf Pinterest"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:49
-#@ ipt_kb
 msgid "Follow us on envato marketplaces"
 msgstr "Folge uns auf Envato-Marketplaces"
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:63
-#@ ipt_kb
 msgid "A nice looking social widget for the footer small area."
-msgstr "Ein gut aussehendes Social-Widget für den \\\"Footer small\\\"-Bereich."
+msgstr ""
+"Ein gut aussehendes Social-Widget für den \\\"Footer small\\\"-Bereich."
 
+# @ ipt_kb
 #: inc/class-ipt-kb-social-widget.php:64
-#@ ipt_kb
 msgid "Social Widget"
 msgstr "Social-Widget"
 
+#: inc/class-tgm-plugin-activation.php:199
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:211
+msgid "Return to the dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:213
+#: inc/class-tgm-plugin-activation.php:1638
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:214
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:215
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:544
+#: inc/class-tgm-plugin-activation.php:2168
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1174
+msgid "Private Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1177
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1182
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1185
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1185
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1188
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1190
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1290
+#: inc/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1312
+#: inc/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1379
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1508
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1616
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1934
+msgid "Install package not available."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1935
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1936
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1937
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1938
+msgid "Plugin install failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1939
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1950
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2064
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2065
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2065
+#: inc/class-tgm-plugin-activation.php:2074
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2065
+#: inc/class-tgm-plugin-activation.php:2074
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2066
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2071
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2072
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2073
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2074
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2075
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2076
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+# @ ipt_kb
 #: inc/extras.php:66
 #, php-format
-#@ ipt_kb
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: inc/ipt-kb-like-article.php:13
-#: inc/ipt-kb-like-article.php:18
-#@ ipt_kb
+# @ ipt_kb
+#: inc/ipt-kb-like-article.php:13 inc/ipt-kb-like-article.php:18
 msgid "Cheatin&#8217; uh?"
 msgstr "Schummeln&#8217; oder was?"
 
-#: inc/ipt-kb-like-article.php:22
-#: inc/template-tags.php:297
-#@ ipt_kb
+# @ ipt_kb
+#: inc/ipt-kb-like-article.php:22 inc/template-tags.php:422
 msgid "You like it already"
 msgstr "Bereits als hilfreich markiert"
 
+# @ ipt_kb
 #: inc/ipt-kb-like-article.php:28
-#@ ipt_kb
 msgid "Thank you."
 msgstr "Dankeschön"
 
-#: inc/template-tags.php:33
-#@ ipt_kb
-msgid "&laquo; First"
-msgstr "&laquo; Erster"
-
-#: inc/template-tags.php:35
-#@ ipt_kb
-msgid "Last &raquo;"
-msgstr "Letzter &raquo;"
-
-#: inc/template-tags.php:77
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:202
 msgid "Post navigation"
 msgstr "Beitragsnavigation"
 
-#: inc/template-tags.php:80
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:205
 msgctxt "Previous post link"
 msgid "<span class=\"glyphicon glyphicon-arrow-left\"></span>"
 msgstr ""
 
-#: inc/template-tags.php:81
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:206
 msgctxt "Next post link"
 msgid "<span class=\"glyphicon glyphicon-arrow-right\"></span>"
 msgstr ""
 
-#: inc/template-tags.php:86
-#@ ipt_kb
-msgid "<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></span></span> Older posts"
-msgstr "<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></span></span> Ältere Beiträge"
+# @ ipt_kb
+#: inc/template-tags.php:211
+msgid ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Older posts"
+msgstr ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Ältere Beiträge"
 
-#: inc/template-tags.php:90
-#@ ipt_kb
-msgid "Newer posts <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right\"></span></span>"
-msgstr "Neuere Beiträge <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right\"></span></span>"
+# @ ipt_kb
+#: inc/template-tags.php:215
+msgid ""
+"Newer posts <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-"
+"right\"></span></span>"
+msgstr ""
+"Neuere Beiträge <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-"
+"arrow-right\"></span></span>"
 
-#: inc/template-tags.php:119
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:244
 msgid "Pingback:"
 msgstr ""
 
-#: inc/template-tags.php:129
+# @ ipt_kb
+#: inc/template-tags.php:254
 #, php-format
-#@ ipt_kb
 msgid "%s <span class=\"says\">says:</span>"
 msgstr "%s <span class=\"says\">sagt:</span>"
 
-#: inc/template-tags.php:132
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:257
 msgid "Your comment is awaiting moderation."
 msgstr "Ihr Kommentar wartet auf Freigabe durch einen Moderator."
 
-#: inc/template-tags.php:150
-#@ ipt_kb
-msgid "<i class=\"glyphicon ipt-icon-reply\"></i>&nbsp;&nbsp;Reply"
-msgstr "<i class=\"glyphicon ipt-icon-reply\"></i>&nbsp;&nbsp;Antworten"
+#: inc/template-tags.php:275
+msgid "<i class=\"glyphicon ipt-icomoon-reply\"></i>&nbsp;&nbsp;Reply"
+msgstr ""
 
-#: inc/template-tags.php:157
+# @ ipt_kb
+#: inc/template-tags.php:282
 #, php-format
-#@ ipt_kb
 msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
 msgstr "%1$s um %2$s"
 
-#: inc/template-tags.php:238
+# @ ipt_kb
+#: inc/template-tags.php:363
 #, php-format
-#@ ipt_kb
-msgid "<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i> Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
-msgstr "<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i> Geschrieben am %1$s</span><span class=\"byline\"> von %2$s</span>"
+msgid ""
+"<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i> "
+"Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr ""
+"<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i> "
+"Geschrieben am %1$s</span><span class=\"byline\"> von %2$s</span>"
 
-#: inc/template-tags.php:294
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:419
 msgid "This article was helpful"
 msgstr "Dieser Beitrag war hilfreich"
 
-#: inc/template-tags.php:301
-#: inc/template-tags.php:311
+# @ ipt_kb
+#: inc/template-tags.php:426 inc/template-tags.php:436
 #, php-format
-#@ ipt_kb
 msgid "%d person found this article useful"
 msgid_plural "%d people found this article useful"
 msgstr[0] "Eine Person fand diesen Beitrag hilfreich"
 msgstr[1] "%d Personen fanden diesen Beitrag hilfreich"
 
-#: inc/template-tags.php:302
-#: inc/template-tags.php:307
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:427 inc/template-tags.php:432
 msgid "Please wait"
 msgstr "Bitte warten"
 
-#: inc/template-tags.php:325
-#: inc/template-tags.php:329
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:450 inc/template-tags.php:454
 msgid "Home"
 msgstr "Zur Startseite"
 
-#: inc/template-tags.php:445
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:570
 msgid "Search result"
 msgstr "Suchergebnis"
 
-#: inc/template-tags.php:449
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:574
 msgid "Error 404 - Not found"
 msgstr "Fehler 404 - Nicht gefunden"
 
-#: inc/template-tags.php:453
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:578
 msgid "Archive"
 msgstr "Archiv"
 
-#: inc/template-tags.php:457
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:582
 msgid "Blog"
 msgstr "Blog"
 
-#: inc/template-tags.php:497
+# @ ipt_kb
+#: inc/template-tags.php:622
 #, php-format
-#@ ipt_kb
 msgid "Required fields are marked %s"
 msgstr "Benötigte Felder sind markiert mit %s"
 
-#: inc/template-tags.php:500
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:625
 msgctxt "noun"
 msgid "Comment"
 msgstr "Kommentar"
 
-#: inc/template-tags.php:501
+# @ ipt_kb
+#: inc/template-tags.php:626
 #, php-format
-#@ ipt_kb
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Sie müssen <a href=\"%s\">angemeldet</a> sein, um einen Kommentar zu schreiben."
+msgstr ""
+"Sie müssen <a href=\"%s\">angemeldet</a> sein, um einen Kommentar zu "
+"schreiben."
 
-#: inc/template-tags.php:502
+# @ ipt_kb
+#: inc/template-tags.php:627
 #, php-format
-#@ ipt_kb
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
-msgstr "Sie sind angemeldet als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Von diesem Benutzerkonto abmelden\">Abmelden?</a>"
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Sie sind angemeldet als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+"\"Von diesem Benutzerkonto abmelden\">Abmelden?</a>"
 
-#: inc/template-tags.php:503
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:628
 msgid "Your email address will not be published."
 msgstr "Ihre E-Mail-Adresse wird nicht veröffentlicht."
 
-#: inc/template-tags.php:504
+# @ default
+#: inc/template-tags.php:629
 #, php-format
-#@ default
-msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: %s"
-msgstr "Sie dürfen folgende <abbr title=\"HyperText Markup Language\">HTML</abbr>-Tags verwenden: %s"
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+"Sie dürfen folgende <abbr title=\"HyperText Markup Language\">HTML</abbr>-"
+"Tags verwenden: %s"
 
-#: inc/template-tags.php:507
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:632
 msgid "Leave a Reply"
 msgstr "Eine Antwort schreiben"
 
-#: inc/template-tags.php:508
+# @ ipt_kb
+#: inc/template-tags.php:633
 #, php-format
-#@ ipt_kb
 msgid "Leave a Reply to %s"
 msgstr "Eine Antwort schreiben zu %s"
 
-#: inc/template-tags.php:509
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:634
 msgid "Cancel reply"
 msgstr "Antwort verwerfen"
 
-#: inc/template-tags.php:510
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:635
 msgid "Post Comment"
 msgstr "Kommentar absenden"
 
-#: inc/template-tags.php:638
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:763
 msgid "Facebook"
 msgstr ""
 
-#: inc/template-tags.php:642
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:767
 msgid "Twitter"
 msgstr ""
 
-#: inc/template-tags.php:646
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:771
 msgid "Google+"
 msgstr ""
 
-#: inc/template-tags.php:663
+# @ ipt_kb
+#: inc/template-tags.php:788
 #, php-format
-#@ ipt_kb
 msgid "%1$s has written <a href=\"%2$s\">%3$s</a> %4$s"
 msgstr "%1$s hat <a href=\"%2$s\">%3$s</a> %4$s geschrieben"
 
-#: inc/template-tags.php:663
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:788
 msgid "article"
 msgid_plural "articles"
 msgstr[0] "Beitrag"
 msgstr[1] "Beiträge"
 
-#: inc/template-tags.php:696
-#@ ipt_kb
-msgid "This content is password protected. To view it please enter your password below:"
-msgstr "Dieser Inhalt ist passwortgeschützt. Bitte geben Sie Ihr Passwort hier ein:"
+# @ ipt_kb
+#: inc/template-tags.php:821
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr ""
+"Dieser Inhalt ist passwortgeschützt. Bitte geben Sie Ihr Passwort hier ein:"
 
-#: inc/template-tags.php:698
-#@ ipt_kb
+# @ ipt_kb
+#: inc/template-tags.php:823
 msgid "Password:"
 msgstr "Passwort:"
 
+#: inc/template-tags.php:847
+msgid "Search"
+msgstr ""
+
+#: inc/template-tags.php:879
+msgid "Login"
+msgstr ""
+
+#: inc/template-tags.php:898
+#, php-format
+msgid "Hi %1$s"
+msgstr ""
+
+#: inc/template-tags.php:902
+msgid "Signout"
+msgstr ""
+
+#: inc/template-tags.php:1027
+msgid "<i class=\"ipticm ipt-icomoon-question-circle\"></i> Forgot Password"
+msgstr ""
+
+#: inc/template-tags.php:1028
+msgid "<i class=\"ipticm ipt-icomoon-signup\"></i> Signup"
+msgstr ""
+
+# @ ipt_kb
 #: no-results.php:13
-#@ ipt_kb
 msgid "Nothing Found"
 msgstr "Nichts gefunden"
 
+# @ ipt_kb
 #: no-results.php:19
 #, php-format
-#@ ipt_kb
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Bereit um Ihren ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Hier beginnen</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Bereit um Ihren ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Hier "
+"beginnen</a>."
 
+# @ ipt_kb
 #: no-results.php:23
-#@ ipt_kb
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Entschuldigung, aber Ihre Suchbegriffe brachten keine Ergebnisse. Bitte versuchen Sie es nochmals mit anderen Suchbegriffen."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Entschuldigung, aber Ihre Suchbegriffe brachten keine Ergebnisse. Bitte "
+"versuchen Sie es nochmals mit anderen Suchbegriffen."
 
+# @ ipt_kb
 #: no-results.php:27
-#@ ipt_kb
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Wir konnten nicht finden, wonach Sie schauen. Vielleicht kann die Suchfunktion helfen."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Wir konnten nicht finden, wonach Sie schauen. Vielleicht kann die "
+"Suchfunktion helfen."
 
+# @ ipt_kb
 #: search.php:16
 #, php-format
-#@ ipt_kb
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für: %s"
 
-#: searchform.php:7
-#@ ipt_kb
-msgctxt "placeholder"
-msgid "Search Knowledgebase&hellip;"
-msgstr "In der Knowledge-Base suchen&hellip;"
-
+# @ ipt_kb
 #: searchform.php:13
 #, php-format
-#@ ipt_kb
 msgid "Search Knowledgebase for %s&hellip;"
 msgstr "In der Knowledge-Base suchen nach %s&hellip;"
 
+# @ ipt_kb
 #: template-knowledgebase.php:144
-#@ ipt_kb
 msgid "Recent articles"
 msgstr "Aktuelle Beiträge"
 
+# @ ipt_kb
 #: template-knowledgebase.php:181
-#@ ipt_kb
 msgid "Popular articles"
 msgstr "Beliebte Beiträge"
 
+# @ bbpress
+#~ msgid "Update"
+#~ msgstr "Aktualisieren"
+
+# @ bbpress
+#~ msgid "%s's Profile"
+#~ msgstr "Profil von %s"
+
+# @ bbpress
+#~ msgid "%s's Topics Started"
+#~ msgstr "Begonnene Themen von %s"
+
+# @ bbpress
+#~ msgid "%s's Replies Created"
+#~ msgstr "Erstellte Antworten von %s"
+
+# @ bbpress
+#~ msgid "%s's Favorites"
+#~ msgstr "Favoriten von %s"
+
+# @ bbpress
+#~ msgid "%s's Subscriptions"
+#~ msgstr "Abonnements von %s"
+
+# @ bbpress
+#~ msgid "Edit %s's Profile"
+#~ msgstr "Profil von %s bearbeiten"
+
+# @ ipt_kb
+#~ msgid ""
+#~ "<span class=\"glyphicon ipt-icon-info2 bstooltip\" title=\"New Request"
+#~ "\"></span><span class=\"sr-only\"> [New Request] </span>"
+#~ msgstr ""
+#~ "<span class=\"glyphicon ipt-icon-info2 bstooltip\" title=\"Neue Anfrage"
+#~ "\"></span><span class=\"sr-only\"> [Neue Anfrage] </span>"
+
+# @ buddy-bbpress-support-topic
+#~ msgid ""
+#~ "<span class=\"glyphicon ipt-icon-checkmark-circle bstooltip\" title="
+#~ "\"Resolved\"></span><span class=\"sr-only\"> [Resolved] </span>"
+#~ msgstr ""
+#~ "<span class=\"glyphicon ipt-icon-checkmark-circle bstooltip\" title="
+#~ "\"Resolved\"></span><span class=\"sr-only\"> [Gelöst] </span>"
+
+# @ ipt_kb
+#~ msgid ""
+#~ "<span class=\"glyphicon ipt-icon-history bstooltip\" title=\"Processing"
+#~ "\"></span><span class=\"sr-only\"> [Processing] </span>"
+#~ msgstr ""
+#~ "<span class=\"glyphicon ipt-icon-history bstooltip\" title=\"In "
+#~ "Bearbeitung\"></span><span class=\"sr-only\"> [In Bearbeitung] </span>"
+
+# @ ipt_kb
+#~ msgid ""
+#~ "<span class=\"glyphicon ipt-icon-cancel-circle bstooltip\" title=\"No "
+#~ "Solution\"></span><span class=\"sr-only\"> [No Solution] </span>"
+#~ msgstr ""
+#~ "<span class=\"glyphicon ipt-icon-cancel-circle bstooltip\" title=\"Keine "
+#~ "Lösung\"></span><span class=\"sr-only\"> [Keine Lösung] </span>"
+
+# @ ipt_kb
+#~ msgid ""
+#~ "<span class=\"glyphicon ipt-icon-bullhorn bstooltip\" title=\"Announcement"
+#~ "\"></span><span class=\"sr-only\"> [Announcement] </span>"
+#~ msgstr ""
+#~ "<span class=\"glyphicon ipt-icon-bullhorn bstooltip\" title="
+#~ "\"Bekanntmachung\"></span><span class=\"sr-only\"> [Bekanntmachung] </"
+#~ "span>"
+
+# @ ipt_kb
+#~ msgid ""
+#~ "<span class=\"glyphicon ipt-icon-user4 bstooltip\" title=\"Announcement"
+#~ "\"></span><span class=\"sr-only\"> [Management] </span>"
+#~ msgstr ""
+#~ "<span class=\"glyphicon ipt-icon-user4 bstooltip\" title=\"Bekanntmachung"
+#~ "\"></span><span class=\"sr-only\"> [Management] </span>"
+
+# @ bbpress
+#~ msgid "Tagged:"
+#~ msgstr "Verschlagwortet:"
+
+# @ ipt_kb
+#~ msgid "Click to show/hide table of contents."
+#~ msgstr "Klicken, um ein Inhaltsverzeichnis ein-/auszublenden."
+
+# @ ipt_kb
+#~ msgid "Click to show/hide articles under this category."
+#~ msgstr "Klicken, um die Beiträge in dieser Kategorie ein-/auszublenden."
+
+# @ ipt_kb
+#~ msgid "Edit Your Profile"
+#~ msgstr "Profil bearbeiten"
+
+# @ ipt_kb
+#~ msgid "Your Favorites"
+#~ msgstr "Ihre Favoriten"
+
+# @ ipt_kb
+#~ msgid "Your Subscriptions"
+#~ msgstr "Ihre Abonnements"
+
+# @ ipt_kb
+#~ msgid "&laquo; First"
+#~ msgstr "&laquo; Erster"
+
+# @ ipt_kb
+#~ msgid "Last &raquo;"
+#~ msgstr "Letzter &raquo;"
+
+# @ ipt_kb
+#~ msgid "<i class=\"glyphicon ipt-icon-reply\"></i>&nbsp;&nbsp;Reply"
+#~ msgstr "<i class=\"glyphicon ipt-icon-reply\"></i>&nbsp;&nbsp;Antworten"
+
+# @ ipt_kb
+#~ msgctxt "placeholder"
+#~ msgid "Search Knowledgebase&hellip;"
+#~ msgstr "In der Knowledge-Base suchen&hellip;"

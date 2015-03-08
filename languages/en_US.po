@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Knowledge Base Theme\n"
-"POT-Creation-Date: 2013-11-05 21:39+0530\n"
-"PO-Revision-Date: 2013-11-05 21:39+0530\n"
+"POT-Creation-Date: 2015-03-08 18:32+0530\n"
+"PO-Revision-Date: 2015-03-08 18:32+0530\n"
 "Last-Translator: Swashata Ghosh <swashata4u@gmail.com>\n"
 "Language-Team: ipanelthemes.com <ipanelthemes@gmail.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
 "esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
@@ -83,248 +83,6 @@ msgstr ""
 #: ../archive.php:68 ../category-templates/category-child.php:48
 #, php-format
 msgid "Page %1$d / %2$d"
-msgstr ""
-
-#: ../comments.php:29
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../comments.php:36 ../comments.php:60
-msgid "Comment navigation"
-msgstr ""
-
-#: ../comments.php:37 ../comments.php:61
-msgid "&larr; Older Comments"
-msgstr ""
-
-#: ../comments.php:38 ../comments.php:62
-msgid "Newer Comments &rarr;"
-msgstr ""
-
-#: ../comments.php:73
-msgid "Comments are closed."
-msgstr ""
-
-#: ../content-page.php:18 ../content-single.php:20
-#: ../template-knowledgebase.php:214
-msgid "<p class=\"pagination-p\">Pages:</p>"
-msgstr ""
-
-#: ../content-page.php:23 ../content-single.php:60 ../content.php:71
-#: ../image.php:32 ../image.php:64 ../bbpress/user-details.php:54
-#: ../inc/class-ipt-kb-bbp-login-widget.php:124 ../inc/template-tags.php:119
-#: ../inc/template-tags.php:160
-msgid "Edit"
-msgstr ""
-
-#: ../content-single.php:29 ../content-single.php:32 ../content.php:49
-#: ../content.php:59
-msgid ", "
-msgstr ""
-
-#: ../content-single.php:37
-#, php-format
-msgid ""
-"This entry was tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;"
-"%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
-"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: ../content-single.php:39
-#, php-format
-msgid ""
-"Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a "
-"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: ../content-single.php:45
-#, php-format
-msgid ""
-"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
-"i>&nbsp;&nbsp;%1$s and tagged <i class=\"glyphicon glyphicon-tags\"></"
-"i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
-"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: ../content-single.php:47
-#, php-format
-msgid ""
-"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
-"i>&nbsp;&nbsp;%1$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
-"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: ../content.php:40 ../content.php:43
-msgid "Read more"
-msgstr ""
-
-#: ../content.php:53
-#, php-format
-msgid "Posted in %1$s"
-msgstr ""
-
-#: ../content.php:63
-#, php-format
-msgid "Tagged %1$s"
-msgstr ""
-
-#: ../content.php:69
-msgid "Leave a comment"
-msgstr ""
-
-#: ../content.php:69
-msgid "1 Comment"
-msgstr ""
-
-#: ../content.php:69
-msgid "% Comments"
-msgstr ""
-
-#: ../footer.php:25
-#, php-format
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: ../footer.php:27
-#, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr ""
-
-#: ../functions.php:54
-msgid "Primary Menu"
-msgstr ""
-
-#: ../functions.php:85
-msgid "Knowledge Base Sidebar"
-msgstr ""
-
-#: ../functions.php:87
-msgid "Shows up only on category archive pages and single posts."
-msgstr ""
-
-#: ../functions.php:94
-msgid "General Sidebar"
-msgstr ""
-
-#: ../functions.php:96
-msgid "Shows up everywhere except the category archive pages and single posts."
-msgstr ""
-
-#: ../functions.php:103
-msgid "bbPress Sidebar"
-msgstr ""
-
-#: ../functions.php:105
-msgid "Shows up on bbPress forums and topics."
-msgstr ""
-
-#: ../functions.php:112
-msgid "Footer Large"
-msgstr ""
-
-#: ../functions.php:120
-msgid "Footer Small"
-msgstr ""
-
-#: ../functions.php:183
-msgid "Oops, some problem to connect. Try again?"
-msgstr ""
-
-#: ../header-bbpress.php:30 ../header.php:30
-msgid "Toggle navigation"
-msgstr ""
-
-#: ../image.php:22
-#, php-format
-msgid ""
-"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
-"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
-"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
-msgstr ""
-
-#: ../image.php:37
-msgid ""
-"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
-"span></span> Previous"
-msgstr ""
-
-#: ../image.php:38
-msgid ""
-"Next <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right"
-"\"></span></span>"
-msgstr ""
-
-#: ../image.php:58
-msgid "Pages:"
-msgstr ""
-
-#: ../no-results.php:13
-msgid "Nothing Found"
-msgstr ""
-
-#: ../no-results.php:19
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: ../no-results.php:23
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: ../no-results.php:27
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: ../search.php:16
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
-#: ../searchform.php:7
-msgctxt "placeholder"
-msgid "Search Knowledgebase&hellip;"
-msgstr ""
-
-#: ../searchform.php:13
-#, php-format
-msgid "Search Knowledgebase for %s&hellip;"
-msgstr ""
-
-#: ../template-knowledgebase.php:42 ../template-knowledgebase.php:54
-#: ../template-knowledgebase.php:73
-#: ../category-templates/category-parent.php:82
-#: ../inc/class-ipt-kb-affix-widget.php:126
-msgid "Get support"
-msgstr ""
-
-#: ../template-knowledgebase.php:58
-#: ../category-templates/category-parent.php:86
-msgid "Browse all"
-msgstr ""
-
-#: ../template-knowledgebase.php:116
-#: ../category-templates/category-parent.php:113
-#, php-format
-msgid "Browse %d article"
-msgid_plural "Browse all %d articles"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../template-knowledgebase.php:144
-msgid "Recent articles"
-msgstr ""
-
-#: ../template-knowledgebase.php:181
-msgid "Popular articles"
 msgstr ""
 
 #: ../bbpress/content-single-topic-lead.php:18
@@ -480,7 +238,7 @@ msgstr ""
 #: ../bbpress/form-forum.php:138 ../bbpress/form-reply-move.php:62
 #: ../bbpress/form-reply.php:110 ../bbpress/form-topic-merge.php:71
 #: ../bbpress/form-topic-split.php:83 ../bbpress/form-topic.php:172
-#: ../inc/template-tags.php:698
+#: ../inc/template-tags.php:823
 msgid "Submit"
 msgstr ""
 
@@ -837,8 +595,8 @@ msgstr ""
 msgid "You must be logged in to create new topics."
 msgstr ""
 
-#: ../bbpress/form-user-edit.php:14 ../inc/template-tags.php:489
-#: ../inc/template-tags.php:490
+#: ../bbpress/form-user-edit.php:14 ../inc/template-tags.php:614
+#: ../inc/template-tags.php:615
 msgid "Name"
 msgstr ""
 
@@ -862,8 +620,8 @@ msgstr ""
 msgid "Contact Info"
 msgstr ""
 
-#: ../bbpress/form-user-edit.php:57 ../inc/template-tags.php:493
-#: ../inc/template-tags.php:494 ../inc/template-tags.php:633
+#: ../bbpress/form-user-edit.php:57 ../inc/template-tags.php:618
+#: ../inc/template-tags.php:619 ../inc/template-tags.php:758
 msgid "Website"
 msgstr ""
 
@@ -886,12 +644,12 @@ msgstr ""
 #: ../bbpress/form-user-edit.php:91 ../bbpress/form-user-login.php:17
 #: ../bbpress/form-user-register.php:23
 #: ../inc/class-ipt-kb-bbp-login-widget.php:79
-#: ../inc/class-ipt-kb-bbp-login-widget.php:84
+#: ../inc/class-ipt-kb-bbp-login-widget.php:84 ../inc/template-tags.php:931
 msgid "Username"
 msgstr ""
 
 #: ../bbpress/form-user-edit.php:96 ../bbpress/form-user-register.php:28
-#: ../inc/template-tags.php:491 ../inc/template-tags.php:492
+#: ../inc/template-tags.php:616 ../inc/template-tags.php:617
 msgid "Email"
 msgstr ""
 
@@ -948,13 +706,13 @@ msgstr ""
 
 #: ../bbpress/form-user-login.php:14 ../bbpress/form-user-login.php:34
 #: ../inc/class-ipt-kb-bbp-login-widget.php:76
-#: ../inc/class-ipt-kb-bbp-login-widget.php:112
+#: ../inc/class-ipt-kb-bbp-login-widget.php:112 ../inc/template-tags.php:934
 msgid "Log In"
 msgstr ""
 
 #: ../bbpress/form-user-login.php:22
 #: ../inc/class-ipt-kb-bbp-login-widget.php:89
-#: ../inc/class-ipt-kb-bbp-login-widget.php:94
+#: ../inc/class-ipt-kb-bbp-login-widget.php:94 ../inc/template-tags.php:932
 msgid "Password"
 msgstr ""
 
@@ -1132,6 +890,13 @@ msgstr ""
 msgid "Edit %s's Profile"
 msgstr ""
 
+#: ../bbpress/user-details.php:54 ../content-page.php:23
+#: ../content-single.php:60 ../content.php:71 ../image.php:32 ../image.php:64
+#: ../inc/class-ipt-kb-bbp-login-widget.php:124 ../inc/template-tags.php:244
+#: ../inc/template-tags.php:285
+msgid "Edit"
+msgstr ""
+
 #: ../bbpress/user-favorites.php:15
 msgid "Favorite Forum Topics"
 msgstr ""
@@ -1231,8 +996,330 @@ msgstr ""
 msgid "%1$s / %2$s"
 msgstr ""
 
+#: ../category-templates/category-parent.php:82
+#: ../inc/class-ipt-kb-affix-widget.php:126 ../template-knowledgebase.php:42
+#: ../template-knowledgebase.php:54 ../template-knowledgebase.php:73
+msgid "Get support"
+msgstr ""
+
+#: ../category-templates/category-parent.php:86
+#: ../template-knowledgebase.php:58
+msgid "Browse all"
+msgstr ""
+
+#: ../category-templates/category-parent.php:113
+#: ../template-knowledgebase.php:116
+#, php-format
+msgid "Browse %d article"
+msgid_plural "Browse all %d articles"
+msgstr[0] ""
+msgstr[1] ""
+
 #: ../category-templates/no-result.php:7
 msgid "No articles published. Check back later?"
+msgstr ""
+
+#: ../comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:36 ../comments.php:60
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:37 ../comments.php:61
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:38 ../comments.php:62
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:73
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:18 ../content-single.php:20
+#: ../template-knowledgebase.php:214
+msgid "<p class=\"pagination-p\">Pages:</p>"
+msgstr ""
+
+#: ../content-single.php:29 ../content-single.php:32 ../content.php:49
+#: ../content.php:59
+msgid ", "
+msgstr ""
+
+#: ../content-single.php:37
+#, php-format
+msgid ""
+"This entry was tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;"
+"%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
+"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:39
+#, php-format
+msgid ""
+"Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a "
+"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:45
+#, php-format
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s and tagged <i class=\"glyphicon glyphicon-tags\"></"
+"i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:47
+#, php-format
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content.php:40 ../content.php:43
+msgid "Read more"
+msgstr ""
+
+#: ../content.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../content.php:63
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../content.php:69
+msgid "Leave a comment"
+msgstr ""
+
+#: ../content.php:69
+msgid "1 Comment"
+msgstr ""
+
+#: ../content.php:69
+msgid "% Comments"
+msgstr ""
+
+#: ../footer.php:25
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../footer.php:27
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../functions.php:58
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:90
+msgid "Knowledge Base Sidebar"
+msgstr ""
+
+#: ../functions.php:92
+msgid "Shows up only on category archive pages and single posts."
+msgstr ""
+
+#: ../functions.php:99
+msgid "General Sidebar"
+msgstr ""
+
+#: ../functions.php:101
+msgid "Shows up everywhere except the category archive pages and single posts."
+msgstr ""
+
+#: ../functions.php:108
+msgid "bbPress Sidebar"
+msgstr ""
+
+#: ../functions.php:110
+msgid "Shows up on bbPress forums and topics."
+msgstr ""
+
+#: ../functions.php:117
+msgid "Footer Large"
+msgstr ""
+
+#: ../functions.php:125
+msgid "Footer Small"
+msgstr ""
+
+#: ../functions.php:192
+msgid "Oops, some problem to connect. Try again?"
+msgstr ""
+
+#: ../functions.php:351 ../inc/class-tgm-plugin-activation.php:196
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../functions.php:352 ../inc/class-tgm-plugin-activation.php:197
+msgid "Install Plugins"
+msgstr ""
+
+#: ../functions.php:353 ../inc/class-tgm-plugin-activation.php:198
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../functions.php:354
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions.php:355 ../inc/class-tgm-plugin-activation.php:200
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:356 ../inc/class-tgm-plugin-activation.php:201
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:357 ../inc/class-tgm-plugin-activation.php:202
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:358 ../inc/class-tgm-plugin-activation.php:203
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:359 ../inc/class-tgm-plugin-activation.php:204
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:360 ../inc/class-tgm-plugin-activation.php:205
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:361 ../inc/class-tgm-plugin-activation.php:206
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:362 ../inc/class-tgm-plugin-activation.php:207
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:363 ../inc/class-tgm-plugin-activation.php:208
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:364 ../inc/class-tgm-plugin-activation.php:209
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions.php:365 ../inc/class-tgm-plugin-activation.php:210
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions.php:366 ../inc/class-tgm-plugin-activation.php:212
+#: ../inc/class-tgm-plugin-activation.php:1951
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions.php:367
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../functions.php:395
+msgid "Knowledge Base Theme"
+msgstr ""
+
+#: ../header-bbpress.php:35 ../header.php:35
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../header-bbpress.php:40 ../header.php:40
+msgid "Toggle search"
+msgstr ""
+
+#: ../header-bbpress.php:46 ../header.php:46
+msgid "Toggle User"
+msgstr ""
+
+#: ../image.php:22
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: ../image.php:37
+msgid ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Previous"
+msgstr ""
+
+#: ../image.php:38
+msgid ""
+"Next <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right"
+"\"></span></span>"
+msgstr ""
+
+#: ../image.php:58
+msgid "Pages:"
 msgstr ""
 
 #: ../inc/bbpress.php:243
@@ -1241,8 +1328,8 @@ msgstr ""
 
 #: ../inc/bbpress.php:245
 msgid ""
-"<span class=\"glyphicon ipt-icomoon-info2 bstooltip\" title=\"New Request\"></"
-"span><span class=\"sr-only\"> [New Request] </span>"
+"<span class=\"glyphicon ipt-icomoon-info2 bstooltip\" title=\"New Request"
+"\"></span><span class=\"sr-only\"> [New Request] </span>"
 msgstr ""
 
 #: ../inc/bbpress.php:249
@@ -1261,8 +1348,8 @@ msgstr ""
 
 #: ../inc/bbpress.php:257
 msgid ""
-"<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"Processing\"></"
-"span><span class=\"sr-only\"> [Processing] </span>"
+"<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"Processing"
+"\"></span><span class=\"sr-only\"> [Processing] </span>"
 msgstr ""
 
 #: ../inc/bbpress.php:261
@@ -1291,8 +1378,8 @@ msgstr ""
 
 #: ../inc/bbpress.php:275
 msgid ""
-"<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Announcement\"></"
-"span><span class=\"sr-only\"> [Management] </span>"
+"<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Announcement"
+"\"></span><span class=\"sr-only\"> [Management] </span>"
 msgstr ""
 
 #: ../inc/bbpress.php:297
@@ -1372,7 +1459,7 @@ msgstr ""
 msgid "(bbPress) Login Widget"
 msgstr ""
 
-#: ../inc/class-ipt-kb-bbp-login-widget.php:102
+#: ../inc/class-ipt-kb-bbp-login-widget.php:102 ../inc/template-tags.php:933
 msgid "Remember Me"
 msgstr ""
 
@@ -1494,6 +1581,193 @@ msgstr ""
 msgid "Social Widget"
 msgstr ""
 
+#: ../inc/class-tgm-plugin-activation.php:199
+msgid "Something went wrong."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:211
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:213
+#: ../inc/class-tgm-plugin-activation.php:1638
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/class-tgm-plugin-activation.php:214
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:215
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:544
+#: ../inc/class-tgm-plugin-activation.php:2168
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1174
+msgid "Private Repository"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1177
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1182
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1185
+msgid "Required"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1185
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1188
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1190
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1290
+#: ../inc/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1312
+#: ../inc/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1379
+msgid "Type"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1508
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1616
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1934
+msgid "Install package not available."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1935
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1936
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1937
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1938
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1939
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:1950
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2064
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2065
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2065
+#: ../inc/class-tgm-plugin-activation.php:2074
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2065
+#: ../inc/class-tgm-plugin-activation.php:2074
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2066
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2071
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2072
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2073
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2074
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2075
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/class-tgm-plugin-activation.php:2076
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
 #: ../inc/extras.php:66
 #, php-format
 msgid "Page %s"
@@ -1503,7 +1777,7 @@ msgstr ""
 msgid "Cheatin&#8217; uh?"
 msgstr ""
 
-#: ../inc/ipt-kb-like-article.php:22 ../inc/template-tags.php:297
+#: ../inc/ipt-kb-like-article.php:22 ../inc/template-tags.php:422
 msgid "You like it already"
 msgstr ""
 
@@ -1511,184 +1785,246 @@ msgstr ""
 msgid "Thank you."
 msgstr ""
 
-#: ../inc/template-tags.php:33
-msgid "&laquo; First"
-msgstr ""
-
-#: ../inc/template-tags.php:35
-msgid "Last &raquo;"
-msgstr ""
-
-#: ../inc/template-tags.php:77
+#: ../inc/template-tags.php:202
 msgid "Post navigation"
 msgstr ""
 
-#: ../inc/template-tags.php:80
+#: ../inc/template-tags.php:205
 msgctxt "Previous post link"
 msgid "<span class=\"glyphicon glyphicon-arrow-left\"></span>"
 msgstr ""
 
-#: ../inc/template-tags.php:81
+#: ../inc/template-tags.php:206
 msgctxt "Next post link"
 msgid "<span class=\"glyphicon glyphicon-arrow-right\"></span>"
 msgstr ""
 
-#: ../inc/template-tags.php:86
+#: ../inc/template-tags.php:211
 msgid ""
 "<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
 "span></span> Older posts"
 msgstr ""
 
-#: ../inc/template-tags.php:90
+#: ../inc/template-tags.php:215
 msgid ""
 "Newer posts <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-"
 "right\"></span></span>"
 msgstr ""
 
-#: ../inc/template-tags.php:119
+#: ../inc/template-tags.php:244
 msgid "Pingback:"
 msgstr ""
 
-#: ../inc/template-tags.php:129
+#: ../inc/template-tags.php:254
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../inc/template-tags.php:132
+#: ../inc/template-tags.php:257
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../inc/template-tags.php:150
+#: ../inc/template-tags.php:275
 msgid "<i class=\"glyphicon ipt-icomoon-reply\"></i>&nbsp;&nbsp;Reply"
 msgstr ""
 
-#: ../inc/template-tags.php:157
+#: ../inc/template-tags.php:282
 #, php-format
 msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/template-tags.php:238
+#: ../inc/template-tags.php:363
 #, php-format
 msgid ""
 "<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i> "
 "Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
 msgstr ""
 
-#: ../inc/template-tags.php:294
+#: ../inc/template-tags.php:419
 msgid "This article was helpful"
 msgstr ""
 
-#: ../inc/template-tags.php:301 ../inc/template-tags.php:311
+#: ../inc/template-tags.php:426 ../inc/template-tags.php:436
 #, php-format
 msgid "%d person found this article useful"
 msgid_plural "%d people found this article useful"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/template-tags.php:302 ../inc/template-tags.php:307
+#: ../inc/template-tags.php:427 ../inc/template-tags.php:432
 msgid "Please wait"
 msgstr ""
 
-#: ../inc/template-tags.php:325 ../inc/template-tags.php:329
+#: ../inc/template-tags.php:450 ../inc/template-tags.php:454
 msgid "Home"
 msgstr ""
 
-#: ../inc/template-tags.php:445
+#: ../inc/template-tags.php:570
 msgid "Search result"
 msgstr ""
 
-#: ../inc/template-tags.php:449
+#: ../inc/template-tags.php:574
 msgid "Error 404 - Not found"
 msgstr ""
 
-#: ../inc/template-tags.php:453
+#: ../inc/template-tags.php:578
 msgid "Archive"
 msgstr ""
 
-#: ../inc/template-tags.php:457
+#: ../inc/template-tags.php:582
 msgid "Blog"
 msgstr ""
 
-#: ../inc/template-tags.php:497
+#: ../inc/template-tags.php:622
 #, php-format
 msgid "Required fields are marked %s"
 msgstr ""
 
-#: ../inc/template-tags.php:500
+#: ../inc/template-tags.php:625
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: ../inc/template-tags.php:501
+#: ../inc/template-tags.php:626
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: ../inc/template-tags.php:502
+#: ../inc/template-tags.php:627
 #, php-format
 msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out?</a>"
 msgstr ""
 
-#: ../inc/template-tags.php:503
+#: ../inc/template-tags.php:628
 msgid "Your email address will not be published."
 msgstr ""
 
-#: ../inc/template-tags.php:504
+#: ../inc/template-tags.php:629
 #, php-format
 msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes: %s"
 msgstr ""
 
-#: ../inc/template-tags.php:507
+#: ../inc/template-tags.php:632
 msgid "Leave a Reply"
 msgstr ""
 
-#: ../inc/template-tags.php:508
+#: ../inc/template-tags.php:633
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: ../inc/template-tags.php:509
+#: ../inc/template-tags.php:634
 msgid "Cancel reply"
 msgstr ""
 
-#: ../inc/template-tags.php:510
+#: ../inc/template-tags.php:635
 msgid "Post Comment"
 msgstr ""
 
-#: ../inc/template-tags.php:638
+#: ../inc/template-tags.php:763
 msgid "Facebook"
 msgstr ""
 
-#: ../inc/template-tags.php:642
+#: ../inc/template-tags.php:767
 msgid "Twitter"
 msgstr ""
 
-#: ../inc/template-tags.php:646
+#: ../inc/template-tags.php:771
 msgid "Google+"
 msgstr ""
 
-#: ../inc/template-tags.php:663
+#: ../inc/template-tags.php:788
 #, php-format
 msgid "%1$s has written <a href=\"%2$s\">%3$s</a> %4$s"
 msgstr ""
 
-#: ../inc/template-tags.php:663
+#: ../inc/template-tags.php:788
 msgid "article"
 msgid_plural "articles"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../inc/template-tags.php:696
+#: ../inc/template-tags.php:821
 msgid ""
 "This content is password protected. To view it please enter your password "
 "below:"
 msgstr ""
 
-#: ../inc/template-tags.php:698
+#: ../inc/template-tags.php:823
 msgid "Password:"
+msgstr ""
+
+#: ../inc/template-tags.php:847
+msgid "Search"
+msgstr ""
+
+#: ../inc/template-tags.php:879
+msgid "Login"
+msgstr ""
+
+#: ../inc/template-tags.php:898
+#, php-format
+msgid "Hi %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:902
+msgid "Signout"
+msgstr ""
+
+#: ../inc/template-tags.php:1027
+msgid "<i class=\"ipticm ipt-icomoon-question-circle\"></i> Forgot Password"
+msgstr ""
+
+#: ../inc/template-tags.php:1028
+msgid "<i class=\"ipticm ipt-icomoon-signup\"></i> Signup"
+msgstr ""
+
+#: ../no-results.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:7
+msgctxt "placeholder"
+msgid "Search Knowledgebase&hellip;"
+msgstr ""
+
+#: ../searchform.php:13
+#, php-format
+msgid "Search Knowledgebase for %s&hellip;"
+msgstr ""
+
+#: ../template-knowledgebase.php:144
+msgid "Recent articles"
+msgstr ""
+
+#: ../template-knowledgebase.php:181
+msgid "Popular articles"
 msgstr ""
