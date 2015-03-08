@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Knowledge Base v1.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 18:33+0530\n"
-"PO-Revision-Date: 2015-03-08 18:33+0530\n"
+"POT-Creation-Date: 2015-03-08 19:34+0530\n"
+"PO-Revision-Date: 2015-03-08 19:34+0530\n"
 "Last-Translator: Alexander Ihrig <github@alexander-ihrig.de>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -1387,87 +1387,87 @@ msgid "Theme: %1$s by %2$s."
 msgstr "Thema: %1$s von %2$s."
 
 # @ ipt_kb
-#: functions.php:58
+#: functions.php:54
 msgid "Primary Menu"
 msgstr "Haupt-Menü"
 
 # @ ipt_kb
-#: functions.php:90
+#: functions.php:91
 msgid "Knowledge Base Sidebar"
 msgstr "Knowledge-Base-Sidebar"
 
 # @ ipt_kb
-#: functions.php:92
+#: functions.php:93
 msgid "Shows up only on category archive pages and single posts."
 msgstr "Wird nur in Kategorien und Beiträgen angezeigt."
 
 # @ ipt_kb
-#: functions.php:99
+#: functions.php:100
 msgid "General Sidebar"
 msgstr "Standard-Sidebar"
 
 # @ ipt_kb
-#: functions.php:101
+#: functions.php:102
 msgid "Shows up everywhere except the category archive pages and single posts."
 msgstr "Wird überall außer in Kategorien und Beiträgen angezeigt."
 
 # @ ipt_kb
-#: functions.php:108
+#: functions.php:109
 msgid "bbPress Sidebar"
 msgstr "bbPress-Sidebar"
 
 # @ ipt_kb
-#: functions.php:110
+#: functions.php:111
 msgid "Shows up on bbPress forums and topics."
 msgstr "Wird in bbPress-Foren und -Themen angezeigt."
 
 # @ ipt_kb
-#: functions.php:117
+#: functions.php:118
 msgid "Footer Large"
 msgstr ""
 
 # @ ipt_kb
-#: functions.php:125
+#: functions.php:126
 msgid "Footer Small"
 msgstr ""
 
 # @ ipt_kb
-#: functions.php:192
+#: functions.php:193
 msgid "Oops, some problem to connect. Try again?"
 msgstr "Oh nein, Probleme beim Verbinden sind aufgetreten. Erneut Versuchen?"
 
-#: functions.php:351 inc/class-tgm-plugin-activation.php:196
+#: functions.php:352 inc/class-tgm-plugin-activation.php:196
 msgid "Install Required Plugins"
 msgstr ""
 
-#: functions.php:352 inc/class-tgm-plugin-activation.php:197
+#: functions.php:353 inc/class-tgm-plugin-activation.php:197
 msgid "Install Plugins"
 msgstr ""
 
-#: functions.php:353 inc/class-tgm-plugin-activation.php:198
+#: functions.php:354 inc/class-tgm-plugin-activation.php:198
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: functions.php:354
+#: functions.php:355
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: functions.php:355 inc/class-tgm-plugin-activation.php:200
+#: functions.php:356 inc/class-tgm-plugin-activation.php:200
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:356 inc/class-tgm-plugin-activation.php:201
+#: functions.php:357 inc/class-tgm-plugin-activation.php:201
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:357 inc/class-tgm-plugin-activation.php:202
+#: functions.php:358 inc/class-tgm-plugin-activation.php:202
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -1480,21 +1480,21 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:358 inc/class-tgm-plugin-activation.php:203
+#: functions.php:359 inc/class-tgm-plugin-activation.php:203
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:359 inc/class-tgm-plugin-activation.php:204
+#: functions.php:360 inc/class-tgm-plugin-activation.php:204
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:360 inc/class-tgm-plugin-activation.php:205
+#: functions.php:361 inc/class-tgm-plugin-activation.php:205
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -1507,7 +1507,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:361 inc/class-tgm-plugin-activation.php:206
+#: functions.php:362 inc/class-tgm-plugin-activation.php:206
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -1518,7 +1518,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:362 inc/class-tgm-plugin-activation.php:207
+#: functions.php:363 inc/class-tgm-plugin-activation.php:207
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -1531,46 +1531,46 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:363 inc/class-tgm-plugin-activation.php:208
+#: functions.php:364 inc/class-tgm-plugin-activation.php:208
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:364 inc/class-tgm-plugin-activation.php:209
+#: functions.php:365 inc/class-tgm-plugin-activation.php:209
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:365 inc/class-tgm-plugin-activation.php:210
+#: functions.php:366 inc/class-tgm-plugin-activation.php:210
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: functions.php:366 inc/class-tgm-plugin-activation.php:212
+#: functions.php:367 inc/class-tgm-plugin-activation.php:212
 #: inc/class-tgm-plugin-activation.php:1951
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: functions.php:367
+#: functions.php:368
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
-#: functions.php:395
+#: functions.php:396
 msgid "Knowledge Base Theme"
 msgstr ""
 
 # @ ipt_kb
-#: header-bbpress.php:35 header.php:35
+#: header-bbpress.php:32 header.php:32
 msgid "Toggle navigation"
 msgstr "Navigation ein-/ausblenden"
 
-#: header-bbpress.php:40 header.php:40
+#: header-bbpress.php:37 header.php:37
 msgid "Toggle search"
 msgstr ""
 
-#: header-bbpress.php:46 header.php:46
+#: header-bbpress.php:43 header.php:43
 msgid "Toggle User"
 msgstr ""
 
@@ -1616,7 +1616,7 @@ msgstr "Neue Anfrage"
 
 #: inc/bbpress.php:245
 msgid ""
-"<span class=\"glyphicon ipt-icomoon-info2 bstooltip\" title=\"New Request"
+"<span class=\"glyphicon ipt-icomoon-info3 bstooltip\" title=\"New Request"
 "\"></span><span class=\"sr-only\"> [New Request] </span>"
 msgstr ""
 

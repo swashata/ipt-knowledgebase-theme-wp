@@ -242,7 +242,7 @@ function ipt_kb_support_new_status( $status ) {
 	$status['topic-not-resolved'] = array(
 		'sb-caption'   => __( 'New Request', 'ipt_kb' ),
 		'value'        => 1,
-		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-info2 bstooltip" title="New Request"></span><span class="sr-only"> [New Request] </span>', 'ipt_kb' ),
+		'prefix-title' => __( '<span class="glyphicon ipt-icomoon-info3 bstooltip" title="New Request"></span><span class="sr-only"> [New Request] </span>', 'ipt_kb' ),
 		'admin_class'  => 'waiting'
 	);
 	$status['topic-resolved'] = array(
