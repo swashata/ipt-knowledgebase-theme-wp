@@ -434,43 +434,43 @@ div.bbp-topic-tags {
 }
 .bbp-admin-links a.bbp-topic-edit-link:before,
 .bbp-admin-links a.bbp-reply-edit-link:before {
-	content: '\e7c9';
+	content: '\e001';
 }
 .bbp-admin-links a.bbp-topic-close-link:before {
-	content: '\e7f1';
+	content: '\e06a';
 }
 .bbp-admin-links a.bbp-topic-sticky-link:before {
-	content: '\e804';
+	content: '\e07b';
 }
 .bbp-admin-links a.bbp-topic-super-sticky-link:before {
-	content: '\e876';
+	content: '\e0d3';
 }
 .bbp-admin-links a.bbp-topic-merge-link:before {
-	content: '\e7ee';
+	content: '\e066';
 }
 .bbp-admin-links a.bbp-topic-trash-link:before,
 .bbp-admin-links a.bbp-reply-trash-link:before,
 .bbp-admin-links a.bbp-topic-delete-link:before,
 .bbp-admin-links a.bbp-reply-delete-link:before {
-	content: '\e86b';
+	content: '\e0c8';
 }
 .bbp-admin-links a.bbp-topic-restore-link:before,
 .bbp-admin-links a.bbp-reply-restore-link:before {
-	content: '\e829';
+	content: '\e096';
 }
 .bbp-admin-links a.bbp-topic-spam-link:before,
 .bbp-admin-links a.bbp-reply-spam-link:before {
-	content: '\e8bf';
+	content: '\e116';
 }
 .bbp-admin-links a.bbp-topic-reply-link:before,
 .bbp-admin-links a.bbp-reply-to-link:before {
-	content: '\e82c';
+	content: '\e099';
 }
 .bbp-admin-links a.bbp-reply-move-link:before {
-	content: '\e845';
+	content: '\e0ac';
 }
 .bbp-admin-links a.bbp-topic-split-link:before {
-	content: '\e827';
+	content: '\e094';
 }
 
 /* =Toggles

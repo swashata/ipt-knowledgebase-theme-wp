@@ -13,9 +13,6 @@ global $ipt_theme_op_settings;
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-<?php if ( $ipt_theme_op_settings['laf']['favicon'] != '' ) : ?>
-<link rel="shortcut icon" type="image/png" href="<?php echo esc_attr( $ipt_theme_op_settings['laf']['favicon'] ); ?>" />
-<?php endif; ?>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 

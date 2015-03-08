@@ -11,6 +11,6 @@
 	// The plugin is most likely override it.
 	?>
 	<span class="badge"><?php echo get_the_date(); ?></span>
-	<h3><span class="glyphicon ipt-icomoon-file"></span> <?php the_title(); ?></h3>
+	<h3><span class="glyphicon ipt-icomoon-file4"></span> <?php the_title(); ?></h3>
 	<span class="clearfix"></span>
 </a>
