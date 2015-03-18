@@ -1426,3 +1426,9 @@ body .syntaxhighlighter table div {
 	}
 }
 
+/* =Advertisement
+------------------------------------------------- */
+.title-advertisement,
+.authorbox-advertisement {
+	margin-bottom: 10px;
+}

@@ -729,6 +729,8 @@ if ( ! function_exists( 'ipt_kb_author_meta' ) ) :
  * @return void
  */
 function ipt_kb_author_meta( $author_id = null ) {
+	global $ipt_theme_op_settings;
+
 	// Check for the author_id
 	if ( $author_id === null ) {
 		// There are two possibilities
@@ -804,6 +806,11 @@ function ipt_kb_author_meta( $author_id = null ) {
 	</div>
 	<div class="clearfix"></div>
 </div>
+<?php if ( isset( $ipt_theme_op_settings['ads'] ) && '' != trim( $ipt_theme_op_settings['ads']['below_authorbox'] ) ) : ?>
+<div class="authorbox-advertisement">
+	<?php echo trim( $ipt_theme_op_settings['ads']['below_authorbox'] ); ?>
+</div>
+<?php endif; ?>
 	<?php
 }
 endif;

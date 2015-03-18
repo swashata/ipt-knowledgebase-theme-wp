@@ -2,6 +2,7 @@
 /**
  * @package iPanelThemes Knowledgebase
  */
+global $ipt_theme_op_settings;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -12,6 +13,11 @@
 			<?php ipt_kb_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
+	<?php if ( isset( $ipt_theme_op_settings['ads'] ) && '' != trim( $ipt_theme_op_settings['ads']['below_title'] ) ) : ?>
+	<div class="title-advertisement">
+		<?php echo trim( $ipt_theme_op_settings['ads']['below_title'] ); ?>
+	</div>
+	<?php endif; ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>

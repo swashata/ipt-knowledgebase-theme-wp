@@ -8,8 +8,11 @@
 /**
  * Set the version
  */
-global $ipt_kb_version;
+global $ipt_kb_version, $ipt_theme_op_settings;
 $ipt_kb_version = '1.7.0';
+if ( ! is_array( $ipt_theme_op_settings ) ) {
+	$ipt_theme_op_settings = array();
+}
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -304,9 +307,8 @@ function ipt_kb_required_plugins() {
 			'name' => 'iPanelThemes Theme Options',
 			'slug' => 'ipt-theme-options',
 			'source' => get_template_directory() . '/plugins/ipt-theme-options.zip',
-			'required' => true,
+			'required' => false,
 			'version' => '0.0.1',
-			'force_activation' => true,
 			'external_url' => '',
 		);
 
@@ -314,7 +316,7 @@ function ipt_kb_required_plugins() {
 		$plugins[] = array(
 			'name' => 'Easy Bootstrap Shortcode',
 			'slug' => 'easy-bootstrap-shortcodes',
-			'required' => true,
+			'required' => false,
 			'version' => '4.2.3',
 		);
 
@@ -350,36 +352,6 @@ function ipt_kb_required_plugins() {
 			'version' => '3.1.11',
 		);
 
-		$config = array(
-			'default_path' => get_template_directory() . '/plugins',          // Default absolute path to pre-packaged plugins.
-			'menu'         => 'tgmpa-install-plugins', // Menu slug.
-			'has_notices'  => true,                    // Show admin notices or not.
-			'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-			'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-			'is_automatic' => false,                   // Automatically activate plugins after installation or not.
-			'message'      => '',                      // Message to output right before the plugins table.
-			'strings'      => array(
-				'page_title'                      => __( 'Install Required Plugins', 'tgmpa' ),
-				'menu_title'                      => __( 'Install Plugins', 'tgmpa' ),
-				'installing'                      => __( 'Installing Plugin: %s', 'tgmpa' ), // %s = plugin name.
-				'oops'                            => __( 'Something went wrong with the plugin API.', 'tgmpa' ),
-				'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ), // %1$s = plugin name(s).
-				'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ), // %1$s = plugin name(s).
-				'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ), // %1$s = plugin name(s).
-				'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s).
-				'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s).
-				'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ), // %1$s = plugin name(s).
-				'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ), // %1$s = plugin name(s).
-				'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ), // %1$s = plugin name(s).
-				'install_link'                    => _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
-				'activate_link'                   => _n_noop( 'Begin activating plugin', 'Begin activating plugins' ),
-				'return'                          => __( 'Return to Required Plugins Installer', 'tgmpa' ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', 'tgmpa' ),
-				'complete'                        => __( 'All plugins installed and activated successfully. %s', 'tgmpa' ), // %s = dashboard link.
-				'nag_type'                        => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
-			)
-		);
-
 		tgmpa( $plugins );
 	}
 }
@@ -388,6 +360,77 @@ endif;
 /**
  * Modify the options plugin
  */
+if ( ! function_exists( 'ipt_kb_theme_extended_ops' ) ) :
+function ipt_kb_theme_extended_ops( $defaults ) {
+	if ( ! is_array( $defaults ) ) {
+		$defaults = array();
+	}
+
+	$defaults['ads'] = array(
+		'below_title' => '',
+		'below_authorbox' => '',
+	);
+
+	return $defaults;
+}
+endif;
+add_filter( 'ipt_theme_op_default_settings', 'ipt_kb_theme_extended_ops' );
+
+if ( class_exists( 'IPT_Theme_Op_Admin' ) ) :
+
+if ( ! function_exists( 'ipt_kb_extended_admin_tabs' ) ) :
+function ipt_kb_extended_admin_tabs( $tabs ) {
+	$tabs[] = array(
+		'id'            => 'advertisement',
+		'label'         => __( '<i class="ipticm ipt-icomoon-bullhorn"></i> Advertisement', 'ipt_kb' ),
+		'callback'      => 'ipt_kb_admin_advertisement',
+		'scroll'        => false,
+		'classes'       => array(),
+		'has_inner_tab' => false,
+	);
+	return $tabs;
+}
+endif;
+add_filter( 'ipt_theme_op_admin_tabs', 'ipt_kb_extended_admin_tabs', 20, 1 );
+
+if ( ! function_exists( 'ipt_kb_admin_advertisement' ) ) :
+function ipt_kb_admin_advertisement() {
+	global $ipt_theme_op_settings;
+	$op = $ipt_theme_op_settings['ads'];
+	$ui = IPT_Theme_Op_Admin::$instance->ui;
+	?>
+<table class="form-table">
+	<tbody>
+		<tr>
+			<th>
+				<?php $ui->generate_label( 'ads[below_title]', __( 'Below Title Advertisement', 'ipt_thm' ) ); ?>
+			</th>
+			<td>
+				<?php $ui->textarea( 'ads[below_title]', $op['below_title'], __( 'Disabled', 'ipt_thm' ), 'fit', 'normal', array( 'code' ) ); ?>
+			</td>
+			<td>
+				<?php $ui->help( __( 'Enter the ad code (RAW HTML) that will be displayed below title.', 'ipt_thm' ) ); ?>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<?php $ui->generate_label( 'ads[below_authorbox]', __( 'Below Authorbox Advertisement', 'ipt_thm' ) ); ?>
+			</th>
+			<td>
+				<?php $ui->textarea( 'ads[below_authorbox]', $op['below_authorbox'], __( 'Disabled', 'ipt_thm' ), 'fit', 'normal', array( 'code' ) ); ?>
+			</td>
+			<td>
+				<?php $ui->help( __( 'Enter the ad code (RAW HTML) that will be displayed beside the authorbox.', 'ipt_thm' ) ); ?>
+			</td>
+		</tr>
+	</tbody>
+</table>
+	<?php
+}
+endif;
+
+endif;
+
 if ( ! function_exists( 'ipt_kb_theme_ops_tabs' ) ) :
 function ipt_kb_theme_ops_tabs( $tabs ) {
 	$new_tabs = array();
