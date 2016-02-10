@@ -22,9 +22,9 @@ class IPT_KB_KnowledgeBase_Widget extends WP_Widget {
 	 *
 	 * @return void
 	 */
-	function IPT_KB_KnowledgeBase_Widget() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'ipt-kb-knowledgebase-widget', 'description' => __( 'Lists all your categories or knowledge bases with the right appearance.', 'ipt_kb' ) );
-		$this->WP_Widget( 'ipt-kb-knowledgebase-widget', __( 'Knowledge Base Widget', 'ipt_kb' ), $widget_ops );
+		parent::__construct( 'ipt-kb-knowledgebase-widget', __( 'Knowledge Base Widget', 'ipt_kb' ), $widget_ops );
 	}
 
 	/**

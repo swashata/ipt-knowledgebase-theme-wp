@@ -22,9 +22,9 @@ class IPT_KB_Popular_Widget extends WP_Widget {
 	 *
 	 * @return void
 	 */
-	function IPT_KB_Popular_Widget() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'ipt-kb-popular-widget', 'description' => __( 'Shows articles or posts based on the user likes.', 'ipt_kb' ) );
-		$this->WP_Widget( 'ipt-kb-popular-widget', __( 'Popular Knowledge Base Articles', 'ipt_kb' ), $widget_ops );
+		parent::__construct( 'ipt-kb-popular-widget', __( 'Popular Knowledge Base Articles', 'ipt_kb' ), $widget_ops );
 	}
 
 	/**

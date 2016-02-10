@@ -25,7 +25,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
 	 *
 	 * @return void
 	 */
-	function IPT_KB_Social_Widget() {
+	function __construct() {
 		$default_settings = array(
 			'title' => __( 'Stay <span>Connected</span>', 'ipt_kb' ),
 			'links' => array(
@@ -61,7 +61,7 @@ class IPT_KB_Social_Widget extends WP_Widget {
 		$this->default_settings = apply_filters( 'ipt_kb_social_widget_defaults', $default_settings );
 		$this->settings_helper = apply_filters( 'ipt_kb_social_widget_settings_helper', $settings_helper );
 		$widget_ops = array( 'classname' => 'ipt-kb-social-widget', 'description' => __( 'A nice looking social widget for the footer small area.', 'ipt_kb' ) );
-		$this->WP_Widget( 'ipt-kb-social-widget', __( 'Social Widget', 'ipt_kb' ), $widget_ops );
+		parent::__construct( 'ipt-kb-social-widget', __( 'Social Widget', 'ipt_kb' ), $widget_ops );
 	}
 
 	/**

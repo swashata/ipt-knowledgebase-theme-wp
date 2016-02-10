@@ -28,9 +28,9 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	 *
 	 * @return void
 	 */
-	function IPT_KB_Affix_Widget() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'ipt_kb_affix', 'description' => __( 'An affix widget for displaying on the sidebar of the single articles.', 'ipt_kb' ) );
-		$this->WP_Widget( 'ipt_kb_affix', __( 'Affix Widget', 'ipt_kb' ), $widget_ops );
+		parent::__construct( 'ipt_kb_affix', __( 'Affix Widget', 'ipt_kb' ), $widget_ops );
 	}
 
 	/**
