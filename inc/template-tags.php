@@ -872,7 +872,6 @@ function ipt_kb_navbar_login() {
 	if ( $ipt_theme_op_settings['navigation']['show_login'] == false ) {
 		return false;
 	}
-	get_currentuserinfo();
 	$additional_items = '';
 	if ( function_exists( 'ipt_theme_op_navigation_logged_out_nav' ) ) {
 		$additional_items = ipt_theme_op_navigation_logged_out_nav( false );
