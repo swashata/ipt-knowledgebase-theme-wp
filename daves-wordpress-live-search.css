@@ -1,0 +1,114 @@
+/** Dave's WordPress Live Search CSS **/
+ul.search_results
+{
+display: block;
+background-color:#fff;
+width: 90%;
+max-height: 500px;
+position:absolute;
+top: 20px;
+left: 0px;
+overflow: auto;
+z-index: 9999;
+
+list-style-type: none;
+list-style-image: none;
+list-style-position: inside;
+
+padding: 0px;
+margin: 0px;
+
+-webkit-box-shadow: 2px 2px 2px #eee;
+box-shadow: 2px 2px 2px #eee;
+}
+
+ul.search_results li
+{
+display: block;
+padding: 5px 10px 5px 10px;
+margin: 0px 0px 0px 0px;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #aaa;
+text-align: left;
+color: #000;
+background-color: #fff;
+text-decoration: none;
+
+}
+
+ul.search_results li:hover
+{
+background-color: #efefef;
+}
+
+ul.search_results li a, ul.search_results li a:visited
+{
+display: block;
+color: #000;
+margin-left: 0px;
+padding-left: 0px;
+text-decoration: none;
+font-weight: bold;
+}
+
+ul.search_results p#daves-wordpress-live-search_author
+{
+margin: 0px;
+font-size: 90%;
+font-weight: bold;
+}
+
+ul.search_results p#daves-wordpress-live-search_date
+{
+margin: 0px;
+font-size: 90%;
+}
+
+/* BEGIN post thumbnails */
+ul.search_results li.post_with_thumb a {
+width:150px;
+float:left;
+margin-bottom: 5px;
+}
+
+ul.search_results li.post_with_thumb img.post_thumb
+{
+float: left;
+margin: 3px 10px 10px 0px;
+height: 48px;
+width: 48px;
+border: 1px solid #888;
+}
+/* END post thumbnails */
+
+/* BEGIN post excerpt */
+ul.search_results .excerpt, ul.search_results .meta
+{
+font-size: 75%;
+width: 100%;
+}
+/* END post excerpt */
+
+ul.search_results .clearfix
+{
+float: none !important;
+clear: both !important;
+}
+
+.search_footer {
+background-color: #888;
+width: 100%;
+text-align: right;
+padding: .5em 0;
+font-size: .9em;
+}
+
+.search_footer a,
+.search_footer a:visited {
+color: #fff;
+margin-right: 1em;
+}
+
+#search_results_activity_indicator{
+z-index:999999;
+}
