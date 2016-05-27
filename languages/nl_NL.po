@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Knowledge Base Theme\n"
 "POT-Creation-Date: 2015-03-08 19:34+0530\n"
-"PO-Revision-Date: 2016-05-25 12:15+0200\n"
+"PO-Revision-Date: 2016-05-27 19:47+0200\n"
 "Last-Translator: Swashata Ghosh <swashata4u@gmail.com>\n"
 "Language-Team: ipanelthemes.com <ipanelthemes@gmail.com>\n"
 "Language: nl_NL\n"
@@ -60,7 +60,7 @@ msgstr "Jaar: %s"
 
 #: ../archive.php:48
 msgid "Asides"
-msgstr ""
+msgstr "Terzijde"
 
 #: ../archive.php:51
 msgid "Images"
@@ -134,7 +134,7 @@ msgstr "Verstopte Antwoorden"
 
 #: ../bbpress/feedback-logged-in.php:13
 msgid "You are already logged in."
-msgstr "U bent al ingelogd."
+msgstr "Je bent al ingelogd."
 
 #: ../bbpress/feedback-no-access.php:13
 msgid "Private"
@@ -142,7 +142,7 @@ msgstr "Priv&#233;."
 
 #: ../bbpress/feedback-no-access.php:16
 msgid "You do not have permission to view this forum."
-msgstr "U heeft geen toestemming om dit forum in te zien."
+msgstr "Je hebt geen toestemming om dit forum in te zien."
 
 #: ../bbpress/feedback-no-forums.php:13
 msgid "Oh bother! No forums were found here!"
@@ -166,7 +166,7 @@ msgstr "Auteursinformatie"
 
 #: ../bbpress/form-anonymous.php:15
 msgid "Your information:"
-msgstr "Uw informatie:"
+msgstr "Jouw informatie:"
 
 #: ../bbpress/form-anonymous.php:20 ../bbpress/form-anonymous.php:21
 msgid "Name (required):"
@@ -183,32 +183,34 @@ msgstr "Website:"
 #: ../bbpress/form-forum.php:35 ../bbpress/form-topic.php:29
 #, php-format
 msgid "Now Editing &ldquo;%s&rdquo;"
-msgstr ""
+msgstr "Nu &ldquo;%s&rdquo; Aanpassen"
 
 #: ../bbpress/form-forum.php:37
 #, php-format
 msgid "Create New Forum in &ldquo;%s&rdquo;"
-msgstr ""
+msgstr "Maak nieuw forum in &ldquo;%s&rdquo;"
 
 #: ../bbpress/form-forum.php:37
 msgid "Create New Forum"
-msgstr ""
+msgstr "Maak Nieuwe Forum"
 
 #: ../bbpress/form-forum.php:47
 msgid ""
 "This forum is closed to new content, however your account still allows you "
 "to do so."
 msgstr ""
+"Dit forum is gesloten voor nieuwe onderwerpen. Echter je publicatie rechten "
+"laten je dit nog toe."
 
 #: ../bbpress/form-forum.php:55 ../bbpress/form-reply.php:34
 #: ../bbpress/form-topic.php:44
 msgid "Your account has the ability to post unrestricted HTML content."
-msgstr ""
+msgstr "Je account heeft de mogelijkheid om onbeperkt HTML-inhoud te plaatsen."
 
 #: ../bbpress/form-forum.php:67
 #, php-format
 msgid "Forum Name (Maximum Length: %d):"
-msgstr ""
+msgstr "Forum Naam  (Maximum Lengte: %d):"
 
 #: ../bbpress/form-forum.php:82 ../bbpress/form-reply.php:50
 #: ../bbpress/form-topic.php:76
@@ -216,10 +218,12 @@ msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
 "and attributes:"
 msgstr ""
+"Je kan de volgende <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+"elementen en attributen gebruiken:"
 
 #: ../bbpress/form-forum.php:91
 msgid "Forum Type:"
-msgstr ""
+msgstr "Forum Type:"
 
 #: ../bbpress/form-forum.php:100
 msgid "Status:"
@@ -247,15 +251,15 @@ msgstr "Indienen"
 #: ../bbpress/form-forum.php:161
 #, php-format
 msgid "The forum &#8216;%s&#8217; is closed to new content."
-msgstr ""
+msgstr "Het forum &#8216;%s&#8217; is gesloten voor nieuwe inhoud."
 
 #: ../bbpress/form-forum.php:169
 msgid "You cannot create new forums."
-msgstr ""
+msgstr "Je kan geen nieuwe forums maken."
 
 #: ../bbpress/form-forum.php:169
 msgid "You must be logged in to create new forums."
-msgstr ""
+msgstr "Je moet zijn ingelogd om nieuwe forums te maken."
 
 #: ../bbpress/form-protected.php:14
 msgid "Protected"
@@ -271,12 +275,16 @@ msgid ""
 "You can either make this reply a new topic with a new title, or merge it "
 "into an existing topic."
 msgstr ""
+"Je kan deze reactie in een nieuw onderwerp samenvoegen met een nieuwe titel, "
+"of samenvoegen in een bestaand onderwerp."
 
 #: ../bbpress/form-reply-move.php:25
 msgid ""
 "If you choose an existing topic, replies will be ordered by the time and "
 "date they were created."
 msgstr ""
+"Als je een bestaan onderwerp kiest, zullen reactie worden gesorteerd op "
+"volgorde van de tijd en datum waarop ze zijn gemaakt."
 
 #: ../bbpress/form-reply-move.php:28
 msgid "Move Method"
@@ -285,7 +293,7 @@ msgstr "Verplaats Methode"
 #: ../bbpress/form-reply-move.php:32 ../bbpress/form-topic-split.php:33
 #, php-format
 msgid "New topic in <strong>%s</strong> titled:"
-msgstr ""
+msgstr "Nieuwe onderwerp in <strong>%s</strong> getiteld:"
 
 #: ../bbpress/form-reply-move.php:35
 #, php-format
@@ -294,7 +302,7 @@ msgstr "Verplaatst: %s"
 
 #: ../bbpress/form-reply-move.php:41 ../bbpress/form-topic-split.php:42
 msgid "Use an existing topic in this forum:"
-msgstr ""
+msgstr "Gebruik een bestaand onderwerp in dit forum:"
 
 #: ../bbpress/form-reply-move.php:51 ../bbpress/form-topic-split.php:52
 msgid "No other topics found!"
@@ -304,14 +312,15 @@ msgstr "Geen andere onderwerpen gevonden!"
 #: ../bbpress/form-topic-split.php:79
 msgid "<strong>WARNING:</strong> This process cannot be undone."
 msgstr ""
+"<strong>WAARSCHUWING:</strong> Dit proces kan niet ongedaan worden gemaakt."
 
 #: ../bbpress/form-reply-move.php:74
 msgid "You do not have the permissions to edit this reply!"
-msgstr ""
+msgstr "Je hebt niet de rechten om deze reactie aan te passen!"
 
 #: ../bbpress/form-reply-move.php:74
 msgid "You cannot edit this reply."
-msgstr "U kan deze reactie niet aanpassen."
+msgstr "Je kan deze reactie niet aanpassen."
 
 #: ../bbpress/form-reply.php:23
 #, php-format
@@ -323,6 +332,8 @@ msgid ""
 "This topic is marked as closed to new replies, however your posting "
 "capabilities still allow you to do so."
 msgstr ""
+"Dit onderwerp is gemarkeerd als gesloten voor nieuwe reacties, echter staan "
+"jouw rechten toe dat jij dit wel mag."
 
 #: ../bbpress/form-reply.php:59
 msgid "Tags:"
@@ -330,38 +341,39 @@ msgstr "Tags:"
 
 #: ../bbpress/form-reply.php:77 ../bbpress/form-topic.php:142
 msgid "Notify the author of follow-up replies via email"
-msgstr ""
+msgstr "Licht de auteur via email in over opvolgende reacties"
 
 #: ../bbpress/form-reply.php:79 ../bbpress/form-topic.php:144
 msgid "Notify me of follow-up replies via email"
-msgstr ""
+msgstr "Licht me via email in over opvolgende reacties"
 
 #: ../bbpress/form-reply.php:93 ../bbpress/form-topic.php:155
 msgid "Keep a log of this edit:"
-msgstr ""
+msgstr "Houdt een log bij van deze aanpassing:"
 
 #: ../bbpress/form-reply.php:97 ../bbpress/form-reply.php:98
 #: ../bbpress/form-topic.php:159
 msgid "Optional reason for editing:"
-msgstr ""
+msgstr "Optionele reden voor aanpassing:"
 
 #: ../bbpress/form-reply.php:127
 #, php-format
 msgid "The topic &#8216;%s&#8217; is closed to new replies."
-msgstr ""
+msgstr "Het onderwerp &#8216;%s&#8217; is gesloten voor nieuwe reacties."
 
 #: ../bbpress/form-reply.php:133 ../bbpress/form-topic.php:193
 #, php-format
 msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
 msgstr ""
+"Het forum &#8216;%s&#8217; is gesloten voor nieuwe onderwerpen en reacties."
 
 #: ../bbpress/form-reply.php:139
 msgid "You cannot reply to this topic."
-msgstr ""
+msgstr "Je kan niet op dit onderwerp reageren"
 
 #: ../bbpress/form-reply.php:139
 msgid "You must be logged in to reply to this topic."
-msgstr ""
+msgstr "Je moet zijn ingelogd om op dit onderwerp te reageren."
 
 #: ../bbpress/form-search.php:13
 msgid "Search for:"
@@ -382,12 +394,16 @@ msgid ""
 "Select the topic to merge this one into. The destination topic will remain "
 "the lead topic, and this one will change into a reply."
 msgstr ""
+"Selecteer het onderwerp om deze in samen te voegen. Het doel onderwerp zal "
+"het hoofdonderwerp blijven, and deze zal veranderen in een reactie."
 
 #: ../bbpress/form-topic-merge.php:24
 msgid ""
 "To keep this topic as the lead, go to the other topic and use the merge tool "
 "from there instead."
 msgstr ""
+"Om dit onderwerp als hoofdonderwerp te behouden, ga naar het ander andere "
+"onderwerp en voeg vanaf daar samen."
 
 #: ../bbpress/form-topic-merge.php:28
 msgid ""
@@ -396,22 +412,29 @@ msgid ""
 "destination topic was created after this one, it's post date will be updated "
 "to second earlier than this one."
 msgstr ""
+"Alle reacties in beide onderwerpen zullen chronologisch samengevoegd worden. "
+"De volgorde van de samengevoegde reacties is gebaseerd op de tijd en datum "
+"waarop ze zijn geplaatst. Als het doelonderwerp eerder was gemaakt dan deze, "
+"zal zijn plaatsingsdatum aangepast worden zodat het een seconde eerder is "
+"dan deze."
 
 #: ../bbpress/form-topic-merge.php:30
 msgid "Destination"
-msgstr ""
+msgstr "Doel"
 
 #: ../bbpress/form-topic-merge.php:32
 msgid "Merge with this topic:"
-msgstr ""
+msgstr "Samenvoegen met dit onderwerp:"
 
 #: ../bbpress/form-topic-merge.php:40
 msgid "No topics were found to which the topic could be merged to!"
 msgstr ""
+"Er zijn geen onderwerpen gevonden waarmee dit onderwerp kan worden "
+"samengevoegd!"
 
 #: ../bbpress/form-topic-merge.php:44
 msgid "There are no other topics in this forum to merge with."
-msgstr ""
+msgstr "Er zijn geen andere onderwerpen in dit forum om mee samen te voegen."
 
 #: ../bbpress/form-topic-merge.php:47 ../bbpress/form-topic-split.php:59
 msgid "Topic Extras"
@@ -419,28 +442,28 @@ msgstr "Onderwerp Extra&apos;s"
 
 #: ../bbpress/form-topic-merge.php:52
 msgid "Merge topic subscribers"
-msgstr ""
+msgstr "Voeg onderwerp abonnees samen"
 
 #: ../bbpress/form-topic-merge.php:57
 msgid "Merge topic favoriters"
-msgstr ""
+msgstr "Voeg mensen samen die dit onderwerp als favoriet hebben"
 
 #: ../bbpress/form-topic-merge.php:62
 msgid "Merge topic tags"
-msgstr ""
+msgstr "Voeg onderwerp tags samen"
 
 #: ../bbpress/form-topic-merge.php:82 ../bbpress/form-topic-split.php:95
 msgid "You do not have the permissions to edit this topic!"
-msgstr ""
+msgstr "Je hebt geen toestemming om dit onderwerp aan te passen!"
 
 #: ../bbpress/form-topic-merge.php:82 ../bbpress/form-topic-split.php:95
 msgid "You cannot edit this topic."
-msgstr ""
+msgstr "Je kan dit onderwerp niet aanpassen."
 
 #: ../bbpress/form-topic-split.php:19
 #, php-format
 msgid "Split topic \"%s\""
-msgstr ""
+msgstr "Splits onderwerp \"%s\""
 
 #: ../bbpress/form-topic-split.php:22
 msgid ""
@@ -448,6 +471,10 @@ msgid ""
 "you just selected. Choose to use that reply as a new topic with a new title, "
 "or merge those replies into an existing topic."
 msgstr ""
+"Wanneer je een onderwerp splitst, deel je het in tweeën vanaf de reactie die "
+"door jou is geselecteerd. Kies om die reactie and nieuwe onderwerp met een "
+"nieuwe titel te beginnen, of voeg het samen met reacties van een bestaand "
+"onderwerp."
 
 #: ../bbpress/form-topic-split.php:26
 msgid ""
@@ -455,46 +482,52 @@ msgid ""
 "merged chronologically. The order of the merged replies is based on the time "
 "and date they were posted."
 msgstr ""
+"Als je een bestaand onderwerp kiest, zullen reacties van beide onderwerpen "
+"op volgorde van tijd worden samengevoegd. De volgorde van de reacties is "
+"gebaseerd op de tijd en datum waarop ze zijn geplaatst."
 
 #: ../bbpress/form-topic-split.php:29
 msgid "Split Method"
-msgstr ""
+msgstr "Splits methode"
 
 #: ../bbpress/form-topic-split.php:36
 #, php-format
 msgid "Split: %s"
-msgstr ""
+msgstr "Splits: %s"
 
 #: ../bbpress/form-topic-split.php:64
 msgid "Copy subscribers to the new topic"
-msgstr ""
+msgstr "Kopieer abonnees naar een nieuw onderwerp"
 
 #: ../bbpress/form-topic-split.php:69
 msgid "Copy favoriters to the new topic"
 msgstr ""
+"Kopieer mensen die dit onderwerp als favoriet hebben naar een nieuw onderwerp"
 
 #: ../bbpress/form-topic-split.php:74
 msgid "Copy topic tags to the new topic"
-msgstr ""
+msgstr "Kopieer onderwerp tags naar een nieuw onderwerp"
 
 #: ../bbpress/form-topic-tag.php:18
 #, php-format
 msgid "Manage Tag: \"%s\""
-msgstr ""
+msgstr "Beheer Tag: \"%s\""
 
 #: ../bbpress/form-topic-tag.php:22
 msgid "Rename"
-msgstr ""
+msgstr "Hernoem"
 
 #: ../bbpress/form-topic-tag.php:25
 msgid "Leave the slug empty to have one automatically generated."
-msgstr ""
+msgstr "Laat de slug leeg om er automatisch een te genereren."
 
 #: ../bbpress/form-topic-tag.php:29
 msgid ""
 "Changing the slug affects its permalink. Any links to the old slug will stop "
 "working."
 msgstr ""
+"Het aanpassen van de slug heeft invloed op de permalink. Alle links naar de "
+"oude slug zullen niet langer werken."
 
 #: ../bbpress/form-topic-tag.php:35
 msgid "Name:"
@@ -514,7 +547,7 @@ msgstr "Samenvoegen"
 
 #: ../bbpress/form-topic-tag.php:62
 msgid "Merging tags together cannot be undone."
-msgstr ""
+msgstr "Samenvoegen van tags kan niet ongedaan worden gemaakt."
 
 #: ../bbpress/form-topic-tag.php:68
 msgid "Existing tag:"
@@ -525,6 +558,8 @@ msgstr "Bestaande tag:"
 msgid ""
 "Are you sure you want to merge the \"%s\" tag into the tag you specified?"
 msgstr ""
+"Weet je zeker dat jde de \"%s\" tag samen wil voegen met de tag die je hebt "
+"aangegeven?"
 
 #: ../bbpress/form-topic-tag.php:88 ../bbpress/form-topic-tag.php:101
 msgid "Delete"
@@ -533,6 +568,8 @@ msgstr "Verwijderen"
 #: ../bbpress/form-topic-tag.php:91
 msgid "This does not delete your topics. Only the tag itself is deleted."
 msgstr ""
+"Dit zal niet je onderwerpen verwijderen. Enkel de tag zelf zal worden "
+"verwijderd."
 
 #: ../bbpress/form-topic-tag.php:94
 msgid "Deleting a tag cannot be undone."
@@ -540,7 +577,7 @@ msgstr "Het verwijderen van een tag kan niet ongedaan worden."
 
 #: ../bbpress/form-topic-tag.php:95
 msgid "Any links to this tag will no longer function."
-msgstr ""
+msgstr "Alle links naar deze tag zullen niet meer werken."
 
 #: ../bbpress/form-topic-tag.php:101
 #, php-format
@@ -548,21 +585,25 @@ msgid ""
 "Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
 "be undone."
 msgstr ""
+"Weet je zeker dat je de \"%s\" tag wil verwijderen? Dit is permanent en kan "
+"niet ongedaan worden."
 
 #: ../bbpress/form-topic.php:31
 #, php-format
 msgid "Create New Topic in &ldquo;%s&rdquo;"
-msgstr ""
+msgstr "Maak Nieuw Onderwerp in &ldquo;%s&rdquo;"
 
 #: ../bbpress/form-topic.php:31
 msgid "Create New Topic"
-msgstr ""
+msgstr "Maak Nieuw Onderwerp"
 
 #: ../bbpress/form-topic.php:38
 msgid ""
 "This forum is marked as closed to new topics, however your posting "
 "capabilities still allow you to do so."
 msgstr ""
+"Dit forum is gemarkeerd als gesloten voor nieuwe onderwerpen, jouw rechten "
+"geven je de mogelijk dit alsnog te doen."
 
 #: ../bbpress/form-topic.php:57
 #, php-format
@@ -571,7 +612,7 @@ msgstr "Onderwerp Titel (Maximum Lengte: %d):"
 
 #: ../bbpress/form-topic.php:84
 msgid "Topic Tags:"
-msgstr ""
+msgstr "Onderwerp Tags:"
 
 #: ../bbpress/form-topic.php:99
 msgid "Forum:"
@@ -583,19 +624,19 @@ msgstr "(Geen Forum)"
 
 #: ../bbpress/form-topic.php:116
 msgid "Topic Type:"
-msgstr ""
+msgstr "Onderwerp Type:"
 
 #: ../bbpress/form-topic.php:127
 msgid "Topic Status:"
-msgstr ""
+msgstr "Onderwerp Status:"
 
 #: ../bbpress/form-topic.php:201
 msgid "You cannot create new topics."
-msgstr ""
+msgstr "Je kan geen nieuwe onderwerpen aanmaken."
 
 #: ../bbpress/form-topic.php:201
 msgid "You must be logged in to create new topics."
-msgstr ""
+msgstr "Je moet zijn ingelogd om nieuwe onderwerpen te maken."
 
 #: ../bbpress/form-user-edit.php:14 ../inc/template-tags.php:614
 #: ../inc/template-tags.php:615
@@ -661,6 +702,8 @@ msgid ""
 "There is a pending email address change to <code>%1$s</code>. <a class=\"btn "
 "btn-sm btn-danger\" href=\"%2$s\">Cancel</a>"
 msgstr ""
+"Er is een wijziging van emailadres naar <code>%1$s</code> gaande. <a class="
+"\"btn btn-sm btn-danger\" href=\"%2$s\">Annuleren</a> "
 
 #: ../bbpress/form-user-edit.php:109
 msgid "New Password"
@@ -671,10 +714,12 @@ msgid ""
 "If you would like to change the password type a new one. Otherwise leave "
 "this blank."
 msgstr ""
+"Als je het wachtwoord wil wijzigen, type dan een nieuwe in. Laat het anders "
+"leeg."
 
 #: ../bbpress/form-user-edit.php:115
 msgid "Type your new password again."
-msgstr ""
+msgstr "Type je wachtwoord nogmaals in."
 
 #: ../bbpress/form-user-edit.php:117
 msgid "Strength indicator"
@@ -685,6 +730,8 @@ msgid ""
 "Your password should be at least ten characters long. Use upper and lower "
 "case letters, numbers, and symbols to make it even stronger."
 msgstr ""
+"Je wachtwoord moet tenminste 10 tekens lang zijn. Gebruik hoofdletters en "
+"kleine letters, cijfers en symbolen om het nog sterker te maken."
 
 #: ../bbpress/form-user-edit.php:127
 msgid "User Role"
@@ -696,7 +743,7 @@ msgstr "Netwerkrol"
 
 #: ../bbpress/form-user-edit.php:137
 msgid "Grant this user super admin privileges for the Network."
-msgstr ""
+msgstr "Geef deze gebruiker super admin rechten op het Netwerk."
 
 #: ../bbpress/form-user-edit.php:152
 msgid "Update Profile"
@@ -742,12 +789,15 @@ msgstr "Maak een Lidmaatschap aan"
 #: ../bbpress/form-user-register.php:17
 msgid "Your username must be unique, and cannot be changed later."
 msgstr ""
+"Je gebruikersnaam moet uniek zijn, en kan niet naderhand veranderd worden."
 
 #: ../bbpress/form-user-register.php:18
 msgid ""
 "We use your email address to email you a secure password and verify your "
 "account."
 msgstr ""
+"We gebruiken je emailadres om je een veilig wachtwoord te sturen en je "
+"aanmelding te controleren."
 
 #: ../bbpress/form-user-register.php:35
 #: ../inc/class-ipt-kb-bbp-login-widget.php:110
@@ -863,7 +913,7 @@ msgstr "Gestarte Onderwerpen"
 #: ../bbpress/user-details.php:36
 #, php-format
 msgid "%s's Replies Created"
-msgstr ""
+msgstr "%s's Reacties Gemaakt"
 
 #: ../bbpress/user-details.php:36
 msgid "Replies Created"
@@ -901,159 +951,160 @@ msgstr "Aanpassen"
 
 #: ../bbpress/user-favorites.php:15
 msgid "Favorite Forum Topics"
-msgstr ""
+msgstr "Favoriete Forum Onderwerpen"
 
 #: ../bbpress/user-favorites.php:28
 msgid "You currently have no favorite topics."
-msgstr ""
+msgstr "Je hebt momenteel geen favoriete onderwerpen."
 
 #: ../bbpress/user-favorites.php:28
 msgid "This user has no favorite topics."
-msgstr ""
+msgstr "Deze gebruiker heeft geen favoriete onderwerpen."
 
 #: ../bbpress/user-profile.php:24 ../inc/class-ipt-kb-bbp-login-widget.php:132
 #, php-format
 msgid "%s Forum Role"
-msgstr ""
+msgstr "%s Forum Rol"
 
 #: ../bbpress/user-profile.php:25
 #, php-format
 msgid "%s Topics Started:"
-msgstr ""
+msgstr "%s Onderwerpen Gestart:"
 
 #: ../bbpress/user-profile.php:26 ../inc/class-ipt-kb-bbp-login-widget.php:138
 #, php-format
 msgid "%s Replies Created"
-msgstr ""
+msgstr "%s Reacties Gemaakt"
 
 #: ../bbpress/user-profile.php:28 ../inc/class-ipt-kb-bbp-login-widget.php:142
 #, php-format
 msgid "%s Favorites"
-msgstr ""
+msgstr "%s Favorieten"
 
 #: ../bbpress/user-replies-created.php:15
 msgid "Forum Replies Created"
-msgstr ""
+msgstr "Forum Reacties Gemaakt"
 
 #: ../bbpress/user-replies-created.php:28
 msgid "You have not replied to any topics."
-msgstr ""
+msgstr "Je hebt op geen van de onderwerpen gereageerd."
 
 #: ../bbpress/user-replies-created.php:28
 msgid "This user has not replied to any topics."
-msgstr ""
+msgstr "Deze gebruiker heeft op geen van de onderwerpen gereageerd."
 
 #: ../bbpress/user-subscriptions.php:19
 msgid "Subscribed Forum Topics"
-msgstr ""
+msgstr "Geabonneerde Forum Onderwerpen"
 
 #: ../bbpress/user-subscriptions.php:32
 msgid "You are not currently subscribed to any topics."
-msgstr ""
+msgstr "Je bent momenteel niet op enig onderwerp geabonneerd."
 
 #: ../bbpress/user-subscriptions.php:32
 msgid "This user is not currently subscribed to any topics."
-msgstr ""
+msgstr "Deze gebruiker is momenteel niet op enig onderwerp geabonneerd."
 
 #: ../bbpress/user-topics-created.php:15
 msgid "Forum Topics Started"
-msgstr ""
+msgstr "Forum Onderwerpen Gestart"
 
 #: ../bbpress/user-topics-created.php:28
 msgid "You have not created any topics."
-msgstr ""
+msgstr "Je hebt geen onderwerpen gemaakt."
 
 #: ../bbpress/user-topics-created.php:28
 msgid "This user has not created any topics."
-msgstr ""
+msgstr "Deze gebruiker heeft geen onderwerpen gemaakt."
 
 #: ../bbtemp/page-forum-statistics.php:23
 msgid "<p>Here are the statistics and popular topics of our forums.</p>"
 msgstr ""
+"<p>Hier zijn de statistieken en populaire onderwerpen op onze forums.</p>"
 
 #: ../bbtemp/page-forum-statistics.php:29
 msgid "Popular Topics"
-msgstr ""
+msgstr "Populaire Onderwerpen"
 
 #: ../category-templates/category-child.php:38
 #: ../category-templates/category-child.php:64
 msgid "Support"
-msgstr ""
+msgstr "Ondersteuning"
 
 #: ../category-templates/category-child.php:45
 #: ../category-templates/category-parent.php:25
 #, php-format
 msgid "%d article"
 msgid_plural "%d articles"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d artikel"
+msgstr[1] "%d artikelen"
 
 #: ../category-templates/category-parent.php:18
 #: ../category-templates/category-parent.php:37
 msgid "Get Support"
-msgstr ""
+msgstr "Krijg Ondersteuning"
 
 #: ../category-templates/category-parent.php:76
 #, php-format
 msgid "%1$s / %2$s"
-msgstr ""
+msgstr "%1$s / %2$s"
 
 #: ../category-templates/category-parent.php:82
 #: ../inc/class-ipt-kb-affix-widget.php:126 ../template-knowledgebase.php:42
 #: ../template-knowledgebase.php:54 ../template-knowledgebase.php:73
 msgid "Get support"
-msgstr ""
+msgstr "Krijg ondersteuning"
 
 #: ../category-templates/category-parent.php:86
 #: ../template-knowledgebase.php:58
 msgid "Browse all"
-msgstr ""
+msgstr "Blader alles"
 
 #: ../category-templates/category-parent.php:113
 #: ../template-knowledgebase.php:116
 #, php-format
 msgid "Browse %d article"
 msgid_plural "Browse all %d articles"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Blader %d artikel"
+msgstr[1] "Blader alle %d artikelen"
 
 #: ../category-templates/no-result.php:7
 msgid "No articles published. Check back later?"
-msgstr ""
+msgstr "Geen artikelen gepubliceerd. Probeer het laten nog eens?"
 
 #: ../comments.php:29
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Een gedachte over &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s gedachtes over &ldquo;%2$s&rdquo;"
 
 #: ../comments.php:36 ../comments.php:60
 msgid "Comment navigation"
-msgstr ""
+msgstr "Commentaar navigatie"
 
 #: ../comments.php:37 ../comments.php:61
 msgid "&larr; Older Comments"
-msgstr ""
+msgstr "&larr; Oudere Commentaren"
 
 #: ../comments.php:38 ../comments.php:62
 msgid "Newer Comments &rarr;"
-msgstr ""
+msgstr "Nieuwere Commentaren &rarr;"
 
 #: ../comments.php:73
 msgid "Comments are closed."
-msgstr ""
+msgstr "Commenaar is gesloten."
 
 #: ../content-page.php:18 ../content-single.php:20
 #: ../template-knowledgebase.php:214
 msgid "<p class=\"pagination-p\">Pages:</p>"
-msgstr ""
+msgstr "<p class=\"pagination-p\">Pagina&apos;s:</p>"
 
 #: ../content-single.php:29 ../content-single.php:32 ../content.php:49
 #: ../content.php:59
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: ../content-single.php:37
 #, php-format
@@ -1062,6 +1113,9 @@ msgid ""
 "%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
 "&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
+"Deze is getagged als <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;"
+"%2$s. <br />Bewaar de <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
+"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #: ../content-single.php:39
 #, php-format
@@ -1069,6 +1123,8 @@ msgid ""
 "Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a "
 "href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
+"Bewaar de <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href="
+"\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #: ../content-single.php:45
 #, php-format
@@ -1078,6 +1134,10 @@ msgid ""
 "i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
 "bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
+"Dit was geplaatst in <i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;"
+"&nbsp;%1$s and tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;"
+"%2$s. <br />Bewaar de <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
+"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #: ../content-single.php:47
 #, php-format
@@ -1086,113 +1146,119 @@ msgid ""
 "i>&nbsp;&nbsp;%1$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
 "bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
+"Dit was geplaatst in <i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;"
+"&nbsp;%1$s. <br />Bewaar de <i class=\"glyphicon glyphicon-bookmark\"></"
+"i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #: ../content.php:40 ../content.php:43
 msgid "Read more"
-msgstr ""
+msgstr "Lees Meer"
 
 #: ../content.php:53
 #, php-format
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Geplaatst in %1$s"
 
 #: ../content.php:63
 #, php-format
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "%1$s getagged"
 
 #: ../content.php:69
 msgid "Leave a comment"
-msgstr ""
+msgstr "Laat commentaar achter"
 
 #: ../content.php:69
 msgid "1 Comment"
-msgstr ""
+msgstr "1 Commentaar"
 
 #: ../content.php:69
 msgid "% Comments"
-msgstr ""
+msgstr "% Commentaren"
 
 #: ../footer.php:25
 #, php-format
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Aangedreven door %s"
 
 #: ../footer.php:27
 #, php-format
 msgid "Theme: %1$s by %2$s."
-msgstr ""
+msgstr "Thema: %1$s door %2$s."
 
 #: ../functions.php:54
 msgid "Primary Menu"
-msgstr ""
+msgstr "Primair Menu"
 
 #: ../functions.php:91
 msgid "Knowledge Base Sidebar"
-msgstr ""
+msgstr "Kennis Databank Zijbalk"
 
 #: ../functions.php:93
 msgid "Shows up only on category archive pages and single posts."
 msgstr ""
+"Wordt alleen getoond op categorie archief pagina&apos;s en losse berichten."
 
 #: ../functions.php:100
 msgid "General Sidebar"
-msgstr ""
+msgstr "Algemene Zijbalk"
 
 #: ../functions.php:102
 msgid "Shows up everywhere except the category archive pages and single posts."
 msgstr ""
+"Wordt overal getoond behalve categorie archief pagina&apos;s en losse "
+"berichten."
 
 #: ../functions.php:109
 msgid "bbPress Sidebar"
-msgstr ""
+msgstr "bbPress Zijbalk"
 
 #: ../functions.php:111
 msgid "Shows up on bbPress forums and topics."
-msgstr ""
+msgstr "Wordt getoond op bbPress forums en onderwerpen."
 
 #: ../functions.php:118
 msgid "Footer Large"
-msgstr ""
+msgstr "Voet Groot"
 
 #: ../functions.php:126
 msgid "Footer Small"
-msgstr ""
+msgstr "Voet Klein"
 
 #: ../functions.php:193
 msgid "Oops, some problem to connect. Try again?"
-msgstr ""
+msgstr "Oeps, er waren problemen met de verbinding. Nogmaals proberen?"
 
 #: ../functions.php:352 ../inc/class-tgm-plugin-activation.php:196
 msgid "Install Required Plugins"
-msgstr ""
+msgstr "Installeer Vereiste Plugins"
 
 #: ../functions.php:353 ../inc/class-tgm-plugin-activation.php:197
 msgid "Install Plugins"
-msgstr ""
+msgstr "Installeer Plugins"
 
 #: ../functions.php:354 ../inc/class-tgm-plugin-activation.php:198
 #, php-format
 msgid "Installing Plugin: %s"
-msgstr ""
+msgstr "Plugin aan het Installeren: %s"
 
 #: ../functions.php:355
 msgid "Something went wrong with the plugin API."
-msgstr ""
+msgstr "Er is iets misgegaan met de plugin API."
 
 #: ../functions.php:356 ../inc/class-tgm-plugin-activation.php:200
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Dit thema vereist de volgende plugin: %1$s."
+msgstr[1] "Dit thema vereist de volgende plugins: %1$s."
 
 #: ../functions.php:357 ../inc/class-tgm-plugin-activation.php:201
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Dit thema beveelt de volgende plugin aan: %1$s."
+msgstr[1] "Dit thema beveelt de volgende plugins aan: %1$s."
 
 #: ../functions.php:358 ../inc/class-tgm-plugin-activation.php:202
 #, php-format
@@ -1205,21 +1271,27 @@ msgid_plural ""
 "plugins. Contact the administrator of this site for help on getting the "
 "plugins installed."
 msgstr[0] ""
+"Sorry, maar je hebt niet de juiste rechten om de %s plugin te installeren. "
+"Neem contact met de beheerder van deze site op voor hulp met het installeren "
+"van deze plugin."
 msgstr[1] ""
+"Sorry, maar je hebt niet de juiste rechten om de %s plugins te installeren. "
+"Neem contact met de beheerder van deze site op voor hulp met het installeren "
+"van deze plugins."
 
 #: ../functions.php:359 ../inc/class-tgm-plugin-activation.php:203
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "De volgende vereiste plugin is momenteel inactief: %1$s."
+msgstr[1] "De volgende vereiste plugins zijn momenteel inactief: %1$s."
 
 #: ../functions.php:360 ../inc/class-tgm-plugin-activation.php:204
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "De volgende aanbevolen plugin is momenteel inactief: %1$s."
+msgstr[1] "De volgende aanbevolen plugins zijn momenteel inactief: %1$s."
 
 #: ../functions.php:361 ../inc/class-tgm-plugin-activation.php:205
 #, php-format
@@ -1232,7 +1304,13 @@ msgid_plural ""
 "plugins. Contact the administrator of this site for help on getting the "
 "plugins activated."
 msgstr[0] ""
+"Sorry, maar je hebt niet de juiste rechten om de %s plugin te activeren. "
+"Neem contact met de beheerder van deze site op voor hulp met het activeren "
+"van deze plugin."
 msgstr[1] ""
+"Sorry, maar je hebt niet de juiste rechten om de %s plugins te activeren. "
+"Neem contact met de beheerder van deze site op voor hulp met het activeren "
+"van deze plugins."
 
 #: ../functions.php:362 ../inc/class-tgm-plugin-activation.php:206
 #, php-format
@@ -1243,7 +1321,11 @@ msgid_plural ""
 "The following plugins need to be updated to their latest version to ensure "
 "maximum compatibility with this theme: %1$s."
 msgstr[0] ""
+"De volgende plugin moet worden geüpdatet naar de meest recente versie om "
+"maximale compatibiliteit met dit thema te garanderen: %1$s."
 msgstr[1] ""
+"De volgende plugins moeten worden geüpdatet naar de meest recente versie om "
+"maximale compatibiliteit met dit thema te garanderen: %1$s."
 
 #: ../functions.php:363 ../inc/class-tgm-plugin-activation.php:207
 #, php-format
@@ -1256,49 +1338,55 @@ msgid_plural ""
 "Contact the administrator of this site for help on getting the plugins "
 "updated."
 msgstr[0] ""
+"Sorry, maar je hebt niet de juiste rechten om de %s plugin te updaten. Neem "
+"contact met de beheerder van deze site op voor hulp met het updaten van deze "
+"plugin."
 msgstr[1] ""
+"Sorry, maar je hebt niet de juiste rechten om de %s plugins te updaten. Neem "
+"contact met de beheerder van deze site op voor hulp met het updaten van deze "
+"plugins."
 
 #: ../functions.php:364 ../inc/class-tgm-plugin-activation.php:208
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Begin met installeren plugin"
+msgstr[1] "Begin met installeren plugins"
 
 #: ../functions.php:365 ../inc/class-tgm-plugin-activation.php:209
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Begin met activeren plugin"
+msgstr[1] "Begin met activeren plugins"
 
 #: ../functions.php:366 ../inc/class-tgm-plugin-activation.php:210
 msgid "Return to Required Plugins Installer"
-msgstr ""
+msgstr "Terug naar de installatie van vereiste plugins"
 
 #: ../functions.php:367 ../inc/class-tgm-plugin-activation.php:212
 #: ../inc/class-tgm-plugin-activation.php:1951
 msgid "Plugin activated successfully."
-msgstr ""
+msgstr "Plugin succesvol geactiveerd."
 
 #: ../functions.php:368
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
-msgstr ""
+msgstr "Alle plugins succesvol geïnstalleerd en geactiveerd. %s"
 
 #: ../functions.php:396
 msgid "Knowledge Base Theme"
-msgstr ""
+msgstr "Kennis Databank Thema"
 
 #: ../header-bbpress.php:32 ../header.php:32
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Navigatie omschakelen"
 
 #: ../header-bbpress.php:37 ../header.php:37
 msgid "Toggle search"
-msgstr ""
+msgstr "Zoeken omschakelen"
 
 #: ../header-bbpress.php:43 ../header.php:43
 msgid "Toggle User"
-msgstr ""
+msgstr "Gebruiker Omschakelen"
 
 #: ../image.php:22
 #, php-format
@@ -1307,185 +1395,214 @@ msgid ""
 "\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
 "href=\"%6$s\" rel=\"gallery\">%7$s</a>"
 msgstr ""
+"Gepubliceerd <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
 
 #: ../image.php:37
 msgid ""
 "<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
 "span></span> Previous"
 msgstr ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Vorige"
 
 #: ../image.php:38
 msgid ""
 "Next <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right"
 "\"></span></span>"
 msgstr ""
+"Volgende <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-"
+"right\"></span></span>"
 
 #: ../image.php:58
 msgid "Pages:"
-msgstr ""
+msgstr "Pagina&apos;s:"
 
 #: ../inc/bbpress.php:243
 msgid "New Request"
-msgstr ""
+msgstr "Nieuw Verzoek"
 
 #: ../inc/bbpress.php:245
 msgid ""
 "<span class=\"glyphicon ipt-icomoon-info3 bstooltip\" title=\"New Request"
 "\"></span><span class=\"sr-only\"> [New Request] </span>"
 msgstr ""
+"<span class=\"glyphicon ipt-icomoon-info3 bstooltip\" title=\"Nieuw Verzoek"
+"\"></span><span class=\"sr-only\"> [Nieuw Verzoek] </span>"
 
 #: ../inc/bbpress.php:249
 msgid "Resolved"
-msgstr ""
+msgstr "Opgelost"
 
 #: ../inc/bbpress.php:251
 msgid ""
 "<span class=\"glyphicon ipt-icomoon-checkmark-circle bstooltip\" title="
 "\"Resolved\"></span><span class=\"sr-only\"> [Resolved] </span>"
 msgstr ""
+"<span class=\"glyphicon ipt-icomoon-checkmark-circle bstooltip\" title="
+"\"Opgelost\"></span><span class=\"sr-only\"> [Opgelost] </span>"
 
 #: ../inc/bbpress.php:255
 msgid "Processing"
-msgstr ""
+msgstr "Verwerken"
 
 #: ../inc/bbpress.php:257
 msgid ""
 "<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"Processing"
 "\"></span><span class=\"sr-only\"> [Processing] </span>"
 msgstr ""
+"<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"Verwerken"
+"\"></span><span class=\"sr-only\"> [Verwerken] </span>"
 
 #: ../inc/bbpress.php:261
 msgid "No Solution"
-msgstr ""
+msgstr "Geen Oplossing"
 
 #: ../inc/bbpress.php:263
 msgid ""
 "<span class=\"glyphicon ipt-icomoon-cancel-circle bstooltip\" title=\"No "
 "Solution\"></span><span class=\"sr-only\"> [No Solution] </span>"
 msgstr ""
+"<span class=\"glyphicon ipt-icomoon-cancel-circle bstooltip\" title=\"Geen "
+"Oplossing\"></span><span class=\"sr-only\"> [Geen Oplossing] </span>"
 
 #: ../inc/bbpress.php:267
 msgid "Announcement"
-msgstr ""
+msgstr "Aankondiging"
 
 #: ../inc/bbpress.php:269
 msgid ""
 "<span class=\"glyphicon ipt-icomoon-bullhorn bstooltip\" title=\"Announcement"
 "\"></span><span class=\"sr-only\"> [Announcement] </span>"
 msgstr ""
+"<span class=\"glyphicon ipt-icomoon-bullhorn bstooltip\" title=\"Aankondiging"
+"\"></span><span class=\"sr-only\"> [Aankondiging] </span>"
 
 #: ../inc/bbpress.php:273
 msgid "Management Topic"
-msgstr ""
+msgstr "Beheer Onderwerp"
 
 #: ../inc/bbpress.php:275
 msgid ""
 "<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Announcement"
 "\"></span><span class=\"sr-only\"> [Management] </span>"
 msgstr ""
+"<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Aankondiging"
+"\"></span><span class=\"sr-only\"> [Management] </span>"
 
 #: ../inc/bbpress.php:297
 msgid "Tagged:"
-msgstr ""
+msgstr "Getagd:"
 
 #: ../inc/category-fields.php:41 ../inc/category-fields.php:62
 msgid "Support Forum"
-msgstr ""
+msgstr "Ondersteuning Forum"
 
 #: ../inc/category-fields.php:43 ../inc/category-fields.php:65
 msgid "Link to support forum. For parent category only."
-msgstr ""
+msgstr "Link naar ondersteuningsforum. Alleen voor de bovenliggende categorie."
 
 #: ../inc/category-fields.php:46 ../inc/category-fields.php:69
 msgid "Icon Class"
-msgstr ""
+msgstr "Pictogram Klasse"
 
 #: ../inc/category-fields.php:48 ../inc/category-fields.php:72
 msgid ""
 "Add icon class to this category. This is for subcategories, not the parent "
 "category."
 msgstr ""
+"Voeg pictogram klasse toe aan deze categorie. Dit is voor subcategorieën, "
+"niet voor de bovenliggende categorie."
 
 #: ../inc/category-fields.php:51 ../inc/category-fields.php:76
 msgid "Image URL"
-msgstr ""
+msgstr "Beeld URL"
 
 #: ../inc/category-fields.php:53 ../inc/category-fields.php:79
 msgid ""
 "Add a 128X128 image for this category. Will only be used for parent "
 "categories."
 msgstr ""
+"Voeg een 128x128 afbeelding toe aan deze categorie. Dit zal alleen gebruikt "
+"worden door bovenliggende categorien."
 
 #: ../inc/class-ipt-kb-affix-widget.php:32
 msgid "An affix widget for displaying on the sidebar of the single articles."
 msgstr ""
+"Een aanhangend widget dat getoond kan worden in de zijbalk van de losse "
+"artikelen."
 
 #: ../inc/class-ipt-kb-affix-widget.php:33
 msgid "Affix Widget"
-msgstr ""
+msgstr "Toevoeging Widget"
 
 #: ../inc/class-ipt-kb-affix-widget.php:111
 msgid "Search&hellip;"
-msgstr ""
+msgstr "Zoek&hellip;"
 
 #: ../inc/class-ipt-kb-affix-widget.php:167
 msgid "Click to show/hide table of contents."
-msgstr ""
+msgstr "Klik om de inhoudsopgaven te tonen/verstoppen."
 
 #: ../inc/class-ipt-kb-affix-widget.php:169
 msgid "Table of Contents"
-msgstr ""
+msgstr "Inhoudsopgave"
 
 #: ../inc/class-ipt-kb-affix-widget.php:198
 msgid "Click to show/hide articles under this category."
-msgstr ""
+msgstr "Klik om de artikelen in deze categorie te tonen/verstoppen."
 
 #: ../inc/class-ipt-kb-affix-widget.php:257
 msgid "No articles found."
-msgstr ""
+msgstr "Geen artikelen gevonden."
 
 #: ../inc/class-ipt-kb-affix-widget.php:304
 msgid "Do not make the widget sticky"
-msgstr ""
+msgstr "Maak de widget niet blijvend"
 
 #: ../inc/class-ipt-kb-affix-widget.php:307
 msgid "No other configuration necessary. Just activate and enjoy. Neat?"
 msgstr ""
+"Geen verdere configuratie nodig. Simpelweg activeren en genieten. Tof "
+"h&eacute;?"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:27
 msgid ""
 "A simple login form with optional links to sign-up and lost password pages."
 msgstr ""
+"Een eenvoudig inlog formulier met optionele link naar de aanmeld en "
+"wachtwoord vergeten pagina&apos;s."
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:30
 msgid "(bbPress) Login Widget"
-msgstr ""
+msgstr "(bbPress) Inlog Widget"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:102 ../inc/template-tags.php:933
 msgid "Remember Me"
-msgstr ""
+msgstr "Onthoudt Mij"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:124
 msgid "Edit Your Profile"
-msgstr ""
+msgstr "Jouw Profiel Aanpassen"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:135
 #, php-format
 msgid "%s Topics Started"
-msgstr ""
+msgstr "%s Onderwerpen Gestart"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:141
 msgid "Your Favorites"
-msgstr ""
+msgstr "Jouw Favorieten"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:146
 msgid "Your Subscriptions"
-msgstr ""
+msgstr "Jouw Abonnementen"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:147
 #, php-format
 msgid "%s Subscriptions"
-msgstr ""
+msgstr "%s Abonnementen"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:190
 msgid "Title:"
@@ -1493,23 +1610,24 @@ msgstr "Titel:"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:195
 msgid "Register URI:"
-msgstr ""
+msgstr "Registreer URI:"
 
 #: ../inc/class-ipt-kb-bbp-login-widget.php:200
 msgid "Lost Password URI:"
-msgstr ""
+msgstr "Wachtwoord Vergeten URI:"
 
 #: ../inc/class-ipt-kb-knowledgebase-widget.php:26
 msgid "Lists all your categories or knowledge bases with the right appearance."
 msgstr ""
+"Lijst van al jouw categorieën of kennis databanken met de juiste opmaak."
 
 #: ../inc/class-ipt-kb-knowledgebase-widget.php:27
 msgid "Knowledge Base Widget"
-msgstr ""
+msgstr "Kennis Databank Widget"
 
 #: ../inc/class-ipt-kb-knowledgebase-widget.php:130
 msgid "Knowledge Bases"
-msgstr ""
+msgstr "Kennis Databanken"
 
 #: ../inc/class-ipt-kb-knowledgebase-widget.php:133
 #: ../inc/class-ipt-kb-popular-widget.php:117
@@ -1519,110 +1637,112 @@ msgstr "Titel"
 
 #: ../inc/class-ipt-kb-knowledgebase-widget.php:138
 msgid "Show sub categories below the parent category (main knowledge bases)"
-msgstr ""
+msgstr "Toon subcategorieën onder de hoofdcategoriën (hoofd kennis databank)"
 
 #: ../inc/class-ipt-kb-knowledgebase-widget.php:141
 msgid ""
 "No other settings necessary. The icon classes you have put on categories and "
 "sub categories will be thoroughly used."
 msgstr ""
+"Geen andere instellingen nodig. De pictogram klassen die je aan de "
+"categorieën en subcategorieën hebt gekoppeld zullen grondig gebruikt worden."
 
 #: ../inc/class-ipt-kb-popular-widget.php:26
 msgid "Shows articles or posts based on the user likes."
-msgstr ""
+msgstr "Toon artikelen of berichten gebaseerd op de voorkeur van de gebruiker."
 
 #: ../inc/class-ipt-kb-popular-widget.php:27
 msgid "Popular Knowledge Base Articles"
-msgstr ""
+msgstr "Populaire Kennis Databank Artikelen"
 
 #: ../inc/class-ipt-kb-popular-widget.php:112
 msgid "Popular Articles"
-msgstr ""
+msgstr "Populaire Artikelen"
 
 #: ../inc/class-ipt-kb-popular-widget.php:121
 msgid "Number of articles"
-msgstr ""
+msgstr "Aantal Artikellen"
 
 #: ../inc/class-ipt-kb-social-widget.php:30
 msgid "Stay <span>Connected</span>"
-msgstr ""
+msgstr "Blijft <span>Gekoppeld</span>"
 
 #: ../inc/class-ipt-kb-social-widget.php:43
 msgid "Like us on Facebook"
-msgstr ""
+msgstr "Like ons op Facebook"
 
 #: ../inc/class-ipt-kb-social-widget.php:44
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Volg ons op Twitten"
 
 #: ../inc/class-ipt-kb-social-widget.php:45
 msgid "Circle us on Google Plus"
-msgstr ""
+msgstr "Cirkel ons op Google Plus"
 
 #: ../inc/class-ipt-kb-social-widget.php:46
 msgid "Subscribe to our Youtube Channel"
-msgstr ""
+msgstr "Abonneer op ons YouTube Kanaal"
 
 #: ../inc/class-ipt-kb-social-widget.php:47
 msgid "Subscribe to our Vimeo Channel"
-msgstr ""
+msgstr "Abonneer op ons Vimeo Kanaal"
 
 #: ../inc/class-ipt-kb-social-widget.php:48
 msgid "Follow us on Pinterest"
-msgstr ""
+msgstr "Volg ons op Pinterest"
 
 #: ../inc/class-ipt-kb-social-widget.php:49
 msgid "Follow us on envato marketplaces"
-msgstr ""
+msgstr "Volg ons op envato marketplaces"
 
 #: ../inc/class-ipt-kb-social-widget.php:63
 msgid "A nice looking social widget for the footer small area."
-msgstr ""
+msgstr "Een mooi uitziende social media widget voor de kleine footer."
 
 #: ../inc/class-ipt-kb-social-widget.php:64
 msgid "Social Widget"
-msgstr ""
+msgstr "Social Media Widget"
 
 #: ../inc/class-tgm-plugin-activation.php:199
 msgid "Something went wrong."
-msgstr ""
+msgstr "Er is iets fout gegaan."
 
 #: ../inc/class-tgm-plugin-activation.php:211
 msgid "Return to the dashboard"
-msgstr ""
+msgstr "Terug naar de dashboard"
 
 #: ../inc/class-tgm-plugin-activation.php:213
 #: ../inc/class-tgm-plugin-activation.php:1638
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "De volgende plugin is succesvol geactiveerd:"
+msgstr[1] "De volgende plugins zijn succesvol geactiveerd:"
 
 #: ../inc/class-tgm-plugin-activation.php:214
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
+msgstr "Alle plugins succesvol geïnstalleerd en geactiveerd. %1$s"
 
 #: ../inc/class-tgm-plugin-activation.php:215
 msgid "Dismiss this notice"
-msgstr ""
+msgstr "Negeer dit bericht"
 
 #: ../inc/class-tgm-plugin-activation.php:544
 #: ../inc/class-tgm-plugin-activation.php:2168
 msgid "Return to the Dashboard"
-msgstr ""
+msgstr "Terug naar de Dashboard"
 
 #: ../inc/class-tgm-plugin-activation.php:1174
 msgid "Private Repository"
-msgstr ""
+msgstr "Priv&eacute; Repository"
 
 #: ../inc/class-tgm-plugin-activation.php:1177
 msgid "Pre-Packaged"
-msgstr ""
+msgstr "Voorverpakt"
 
 #: ../inc/class-tgm-plugin-activation.php:1182
 msgid "WordPress Repository"
-msgstr ""
+msgstr "WordPress Repository"
 
 #: ../inc/class-tgm-plugin-activation.php:1185
 msgid "Required"
@@ -1630,15 +1750,15 @@ msgstr "Verplicht"
 
 #: ../inc/class-tgm-plugin-activation.php:1185
 msgid "Recommended"
-msgstr ""
+msgstr "Aanbevolen"
 
 #: ../inc/class-tgm-plugin-activation.php:1188
 msgid "Not Installed"
-msgstr ""
+msgstr "Niet Geïnstalleerd"
 
 #: ../inc/class-tgm-plugin-activation.php:1190
 msgid "Installed But Not Activated"
-msgstr ""
+msgstr "Geïnstalleerd Maar Niet Geactiveerd"
 
 #: ../inc/class-tgm-plugin-activation.php:1290
 #: ../inc/class-tgm-plugin-activation.php:1398
@@ -1656,6 +1776,8 @@ msgid ""
 "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
 "Dashboard\">Return to the Dashboard</a>"
 msgstr ""
+"Geen plugins om te installeren of activeren. <a href=\"%1$s\" title=\"Terug "
+"naar de Dashboard\">Terug naar de Dashboard</a>"
 
 #: ../inc/class-tgm-plugin-activation.php:1377
 msgid "Plugin"
@@ -1675,51 +1797,54 @@ msgstr "Status"
 
 #: ../inc/class-tgm-plugin-activation.php:1508
 msgid "No plugins are available to be installed at this time."
-msgstr ""
+msgstr "Er zijn op dit moment geen plugins om te installeren."
 
 #: ../inc/class-tgm-plugin-activation.php:1616
 msgid "No plugins are available to be activated at this time."
-msgstr ""
+msgstr "Er zijn op dit moment geen plugins om te activeren."
 
 #: ../inc/class-tgm-plugin-activation.php:1934
 msgid "Install package not available."
-msgstr ""
+msgstr "Installatie pakketten zijn niet beschikbaar."
 
 #: ../inc/class-tgm-plugin-activation.php:1935
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
+"Download het installatie pakket van <span class=\"code\">%s</span>&#8230;"
 
 #: ../inc/class-tgm-plugin-activation.php:1936
 msgid "Unpacking the package&#8230;"
-msgstr ""
+msgstr "Pakket uitpakken&#8230;"
 
 #: ../inc/class-tgm-plugin-activation.php:1937
 msgid "Installing the plugin&#8230;"
-msgstr ""
+msgstr "Installeer de plugin&#8230;"
 
 #: ../inc/class-tgm-plugin-activation.php:1938
 msgid "Plugin install failed."
-msgstr ""
+msgstr "Plugin installatie heeft gefaald."
 
 #: ../inc/class-tgm-plugin-activation.php:1939
 msgid "Plugin installed successfully."
-msgstr ""
+msgstr "Plugin installatie succesvol verlopen."
 
 #: ../inc/class-tgm-plugin-activation.php:1950
 msgid "Plugin activation failed."
-msgstr ""
+msgstr "Plugin activatie heeft gefaald."
 
 #: ../inc/class-tgm-plugin-activation.php:2064
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
+"Het installatie proces is gestart. Dit proces kan op sommige systemen enige "
+"tijd duren, dus wees s.v.p. geduldig."
 
 #: ../inc/class-tgm-plugin-activation.php:2065
 #, php-format
 msgid "%1$s installed and activated successfully."
-msgstr ""
+msgstr "%1$s succesvol geïnstalleerd en geactiveerd."
 
 #: ../inc/class-tgm-plugin-activation.php:2065
 #: ../inc/class-tgm-plugin-activation.php:2074
@@ -1733,23 +1858,27 @@ msgstr "Verstop Details"
 
 #: ../inc/class-tgm-plugin-activation.php:2066
 msgid "All installations and activations have been completed."
-msgstr ""
+msgstr "Alle installaties en activaties zijn klaar."
 
 #: ../inc/class-tgm-plugin-activation.php:2067
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
+msgstr "Installeren en Activeren Plugin %1$s (%2$d/%3$d)"
 
 #: ../inc/class-tgm-plugin-activation.php:2071
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
+"Het installatie proces is gestart. Dit proces kan op sommige systemen enige "
+"tijd duren, dus wees s.v.p. geduldig."
 
 #: ../inc/class-tgm-plugin-activation.php:2072
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
+"Er is een fout gebeurd tijdens het installeren van %1$s: <strong>%2$s</"
+"strong>."
 
 #: ../inc/class-tgm-plugin-activation.php:2073
 #, php-format
@@ -1768,7 +1897,7 @@ msgstr "Alle installaties zijn voltooid."
 #: ../inc/class-tgm-plugin-activation.php:2076
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "Plugin %1$s (%2$d/%3$d) aan het installeren"
+msgstr "Installatie Plugin  %1$s (%2$d/%3$d)"
 
 #: ../inc/extras.php:66
 #, php-format
@@ -1781,20 +1910,20 @@ msgstr "Valsspelen, h&#xE9;?"
 
 #: ../inc/ipt-kb-like-article.php:22 ../inc/template-tags.php:422
 msgid "You like it already"
-msgstr "U vind het nu al leuk"
+msgstr "Je vind het nu al leuk"
 
 #: ../inc/ipt-kb-like-article.php:28
 msgid "Thank you."
-msgstr "Dank u."
+msgstr "Dankjewel."
 
 #: ../inc/template-tags.php:202
 msgid "Post navigation"
-msgstr ""
+msgstr "Bericht navigatie"
 
 #: ../inc/template-tags.php:205
 msgctxt "Previous post link"
 msgid "<span class=\"glyphicon glyphicon-arrow-left\"></span>"
-msgstr ""
+msgstr "<span class=\"glyphicon glyphicon-arrow-left\"></span>"
 
 #: ../inc/template-tags.php:206
 msgctxt "Next post link"
@@ -1828,11 +1957,11 @@ msgstr "%s <span class=\"says\">zegt:</span>"
 
 #: ../inc/template-tags.php:257
 msgid "Your comment is awaiting moderation."
-msgstr "Uw commentaar wacht op goedkeuring."
+msgstr "Je commentaar wacht op goedkeuring."
 
 #: ../inc/template-tags.php:275
 msgid "<i class=\"glyphicon ipt-icomoon-reply\"></i>&nbsp;&nbsp;Reply"
-msgstr ""
+msgstr "<i class=\"glyphicon ipt-icomoon-reply\"></i>&nbsp;&nbsp;Reactie"
 
 #: ../inc/template-tags.php:282
 #, php-format
@@ -1897,7 +2026,7 @@ msgstr "Commentaar"
 #: ../inc/template-tags.php:626
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "U moet zijn <a href=\"%s\">ingelogt</a> om commentaar te geven."
+msgstr "Je moet zijn <a href=\"%s\">ingelogt</a> om commentaar te geven."
 
 #: ../inc/template-tags.php:627
 #, php-format
@@ -1905,10 +2034,12 @@ msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out?</a>"
 msgstr ""
+"Ingelogd als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"UItloggen"
+"\">UItloggen?</a>"
 
 #: ../inc/template-tags.php:628
 msgid "Your email address will not be published."
-msgstr "Uw emailadres zal niet worden gepubliceerd."
+msgstr "Je emailadres zal niet worden gepubliceerd."
 
 #: ../inc/template-tags.php:629
 #, php-format
@@ -1951,7 +2082,7 @@ msgstr "Google+"
 #: ../inc/template-tags.php:788
 #, php-format
 msgid "%1$s has written <a href=\"%2$s\">%3$s</a> %4$s"
-msgstr ""
+msgstr "%1$s heeft <a href=\"%2$s\">%3$s</a> geschreven %4$s"
 
 #: ../inc/template-tags.php:788
 msgid "article"
@@ -1964,6 +2095,8 @@ msgid ""
 "This content is password protected. To view it please enter your password "
 "below:"
 msgstr ""
+"Deze inhoud is met een wachtwoord beveiligd. Geef je wachtwoord op om het te "
+"bekijken:"
 
 #: ../inc/template-tags.php:823
 msgid "Password:"
@@ -2004,18 +2137,23 @@ msgstr "Niets Gevonden"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Klaar om je eerste bericht te plaatsen? <a href=\"%1$s\">Begin hier</a>."
 
 #: ../no-results.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Sorry, maar er is niets dat overeenkomt met je zoek termen. Probeer s.v.p. "
+"nogmaals met andere zoekwoorden."
 
 #: ../no-results.php:27
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Het lijkt erop dat we niet kunnen vinden wat je zoekt. Wellicht dat zoeken "
+"helpt."
 
 #: ../search.php:16
 #, php-format
