@@ -9,3 +9,8 @@ To properly and smoothly import, we need to create several controls, specificall
 3. Icon Selector
 
 We will add more in future
+
+Some plugins/themes to look into:
+
+1. [Customify](https://github.com/pixelgrade/customify)
+2. [LayersWP](https://github.com/Obox/layerswp)
