@@ -184,7 +184,7 @@ function ipt_kb_scripts() {
 
 	// Now the JS
 	wp_enqueue_script( 'ipt_kb-bootstrap', get_template_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array( 'jquery' ), $ipt_kb_version );
-	wp_enqueue_script( 'ipt_kb-bootstrap-jq', get_template_directory_uri() . '/lib/bootstrap/js/jquery.ipt-kb-bootstrap.js', array( 'jquery' ), $ipt_kb_version );
+	wp_enqueue_script( 'ipt_kb-bootstrap-jq', get_template_directory_uri() . '/js/jquery.ipt-kb-bootstrap.js', array( 'jquery' ), $ipt_kb_version );
 
 	wp_enqueue_script( 'ipt_kb-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), $ipt_kb_version, true );
 
