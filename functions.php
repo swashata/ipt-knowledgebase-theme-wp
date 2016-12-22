@@ -302,16 +302,6 @@ function ipt_kb_required_plugins() {
 	if ( function_exists( 'tgmpa' ) ) {
 		$plugins = array();
 
-		// Base plugin
-		$plugins[] = array(
-			'name' => 'iPanelThemes Theme Options',
-			'slug' => 'ipt-theme-options',
-			'source' => get_template_directory() . '/plugins/ipt-theme-options.zip',
-			'required' => false,
-			'version' => '0.0.1',
-			'external_url' => '',
-		);
-
 		// Easy Bootstrap shortcode
 		$plugins[] = array(
 			'name' => 'Easy Bootstrap Shortcode',
@@ -352,7 +342,19 @@ function ipt_kb_required_plugins() {
 			'version' => '3.1.11',
 		);
 
-		tgmpa( $plugins );
+
+		$config = array(
+			'id'           => 'ipt_kb',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+			'default_path' => '',                      // Default absolute path to bundled plugins.
+			'menu'         => 'tgmpa-install-plugins', // Menu slug.
+			'has_notices'  => true,                    // Show admin notices or not.
+			'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+			'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+			'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+			'message'      => '',                      // Message to output right before the plugins table.
+		);
+
+		tgmpa( $plugins, $config );
 	}
 }
 endif;
