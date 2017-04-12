@@ -180,7 +180,8 @@ function ipt_kb_scripts() {
 	wp_enqueue_style( 'ipt_kb-bootstrap-theme', get_template_directory_uri() . '/lib/bootstrap/css/bootstrap-theme.min.css', array(), $ipt_kb_version );
 
 	// Icomoon
-	wp_enqueue_style( 'ipt-icomoon-fonts', get_template_directory_uri() . '/lib/icomoon/icomoon.css', array(), $ipt_kb_version );
+	wp_enqueue_style( 'ipt-kb-icomoon', get_template_directory_uri() . '/lib/icomoon/style.css', array(), $ipt_kb_version );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/lib/fontawesome/css/font-awesome.min.css', array(), $ipt_kb_version );
 
 	// Now the JS
 	wp_enqueue_script( 'ipt_kb-bootstrap', get_template_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array( 'jquery' ), $ipt_kb_version );
@@ -478,18 +479,16 @@ require get_template_directory() . '/inc/class-ipt-bootstrap-walker-nav-menu.php
 /**
  * Plug our Walker for editing the nav menu
  */
-if ( is_admin() ) {
-	require get_template_directory() . '/inc/class-ipt-bootstrap-walker-nav-menu-edit.php';
-	require get_template_directory() . '/inc/ipt-kb-nav-filters.php';
-	// Add custom fields to menu
-	add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
+require get_template_directory() . '/inc/class-ipt-bootstrap-walker-nav-menu-edit.php';
+require get_template_directory() . '/inc/ipt-kb-nav-filters.php';
+// Add custom fields to menu
+add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
 
-	// Save custom fields from menu
-	add_action( 'wp_update_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_update_fields', 10, 3 );
+// Save custom fields from menu
+add_action( 'wp_update_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_update_fields', 10, 3 );
 
-	// Change the edit menu walker
-	add_filter( 'wp_edit_nav_menu_walker', 'ipt_bootstrap_walker_nav_menu_edit_filter', 20, 2 );
-}
+// Change the edit menu walker
+add_filter( 'wp_edit_nav_menu_walker', 'ipt_bootstrap_walker_nav_menu_edit_filter', 20, 2 );
 /**
  * Implement the Custom Header feature.
  */
