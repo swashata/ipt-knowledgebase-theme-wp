@@ -304,10 +304,10 @@ function ipt_kb_required_plugins() {
 
 		// Easy Bootstrap shortcode
 		$plugins[] = array(
-			'name' => 'Easy Bootstrap Shortcode',
-			'slug' => 'easy-bootstrap-shortcodes',
+			'name' => 'Bootstrap Shortcodes for WordPress',
+			'slug' => 'bootstrap-3-shortcodes',
 			'required' => false,
-			'version' => '4.2.3',
+			'version' => '3.3.10',
 		);
 
 		// bbPress
