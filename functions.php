@@ -474,6 +474,22 @@ add_filter( 'ipt_theme_op_active_theme_meta', 'ipt_kb_op_theme_meta' );
  * Include the walker class for bootstrap nav menu
  */
 require get_template_directory() . '/inc/class-ipt-bootstrap-walker-nav-menu.php';
+
+/**
+ * Plug our Walker for editing the nav menu
+ */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/class-ipt-bootstrap-walker-nav-menu-edit.php';
+	require get_template_directory() . '/inc/ipt-kb-nav-filters.php';
+	// Add custom fields to menu
+	add_action( 'wp_setup_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_add_fields' );
+
+	// Save custom fields from menu
+	add_action( 'wp_update_nav_menu_item', 'ipt_bootstrap_walker_nav_menu_edit_update_fields', 10, 3 );
+
+	// Change the edit menu walker
+	add_filter( 'wp_edit_nav_menu_walker', 'ipt_bootstrap_walker_nav_menu_edit_filter', 20, 2 );
+}
 /**
  * Implement the Custom Header feature.
  */
