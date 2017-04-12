@@ -170,7 +170,9 @@ class IPT_Bootstrap_Walker_Nav_Menu_Edit extends Walker_Nav_Menu {
 					<label for="edit-menu-item-icon-<?php echo $item_id; ?>">
 						<?php _e( 'Menu Icon Class' ); ?><br />
 						<input type="text" id="edit-menu-item-icon-<?php echo $item_id; ?>" class="ipt-navmenu-iconpicker code widefat" name="menu-item-icon[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->icon ); ?>" /><br />
-						<span class="description"><?php _e( 'If you want to put icon before a menu item, then you can choose an icon here.', 'ipt_thm' ); ?></span>
+						<span class="description">
+							<?php printf( __( 'If you want to put icon before a menu item, then you can choose an icon here. Both <a href="%1$s">IcoMoon</a> and <a href="%2$s">FontAwesome</a> classes are supported. Leave <code>none</code> or empty to not show any icons.', 'ipt_kb' ), ipt_kb_icomoon_demo_link(), ipt_kb_fontawesome_demo_link() ); ?>
+						</span>
 					</label>
 				</p>
 				<?php /* End ICON Field */ ?>
@@ -178,7 +180,7 @@ class IPT_Bootstrap_Walker_Nav_Menu_Edit extends Walker_Nav_Menu {
 				<?php /* Divider Field */ ?>
 				<p class="field-divider description">
 					<label for="edit-menu-item-divider-<?php echo $item_id; ?>">
-						<input type="checkbox" id="edit-menu-item-divider-<?php echo $item_id; ?>" class="ipt-divider" name="menu-item-divider[<?php echo $item_id; ?>]" value="1"<?php echo ( true == $item->divider ? ' checked="checked"' : '' ); ?> /> <?php _e( 'Show Divider after this item', 'ipt_thm' ); ?>
+						<input type="checkbox" id="edit-menu-item-divider-<?php echo $item_id; ?>" class="ipt-divider" name="menu-item-divider[<?php echo $item_id; ?>]" value="1"<?php echo ( true == $item->divider ? ' checked="checked"' : '' ); ?> /> <?php _e( 'Show Divider after this item', 'ipt_kb' ); ?>
 					</label>
 				</p>
 				<?php /* End Divider Field */ ?>
@@ -186,7 +188,7 @@ class IPT_Bootstrap_Walker_Nav_Menu_Edit extends Walker_Nav_Menu {
 				<?php /* Dropdown header Field */ ?>
 				<p class="field-header description">
 					<label for="edit-menu-item-header-<?php echo $item_id; ?>">
-						<input type="checkbox" id="edit-menu-item-header-<?php echo $item_id; ?>" class="ipt-header" name="menu-item-header[<?php echo $item_id; ?>]" value="1"<?php echo ( true == $item->header ? ' checked="checked"' : '' ); ?> /> <?php _e( 'Appear as Dropdown Header', 'ipt_thm' ); ?>
+						<input type="checkbox" id="edit-menu-item-header-<?php echo $item_id; ?>" class="ipt-header" name="menu-item-header[<?php echo $item_id; ?>]" value="1"<?php echo ( true == $item->header ? ' checked="checked"' : '' ); ?> /> <?php _e( 'Appear as Dropdown Header', 'ipt_kb' ); ?>
 					</label>
 				</p>
 				<?php /* End Dropdown header Field */ ?>
@@ -194,7 +196,7 @@ class IPT_Bootstrap_Walker_Nav_Menu_Edit extends Walker_Nav_Menu {
 				<?php /* Disabled Field */ ?>
 				<p class="field-bsdisabled description">
 					<label for="edit-menu-item-bsdisabled-<?php echo $item_id; ?>">
-						<input type="checkbox" id="edit-menu-item-bsdisabled-<?php echo $item_id; ?>" class="ipt-bsdisabled" name="menu-item-bsdisabled[<?php echo $item_id; ?>]" value="1"<?php echo ( true == $item->bsdisabled ? ' checked="checked"' : '' ); ?> /> <?php _e( 'Appear as disabled', 'ipt_thm' ); ?>
+						<input type="checkbox" id="edit-menu-item-bsdisabled-<?php echo $item_id; ?>" class="ipt-bsdisabled" name="menu-item-bsdisabled[<?php echo $item_id; ?>]" value="1"<?php echo ( true == $item->bsdisabled ? ' checked="checked"' : '' ); ?> /> <?php _e( 'Appear as disabled', 'ipt_kb' ); ?>
 					</label>
 				</p>
 				<?php /* End Disabled Field */ ?>

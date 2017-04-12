@@ -1053,3 +1053,25 @@ function ipt_kb_wp_login_form( $args = array() ) {
 		return $form;
 }
 endif;
+
+if ( ! function_exists( 'ipt_kb_icomoon_demo_link' ) ) :
+	/**
+	 * Get the URL of the icomoon icon demo file
+	 *
+	 * @return     string  The URL relative to the theme
+	 */
+	function ipt_kb_icomoon_demo_link() {
+		return get_template_directory_uri() . '/lib/icomoon/demo.html';
+	}
+endif;
+
+if ( ! function_exists( 'ipt_kb_fontawesome_demo_link' ) ) :
+	/**
+	 * Returns the fontawesome demo URL
+	 *
+	 * @return     string  The URL to the fontawesome domain
+	 */
+	function ipt_kb_fontawesome_demo_link() {
+		return 'http://fontawesome.io/icons/';
+	}
+endif;
