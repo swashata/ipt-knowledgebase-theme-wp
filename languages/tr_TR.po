@@ -1,0 +1,2505 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Knowledge Base Theme\n"
+"POT-Creation-Date: 2018-12-04 21:13+0300\n"
+"PO-Revision-Date: 2018-12-22 14:31+0300\n"
+"Last-Translator: Ümit Solmaz <ileti@alvehe.com>\n"
+"Language-Team: ipanelthemes.com <ipanelthemes@gmail.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:26
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hata! Bu sayfa bulunamadı."
+
+#: ../404.php:30
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Üzgünüz :( Aradığınız sayfa bulunamadı. Aşağıdaki bağlantılardan birini "
+"deneyin veya bir arama gerçekleştirin?"
+
+#: ../404.php:38
+msgid "Recently Published Articles"
+msgstr "Son Yayınlanan Yazılar"
+
+#: ../404.php:58
+msgid "Knowledge Base"
+msgstr "İçerikler"
+
+#: ../archive.php:31
+#, php-format
+msgid "Author: %s"
+msgstr "Yazar: %s"
+
+#: ../archive.php:39
+#, php-format
+msgid "Day: %s"
+msgstr "Gün: %s"
+
+#: ../archive.php:42
+#, php-format
+msgid "Month: %s"
+msgstr "Ay: %s"
+
+#: ../archive.php:45
+#, php-format
+msgid "Year: %s"
+msgstr "Yıl: %s"
+
+#: ../archive.php:48
+msgid "Asides"
+msgstr "Kenar"
+
+#: ../archive.php:51
+msgid "Images"
+msgstr "Görüntü"
+
+#: ../archive.php:54
+msgid "Videos"
+msgstr "Videolar "
+
+#: ../archive.php:57
+msgid "Quotes"
+msgstr "Alıntılar "
+
+#: ../archive.php:60
+msgid "Links"
+msgstr "Bağlantılar"
+
+#: ../archive.php:63
+msgid "Archives"
+msgstr "Arşiv"
+
+#: ../archive.php:68 ../category-templates/category-child.php:48
+#, php-format
+msgid "Page %1$d / %2$d"
+msgstr "Sayfa %1$d / %2$d"
+
+#: ../bbpress/content-single-topic-lead.php:18
+#: ../bbpress/content-single-topic-lead.php:90
+msgid "Creator"
+msgstr "Kurucu"
+
+#: ../bbpress/content-single-topic-lead.php:22
+#: ../bbpress/content-single-topic-lead.php:94 ../bbpress/loop-topics.php:17
+#: ../bbpress/loop-topics.php:31
+msgid "Topic"
+msgstr "Konu"
+
+#: ../bbpress/content-statistics.php:15
+msgid "Registered Users"
+msgstr "Kayıtlı Kullanıcılar"
+
+#: ../bbpress/content-statistics.php:16
+msgid "Forums"
+msgstr "Forumlar"
+
+#: ../bbpress/content-statistics.php:17 ../bbpress/loop-forums.php:17
+msgid "Topics"
+msgstr "Başlıklar"
+
+#: ../bbpress/content-statistics.php:18 ../bbpress/loop-forums.php:18
+#: ../bbpress/loop-replies.php:25 ../bbpress/loop-replies.php:48
+#: ../bbpress/loop-topics.php:19 ../bbpress/loop-topics.php:33
+msgid "Replies"
+msgstr "Yanıtlar "
+
+#: ../bbpress/content-statistics.php:19
+msgid "Topic Tags"
+msgstr "Konu Etiketleri:"
+
+#: ../bbpress/content-statistics.php:21
+msgid "Empty Topic Tags"
+msgstr "Boş Konu Etiketleri"
+
+#: ../bbpress/content-statistics.php:24
+msgid "Hidden Topics"
+msgstr "Gizli Konular"
+
+#: ../bbpress/content-statistics.php:27
+msgid "Hidden Replies"
+msgstr "Gizli Cevap"
+
+#: ../bbpress/feedback-logged-in.php:13
+msgid "You are already logged in."
+msgstr "Zaten giriş yapmışsınız"
+
+#: ../bbpress/feedback-no-access.php:13
+msgid "Private"
+msgstr "Özel "
+
+#: ../bbpress/feedback-no-access.php:16
+msgid "You do not have permission to view this forum."
+msgstr "Bu forumu görüntülemek için izniniz yok."
+
+#: ../bbpress/feedback-no-forums.php:13
+msgid "Oh bother! No forums were found here!"
+msgstr "Aradığınız forum bulunamadı"
+
+#: ../bbpress/feedback-no-replies.php:13
+msgid "Oh bother! No replies were found here!"
+msgstr "Aradığınız cevap bulunamadı"
+
+#: ../bbpress/feedback-no-search.php:13
+msgid "Oh bother! No search results were found here!"
+msgstr "Aradığınız sonuç bulunamadı !"
+
+#: ../bbpress/feedback-no-topics.php:13
+msgid "Oh bother! No topics were found here!"
+msgstr "Aradığınız konu bulunamadı !"
+
+#: ../bbpress/form-anonymous.php:15
+msgid "Author Information"
+msgstr "Yazar Bilgileri."
+
+#: ../bbpress/form-anonymous.php:15
+msgid "Your information:"
+msgstr "Bilgileriniz:"
+
+#: ../bbpress/form-anonymous.php:20 ../bbpress/form-anonymous.php:21
+msgid "Name (required):"
+msgstr "Adınız (gerekli)"
+
+#: ../bbpress/form-anonymous.php:25 ../bbpress/form-anonymous.php:26
+msgid "Mail (will not be published) (required):"
+msgstr "Eposta (gerekli):"
+
+#: ../bbpress/form-anonymous.php:30 ../bbpress/form-anonymous.php:31
+msgid "Website:"
+msgstr "Web sitesi:"
+
+#: ../bbpress/form-forum.php:35 ../bbpress/form-topic.php:29
+#, php-format
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr "Şimdi Düzenle &ldquo;%s&rdquo;"
+
+#: ../bbpress/form-forum.php:37
+#, php-format
+msgid "Create New Forum in &ldquo;%s&rdquo;"
+msgstr "Forum oluştur &ldquo;%s&rdquo;"
+
+#: ../bbpress/form-forum.php:37
+msgid "Create New Forum"
+msgstr "Yeni Forum Oluştur"
+
+#: ../bbpress/form-forum.php:47
+msgid ""
+"This forum is closed to new content, however your account still allows you "
+"to do so."
+msgstr ""
+"Bu forum yeni içeriğe kapalı, ancak hesabınız yine de bunu yapmanıza izin "
+"veriyor."
+
+#: ../bbpress/form-forum.php:55 ../bbpress/form-reply.php:34
+#: ../bbpress/form-topic.php:44
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr "Hesabınız sınırsız HTML içeriği gönderme yeteneğine sahiptir."
+
+#: ../bbpress/form-forum.php:67
+#, php-format
+msgid "Forum Name (Maximum Length: %d):"
+msgstr "Forum adı (maksimum uzunluk: %d):"
+
+#: ../bbpress/form-forum.php:82 ../bbpress/form-reply.php:50
+#: ../bbpress/form-topic.php:76
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+"Bu <abbr title=\"HyperText Markup Language Genişletilebilir Büyütülmüş Metin "
+"İşaretleme Dili\">HTML</abbr> etiketleri ve öznitelikleri kullanabilirsiniz: "
+"%s"
+
+#: ../bbpress/form-forum.php:91
+msgid "Forum Type:"
+msgstr "Forum Türü:"
+
+#: ../bbpress/form-forum.php:100
+msgid "Status:"
+msgstr "Durum:"
+
+#: ../bbpress/form-forum.php:109
+msgid "Visibility:"
+msgstr "Görünürlük:"
+
+#: ../bbpress/form-forum.php:118
+msgid "Parent Forum:"
+msgstr "Ana Forum:"
+
+#: ../bbpress/form-forum.php:123
+msgid "(No Parent)"
+msgstr "(Kaynak Yok)"
+
+#: ../bbpress/form-forum.php:138 ../bbpress/form-reply-move.php:62
+#: ../bbpress/form-reply.php:110 ../bbpress/form-topic-merge.php:71
+#: ../bbpress/form-topic-split.php:83 ../bbpress/form-topic.php:172
+#: ../inc/template-tags.php:830
+msgid "Submit"
+msgstr "Gönder"
+
+#: ../bbpress/form-forum.php:161
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new content."
+msgstr "Bu forum &#8216;%s&#8217; yeni içeriğe kapalıdır."
+
+#: ../bbpress/form-forum.php:169
+msgid "You cannot create new forums."
+msgstr "Yeni forumlar oluşturamazsınız."
+
+#: ../bbpress/form-forum.php:169
+msgid "You must be logged in to create new forums."
+msgstr "Yeni forum oluşturmak için giriş yapınız"
+
+#: ../bbpress/form-protected.php:14
+msgid "Protected"
+msgstr "Korumalı"
+
+#: ../bbpress/form-reply-move.php:18
+#, php-format
+msgid "Move reply \"%s\""
+msgstr "Yanıtla  \"%s\""
+
+#: ../bbpress/form-reply-move.php:21
+msgid ""
+"You can either make this reply a new topic with a new title, or merge it "
+"into an existing topic."
+msgstr ""
+"Bu, yeni bir başlık ile yeni bir konu cevap yapmak, ya da mevcut bir konu "
+"haline birleştirebilirsiniz."
+
+#: ../bbpress/form-reply-move.php:25
+msgid ""
+"If you choose an existing topic, replies will be ordered by the time and "
+"date they were created."
+msgstr ""
+"Mevcut bir konuyu seçerseniz, yanıtlar, oluşturulduğu saat ve tarihe göre "
+"sıralanır."
+
+#: ../bbpress/form-reply-move.php:28
+msgid "Move Method"
+msgstr "Taşıma Yöntemi"
+
+#: ../bbpress/form-reply-move.php:32 ../bbpress/form-topic-split.php:33
+#, php-format
+msgid "New topic in <strong>%s</strong> titled:"
+msgstr "Yeni konu <strong>%s</ strong> başlıklandırılmış:"
+
+#: ../bbpress/form-reply-move.php:35
+#, php-format
+msgid "Moved: %s"
+msgstr "Taşındı: %s"
+
+#: ../bbpress/form-reply-move.php:41 ../bbpress/form-topic-split.php:42
+msgid "Use an existing topic in this forum:"
+msgstr "Bu forumda olan konuyu kullanın:"
+
+#: ../bbpress/form-reply-move.php:51 ../bbpress/form-topic-split.php:52
+msgid "No other topics found!"
+msgstr "Başka konular bulunamadı!"
+
+#: ../bbpress/form-reply-move.php:58 ../bbpress/form-topic-merge.php:67
+#: ../bbpress/form-topic-split.php:79
+msgid "<strong>WARNING:</strong> This process cannot be undone."
+msgstr "<strong> UYARI: </ strong> Bu işlem geri alınamaz."
+
+#: ../bbpress/form-reply-move.php:74
+msgid "You do not have the permissions to edit this reply!"
+msgstr "Bu yanıtı düzenleme izniniz yok!"
+
+#: ../bbpress/form-reply-move.php:74
+msgid "You cannot edit this reply."
+msgstr "Bu yanıtı düzenleyemezsiniz."
+
+#: ../bbpress/form-reply.php:23
+#, php-format
+msgid "Reply To: %s"
+msgstr "Yanıtla: %s"
+
+#: ../bbpress/form-reply.php:28
+msgid ""
+"This topic is marked as closed to new replies, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+"Bu konu yeni cevaplara kapalı olarak işaretlenmiştir, ancak gönderme "
+"yetenekleriniz buna izin vermektedir."
+
+#: ../bbpress/form-reply.php:59
+msgid "Tags:"
+msgstr "Etiketler:"
+
+#: ../bbpress/form-reply.php:77 ../bbpress/form-topic.php:142
+msgid "Notify the author of follow-up replies via email"
+msgstr "E-posta yoluyla takip edilen konulara e-posta yolu ile yanıtları ilet."
+
+#: ../bbpress/form-reply.php:79 ../bbpress/form-topic.php:144
+msgid "Notify me of follow-up replies via email"
+msgstr "takip yanıtlarını e-posta yoluyla bana bildir"
+
+#: ../bbpress/form-reply.php:93 ../bbpress/form-topic.php:155
+msgid "Keep a log of this edit:"
+msgstr "Bu düzenleme günlüğünü sakla:"
+
+#: ../bbpress/form-reply.php:97 ../bbpress/form-reply.php:98
+#: ../bbpress/form-topic.php:159
+msgid "Optional reason for editing:"
+msgstr "Düzenlemenin nedeni:"
+
+#: ../bbpress/form-reply.php:127
+#, php-format
+msgid "The topic &#8216;%s&#8217; is closed to new replies."
+msgstr "Konu &#8216;%s&#8217; yeni cevaplara kapalı."
+
+#: ../bbpress/form-reply.php:133 ../bbpress/form-topic.php:193
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr "forum &#8216;%s&#8217; yeni konu ve cevaplara kapalı."
+
+#: ../bbpress/form-reply.php:139
+msgid "You cannot reply to this topic."
+msgstr "Bu konuya cevap veremezsiniz."
+
+#: ../bbpress/form-reply.php:139
+msgid "You must be logged in to reply to this topic."
+msgstr "Bu konuya cevap vermek için oturum açmanız gerekir."
+
+#: ../bbpress/form-search.php:13
+msgid "Search for:"
+msgstr "Arama: "
+
+#: ../bbpress/form-search.php:17
+#, php-format
+msgid "Search %s&hellip;"
+msgstr "Ara %s&hellip;"
+
+#: ../bbpress/form-topic-merge.php:20
+#, php-format
+msgid "Merge topic \"%s\""
+msgstr "Konu Birleştirme \"%s\""
+
+#: ../bbpress/form-topic-merge.php:23
+msgid ""
+"Select the topic to merge this one into. The destination topic will remain "
+"the lead topic, and this one will change into a reply."
+msgstr ""
+"Bu konuyu birleştirmek için konuyu seçin. Hedef konu önde gelen konuyu "
+"olmaya devam edecek ve bu konunun cevabı değişecek."
+
+#: ../bbpress/form-topic-merge.php:24
+msgid ""
+"To keep this topic as the lead, go to the other topic and use the merge tool "
+"from there instead."
+msgstr ""
+"Bu konuyu lider olarak tutmak için, bir başkasına gidin ve oradan "
+"birleştirme aracını kullanın."
+
+#: ../bbpress/form-topic-merge.php:28
+msgid ""
+"All replies within both topics will be merged chronologically. The order of "
+"the merged replies is based on the time and date they were posted. If the "
+"destination topic was created after this one, it's post date will be updated "
+"to second earlier than this one."
+msgstr ""
+"Her iki konu içindeki tüm yanıtları kronolojik olarak birleştirilir. "
+"Birleştirilmiş cevapların sırasına göre en son yayınlananın tarihi ile "
+"güncellenecektir."
+
+#: ../bbpress/form-topic-merge.php:30
+msgid "Destination"
+msgstr "Hedef"
+
+#: ../bbpress/form-topic-merge.php:32
+msgid "Merge with this topic:"
+msgstr "Bu konu ile Birleştir:"
+
+#: ../bbpress/form-topic-merge.php:40
+msgid "No topics were found to which the topic could be merged to!"
+msgstr "Konunun birleştirilebileceği hiçbir konu bulunamadı!"
+
+#: ../bbpress/form-topic-merge.php:44
+msgid "There are no other topics in this forum to merge with."
+msgstr "Birleştirmek için bu forumda başka hiçbir konu bulunamadı."
+
+#: ../bbpress/form-topic-merge.php:47 ../bbpress/form-topic-split.php:59
+msgid "Topic Extras"
+msgstr "Konu Ekstraları"
+
+#: ../bbpress/form-topic-merge.php:52
+msgid "Merge topic subscribers"
+msgstr "Konu Abonelerini Birleştirme"
+
+#: ../bbpress/form-topic-merge.php:57
+msgid "Merge topic favoriters"
+msgstr "Favori Konuları Birleştirme"
+
+#: ../bbpress/form-topic-merge.php:62
+msgid "Merge topic tags"
+msgstr "Konu etiketlerini Birleştirme"
+
+#: ../bbpress/form-topic-merge.php:82 ../bbpress/form-topic-split.php:95
+msgid "You do not have the permissions to edit this topic!"
+msgstr "Bu konuyu düzenlemek için izniniz yok!"
+
+#: ../bbpress/form-topic-merge.php:82 ../bbpress/form-topic-split.php:95
+msgid "You cannot edit this topic."
+msgstr "Bu konuyu düzenleyemezsiniz."
+
+#: ../bbpress/form-topic-split.php:19
+#, php-format
+msgid "Split topic \"%s\""
+msgstr "Konusunu böl \"%s\""
+
+#: ../bbpress/form-topic-split.php:22
+msgid ""
+"When you split a topic, you are slicing it in half starting with the reply "
+"you just selected. Choose to use that reply as a new topic with a new title, "
+"or merge those replies into an existing topic."
+msgstr ""
+"Bir konuyu böldüğünüzde, seçtiğiniz cevaptan başlayarak yarıya böleceksiniz. "
+"Bu yanıtı yeni bir başlık ile yeni bir konu olarak kullanmayı veya bu "
+"yanıtları mevcut bir konuyla birleştirmeyi seçin."
+
+#: ../bbpress/form-topic-split.php:26
+msgid ""
+"If you use the existing topic option, replies within both topics will be "
+"merged chronologically. The order of the merged replies is based on the time "
+"and date they were posted."
+msgstr ""
+"Mevcut konu seçeneğini kullanırsanız, her iki başlıktaki cevaplar kronolojik "
+"olarak birleştirilir. Birleştirilmiş cevapların sırası, gönderildikleri saat "
+"ve tarihe dayanır."
+
+#: ../bbpress/form-topic-split.php:29
+msgid "Split Method"
+msgstr "Bölme Yöntemi"
+
+#: ../bbpress/form-topic-split.php:36
+#, php-format
+msgid "Split: %s"
+msgstr "Bölünmüş: %s"
+
+#: ../bbpress/form-topic-split.php:64
+msgid "Copy subscribers to the new topic"
+msgstr "Aboneleri yeni konuya kopyala"
+
+#: ../bbpress/form-topic-split.php:69
+msgid "Copy favoriters to the new topic"
+msgstr "Favorileri yani konuya kopyala"
+
+#: ../bbpress/form-topic-split.php:74
+msgid "Copy topic tags to the new topic"
+msgstr "Konu etiketlerini yeni konuya kopyalayın"
+
+#: ../bbpress/form-topic-tag.php:18
+#, php-format
+msgid "Manage Tag: \"%s\""
+msgstr "Etiketi Yönet: \"%s\""
+
+#: ../bbpress/form-topic-tag.php:22
+msgid "Rename"
+msgstr "Yeniden adlandır"
+
+#: ../bbpress/form-topic-tag.php:25
+msgid "Leave the slug empty to have one automatically generated."
+msgstr "Otomatik olarak üretilmek için parçayı boş bırakın."
+
+#: ../bbpress/form-topic-tag.php:29
+msgid ""
+"Changing the slug affects its permalink. Any links to the old slug will stop "
+"working."
+msgstr ""
+"Parçanın değiştirilmesi, kalıcı bağlantıyı etkiler. Eski parça için herhangi "
+"bir bağlantı duracaktır."
+
+#: ../bbpress/form-topic-tag.php:35
+msgid "Name:"
+msgstr "Adı:"
+
+#: ../bbpress/form-topic-tag.php:40
+msgid "Slug:"
+msgstr "Parça"
+
+#: ../bbpress/form-topic-tag.php:45 ../inc/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Güncelle"
+
+#: ../bbpress/form-topic-tag.php:59 ../bbpress/form-topic-tag.php:73
+msgid "Merge"
+msgstr "Birleştir"
+
+#: ../bbpress/form-topic-tag.php:62
+msgid "Merging tags together cannot be undone."
+msgstr "Birleştirme etiketleri birlikte geri alınamaz."
+
+#: ../bbpress/form-topic-tag.php:68
+msgid "Existing tag:"
+msgstr "Varolan etiket:"
+
+#: ../bbpress/form-topic-tag.php:73
+#, php-format
+msgid ""
+"Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr ""
+"Etiketi belirttiğiniz  \"%s\" etiketle birleştirmek istediğinizden emin "
+"misiniz?"
+
+#: ../bbpress/form-topic-tag.php:88 ../bbpress/form-topic-tag.php:101
+msgid "Delete"
+msgstr "Sil"
+
+#: ../bbpress/form-topic-tag.php:91
+msgid "This does not delete your topics. Only the tag itself is deleted."
+msgstr "Yalnızca etiketin kendisi silinir.Konularınız silinmez."
+
+#: ../bbpress/form-topic-tag.php:94
+msgid "Deleting a tag cannot be undone."
+msgstr "Bir etiketi silme işlemi geri alınamaz."
+
+#: ../bbpress/form-topic-tag.php:95
+msgid "Any links to this tag will no longer function."
+msgstr "Bu etiket ile ilgili herhangi bir bağlantı artık çalışmaz."
+
+#: ../bbpress/form-topic-tag.php:101
+#, php-format
+msgid ""
+"Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
+"be undone."
+msgstr ""
+"Etiketi silmek istediğinizden \"%s\" emin misiniz? Bu etiket kalıcıolarak "
+"silinir ve geri alınamaz."
+
+#: ../bbpress/form-topic.php:31
+#, php-format
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr "içerisinde yeni konu oluştur &ldquo;%s&rdquo;"
+
+#: ../bbpress/form-topic.php:31
+msgid "Create New Topic"
+msgstr "Yeni Konu Oluştur"
+
+#: ../bbpress/form-topic.php:38
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+"Yeni mesajlara kapalı olarak bu forumu ancak sizin gönderme yetenekleri hala "
+"bunu yapmak için izin, işaretlenir."
+
+#: ../bbpress/form-topic.php:57
+#, php-format
+msgid "Topic Title (Maximum Length: %d):"
+msgstr "Konu Başlığı (Maksimum Uzunluk: %d ):"
+
+#: ../bbpress/form-topic.php:84
+msgid "Topic Tags:"
+msgstr "Konu Etiketleri:"
+
+#: ../bbpress/form-topic.php:99
+msgid "Forum:"
+msgstr "Forum"
+
+#: ../bbpress/form-topic.php:102
+msgid "(No Forum)"
+msgstr "(Forum Yok)"
+
+#: ../bbpress/form-topic.php:116
+msgid "Topic Type:"
+msgstr "Konu Tipi:"
+
+#: ../bbpress/form-topic.php:127
+msgid "Topic Status:"
+msgstr "Konu Durumu:"
+
+#: ../bbpress/form-topic.php:201
+msgid "You cannot create new topics."
+msgstr "Yeni konular oluşturma yetkiniz bulunmamaktadır."
+
+#: ../bbpress/form-topic.php:201
+msgid "You must be logged in to create new topics."
+msgstr "Yeni konu oluşturmak için giriş yapınız"
+
+#: ../bbpress/form-user-edit.php:14 ../inc/template-tags.php:614
+#: ../inc/template-tags.php:615
+msgid "Name"
+msgstr "Ad"
+
+#: ../bbpress/form-user-edit.php:23
+msgid "First Name"
+msgstr "İsim"
+
+#: ../bbpress/form-user-edit.php:28
+msgid "Last Name"
+msgstr "Soyadı"
+
+#: ../bbpress/form-user-edit.php:33
+msgid "Nickname"
+msgstr "Rumuz"
+
+#: ../bbpress/form-user-edit.php:38
+msgid "Display Name"
+msgstr "Ekran adı"
+
+#: ../bbpress/form-user-edit.php:51
+msgid "Contact Info"
+msgstr "İletişim Bilgileri"
+
+#: ../bbpress/form-user-edit.php:57 ../inc/template-tags.php:618
+#: ../inc/template-tags.php:619 ../inc/template-tags.php:760
+msgid "Website"
+msgstr "Web Sitesi"
+
+#: ../bbpress/form-user-edit.php:72
+msgid "About Yourself"
+msgstr "Kendinizi Hakkında"
+
+#: ../bbpress/form-user-edit.php:72
+msgid "About the user"
+msgstr "Kullanıcı hakkında"
+
+#: ../bbpress/form-user-edit.php:78
+msgid "Biographical Info"
+msgstr "Biyografik Bilgi"
+
+#: ../bbpress/form-user-edit.php:85
+msgid "Account"
+msgstr "Hesap"
+
+#: ../bbpress/form-user-edit.php:91 ../bbpress/form-user-login.php:17
+#: ../bbpress/form-user-register.php:23
+#: ../inc/class-ipt-kb-bbp-login-widget.php:79
+#: ../inc/class-ipt-kb-bbp-login-widget.php:84 ../inc/template-tags.php:940
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+#: ../bbpress/form-user-edit.php:96 ../bbpress/form-user-register.php:28
+#: ../inc/template-tags.php:616 ../inc/template-tags.php:617
+msgid "Email"
+msgstr "Eposta"
+
+#: ../bbpress/form-user-edit.php:104
+#, php-format
+msgid ""
+"There is a pending email address change to <code>%1$s</code>. <a class=\"btn "
+"btn-sm btn-danger\" href=\"%2$s\">Cancel</a>"
+msgstr ""
+"Bekleyen bir e-posta adresi değişikliği var <code>%1$s</code>. <a class="
+"\"btn btn-sm btn-danger\" href=\"%2$s\">İptal</a>"
+
+#: ../bbpress/form-user-edit.php:109
+msgid "New Password"
+msgstr "Yeni Şifre"
+
+#: ../bbpress/form-user-edit.php:112
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+"Eğer değiştirmek istiyorsanız Parola yeni bir yazın. Aksi takdirde bu boş "
+"bırakın."
+
+#: ../bbpress/form-user-edit.php:115
+msgid "Type your new password again."
+msgstr "Yeni parolanızı tekrar yazın."
+
+#: ../bbpress/form-user-edit.php:117
+msgid "Strength indicator"
+msgstr "Güç göstergesi"
+
+#: ../bbpress/form-user-edit.php:118
+msgid ""
+"Your password should be at least ten characters long. Use upper and lower "
+"case letters, numbers, and symbols to make it even stronger."
+msgstr ""
+"Parolanız en az on karakter uzunluğunda olmalıdır. Daha da güçlü hale "
+"getirmek için büyük ve küçük harf, sayılar ve semboller kullanın."
+
+#: ../bbpress/form-user-edit.php:127
+msgid "User Role"
+msgstr "Kullanıcı Rolü"
+
+#: ../bbpress/form-user-edit.php:134
+msgid "Network Role"
+msgstr "Ağ Rolü"
+
+#: ../bbpress/form-user-edit.php:137
+msgid "Grant this user super admin privileges for the Network."
+msgstr "Ağ için bu kullanım süper admin yetkileri vermek."
+
+#: ../bbpress/form-user-edit.php:152
+msgid "Update Profile"
+msgstr "Profil Güncellemesi"
+
+#: ../bbpress/form-user-edit.php:152
+msgid "Update User"
+msgstr "Kullanıcı Güncelle"
+
+#: ../bbpress/form-user-login.php:14 ../bbpress/form-user-login.php:34
+#: ../inc/class-ipt-kb-bbp-login-widget.php:76
+#: ../inc/class-ipt-kb-bbp-login-widget.php:112 ../inc/template-tags.php:943
+msgid "Log In"
+msgstr "Oturum aç"
+
+#: ../bbpress/form-user-login.php:22
+#: ../inc/class-ipt-kb-bbp-login-widget.php:89
+#: ../inc/class-ipt-kb-bbp-login-widget.php:94 ../inc/template-tags.php:941
+msgid "Password"
+msgstr "Parola"
+
+#: ../bbpress/form-user-login.php:30
+msgid "Keep me signed in"
+msgstr "Beni bağlı tut"
+
+#: ../bbpress/form-user-lost-pass.php:14
+#: ../inc/class-ipt-kb-bbp-login-widget.php:107
+msgid "Lost Password"
+msgstr "Kayıp Şifre"
+
+#: ../bbpress/form-user-lost-pass.php:17
+msgid "Username or Email"
+msgstr "Kullanıcı adı veya e-posta"
+
+#: ../bbpress/form-user-lost-pass.php:24
+msgid "Reset My Password"
+msgstr "Şifremi Sıfırla"
+
+#: ../bbpress/form-user-register.php:14
+msgid "Create an Account"
+msgstr "Bir hesap oluşturun"
+
+#: ../bbpress/form-user-register.php:17
+msgid "Your username must be unique, and cannot be changed later."
+msgstr "Kullanıcı adınız benzersiz olmalıdır ve sonradan değiştirilemez."
+
+#: ../bbpress/form-user-register.php:18
+msgid ""
+"We use your email address to email you a secure password and verify your "
+"account."
+msgstr ""
+"Hesabınızı doğrulamak için e-posta adresinize gelen yönergelere dikkat edin."
+
+#: ../bbpress/form-user-register.php:35
+#: ../inc/class-ipt-kb-bbp-login-widget.php:110
+msgid "Register"
+msgstr "Kayıt"
+
+#: ../bbpress/form-user-roles.php:13
+msgid "Blog Role"
+msgstr "Blog Rolü"
+
+#: ../bbpress/form-user-roles.php:23
+msgid "Forum Role"
+msgstr "Forum Rolü"
+
+#: ../bbpress/loop-forums.php:16
+msgid "Forum"
+msgstr "Forum"
+
+#: ../bbpress/loop-forums.php:18 ../bbpress/loop-replies.php:19
+#: ../bbpress/loop-replies.php:46 ../bbpress/loop-topics.php:19
+#: ../bbpress/loop-topics.php:33
+msgid "Posts"
+msgstr "Yazılar"
+
+#: ../bbpress/loop-forums.php:19 ../bbpress/loop-topics.php:20
+#: ../bbpress/loop-topics.php:34
+msgid "Freshness"
+msgstr "Yenilik"
+
+#: ../bbpress/loop-replies.php:16 ../bbpress/loop-replies.php:43
+#: ../bbpress/loop-search.php:16 ../bbpress/loop-search.php:29
+msgid "Author"
+msgstr "Yazar"
+
+#: ../bbpress/loop-search-forum.php:16
+#, php-format
+msgid "Last updated %s"
+msgstr "Son güncelleme %s"
+
+#: ../bbpress/loop-search-forum.php:26
+msgid "Forum: "
+msgstr "Forum:"
+
+#: ../bbpress/loop-search-reply.php:24
+msgid "In reply to: "
+msgstr "Cevap olarak:"
+
+#: ../bbpress/loop-search-topic.php:26
+msgid "Topic: "
+msgstr "Konu:"
+
+#: ../bbpress/loop-search-topic.php:33
+msgid "in group forum "
+msgstr "grup forumu"
+
+#: ../bbpress/loop-search-topic.php:37
+msgid "in forum "
+msgstr "Forumda"
+
+#: ../bbpress/loop-search.php:18 ../bbpress/loop-search.php:31
+msgid "Search Results"
+msgstr "Arama Sonuçları"
+
+#: ../bbpress/loop-single-reply.php:17
+msgid "Actions"
+msgstr "Eylemler"
+
+#: ../bbpress/loop-single-reply.php:27
+msgid "in reply to: "
+msgstr "cevap olarak:"
+
+#: ../bbpress/loop-single-topic.php:58
+#, php-format
+msgid "Started by: %1$s"
+msgstr "Başlatan: %1$s"
+
+#: ../bbpress/loop-single-topic.php:62
+#, php-format
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr "Giriş: <a href=\"%1$s\">%2$s</a>"
+
+#: ../bbpress/loop-single-topic.php:94 ../inc/bbpress.php:116
+#, php-format
+msgid "by %s"
+msgstr " %s"
+
+#: ../bbpress/loop-topics.php:18 ../bbpress/loop-topics.php:32
+msgid "Voices"
+msgstr "Sesler"
+
+#: ../bbpress/pagination-topics.php:26
+msgid "New Topic"
+msgstr "Yeni Konu"
+
+#: ../bbpress/user-details.php:28
+#, php-format
+msgid "%s's Profile"
+msgstr "%s's Profil"
+
+#: ../bbpress/user-details.php:28 ../bbpress/user-profile.php:15
+msgid "Profile"
+msgstr "Profil"
+
+#: ../bbpress/user-details.php:32
+#, php-format
+msgid "%s's Topics Started"
+msgstr "%s's Başlatılan Konular"
+
+#: ../bbpress/user-details.php:32
+msgid "Topics Started"
+msgstr "Başlatılan Konular"
+
+#: ../bbpress/user-details.php:36
+#, php-format
+msgid "%s's Replies Created"
+msgstr "%s's Yanıtlar Oluşturuldu"
+
+#: ../bbpress/user-details.php:36
+msgid "Replies Created"
+msgstr "Cevapların Oluşturulma Tarihi"
+
+#: ../bbpress/user-details.php:41
+#, php-format
+msgid "%s's Favorites"
+msgstr "%s's Favoriler"
+
+#: ../bbpress/user-details.php:41
+msgid "Favorites"
+msgstr "Favoriler"
+
+#: ../bbpress/user-details.php:49
+#, php-format
+msgid "%s's Subscriptions"
+msgstr "%s's Abonelikler"
+
+#: ../bbpress/user-details.php:49
+msgid "Subscriptions"
+msgstr "Abonelikler "
+
+#: ../bbpress/user-details.php:54
+#, php-format
+msgid "Edit %s's Profile"
+msgstr "Kullanıcı Profilini %s's Düzenl"
+
+#: ../bbpress/user-details.php:54 ../content-page.php:23
+#: ../content-single.php:66 ../content.php:71 ../image.php:32 ../image.php:64
+#: ../inc/class-ipt-kb-bbp-login-widget.php:124 ../inc/template-tags.php:244
+#: ../inc/template-tags.php:285
+msgid "Edit"
+msgstr "Düzenle"
+
+#: ../bbpress/user-favorites.php:15
+msgid "Favorite Forum Topics"
+msgstr "Favori Forum Konuları"
+
+#: ../bbpress/user-favorites.php:28
+msgid "You currently have no favorite topics."
+msgstr "Şu anda hiç favori konuları var."
+
+#: ../bbpress/user-favorites.php:28
+msgid "This user has no favorite topics."
+msgstr "Bu kullanıcının favori konuları vardır."
+
+#: ../bbpress/user-profile.php:24 ../inc/class-ipt-kb-bbp-login-widget.php:132
+#, php-format
+msgid "%s Forum Role"
+msgstr "%s Forum Rolü"
+
+#: ../bbpress/user-profile.php:25
+#, php-format
+msgid "%s Topics Started:"
+msgstr "%s Konular Başladı:"
+
+#: ../bbpress/user-profile.php:26 ../inc/class-ipt-kb-bbp-login-widget.php:138
+#, php-format
+msgid "%s Replies Created"
+msgstr "%s Yanıtlar Oluşturuldu"
+
+#: ../bbpress/user-profile.php:28 ../inc/class-ipt-kb-bbp-login-widget.php:142
+#, php-format
+msgid "%s Favorites"
+msgstr "%s Favoriler"
+
+#: ../bbpress/user-replies-created.php:15
+msgid "Forum Replies Created"
+msgstr "Forum Cevapları Yanıtlandı"
+
+#: ../bbpress/user-replies-created.php:28
+msgid "You have not replied to any topics."
+msgstr "Hiçbir konuya cevap vermediniz."
+
+#: ../bbpress/user-replies-created.php:28
+msgid "This user has not replied to any topics."
+msgstr "Bu kullanıcı herhangi bir konu yanıt vermedi."
+
+#: ../bbpress/user-subscriptions.php:19
+msgid "Subscribed Forum Topics"
+msgstr "Abone Forum Konular"
+
+#: ../bbpress/user-subscriptions.php:32
+msgid "You are not currently subscribed to any topics."
+msgstr "Şu anda herhangi bir konu abone değilsiniz."
+
+#: ../bbpress/user-subscriptions.php:32
+msgid "This user is not currently subscribed to any topics."
+msgstr "Bu kullanıcı şu anda herhangi bir konuya abone değil."
+
+#: ../bbpress/user-topics-created.php:15
+msgid "Forum Topics Started"
+msgstr "Forum Konuları Başladı"
+
+#: ../bbpress/user-topics-created.php:28
+msgid "You have not created any topics."
+msgstr "Herhangi bir konu yaratmadınız."
+
+#: ../bbpress/user-topics-created.php:28
+msgid "This user has not created any topics."
+msgstr "Bu kullanıcı herhangi bir konu oluşturmadı."
+
+#: ../bbtemp/page-forum-statistics.php:23
+msgid "<p>Here are the statistics and popular topics of our forums.</p>"
+msgstr "<p>İşte forumlarımızın istatistikleri ve popüler konuları.</p>"
+
+#: ../bbtemp/page-forum-statistics.php:29
+msgid "Popular Topics"
+msgstr "Popüler Konular"
+
+#: ../category-templates/category-child.php:38
+#: ../category-templates/category-child.php:64
+msgid "Support"
+msgstr "Destek"
+
+#: ../category-templates/category-child.php:45
+#: ../category-templates/category-parent.php:25
+#, php-format
+msgid "%d article"
+msgid_plural "%d articles"
+msgstr[0] "%d içerik"
+msgstr[1] "%d içerik"
+
+#: ../category-templates/category-parent.php:18
+#: ../category-templates/category-parent.php:37
+msgid "Get Support"
+msgstr "Destek al"
+
+#: ../category-templates/category-parent.php:76
+#, php-format
+msgid "%1$s / %2$s"
+msgstr "%1$s / %2$s"
+
+#: ../category-templates/category-parent.php:82
+#: ../inc/class-ipt-kb-affix-widget.php:126 ../template-knowledgebase.php:42
+#: ../template-knowledgebase.php:54 ../template-knowledgebase.php:73
+msgid "Get support"
+msgstr "Destek al"
+
+#: ../category-templates/category-parent.php:86
+#: ../template-knowledgebase.php:58
+msgid "Browse all"
+msgstr "Tümü"
+
+#: ../category-templates/category-parent.php:113
+#: ../template-knowledgebase.php:116
+#, php-format
+msgid "Browse %d article"
+msgid_plural "Browse all %d articles"
+msgstr[0] "Tümüne %d Gözat"
+msgstr[1] "Tümüne %d gözat"
+
+#: ../category-templates/no-result.php:7
+msgid "No articles published. Check back later?"
+msgstr "Yayınlanmış içerik yok. Daha sonra kontrol edelim mi?"
+
+#: ../comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Bir Yorum &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s yorumlar &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:36 ../comments.php:60
+msgid "Comment navigation"
+msgstr "Yorum gezintisi "
+
+#: ../comments.php:37 ../comments.php:61
+msgid "&larr; Older Comments"
+msgstr "&larr;  Eski Yorumlar"
+
+#: ../comments.php:38 ../comments.php:62
+msgid "Newer Comments &rarr;"
+msgstr "Daha Yeni Yorumlar &rarr;"
+
+#: ../comments.php:73
+msgid "Comments are closed."
+msgstr "Yoruma kapalı."
+
+#: ../content-page.php:18 ../content-single.php:26
+#: ../template-knowledgebase.php:214
+msgid "<p class=\"pagination-p\">Pages:</p>"
+msgstr "<p class=\"pagination-p\">Sayfa:</p>"
+
+#: ../content-single.php:35 ../content-single.php:38 ../content.php:49
+#: ../content.php:59
+msgid ", "
+msgstr ","
+
+#: ../content-single.php:43
+#, php-format
+msgid ""
+"This entry was tagged <i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;"
+"%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;"
+"&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"<i class=\"glyphicon glyphicon-tags\"></i>&nbsp;&nbsp;%2$s. <br />kalıcı <i "
+"class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel="
+"\"bookmark\">bağlantı</a>."
+
+#: ../content-single.php:45
+#, php-format
+msgid ""
+"Bookmark the <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a "
+"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"kalıcı <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href="
+"\"%3$s\" rel=\"bookmark\">bağlantı</a>."
+
+#: ../content-single.php:51
+#, php-format
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s and tagged <i class=\"glyphicon glyphicon-tags\"></"
+"i>&nbsp;&nbsp;%2$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"<i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;&nbsp;%1$s <i class="
+"\"glyphicon glyphicon-tags\" title=\"Etiketler\"></i>&nbsp;&nbsp;%2$s. <br /"
+">kalıcı <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href="
+"\"%3$s\" rel=\"bookmark\">bağlantı</a>."
+
+#: ../content-single.php:53
+#, php-format
+msgid ""
+"This entry was posted in <i class=\"glyphicon glyphicon-folder-open\"></"
+"i>&nbsp;&nbsp;%1$s. <br />Bookmark the <i class=\"glyphicon glyphicon-"
+"bookmark\"></i>&nbsp;&nbsp;<a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"<i class=\"glyphicon glyphicon-folder-open\"></i>&nbsp;&nbsp;%1$s. <br /> "
+"kalıcı <i class=\"glyphicon glyphicon-bookmark\"></i>&nbsp;&nbsp;<a href="
+"\"%3$s\" rel=\"bookmark\">bağlantı</a>."
+
+#: ../content.php:40 ../content.php:43
+msgid "Read more"
+msgstr "Devamı"
+
+#: ../content.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr "%1$s yayınlananlar"
+
+#: ../content.php:63
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Etiketlenen %1$s "
+
+#: ../content.php:69
+msgid "Leave a comment"
+msgstr "Yorum Yap"
+
+#: ../content.php:69
+msgid "1 Comment"
+msgstr "1 Yorum"
+
+#: ../content.php:69
+msgid "% Comments"
+msgstr "% Yorum"
+
+#: ../footer.php:25
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Gururla tarafından desteklenmektedir %s "
+
+#: ../footer.php:27
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s  %2$s tarafından hazırlanmıştır."
+
+#: ../functions.php:57
+msgid "Primary Menu"
+msgstr "Ana Menü "
+
+#: ../functions.php:104
+msgid "Knowledge Base Sidebar"
+msgstr "İçerik Kenar Çubuğu"
+
+#: ../functions.php:106
+msgid "Shows up only on category archive pages and single posts."
+msgstr "Sadece kategori arşiv sayfalarında ve tek yayınlarda gösterilir."
+
+#: ../functions.php:113
+msgid "General Sidebar"
+msgstr "Genel kenar çubuğu"
+
+#: ../functions.php:115
+msgid "Shows up everywhere except the category archive pages and single posts."
+msgstr "Kategori arşiv sayfaları ve tek ileti dışında her yerde görünür."
+
+#: ../functions.php:122
+msgid "bbPress Sidebar"
+msgstr "bbPress Kenar"
+
+#: ../functions.php:124
+msgid "Shows up on bbPress forums and topics."
+msgstr "bbPress forumlarda ve konularda gösterilir."
+
+#: ../functions.php:131
+msgid "Footer Large"
+msgstr "Büyük Altbilgi"
+
+#: ../functions.php:139
+msgid "Footer Small"
+msgstr "Küçük Altbilgi"
+
+#: ../functions.php:207
+msgid "Oops, some problem to connect. Try again?"
+msgstr "Hata, bağlantıda bir sorun var. Tekrar denermisin?"
+
+#: ../functions.php:388
+msgid "<i class=\"ipticm ipt-icomoon-bullhorn\"></i> Advertisement"
+msgstr "<i class=\"ipticm ipt-icomoon-bullhorn\"></i> Reklam"
+
+#: ../functions.php:409
+msgid "Below Title Advertisement"
+msgstr "Başlığın altında Reklam"
+
+#: ../functions.php:412 ../functions.php:423
+msgid "Disabled"
+msgstr "Devredışı"
+
+#: ../functions.php:415
+msgid "Enter the ad code (RAW HTML) that will be displayed below title."
+msgstr "Başlık altında görüntülenecek reklam kodunu (RAW HTML) girin."
+
+#: ../functions.php:420
+msgid "Below Authorbox Advertisement"
+msgstr "Yazar kutusu reklamının altında"
+
+#: ../functions.php:426
+msgid ""
+"Enter the ad code (RAW HTML) that will be displayed beside the authorbox."
+msgstr "Yazar kutusunun yanında görüntülenecek reklam kodunu (RAW HTML) girin."
+
+#: ../functions.php:452
+msgid "Knowledge Base Theme"
+msgstr "KBT"
+
+#: ../header-bbpress.php:31 ../header.php:31
+msgid "Toggle navigation"
+msgstr "Gezinmeyi Değiştir"
+
+#: ../header-bbpress.php:36 ../header.php:36
+msgid "Toggle search"
+msgstr "Kullanıcı ara"
+
+#: ../header-bbpress.php:42 ../header.php:42
+msgid "Toggle User"
+msgstr "Kullanıcı Değiştir"
+
+#: ../image.php:22
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+"<span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">"
+"%2$s</time></span> <a href=\"%3$s\">%4$s &times; %5$s</a> <a href=\"%6$s\" "
+"rel=\"gallery\">%7$s</a>"
+
+#: ../image.php:37
+msgid ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Previous"
+msgstr ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Önceki"
+
+#: ../image.php:38
+msgid ""
+"Next <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-right"
+"\"></span></span>"
+msgstr ""
+"Sonraki <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-"
+"right\"></span></span>"
+
+#: ../image.php:58
+msgid "Pages:"
+msgstr "Sayfalar:"
+
+#: ../inc/bbpress.php:243
+msgid "New Request"
+msgstr "Yeni İstek"
+
+#: ../inc/bbpress.php:245
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-info3 bstooltip\" title=\"New Request"
+"\"></span><span class=\"sr-only\"> [New Request] </span>"
+msgstr ""
+"<span class=\"glyphicon ipt-icomoon-info3 bstooltip\" title=\"Yeni İstek\"></"
+"span><span class=\"sr-only\"> [Yeni İstek] </span>"
+
+#: ../inc/bbpress.php:249
+msgid "Resolved"
+msgstr "Çözümlenmiş"
+
+#: ../inc/bbpress.php:251
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-checkmark-circle bstooltip\" title="
+"\"Resolved\"></span><span class=\"sr-only\"> [Resolved] </span>"
+msgstr ""
+"<span class=\"glyphicon ipt-icomoon-checkmark-circle bstooltip\" title="
+"\"Çözümlenmiş\"></span><span class=\"sr-only\"> [Çözümlenmiş] </span>"
+
+#: ../inc/bbpress.php:255
+msgid "Processing"
+msgstr "İşleniyor"
+
+#: ../inc/bbpress.php:257
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"Processing"
+"\"></span><span class=\"sr-only\"> [Processing] </span>"
+msgstr ""
+"<span class=\"glyphicon ipt-icomoon-history bstooltip\" title=\"İşleniyor"
+"\"></span><span class=\"sr-only\"> [İşleniyor] </span>"
+
+#: ../inc/bbpress.php:261
+msgid "No Solution"
+msgstr "Çözüm"
+
+#: ../inc/bbpress.php:263
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-cancel-circle bstooltip\" title=\"No "
+"Solution\"></span><span class=\"sr-only\"> [No Solution] </span>"
+msgstr ""
+"<span class=\"glyphicon ipt-icomoon-cancel-circle bstooltip\" title=\"Çözüm"
+"\"></span><span class=\"sr-only\"> [Çözüm] </span>"
+
+#: ../inc/bbpress.php:267
+msgid "Announcement"
+msgstr "Duyuru "
+
+#: ../inc/bbpress.php:269
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-bullhorn bstooltip\" title=\"Announcement"
+"\"></span><span class=\"sr-only\"> [Announcement] </span>"
+msgstr ""
+"<span class=\"glyphicon ipt-icomoon-bullhorn bstooltip\" title=\"Bildirim"
+"\"></span><span class=\"sr-only\"> [Bildirim] </span>"
+
+#: ../inc/bbpress.php:273
+msgid "Management Topic"
+msgstr "Yönetim Konusu"
+
+#: ../inc/bbpress.php:275
+msgid ""
+"<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Announcement"
+"\"></span><span class=\"sr-only\"> [Management] </span>"
+msgstr ""
+"<span class=\"glyphicon ipt-icomoon-user4 bstooltip\" title=\"Duyuru\"></"
+"span><span class=\"sr-only\"> [Yönetim] </span>"
+
+#: ../inc/bbpress.php:297
+msgid "Tagged:"
+msgstr "Etiketlenen:"
+
+#: ../inc/category-fields.php:41 ../inc/category-fields.php:62
+msgid "Support Forum"
+msgstr "Destek Forumu "
+
+#: ../inc/category-fields.php:43 ../inc/category-fields.php:65
+msgid "Link to support forum. For parent category only."
+msgstr "Forum destek bağlantısı. Sadece ebeveyn kategorisi için."
+
+#: ../inc/category-fields.php:46 ../inc/category-fields.php:69
+msgid "Icon Class"
+msgstr "Simge Sınıfı"
+
+#: ../inc/category-fields.php:48 ../inc/category-fields.php:72
+msgid ""
+"Add icon class to this category. This is for subcategories, not the parent "
+"category."
+msgstr ""
+"Simge sınıfı bu kategoriye ekleyin. Bu alt kategori için, ana kategori için "
+"değil."
+
+#: ../inc/category-fields.php:51 ../inc/category-fields.php:76
+msgid "Image URL"
+msgstr "Resim URL'si:"
+
+#: ../inc/category-fields.php:53 ../inc/category-fields.php:79
+msgid ""
+"Add a 128X128 image for this category. Will only be used for parent "
+"categories."
+msgstr ""
+"Bu kategori için bir 128X128 resim ekleyin. Yalnızca ana kategoriler için "
+"kullanılacaktır."
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:92
+#, php-format
+msgid "%s (Invalid)"
+msgstr "%s (Geçersiz)"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:96
+#, php-format
+msgid "%s (Pending)"
+msgstr "%s (Beklemede)"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:109
+msgid "sub item"
+msgstr "menü alt öğesi"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:124
+msgid "Move up"
+msgstr "Taşındı: "
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:137
+msgid "Move down"
+msgstr "Taşıma Yöntemi"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:139
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:141
+msgid "Edit Menu Item"
+msgstr "Menü Öğesini Düzenle"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:150
+msgid "URL"
+msgstr "URL"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:157
+msgid "Navigation Label"
+msgstr "Navigasyon Etiketi"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:163
+msgid "Title Attribute"
+msgstr "Başlık Özniteliği"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:171
+msgid "Menu Icon Class"
+msgstr "Menü Simgesi Sınıfı"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:174
+#, php-format
+msgid ""
+"If you want to put icon before a menu item, then you can choose an icon "
+"here. Both <a href=\"%1$s\">IcoMoon</a> and <a href=\"%2$s\">FontAwesome</a> "
+"classes are supported. Leave <code>none</code> or empty to not show any "
+"icons."
+msgstr ""
+"Bir menü öğesinden önce simge koymak istiyorsanız, burada bir simge "
+"seçebilirsiniz. Her iki <a href=\"%1$s\">IcoMoon</a> ve <a href=\"%2$s"
+"\">FontAwesome</a> sınıfları desteklenir. Herhangi bir simge göstermemek "
+"için <code>boş</code> bırakın."
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:183
+msgid "Show Divider after this item"
+msgstr "Bu öğeden sonra Bölücüyü göster"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:191
+msgid "Appear as Dropdown Header"
+msgstr "Açılır başlık olarak görünür"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:199
+msgid "Appear as disabled"
+msgstr "Devre dışı olarak görünür"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:208
+msgid "Open link in a new window/tab"
+msgstr "Yeni bir pencerede/sekmede bağlantıyı aç"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:213
+msgid "CSS Classes (optional)"
+msgstr "CSS sınıfları (isteğe bağlı)"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:219
+msgid "Link Relationship (XFN)"
+msgstr "Bağlantı İlişkisi (XFN)"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:225
+msgid "Description"
+msgstr "Açıklama"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:227
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr "Geçerli tema destekliyorsa açıklama menüde görüntülenir."
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:233
+msgid "Move"
+msgstr "Taşı"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:234
+msgid "Up one"
+msgstr "Bir yukarı"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:235
+msgid "Down one"
+msgstr "Eksi bir"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:238
+msgid "To the top"
+msgstr "Başa"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:247
+#, php-format
+msgid "Original: %s"
+msgstr "Orjinal: %s"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:260
+msgid "Remove"
+msgstr "Kaldır"
+
+#: ../inc/class-ipt-bootstrap-walker-nav-menu-edit.php:261
+msgid "Cancel"
+msgstr "İptal et"
+
+#: ../inc/class-ipt-kb-affix-widget.php:32
+msgid "An affix widget for displaying on the sidebar of the single articles."
+msgstr ""
+"Tek içeriklerin kenar çubuğunda görüntülemek için bir bağlama ekran aracı"
+
+#: ../inc/class-ipt-kb-affix-widget.php:33
+msgid "Affix Widget"
+msgstr "Bağlama Ekran Aracı"
+
+#: ../inc/class-ipt-kb-affix-widget.php:111
+msgid "Search&hellip;"
+msgstr "Ara&hellip;"
+
+#: ../inc/class-ipt-kb-affix-widget.php:167
+msgid "Click to show/hide table of contents."
+msgstr "İçindekiler tablosunu göstermek/gizlemek için tıklayın."
+
+#: ../inc/class-ipt-kb-affix-widget.php:169
+msgid "Table of Contents"
+msgstr "İçindekiler"
+
+#: ../inc/class-ipt-kb-affix-widget.php:198
+msgid "Click to show/hide articles under this category."
+msgstr "Bu kategorinin altındaki içerikleri göstermek/gizle için tıklayın."
+
+#: ../inc/class-ipt-kb-affix-widget.php:257
+msgid "No articles found."
+msgstr "Gönderi Bulunamadı"
+
+#: ../inc/class-ipt-kb-affix-widget.php:304
+msgid "Do not make the widget sticky"
+msgstr "Ekran Aracını yapışkan yapmayın"
+
+#: ../inc/class-ipt-kb-affix-widget.php:307
+msgid "No other configuration necessary. Just activate and enjoy. Neat?"
+msgstr ""
+"Başka bir yapılandırma gerekmez. Sadece aktive ve keyfini çıkarın. Düzgün?"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:27
+msgid ""
+"A simple login form with optional links to sign-up and lost password pages."
+msgstr ""
+"Kayıt olmak ve parola sayfalarını kaybetmek için isteğe bağlı bağlantılar "
+"içeren basit bir giriş formu."
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:30
+msgid "(bbPress) Login Widget"
+msgstr "(bbPress) Oturum Açma Aracı"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:102 ../inc/template-tags.php:942
+msgid "Remember Me"
+msgstr "Beni hatırla"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:124
+msgid "Edit Your Profile"
+msgstr "Profilinizi Düzenle"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:135
+#, php-format
+msgid "%s Topics Started"
+msgstr "%s Başlayan Konular"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:141
+msgid "Your Favorites"
+msgstr "Favoriler"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:146
+msgid "Your Subscriptions"
+msgstr "Abonelikler"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:147
+#, php-format
+msgid "%s Subscriptions"
+msgstr "%s Abonelik"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:190
+msgid "Title:"
+msgstr "Başlık:"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:195
+msgid "Register URI:"
+msgstr "Kayıt URI:"
+
+#: ../inc/class-ipt-kb-bbp-login-widget.php:200
+msgid "Lost Password URI:"
+msgstr "Kayıp kullanıcı URI:"
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:26
+msgid "Lists all your categories or knowledge bases with the right appearance."
+msgstr ""
+"Tüm kategorilerinizi veya bilgi tabanlarınızı doğru görünümde listeler."
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:27
+msgid "Knowledge Base Widget"
+msgstr "Bilgi Tabanı Ekran aracı"
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:130
+msgid "Knowledge Bases"
+msgstr "Bilgi Tabanı"
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:133
+#: ../inc/class-ipt-kb-popular-widget.php:117
+#: ../inc/class-ipt-kb-social-widget.php:130
+msgid "Title"
+msgstr "Başlık"
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:138
+msgid "Show sub categories below the parent category (main knowledge bases)"
+msgstr "Alt kategorileri ana kategorinin altında göster. (temel bilgiler)"
+
+#: ../inc/class-ipt-kb-knowledgebase-widget.php:141
+msgid ""
+"No other settings necessary. The icon classes you have put on categories and "
+"sub categories will be thoroughly used."
+msgstr ""
+"Başka ayarlara gerek yok.Kategoriler ve alt kategoriler üzerine koyduğunuz "
+"simge sınıfları tam olarak kullanılacaktır."
+
+#: ../inc/class-ipt-kb-popular-widget.php:26
+msgid "Shows articles or posts based on the user likes."
+msgstr "Kullanıcı beğenmelerine göre içerik veya gönderileri gösterir."
+
+#: ../inc/class-ipt-kb-popular-widget.php:27
+msgid "Popular Knowledge Base Articles"
+msgstr "Popüler Bilgi İçerikleri"
+
+#: ../inc/class-ipt-kb-popular-widget.php:112
+msgid "Popular Articles"
+msgstr "Popüler içerikler"
+
+#: ../inc/class-ipt-kb-popular-widget.php:121
+msgid "Number of articles"
+msgstr "İçerik sayısı"
+
+#: ../inc/class-ipt-kb-social-widget.php:30
+msgid "Stay <span>Connected</span>"
+msgstr "Bağlı <span>Kalın</span>"
+
+#: ../inc/class-ipt-kb-social-widget.php:43
+msgid "Like us on Facebook"
+msgstr "Bizi Facebook'ta Beğen"
+
+#: ../inc/class-ipt-kb-social-widget.php:44
+msgid "Follow us on Twitter"
+msgstr "Twitter da bizi izleyin"
+
+#: ../inc/class-ipt-kb-social-widget.php:45
+msgid "Circle us on Google Plus"
+msgstr "Bizi Google Plus üzerinden Çevrenize ekleyiniz "
+
+#: ../inc/class-ipt-kb-social-widget.php:46
+msgid "Subscribe to our Youtube Channel"
+msgstr "Youtube kanalımıza abone olunuz"
+
+#: ../inc/class-ipt-kb-social-widget.php:47
+msgid "Subscribe to our Vimeo Channel"
+msgstr "Vimeo kanalımıza abone olubuz"
+
+#: ../inc/class-ipt-kb-social-widget.php:48
+msgid "Follow us on Pinterest"
+msgstr "Bizi Pinterest de takip et!"
+
+#: ../inc/class-ipt-kb-social-widget.php:49
+msgid "Follow us on envato marketplaces"
+msgstr "Bizi Envato da takip et!"
+
+#: ../inc/class-ipt-kb-social-widget.php:63
+msgid "A nice looking social widget for the footer small area."
+msgstr "Altbilgi küçük alan için güzel görünümlü bir sosyal ekran aracı."
+
+#: ../inc/class-ipt-kb-social-widget.php:64
+msgid "Social Widget"
+msgstr "Sosyal ekran bileşeni"
+
+#: ../inc/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "Gerekli Eklentileri Yükleyin"
+
+#: ../inc/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "Eklentileri yükleyin"
+
+#: ../inc/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Yüklenen Eklenti: %s"
+
+#: ../inc/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Eklenti Güncelle: %s"
+
+#: ../inc/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr "Eklenti API'sında bir sorun oluştu."
+
+#: ../inc/class-tgm-plugin-activation.php:336
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Bu tema aşağıdaki eklentiyi gerektiriyor: %1$s."
+msgstr[1] "Bu tema aşağıdaki eklentiyi gerektiriyor: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:342
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Bu tema aşağıdaki eklentileri önerir: %1$s."
+msgstr[1] "Bu tema aşağıdaki eklentileri önerir: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"Bu temayla maksimum uyumluluk sağlamak için aşağıdaki eklentinin en son "
+"sürüme geçirilmesi gerekiyor: %1$s."
+msgstr[1] ""
+"Bu temayla maksimum uyumluluk sağlamak için aşağıdaki eklentinin en son "
+"sürüme geçirilmesi gerekiyor: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "İçin bir güncelleme var: %1$s."
+msgstr[1] "Aşağıdaki eklentiler için güncellemeler mevcut: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:360
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "Aşağıdaki gerekli eklenti şu anda etkin değil: %1$s."
+msgstr[1] "Aşağıdaki gerekli eklenti şu anda etkin değil: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:366
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "Aşağıdaki önerilen eklenti şu anda etkin değil: %1$s."
+msgstr[1] "Aşağıdaki gerekli eklenti şu anda etkin değil: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:371
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Eklenti kurma işlemini başlatın"
+msgstr[1] "Eklenti kurma işlemini başlatın"
+
+#: ../inc/class-tgm-plugin-activation.php:376
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Eklentileri Aktif edin"
+msgstr[1] "Eklentileri etkinleştirmeye başlayın."
+
+#: ../inc/class-tgm-plugin-activation.php:381
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Eklentileri Aktif edin"
+msgstr[1] "Eklentileri etkinleştirmeye başlayın."
+
+#: ../inc/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "Gerekli Eklenti Yükleyiciye Geri Dön"
+
+#: ../inc/class-tgm-plugin-activation.php:386
+#: ../inc/class-tgm-plugin-activation.php:827
+#: ../inc/class-tgm-plugin-activation.php:2533
+#: ../inc/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Gösterge Tablosuna Geri Dön"
+
+#: ../inc/class-tgm-plugin-activation.php:387
+#: ../inc/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "Eklenti başarıyla etkinleştirildi."
+
+#: ../inc/class-tgm-plugin-activation.php:388
+#: ../inc/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Aşağıdaki eklenti başarıyla etkinleştirildi:"
+msgstr[1] "Aşağıdaki eklenti başarıyla etkinleştirildi:"
+
+#: ../inc/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Hiçbir işlem yapılmadı.Eklenti %1$s zaten aktif."
+
+#: ../inc/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Eklenti aktif değil. Bu tema için %s daha yüksek bir sürüme ihtiyaç vardır. "
+"Lütfen eklentiyi güncelleyin."
+
+#: ../inc/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Tüm eklentiler başarıyla yüklendi ve etkinleştirildi. %1$s"
+
+#: ../inc/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Bu bildirimi yoksay"
+
+#: ../inc/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Yüklemek, güncellemek veya etkinleştirmek için bir veya daha fazla gerekli "
+"veya önerilen eklenti vardır."
+
+#: ../inc/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Yardım için lütfen bu sitenin yöneticisine başvurun."
+
+#: ../inc/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Bu temayla maksimum uyumluluk sağlamak için aşağıdaki eklentinin en son "
+"sürüme geçirilmesi gerekiyor: %1$s."
+
+#: ../inc/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Güncelleştirme gerekli."
+
+#: ../inc/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"Uzak eklenti paketi istenen sümüklü bir klasör içermiyor ve yeniden "
+"adlandırma çalışmıyordu.."
+
+#: ../inc/class-tgm-plugin-activation.php:934
+#: ../inc/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Lütfen eklenti sağlayıcısına başvurun ve eklentilerini WordPress "
+"yönergelerine göre paketlemelerini isteyin."
+
+#: ../inc/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Uzak eklenti paketi birden fazla dosyadan oluşur, ancak dosyalar bir "
+"klasörde paketlenmez."
+
+#: ../inc/class-tgm-plugin-activation.php:1121
+#: ../inc/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "ile"
+
+#: ../inc/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: ../inc/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Gereklidir"
+
+#: ../inc/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Tavsiye edilen"
+
+#: ../inc/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "WordPress Deposu"
+
+#: ../inc/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "dış veri kaynağı"
+
+#: ../inc/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Ön Paketlenmiş"
+
+#: ../inc/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Yüklü değil"
+
+#: ../inc/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Yüklü Ama Aktif Değil"
+
+#: ../inc/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Etkinleştir"
+
+#: ../inc/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Gerekli Güncelleme Yok"
+
+#: ../inc/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Güncelleme Gereklidir"
+
+#: ../inc/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Tavsiye edilen"
+
+#: ../inc/class-tgm-plugin-activation.php:2342
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: ../inc/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "%s <span class=\"says\">diyorki:</span>"
+msgstr[1] "%s <span class=\"says\">diyorki:</span>"
+
+#: ../inc/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "%s <span class=\"says\">diyorki:</span>"
+msgstr[1] "%s <span class=\"says\">diyorki:</span>"
+
+#: ../inc/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Güncelleme Mevcut <span class=\"count\">(%s)</span>"
+msgstr[1] "Güncelleme Mevcut <span class=\"count\">(%s)</span>"
+
+#: ../inc/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "%s <span class=\"says\">diyorki:</span>"
+msgstr[1] "%s <span class=\"says\">diyorki:</span>"
+
+#: ../inc/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "bilinmeyen"
+
+#: ../inc/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Yüklü sürüm:"
+
+#: ../inc/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Minimum gerekli sürüm:"
+
+#: ../inc/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Mevcut sürüm:"
+
+#: ../inc/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Şu anda yüklenecek eklenti yok."
+
+#: ../inc/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Eklenti"
+
+#: ../inc/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Kaynak"
+
+#: ../inc/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Tür"
+
+#: ../inc/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Versiyon"
+
+#: ../inc/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Durum"
+
+#: ../inc/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr "Kur %2$s"
+
+#: ../inc/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr "Güncelle %2$s"
+
+#: ../inc/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr "Etkinleştir %2$s"
+
+#: ../inc/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Eklenti yazarından mesajı yükseltin:"
+
+#: ../inc/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Kur"
+
+#: ../inc/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Etkinleştir"
+
+#: ../inc/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Şu anda yüklenecek eklenti yok."
+
+#: ../inc/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Şu anda etkinleştirilecek eklentiler yok."
+
+#: ../inc/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Şu anda yüklenecek eklenti yok."
+
+#: ../inc/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Şu anda etkinleştirilecek eklentiler yok."
+
+#: ../inc/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "Şu anda etkinleştirilecek eklentiler yok."
+
+#: ../inc/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "Şu anda etkinleştirilecek eklentiler yok."
+
+#: ../inc/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Eklenti etkinleştirme başarısız oldu."
+
+#: ../inc/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Eklentisi Yükleniyor %1$s (%2$d/%3$d)"
+
+#: ../inc/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "yüklenirken bir hata oluştu %1$s: <strong>%2$s</strong>."
+
+#: ../inc/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Kurulumu başarısız %1$s oldu."
+
+#: ../inc/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Kurulum ve aktivasyon işlemi başlıyor. Bu süreç bazı sunucular üzerinde "
+"biraz zaman alabilir, bu yüzden lütfen sabırlı olun olunr."
+
+#: ../inc/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s yüklendi ve başarıyla etkinleştirildi."
+
+#: ../inc/class-tgm-plugin-activation.php:3509
+#: ../inc/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Ayrıntıları Göster"
+
+#: ../inc/class-tgm-plugin-activation.php:3509
+#: ../inc/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Ayrıntıları Gizle"
+
+#: ../inc/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Tüm kurulumlar ve etkinleştirmeler tamamlandı."
+
+#: ../inc/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Eklentisi Kurma ve Etkinleştirme %1$s (%2$d/%3$d)"
+
+#: ../inc/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Yükleme işlemi başlıyor. Bu süreç bazı sunucular üzerinde biraz zaman "
+"alabilir, bu yüzden lütfen sabırlı olun."
+
+#: ../inc/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s başarıyla yüklendi."
+
+#: ../inc/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Tüm yüklemeler tamamlanmıştır."
+
+#: ../inc/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Eklentisi Yükleniyor %1$s (%2$d/%3$d)"
+
+#: ../inc/extras.php:66
+#, php-format
+msgid "Page %s"
+msgstr "Sayfa %s"
+
+#: ../inc/ipt-kb-like-article.php:13 ../inc/ipt-kb-like-article.php:18
+msgid "Cheatin&#8217; uh?"
+msgstr "Düzen&#8217; uh?"
+
+#: ../inc/ipt-kb-like-article.php:22 ../inc/template-tags.php:422
+msgid "You like it already"
+msgstr "Beğenmişsiniz"
+
+#: ../inc/ipt-kb-like-article.php:28
+msgid "Thank you."
+msgstr "Teşekkürler."
+
+#: ../inc/template-tags.php:202
+msgid "Post navigation"
+msgstr "Yayın Gezintisi  "
+
+#: ../inc/template-tags.php:205
+msgctxt "Previous post link"
+msgid "<span class=\"glyphicon glyphicon-arrow-left\"></span>"
+msgstr "<span class=\"glyphicon glyphicon-arrow-left\"></span>"
+
+#: ../inc/template-tags.php:206
+msgctxt "Next post link"
+msgid "<span class=\"glyphicon glyphicon-arrow-right\"></span>"
+msgstr "<span class=\"glyphicon glyphicon-arrow-right\"></span>"
+
+#: ../inc/template-tags.php:211
+msgid ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Older posts"
+msgstr ""
+"<span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-left\"></"
+"span></span> Eski içerikler"
+
+#: ../inc/template-tags.php:215
+msgid ""
+"Newer posts <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-arrow-"
+"right\"></span></span>"
+msgstr ""
+"Yeni içerikler <span class=\"meta-nav\"><span class=\"glyphicon glyphicon-"
+"arrow-right\"></span></span>"
+
+#: ../inc/template-tags.php:244
+msgid "Pingback:"
+msgstr "Geri izleme:"
+
+#: ../inc/template-tags.php:254
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">diyorki:</span>"
+
+#: ../inc/template-tags.php:257
+msgid "Your comment is awaiting moderation."
+msgstr "Yorumunuz onay bekliyor."
+
+#: ../inc/template-tags.php:275
+msgid "<i class=\"glyphicon ipt-icomoon-reply\"></i>&nbsp;&nbsp;Reply"
+msgstr "<i class=\"glyphicon ipt-icomoon-reply\"></i>&nbsp;&nbsp;Yanıt"
+
+#: ../inc/template-tags.php:282
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s tarih %2$s"
+
+#: ../inc/template-tags.php:363
+#, php-format
+msgid ""
+"<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i> "
+"Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr ""
+"<span class=\"posted-on\"><i class=\"glyphicon glyphicon-calendar\"></i>  "
+"%1$s</span><span class=\"byline\"> %2$s</span>"
+
+#: ../inc/template-tags.php:419
+msgid "This article was helpful"
+msgstr "Bu içerik faydalı oldu"
+
+#: ../inc/template-tags.php:426 ../inc/template-tags.php:436
+#, php-format
+msgid "%d person found this article useful"
+msgid_plural "%d people found this article useful"
+msgstr[0] "%d insanlar bu içeriği yararlı buldu"
+msgstr[1] "%d insanlar bu içeriği yararlı buldu"
+
+#: ../inc/template-tags.php:427 ../inc/template-tags.php:432
+msgid "Please wait"
+msgstr "Lütfen bekle"
+
+#: ../inc/template-tags.php:450 ../inc/template-tags.php:454
+msgid "Home"
+msgstr "Anasayfa"
+
+#: ../inc/template-tags.php:570
+msgid "Search result"
+msgstr "Arama sonuçları"
+
+#: ../inc/template-tags.php:574
+msgid "Error 404 - Not found"
+msgstr "Hata 404 bulunamadı"
+
+#: ../inc/template-tags.php:578
+msgid "Archive"
+msgstr "Arşiv"
+
+#: ../inc/template-tags.php:582
+msgid "Blog"
+msgstr "Blog"
+
+#: ../inc/template-tags.php:622
+#, php-format
+msgid "Required fields are marked %s"
+msgstr "Gerekli alanlar işaretlenmiştir %s"
+
+#: ../inc/template-tags.php:625
+msgctxt "noun"
+msgid "Comment"
+msgstr "Yorum"
+
+#: ../inc/template-tags.php:626
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Yorum yazmak için <a href=\"%s\">giriş</a> yapınız."
+
+#: ../inc/template-tags.php:627
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"<a href=\"%1$s\">%2$s</a> olarak giriş yaptınız. <a href=\"%3$s\" title="
+"\"Güvenli Çıkış Yap\">Çıkış?</a>"
+
+#: ../inc/template-tags.php:628
+msgid "Your email address will not be published."
+msgstr "✉E-posta hesabınız yayımlanmayacak."
+
+#: ../inc/template-tags.php:629
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+"Bu <abbr title=\"HyperText Markup Language Genişletilebilir Büyütülmüş Metin "
+"İşaretleme Dili\">HTML</abbr> etiketleri ve öznitelikleri kullanabilirsiniz: "
+"%s"
+
+#: ../inc/template-tags.php:632
+msgid "Leave a Reply"
+msgstr "Cevap Bırak"
+
+#: ../inc/template-tags.php:633
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Yanıt Ver %s"
+
+#: ../inc/template-tags.php:634
+msgid "Cancel reply"
+msgstr "Yanıtlamayı Boşver"
+
+#: ../inc/template-tags.php:635
+msgid "Post Comment"
+msgstr "Yorumunu Gönder"
+
+#: ../inc/template-tags.php:765
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../inc/template-tags.php:769
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../inc/template-tags.php:773
+msgid "Google+"
+msgstr "Google+"
+
+#: ../inc/template-tags.php:790
+#, php-format
+msgid "%1$s has written <a href=\"%2$s\">%3$s</a> %4$s"
+msgstr "%1$s toplam <a href=\"%2$s\">%3$s</a> %4$s"
+
+#: ../inc/template-tags.php:790
+msgid "article"
+msgid_plural "articles"
+msgstr[0] "içerik"
+msgstr[1] "içerik"
+
+#: ../inc/template-tags.php:828
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr ""
+"Bu içerik parola korumalı. Görüntülemek için lütfen aşağıdaki parolanızı "
+"girin:"
+
+#: ../inc/template-tags.php:830
+msgid "Password:"
+msgstr "Parola:"
+
+#: ../inc/template-tags.php:854
+msgid "Search"
+msgstr "Ara"
+
+#: ../inc/template-tags.php:885
+msgid "Login"
+msgstr "Giriş"
+
+#: ../inc/template-tags.php:904
+#, php-format
+msgid "Hi %1$s"
+msgstr "Merhaba %1$s"
+
+#: ../inc/template-tags.php:908
+msgid "My Profile"
+msgstr "Profil"
+
+#: ../inc/template-tags.php:911
+msgid "Signout"
+msgstr "Çıkış Yapın"
+
+#: ../inc/template-tags.php:1041
+msgid "<i class=\"ipticm ipt-icomoon-question-circle\"></i> Forgot Password"
+msgstr "<i class=\"ipticm ipt-icomoon-question-circle\"></i> Parolayı Unuttum"
+
+#: ../inc/template-tags.php:1042
+msgid "<i class=\"ipticm ipt-icomoon-signup\"></i> Signup"
+msgstr "<i class=\"ipticm ipt-icomoon-signup\"></i>Kayıt"
+
+#: ../no-results.php:13
+msgid "Nothing Found"
+msgstr "İçerik Bulunamadı"
+
+#: ../no-results.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"İlk yazınızı yayınlamak için hazır mısınız? <a href=\"%1$s\"> buradan "
+"başlayın </a>"
+
+#: ../no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Üzgünüz, ama hiçbir sonuç arama terimleriniz ile eşleşmedi. Farklı anahtar "
+"kelimeler ile tekrar deneyiniz."
+
+#: ../no-results.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Aradığınız şeyi bulamadık belki farklı bir arama yapmanız işe yarayabilir."
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "için Arama Sonuçları %s"
+
+#: ../searchform.php:7
+msgctxt "placeholder"
+msgid "Search Knowledgebase&hellip;"
+msgstr "Site içinde Ara&hellip;"
+
+#: ../searchform.php:13
+#, php-format
+msgid "Search Knowledgebase for %s&hellip;"
+msgstr "Site içinde arama sonuçları %s&hellip;"
+
+#: ../template-knowledgebase.php:144
+msgid "Recent articles"
+msgstr "Son İçerikler"
+
+#: ../template-knowledgebase.php:181
+msgid "Popular articles"
+msgstr "Popüler içerikler"
+
+#~ msgid ""
+#~ "Bu <abbr title=\"HyperText Markup Language\">HTML</abbr> etiketlerini "
+#~ "kullanabilirsin:"
+#~ msgstr ""
+#~ "Bu <abbr title=\"Genişletilmiş Metin İşaretleme Dili\">HTML</abbr> "
+#~ "etiketleri ve öznitelikleri kullanabilirsiniz:"
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to install the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin installed."
+#~ msgid_plural ""
+#~ "Sorry, but you do not have the correct permissions to install the %s "
+#~ "plugins. Contact the administrator of this site for help on getting the "
+#~ "plugins installed."
+#~ msgstr[0] ""
+#~ "Üzgünüz, ancak eklentisini %s yüklemek için doğru izinlere sahip "
+#~ "değilsiniz. Eklentinin yüklenmesiyle ilgili yardım için bu sitenin "
+#~ "yöneticisine başvurun."
+#~ msgstr[1] ""
+#~ "Üzgünüz, ancak  eklentisini %s yüklemek için doğru izinlere sahip "
+#~ "değilsiniz. Eklentinin yüklenmesiyle ilgili yardım için bu sitenin "
+#~ "yöneticisine başvurun."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to activate the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin activated."
+#~ msgid_plural ""
+#~ "Sorry, but you do not have the correct permissions to activate the %s "
+#~ "plugins. Contact the administrator of this site for help on getting the "
+#~ "plugins activated."
+#~ msgstr[0] ""
+#~ "Maalesef,  eklentisini etkinleştirmek için doğru izinlere sahip %s "
+#~ "değilsiniz. Eklentinin etkinleştirilmesi ile ilgili yardım için bu "
+#~ "sitenin yöneticisine başvurun."
+#~ msgstr[1] ""
+#~ "Maalesef,  eklentisini etkinleştirmek için doğru izinlere sahip %s "
+#~ "değilsiniz. Eklentinin etkinleştirilmesi ile ilgili yardım için bu "
+#~ "sitenin yöneticisine başvurun."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to update the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin updated."
+#~ msgid_plural ""
+#~ "Sorry, but you do not have the correct permissions to update the %s "
+#~ "plugins. Contact the administrator of this site for help on getting the "
+#~ "plugins updated."
+#~ msgstr[0] ""
+#~ "Üzgünüz, ancak  eklentisini güncellemek için doğru izinlere sahip %s "
+#~ "değilsiniz. Eklentinin güncellenmesi konusunda yardım için bu sitenin "
+#~ "yöneticisine başvurun."
+#~ msgstr[1] ""
+#~ "Üzgünüz, ancak  eklentisini güncellemek için doğru izinlere sahip %s "
+#~ "değilsiniz. Eklentinin güncellenmesi konusunda yardım için bu sitenin "
+#~ "yöneticisine başvurun."
+
+#~ msgid "All plugins installed and activated successfully. %s"
+#~ msgstr "Tüm eklentiler başarıyla yüklendi ve etkinleştirildi. %s"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Hata var."
+
+#~ msgid "Return to the dashboard"
+#~ msgstr "Kontrol paneline dön"
+
+#~ msgid "Private Repository"
+#~ msgstr "Özel Depo"
+
+#~ msgid ""
+#~ "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+#~ "Dashboard\">Return to the Dashboard</a>"
+#~ msgstr ""
+#~ "Hayır eklentileri yüklemek veya etkinleştirmek için.<a href=\"%1$s\" "
+#~ "title=\"Panoya geri dön\">Panoya Geri Dön</a>"
+
+#~ msgid "Install package not available."
+#~ msgstr "Yükleme paketi mevcut değil."
+
+#~ msgid ""
+#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgstr "Yükleme paketi indiriliyor <span class=\"code\">%s</span>&#8230;"
+
+#~ msgid "Unpacking the package&#8230;"
+#~ msgstr "Yükleme paketi açılıyor&#8230;"
+
+#~ msgid "Installing the plugin&#8230;"
+#~ msgstr "Eklenti yükleniyor&#8230;"
+
+#~ msgid "Plugin install failed."
+#~ msgstr "Eklenti yüklemesi başarısız oldu."
+
+#~ msgid "Plugin installed successfully."
+#~ msgstr "Eklenti başarıyla yüklendi."
