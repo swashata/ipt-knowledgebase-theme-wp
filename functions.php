@@ -5,6 +5,77 @@
  * @package iPanelThemes Knowledgebase
  */
 
+
+
+ define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/settings/' );
+require_once dirname( __FILE__ ) . '/settings/options-framework.php';
+
+// Loads options.php from child or parent theme
+$optionsfile = locate_template( 'options.php' );
+load_template( $optionsfile );
+
+/*
+ * This is an example of how to add custom scripts to the options panel.
+ * This one shows/hides the an option when a checkbox is clicked.
+ *
+ * You can delete it if you not using that option
+ */
+add_action( 'optionsframework_custom_scripts', 'optionsframework_custom_scripts' );
+
+function optionsframework_custom_scripts() { ?>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+	jQuery('#example_showhidden').click(function() {
+  		jQuery('#section-example_text_hidden').fadeToggle(400);
+	});
+
+	if (jQuery('#example_showhidden:checked').val() !== undefined) {
+		jQuery('#section-example_text_hidden').show();
+	}
+
+});
+</script>
+<?php
+}
+
+
+ /* Akıllı arama */
+	 add_action('wp_footer', 'mywiki_theme_setup');
+		 function mywiki_theme_setup(){
+			 wp_enqueue_script( 'ajaxsearch',  get_template_directory_uri() . '/js/ajaxsearch.js');
+			 wp_enqueue_script( 'general',  get_template_directory_uri() . '/js/general.js');
+			 wp_localize_script( 'general', 'my_ajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+		 }
+		 function mywiki_search() {
+			 global $wpdb;
+			 $mywiki_title=trim($_POST['queryString']);
+			 $mywiki_args = array('posts_per_page' => 5, 'order'=> 'ASC', "orderby"=> "title", "post_type" => "post",'post_status'=>'publish', "s" => $mywiki_title);
+			 $mywiki_posts = get_posts( $mywiki_args );
+			 $mywiki_output='';
+			 if($mywiki_posts){
+					$mywiki_h=0;
+					$mywiki_output.='<ul id="search-result">';
+					foreach ( $mywiki_posts as $mywiki_post )
+					{
+						$mywiki_output.='<a href="'.$mywiki_posts[$mywiki_h]->guid.'"><li class="que-icn">';
+						$mywiki_output.=' '.$mywiki_posts[$mywiki_h]->post_title.' ';
+						$mywiki_output.='</li></a>';
+						$mywiki_h++;
+					}
+					$mywiki_output.='</ul>';
+					echo $mywiki_output;
+			 }else{
+					$mywiki_output.='no';
+				 echo $mywiki_output;
+			 }
+			 die();
+		 }
+	 add_action('wp_ajax_mywiki_search', 'mywiki_search');
+	 add_action('wp_ajax_nopriv_mywiki_search', 'mywiki_search');
+
+
 /**
  * Set the version
  */
@@ -56,6 +127,15 @@ function ipt_kb_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'ipt_kb' ),
 	) );
+
+  register_nav_menus( array(
+  'primaryalt' => __( 'Alt kısım menüsü', 'ipt_kb' ),
+) );
+
+register_nav_menus( array(
+'primaryust' => __( 'Üst kısım menüsü', 'ipt_kb' ),
+) );
+
 
 	/**
 	 * Setup the WordPress core custom background feature.
@@ -294,9 +374,6 @@ add_filter( 'wp_link_pages_link', 'ipt_kb_link_pages' );
 /**
  * Include the TGM Plugin Activation
  */
-require get_template_directory() . '/inc/class-tgm-plugin-activation.php';
-
-add_action( 'tgmpa_register', 'ipt_kb_required_plugins' );
 
 if ( ! function_exists( 'ipt_kb_required_plugins' ) ) :
 function ipt_kb_required_plugins() {

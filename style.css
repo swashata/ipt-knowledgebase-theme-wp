@@ -1,10 +1,11 @@
 /*
 Theme Name: WP Knowledge Base
-Theme URI: http://ipanelthemes.com/kb/wp-knowledge-base-theme/
+Theme URI: https://github.com/swashata/ipt-knowledgebase-theme-wp
 Author: swashata
-Author URI: http://www.swashata.com/
+Adaption : alvehe
+Author URI: https://swas.io
 Description: A responsive bootstrap based theme for maintaining multi product knowledge base on your WordPress site. Easily create knowledge bases with just posts and categories. You can also have images, support forum links and/or icons assigned to knowledge bases. The theme also has a comprehensive documentation which can be found at the ThemeURI ( http://ipanelthemes.com/kb/wp-knowledge-base-theme/ ). Requires atleast WordPress 3.5 due to jQuery dependency of bootstrap 3.0. Support for bbPress is added officially to version 1.6.0.
-Version: 1.7.0
+Version: 1.7.0 17052020
 License: GNU General Public License
 License URI: license.txt
 Text Domain: ipt_kb
@@ -118,6 +119,138 @@ a img {
 	border: 0;
 }
 
+/** canvas ve arama & reklam **/
+
+.reklamnet {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 3px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 5000; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.netizdetay {
+    padding: 30px;
+    color: #999;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#s {
+	width:100%;
+	padding:15px
+}
+#result {
+	height:20px;
+	font-size:16px;
+	font-family: 'Poppins', sans-serif;
+	color:#333;
+	padding:5px;
+	margin-bottom:10px;
+	background-color:#FF9
+}
+.suggestionsbox {
+	left:0;
+	z-index:99999;
+	text-align:left;
+	top:10px;
+	border-radius:0;
+	margin:15px 0 0;
+	width:100%;
+	background-color:#fff;
+	border:1px solid #D1D1D1;
+	color:#222;
+	border-radius:5px;
+}
+.suggestionlist {
+	margin:-11px 0 0;
+	padding:0
+}
+.suggestionlist ul li {
+	list-style:none;
+	margin:0;
+	padding:7px;
+	cursor:pointer;
+	margin:0 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+}
+.suggestionlist ul li:hover {
+	color:#048eb0;
+	background:#eee;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	-khtml-border-radius:0;
+	border-radius:0;
+	margin:0 10px
+}
+.suggestionlist ul li a {
+	color:#000
+}
+.suggestionlist ul li a:hover {
+	color:#048eb0
+}
+#suggestionslist >ul {
+	margin-left:0
+}
+.suggestionlist li.que-icn {
+	padding-left:10px
+}
+.load {
+	background-image:url(./img/loader.gif);
+	background-position:right 180px center;
+	background-repeat:no-repeat
+}
+
+img.upArrow {
+    margin-top: -35px;
+    margin-left: 20px;
+}
+
 /* =Global
 ----------------------------------------------- */
 body {
@@ -128,7 +261,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -254,6 +387,11 @@ input {
 button,
 input {
 	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+}
+
+.entry-content {
+    font-size: 17px;
+    line-height: 1.7em;
 }
 
 .entry-content input[type="reset"],
@@ -450,7 +588,6 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
 }
 .page-links {
 	clear: both;
@@ -843,7 +980,7 @@ body .comment-reply-title {
 	margin: 0;
 	line-height: 24px;
 	font-size: 14px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 /* =Knowledgebase Parent Category
@@ -1167,7 +1304,7 @@ body .syntaxhighlighter table div {
 	padding: 0 15px;
 	margin-right: 15px;
 	margin-top: 2px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 #commentform .cptch_block label {
 	width: 41.6667%;
@@ -1211,9 +1348,12 @@ body .syntaxhighlighter table div {
 	position: relative;
 }
 #masthead .navbar-brand img {
-	height: 50px;
-	width: auto;
-	margin-top: -15px;
+    width: auto;
+    margin-top: -10px;
+		max-height: 41px;
+}
+.navbar-toggle {
+    padding: 5px 10px !important;
 }
 
 /* Fine Tune the search and login */
@@ -1431,4 +1571,352 @@ body .syntaxhighlighter table div {
 .title-advertisement,
 .authorbox-advertisement {
 	margin-bottom: 10px;
+}
+
+.page-header {
+    border-bottom: 0px !important;
+    margin: 0px !important;
+}
+
+.reklamyeni {
+	min-height:193px; margin: 0 auto;
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: center;
+width: 100%;
+background: #eee;
+padding: 10px;
+border-radius: 3px;
+}
+
+.medya .tab-content {
+    border-top: 1px solid #ddd;
+    border-radius: 4px !important;
+    min-height: 165px;
+}
+.medya ul.nav.nav-pills.nav-stacked {
+    margin: 0;
+}
+
+.medya ul.list-group {
+    margin: 0px;
+}
+
+
+.copyright.text-light.container a:hover {
+    color: #222;
+}
+.copyright.text-light.container a {
+    color: #fff;
+    text-shadow: none;
+}
+
+.site-info h3 {
+	margin:0 !important;
+    margin-bottom: 10px !important;
+}
+
+
+#wrapper {
+  padding-left: 0px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #f8f8f8;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: #41484c;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #222222;
+  background: none;
+}
+
+
+
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+#menu-toggle {
+    text-decoration: none;
+}
+
+.btn-menu {
+  color: #000;
+}
+
+.inset {
+  padding: 20px;
+}
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 290px !important;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+.inset {
+  padding: 15px;
+}
+
+}
+
+
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 290px !important;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+.inset {
+  padding: 15px;
+}
+
+ul.sidebar-nav.nav {
+    padding-top: 110px;
+}
+
+.glyphicon-align-justify:before {
+    content: "\e055";
+    font-size: 20px;
+}
+
+div#sidebar-wrapper {
+    top: 0px !important;
+}
+
+li.categories {
+    margin-left: 10px;
+		margin-top:30px;
+}
+li.cat-item {
+    list-style: none;
+}
+
+li.cat-item a {
+    margin: 0;
+    padding: 0;
+    text-align: left !important;
+		margin-bottom: -10px !important;
+}
+
+li.cat-item a:hover {
+    color: #222;
+}
+.categories ul {
+    margin: 0 !important;
+    padding: 0;
+}
+ul.children {
+    font-size: 12px;
+		margin-left:10px !important;
+}
+
+li.sidebar-brand {
+    height: 45px !important;
+}
+.sidebar-brand .nav>li>a {
+    padding: 10px !important;
+}
+
+li.sidebar-brand {
+    margin-left: -5px;
+}
+
+.entry-content p:first-of-type::first-letter {
+    font-size: 4.2em;
+    float: left;
+    line-height: 0.7em;
+    margin: 0.13em 0.13em 0.13em 0;
+}
+
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+div#content {
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+		padding-top: 15px;
+}
+
+div#page {
+    margin-top: 79px;
+}
+
+.ustmenu a {
+    padding: 9px 15px !important;
+    background: transparent !important;
+    color: #eee !important;
+    font-size: 13px !important;
+}
+
+
+.row.medya.hidden-xs {
+    background: #f6f6ea;
+    padding-top: 20px;
+		margin-bottom:20px;
+}
+
+.medya .tab-content {
+    padding: 0;
+    border: 0 !important;
+}
+
+.medya ul.nav.nav-pills.nav-stacked {
+    border-left: 3px solid red;
+    padding-left: 10px;
+}
+
+.medya .nav-pills>li.active>a,.medya .nav-pills>li.active>a:focus,.medya .nav-pills>li.active>a:hover {
+    background: red;
+    border-radius: 0px !important;
+		color:#fff;
+}
+.medya .nav-pills>li.active>a, .medya .nav-pills>li.active>a:focus, .medya .nav-pills>li.active>a:hover {
+    background: red;
+    border-radius: 0px !important;
+		color:#fff;
+}
+.medya .nav-pills>li>a {
+    color: #222;
+}
+
+.navbar-header {
+
+    width: 100%;
+
+}
+
+@media (min-width: 1200px) {
+	.navbar-default .container {
+	    width: 1200px !important;
+	}
+	a#menu-toggle {
+	    margin-left: -15px;
+	}
+}
+
+body.admin-bar nav#site_navigation {
+    padding-top: 32px;
 }

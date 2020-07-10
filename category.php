@@ -21,7 +21,6 @@ $sub_categories = get_categories( array(
 ?>
 
 	<section id="primary" class="content-area<?php if ( $cat->parent != '0' || empty( $sub_categories ) ) echo ' col-md-8'; ?>">
-		<?php get_search_form(); ?>
 		<main id="main" class="site-main <?php echo ( $cat->parent == '0' ? 'ipt-kb-parent' : 'ipt-kb-child' ); ?>" role="main">
 			<?php if ( $cat->parent == '0' && ! empty( $sub_categories ) ) : ?>
 			<?php get_template_part( 'category-templates/category', 'parent' ); // This is a parent category ?>

@@ -20,9 +20,16 @@ $main_categories = get_categories( array(
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<?php get_search_form(); ?>
+
+			<?php if ( of_get_option( 'reklam_3' ) ) { ?>
+			<div class="reklamnet">
+			<?php echo of_get_option( 'reklam_3', '' ); ?>
+			</div>
+			<?php } ?>
+
 
 			<div class="row kb-home-cat-row">
+
 				<?php $cat_iterator = 0; foreach ( $main_categories as $cat ) : ?>
 				<?php $term_meta = get_option( 'ipt_kb_category_meta_' . $cat->term_id, array() ); ?>
 				<?php $term_link = esc_url( get_term_link( $cat ) ); ?>
@@ -85,7 +92,7 @@ $main_categories = get_categories( array(
 							<?php if ( ! empty( $sub_categories ) ) : ?>
 							<?php foreach ( $sub_categories as $scat ) : ?>
 							<?php $sterm_meta = get_option( 'ipt_kb_category_meta_' . $scat->term_id, array() ); ?>
-							<a href="<?php echo esc_url( get_term_link( $scat, 'category' ) ); ?>" class="list-group-item">
+							<a href="<?php echo esc_url( get_term_link( $scat, 'category' ) ); ?>"  class="list-group-item" target="_blank" rel="nofollow">
 								<span class="badge"><?php echo $scat->count; ?></span>
 								<?php if ( isset( $sterm_meta['icon_class'] ) && '' != $sterm_meta['icon_class'] ) : ?>
 								<i class="glyphicon <?php echo esc_attr( $sterm_meta['icon_class'] ); ?>"></i>
@@ -124,6 +131,13 @@ $main_categories = get_categories( array(
 			</div>
 
 
+			<?php if ( of_get_option( 'reklam_4' ) ) { ?>
+			<div class="reklamnet">
+			<?php echo of_get_option( 'reklam_4', '' ); ?>
+			</div>
+			<?php } ?>
+
+
 			<div class="row kb-home-panels">
 				<?php
 				// Remove the filter from the Posts Order By Plugin
@@ -154,6 +168,11 @@ $main_categories = get_categories( array(
 								<?php endif; ?>
 							</div>
 						</div>
+						<?php if ( of_get_option( 'reklam_10' ) ) { ?>
+						<div class="reklamnet" style="margin:0 !important; margin-top:-20px !important;">
+						<?php echo of_get_option( 'reklam_10', '' ); ?>
+						</div>
+						<?php } ?>
 					</div>
 				</div>
 				<?php wp_reset_query(); ?>
@@ -191,9 +210,20 @@ $main_categories = get_categories( array(
 								<?php endif; ?>
 							</div>
 						</div>
+						<?php if ( of_get_option( 'reklam_11' ) ) { ?>
+						<div class="reklamnet" style="margin:0 !important; margin-top:-20px !important;">
+						<?php echo of_get_option( 'reklam_11', '' ); ?>
+						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
+
+			<?php if ( of_get_option( 'reklam_5' ) ) { ?>
+			<div class="reklamnet">
+			<?php echo of_get_option( 'reklam_5', '' ); ?>
+			</div>
+			<?php } ?>
 
 			<?php wp_reset_query(); ?>
 			<?php

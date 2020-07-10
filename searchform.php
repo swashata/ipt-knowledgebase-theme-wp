@@ -6,7 +6,7 @@
  */
 $stext = esc_attr_x( 'Search Knowledgebase&hellip;', 'placeholder', 'ipt_kb' );
 ?>
-<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<form role="search" method="get" id="searchformtop" action="<?php echo site_url(); ?>">
 	<?php // Check to see if category, if yes, then modify the search parameters ?>
 	<?php if ( is_category() ) : ?>
 	<input type="hidden" name="cat" value="<?php echo esc_attr( get_query_var( 'cat' ) ); ?>" />
@@ -14,8 +14,13 @@ $stext = esc_attr_x( 'Search Knowledgebase&hellip;', 'placeholder', 'ipt_kb' );
 	<?php endif; ?>
 	<div class="form-group">
 		<div class="input-group input-group-lg">
-			<input type="search" class="search-field form-control" placeholder="<?php echo $stext; ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" />
+		<input name="s" id="s" type="text" onKeyUp="suggest(this.value);" class="search-field form-control" onBlur="fill();" style="font-family:Helvetica, FontAwesome" autocomplete="off" placeholder="<?php echo get_theme_mod('genetik_arama_kutusu', 'Arama...') ?>" data-provide="typeahead" data-items="4" data-source=''>
 			<span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="ipt-icomoon-search"></span></button></span>
+		</div>
+		<div class="suggestionsbox" id="suggestions" style="display: none;">
+			<img src="<?php echo get_template_directory_uri().'/images/arrow1.png'; ?>" height="18" width="27" class="upArrow" alt="upArrow" />
+			<div class="suggestionlist" id="suggestionslist">
+			</div>
 		</div>
 	</div>
 </form>
