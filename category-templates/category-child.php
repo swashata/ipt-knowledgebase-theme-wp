@@ -75,7 +75,15 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 					?>
 				</div>
 				<div class="clearfix"></div>
+				<?php if ( of_get_option( 'reklam_6' ) ) { ?>
+				<div class="reklamnet">
+				<?php echo of_get_option( 'reklam_6', '' ); ?>
+				</div>
+				<?php } ?>
 			</header><!-- .page-header -->
+
+
+				<hr>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content' ); ?>
@@ -87,3 +95,8 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 
 		<?php endif; ?>
 
+		<?php if ( of_get_option( 'reklam_7' ) ) { ?>
+		<div class="reklamnet">
+		<?php echo of_get_option( 'reklam_7', '' ); ?>
+		</div>
+		<?php } ?>

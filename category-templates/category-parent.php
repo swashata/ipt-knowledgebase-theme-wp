@@ -5,8 +5,11 @@
 global $term_meta, $cat, $cat_id, $sub_categories;
 $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 ?>
+<?php if ( of_get_option( 'reklam_yeni' ) ) { ?>
+<div class="col-md-7">
+	<?php } ?>
 	<header class="kb-parent-category-header row">
-		<div class="col-sm-4 col-md-3 col-lg-2 kb-pcat-icon hidden-xs">
+		<div class="col-sm-5 col-md-4 col-lg-3 kb-pcat-icon hidden-xs" style="margin-top:10px;">
 			<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
 			<p class="text-center">
 				<img class="img-circle" src="<?php echo esc_attr( $term_meta['image_url'] ); ?>" alt="<?php echo esc_attr( $cat->name ); ?>" />
@@ -20,10 +23,16 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 			<?php endif; ?>
 			</div>
 		</div>
-		<div class="col-sm-8 col-md-9 col-lg-10">
+		<div class="col-sm-7 col-md-8 col-lg-9">
 			<h1 class="page-title">
-				<span class="pull-right label label-info"><?php printf( _n( '%d article', '%d articles', $pcat_totals, 'ipt_kb' ), $pcat_totals ); ?></span>
+				<div class="bg-primary" style="padding:50px 15px; margin-top:10px; text-align: center; border-top-left-radius: 3px; border-top-right-radius: 3px; color:#fff;">
 				<?php single_cat_title(); ?>
+			</div>
+				<div class="label-info" style="width:%100;  padding:15px; font-size:22px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; color:#fff;"><?php printf( _n( '%d', '%d', $pcat_totals, 'ipt_kb' ), $pcat_totals ); ?>
+					<div style="float:right;">
+						içerik
+					</div>
+				</div>
 			</h1>
 			<div class="kb-pcat-icon visible-xs">
 				<?php if ( isset( $term_meta['image_url'] ) && '' != $term_meta['image_url'] ) : ?>
@@ -49,6 +58,19 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 		</div>
 		<div class="clearfix"></div>
 	</header><!-- .page-header -->
+	<?php if ( of_get_option( 'reklam_yeni' ) ) { ?>
+</div>
+<?php } ?>
+
+				<?php if ( of_get_option( 'reklam_yeni' ) ) { ?>
+				<div class="col-md-5  col-xs-12" style="float:right;">
+				<div class="reklamyeni">
+				    <?php echo of_get_option( 'reklam_yeni', '' ); ?>
+				</div>
+				</div>
+				<?php } ?>
+
+				<div style="clear:both;"></div>
 
 	<div class="row kb-cat-parent-row">
 		<?php /* Start the subcategory loop */ ?>
@@ -120,4 +142,3 @@ $pcat_totals = ipt_kb_total_cat_post_count( $cat_id );
 		<?php endforeach; ?>
 		<div class="clearfix"></div>
 	</div>
-
