@@ -19,8 +19,6 @@ function ipt_kb_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'ipt_kb_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/logo.png',
 		'default-text-color'     => '777',
-		'width'                  => 200,
-		'height'                 => 50,
 		'flex-height'            => false,
 		'flex-width'             => false,
 		'header-text'            => false,

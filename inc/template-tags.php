@@ -365,7 +365,7 @@ function ipt_kb_posted_on() {
 			esc_url( get_permalink() ),
 			$time_string
 		),
-		sprintf( '<span class="author vcard"><i class="glyphicon glyphicon-user"></i> <a class="url fn n" href="%1$s">%2$s</a></span>',
+		sprintf( '<span class="author vcard"><i class="glyphicon glyphicon-user"></i> %2$s </span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
 		)
