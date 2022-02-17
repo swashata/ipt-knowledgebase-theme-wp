@@ -309,11 +309,10 @@ class IPT_KB_Affix_Widget extends WP_Widget {
 	}
 }
 
-//UTC MOD 2/17/21 create_function() depreciated START
-//add_action( 'widgets_init', create_function( '', "register_widget( 'IPT_KB_Affix_Widget' );" ) );
-
-add_action( 'widgets_init', function() { register_widget( "IPT_KB_Affix_Widget" ); } );
-//UTC MOD 2/17/21 create_function() depreciated END
+add_action( 'widgets_init', 'itkbaffix_register_widgets' );
+function itkbaffix_register_widgets() {
+    register_widget( 'IPT_KB_Affix_Widget' );
+}
 
 /**
  * TOC content filter
