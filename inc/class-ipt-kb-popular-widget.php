@@ -125,4 +125,4 @@ class IPT_KB_Popular_Widget extends WP_Widget {
 	}
 }
 
-add_action( 'widgets_init', create_function( '', "register_widget( 'IPT_KB_Popular_Widget' );" ) );
+add_action( 'widgets_init', function() { register_widget( "IPT_KB_Popular_Widget" ); } );
